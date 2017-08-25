@@ -1,0 +1,235 @@
+.card {
+    border-radius: 6px;
+    background-color: $white;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 320px;
+    // trying this for now
+    height: 200px;
+    overflow:hidden;
+    //
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+    border: 0px;
+   	box-shadow:
+        0 1px 3px rgba(0,0,0, 0.12),
+        0 1px 2px rgba(0,0,0, 0.24);
+
+	a {
+	    color: $grey-mid-light;
+	    font-size: 12px;
+	    text-decoration: none;
+	}
+
+    h4 {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-top: 0;
+	}
+
+	h6 {
+		color: $grey-mid-light;
+		font-size: 10px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    margin: 0;
+	}
+
+	p {
+		color: $grey-mid-light;
+		font-size: $base-font-news-size;
+		line-height: $base-font-news-line-height;
+	}
+
+	.btn {
+		position: absolute; 
+		bottom: 15px;
+		right: 15px;
+	}
+}
+
+.card-small {
+	height: 100px;
+	h4 {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	h6 {
+		font-size: 10px;
+	}
+	.btn {
+		position: absolute; 
+		bottom: 5px;
+		right: 5px;
+		margin-bottom: 0px;
+		&:hover {
+			background-color: $grey-mid;
+			color: $white;
+		}
+	}
+}
+
+.card-listing {
+	height: 100px;
+	h4 {
+		font-size: 11px;
+	}
+	h6 {
+		font-size: 9px;
+	}
+}
+
+.card-green {
+	&:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    background-color: $ado-green;
+    color: $white;
+		p {
+			color: $grey-light;
+		}
+	}
+}
+
+.card-blue {
+	&:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    background-color: $ado-blue-dark;
+    color: $white;
+		p {
+			color: $grey-light;
+		}
+	}
+}
+
+.card-red {
+	&:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+    background-color: $ado-red;
+    color: $white;
+		p {
+			color: $grey-light;
+		}
+	}
+}
+
+// 
+// Job Listings
+//
+.card-jobs {
+    border-radius: 6px;
+    background-color: $white;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 100%;
+    // trying this for now
+    // height: 120px;
+    overflow:hidden;
+    //
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+	border: 2px solid $grey-light;
+    // border: 0px;
+   	// box-shadow:
+    //     0 1px 3px rgba(0,0,0, 0.12),
+    //     0 1px 2px rgba(0,0,0, 0.24);
+
+	&:hover {
+		border: 0;
+	}
+	a {
+	    text-decoration: none;
+	}
+
+    h4 {
+    	color: $text-color;
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-top: 0;
+	}
+
+	h6 {
+		color: $ado-green;
+		font-size: 10px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    margin: 0;
+	}
+
+	p {
+		color: $grey-mid-light;
+		font-size: 12px;
+		line-height: 1.2;
+
+	}
+
+	.job-date {
+		position: absolute; 
+		bottom: 5px;
+		right: 5px;
+		font-size: 10px;
+	    font-weight: 700;
+	}
+
+	.btn-job-view {
+		position: absolute; 
+		bottom: 15px;
+		right: 15px;
+		border-color: $blue-light;
+	}
+
+}
+
+
+
+// color of the buttons when you hover on the card
+.card-blue, .card-green, .card-red {
+	&:hover {
+		.btn-job-view {
+			background-color: $grey-mid-light;
+			color: $white;
+		}
+		h4 {
+			color: $white;
+		}
+		h6 {
+			color: $white;
+		}
+	}
+}
+
+.btn-job-view {
+	&:hover {
+			background-color: $ado-green;
+			color: $white;
+		}
+}
+
+
+//
+// Front news card
+//
+.front-news {
+    background-color: $white;
+    margin-bottom:15px;
+
+   	h4 {
+		font-size: 15px;
+    }
+    p {
+        color: $grey-mid-light;
+    	font-size: $base-font-news-size;
+        line-height: $base-font-news-line-height;
+    }
+
+    .front-news-content {
+    	height: 80px;
+    	overflow:hidden;
+    	margin-bottom:15px;
+    }
+}

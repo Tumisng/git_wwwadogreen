@@ -1,0 +1,43 @@
+$white: #fafafa;
+
+// Main Colors AdoGreen
+$ado-green: #00a500;
+$ado-dark-green: #006500;
+$ado-red: #ff0101;
+$ado-blue-light: #3499DB;
+$ado-blue-dark: #0665A2;
+$ado-purple: #882daf;
+
+
+$grey-light: #EBEBEB;
+$grey-mid-light: #A3A3A3;
+$grey-mid: #7A7A7A;
+$grey-darker: #333333;
+
+$text-color: $grey-darker;
+
+
+$blue-light: #3498db;
+$blue-mid-light: #2980b9;
+$blue-mid-dark: #34495e;
+$blue-dark: #2c3e50;
+$purple-light: #9b59b6;
+$purple-dark: #8e44ad;
+$orange-light: #e67e22;
+$orange-mid-light: #e74c3c;
+$orange-mid-dark: #d35400;
+$orange-dark: #c0392b;
+$yellow-light: #f1c40f;
+$yellow-dark: #f39c12;
+$green-dark: #28b162;
+
+
+$link-color: $blue-dark;
+$link-hover-color: saturate($ado-green, 50%);
+$link-visited-color: $orange-mid-light;
+
+// Typography
+$quiet-color:$blue-light;
+$loud-color: $ado-red;
+
+

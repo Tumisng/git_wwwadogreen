@@ -1,0 +1,67 @@
+// full line
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+
+// double line
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+}
+
+// think dash
+hr.style3 {
+	border-top: 1px dashed #8c8b8b;
+}
+
+// thin dash
+hr.style4 {
+	border-top: 1px dotted #8c8b8b;
+}
+// dash with spacing
+hr.style5 {
+	background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+}
+
+// thik dots
+hr.style6 {
+	background-color: #fff;
+	border-top: 2px dotted #8c8b8b;
+}
+
+// think line
+hr.style7 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+// thin double
+hr.style8 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+hr.style8:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+// thin dashed
+hr.style9 {
+	border-top: 1px dashed #8c8b8b;
+	border-bottom: 1px dashed #fff;
+}
+
+// dotted close
+hr.style10 {
+	border-top: 1px dotted #8c8b8b;
+	border-bottom: 1px dotted #fff;
+}
+// Faded line nice
+hr.style11 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

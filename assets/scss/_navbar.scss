@@ -1,0 +1,144 @@
+//
+// * Yamm!3 - Yet another megamenu for Bootstrap 3
+// * http://geedmo.github.com/yamm3
+// *
+// * @geedmo - Licensed under the MIT license
+// *
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+.yamm
+.yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+.yamm {
+	.dropdown-menu {left: auto;}
+}
+
+.menu-bold {
+	a {
+                    font-family: $heading-font-family;
+	    font-weight: 300;
+	    font-size: 12px;
+
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: $white;
+}
+
+.navbar-fixed-top {
+    background-color: $ado-dark-green;
+    color: $white;
+}
+
+.navbar-brand {
+}
+
+.nav {
+	a {
+		text-decoration: none;
+		font-size: 12px;
+		font-family: $base-font-family;
+		text-transform: uppercase;
+                                color: $white;
+
+	}
+	li {
+		a:hover, &:focus  {
+			background-color: $grey-mid;
+			color: #fff;
+		}
+	}
+}
+
+.dropdown-menu > li > a {
+    font-family: $base-font-family;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: none;
+    border-bottom: solid 1px #eee;
+    padding: 6px 15px;
+}
+
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
+	background-color: $grey-mid;
+	color: $white;
+}
+
+
+// Fix dropdown menu to the right
+.navbar-right .dropdown-menu {
+	right: auto;
+	left: auto;
+}
+// 
+// header logo
+// 
+
+.logo {
+	display: inline-block;
+	padding: 0;
+}
+
+#logo {
+    background: url("/assets/img/logo-header.svg") 0 0 no-repeat !important;
+    width: 80px;
+    // height: 20px;
+    position: relative;
+    top: 8px;
+    /* left: 30px; */
+}
+
+#logo-under {
+	padding-top: 6px;
+    font-size: 10px;
+    position: relative;
+}
+
+
+// Contact block information
+#contact-details {
+	font-size: 10px;
+	display: inline-block;
+	float: right;
+}
+
+@media (min-width: 480px){
+
+}
+
+@media (min-width: 768px){
+	
+	#logo {
+		width: 144px;
+	    // height: 36px;
+	    position: relative;
+	    top: 8px;
+	}
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 1200px){
+
+	}
+// Test

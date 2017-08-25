@@ -1,0 +1,79 @@
+// Font Stuff
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-weight: 400;
+
+$fixed-font-family: 'Montserrat';
+$fixed-font-size: 85%;
+$fixed-line-height: 1.2;
+
+// news - blog
+$base-font-news-size: 12px;
+$base-font-news-line-height: 1.2;
+
+body {
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+}
+
+// b {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 18px;
+// }
+
+
+// Headings and typography
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { 
+	font-family: $heading-font-family; 
+	font-weight: $heading-font-weight; 
+}
+
+.h1, .h2 { line-height: 1.1; }
+.h3, .h4 { line-height: 1.3; }
+.h1 { font-size: 400%; letter-spacing: -2px; }
+.h2 { font-size: 250%; letter-spacing: -1px; }
+.h3 { font-size: 200%; }
+.h4 { font-size: 180%; }
+.h5 { font-size: 130%; }
+
+.fixed { font-family: $fixed-font-family; font-size: $fixed-font-size; line-height: $fixed-line-height; }
+
+.thin-heading {
+	font-weight: 100;
+}
+
+.heading-underline {
+	display: inline-block;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.quiet { color: $quiet-color; }
+.small { font-size: 12px; }
+.loud  { color: $loud-color; }
+
+.italic { font-style: italic; }
+.bold   { font-weight: 700; @extend .loud; }
+
+.block-margins { margin: 1em 0; }
+
+.unordered-list { list-style-type: disc; }
+.ordered-list { list-style: decimal; }
+
+//  -------------------
+
+@media (min-width: 992px){
+	body {
+		font-size: 14px;
+	}
+}
+
+
+
+
