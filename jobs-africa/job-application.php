@@ -40,10 +40,13 @@
     
     include_once ENV_ROOT . 'includes/header.php';
 ?> 
+    <!-- CSS file -->
+    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/plugins/autocomplete/easy-autocomplete.min.css">
+
 <!--=== Content Part ===-->
     <div class="container">
         <div class="row">
-            <div class="col-md-12 job-header">
+            <div class="col-md-12 job-header text-center">
                 <h2 id="job-title"><?php echo $strJobTitle; ?></h2>
                 <h4 class="loud"><?php if ($strJobStatus=='closed') { 
                     echo 'Please note: This job is closed. However, please do still register your CV here for similar future positions. Thank you!.';}?></h4>
@@ -51,49 +54,14 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <form id="jobapplication" name="jobapp" class="reg-page" enctype="multipart/form-data"  method="post" action="<?php echo ENV_RSS;?>ajax/getJobForm2.php">
+                <form id="jobApplication" name="jobapp" class="reg-page" enctype="multipart/form-data"  method="post" action="<?php echo ENV_RSS;?>ajax/getJobForm2.php">
                         <input type="hidden" name="FormType" value="JobApplication">
-                        <input type="hidden" name="JobId" value="<?php echo $strJobId; ?> ">
+                        <input type="hidden" name="JobId" value="<?php echo $intAppDataId; ?>">
                         <input id="JobTitle" type="hidden" name="JobTitle" value="<?php echo $strJobTitle; ?>">
 
-                        <label>First Name<span class="color-red">*</span></label>
-                        <input type="text" id="Name" name="Name" class="form-control margin-bottom-20" required="">
-
-                        <label>Last Name<span class="color-red">*</span></label>
-                        <input type="text" name="Last-Name" class="form-control margin-bottom-20" required="">
-
-                        <label>Email Address<span class="color-red">*</span></label>
-                        <input type="email" name="Email" class="form-control margin-bottom-20" required="">
-
-                        <label>Cell Number<span class="color-red">*</span></label>
-                        <input type="tel" name="Cell" class="form-control margin-bottom-20" required="">
-
-                        <label>Current Job Title<span class="color-red">*</span></label>
-                        <input type="text" name="Job-title" class="form-control margin-bottom-20" required="">
-
-                        <label>Current Company<span class="color-red">*</span></label>
-                        <input type="text" name="Company" class="form-control margin-bottom-20" required="">
-
-                        <label>Current Salary<span class="color-red">*</span></label>
-                        <input type="text" name="Salary" class="form-control margin-bottom-20" required="">
-
-                        <label>Nationality<span class="color-red">*</span></label>
-                        <input type="text" name="Nationality" class="form-control margin-bottom-20" required="">
-
-                        <label>Willing To Relocate?<span class="color-red">*</span></label>
-                        <input type="text" name="Relocate" class="form-control margin-bottom-20" required="">
-
-                        <label>Notice Period<span class="color-red">*</span></label>
-                        <input type="text" name="Notice-Period" class="form-control margin-bottom-20" required="">
-
-                        <label>Attach CV<span class="color-red">*</span></label>
-                        <input type="file" name="FileUpload" class="form-control margin-bottom-20" required="">
-
-                        <label>Comment</label>
-                        <input type="text" name="Comment" class="form-control margin-bottom-20">
-
-                    <hr>
-
+<?php
+                            include ENV_ROOT . 'includes/Job_Apply_Form_Standard.php';
+?>
                     <div class="row">
                         <div class="col-lg-6">
                             <button id="submitBtn" class="button button-green btn-block" type="submit">Submit</button>
@@ -115,6 +83,8 @@
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/javascripts_basic.html';
 ?>
+    <!-- JS file -->
+<script src="<?php echo ENV_ROOTURL; ?>assets/plugins/autocomplete/jquery.easy-autocomplete.min.js"> </script>
 
     
     <script>
@@ -134,6 +104,27 @@
                };
 
        </script>
+       <script>
+           var options = {
+	url: "<?php echo ENV_ROOTURL; ?>assets/data/countries.xml",
 
+                        dataType: "xml",
+                        xmlElementName: "country",
+
+                        getValue: function(element) {
+                                return $(element).find("name").text();
+                        },
+
+                        list: {
+                                match: {
+                                        enabled: true
+                                }
+                        }
+                };
+
+                $("#country-list").easyAutocomplete(options);
+       </script>
+       
+       
        </body>
 </html>

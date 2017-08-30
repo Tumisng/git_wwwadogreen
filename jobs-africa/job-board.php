@@ -38,11 +38,10 @@ echo '
                     </div>
                     <div class="panel-body">
                         <ul class="list-unstyled joblist" id="job-board-listing">
-                        
 ';
 
 $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
-//First version loading into an array
+
 $json1 = file_get_contents($json_url);
 $array = json_decode($json1);
 
@@ -54,10 +53,13 @@ if(isset($array[2])) {
      $strJobOpenDate = $value->OpenDate;
      $strJobSector = $value->Sector;
      $strJobLocation = $value->Location;
+//    replace %20 in the URL
+     $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
+     
 ?> 
                                 <li>
                                         <div class="card-jobs card-green">
-                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitle; ?>">
+                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name='.$strJobTitleURL; ?>">
                                                         <div class="card-content"> 
                                                             <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation ;?></h6>
                                                             <h4 class="title"><?php echo $strJobTitle;?></h4>

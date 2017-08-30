@@ -132,7 +132,5 @@
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
 
-    
-    
 </body>
 </html>

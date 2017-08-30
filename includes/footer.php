@@ -37,10 +37,10 @@
                             <h4>Candidate Useful Links</h4></div>
                         <ul class="list-unstyled footer-a">
                             <li>
-                                <a href="<?php echo ENV_ROOTURL;?>about-us.html" rel="nofollow">About Us</a>
+                                <a href="<?php echo ENV_ROOTURL;?>about-us.php" rel="nofollow">About Us</a>
                             </li>
                             <li>
-                                <a href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.html" rel="nofollow">Register Your CV</a>
+                                <a href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
                             </li>
                         </ul>
                     </div>

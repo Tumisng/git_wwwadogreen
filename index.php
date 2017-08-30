@@ -16,10 +16,10 @@ include 'includes/header.php';
         
 
     <div class="row">
-        <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="jobs-africa/job-board.html " role="button"><h4>Job Board</h4></a></div>
-        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="candidate/job-hunting-africa-tips-and-advice.html" role="button"><h4>Candidates</h4></a></div>
-        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="about-us.html" role="button"><h4>Clients</h4></a></div>
-        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="contact-adogreen-recruitment.html" role="button"><h4>Contact us</h4></a></div>
+        <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a></div>
+        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="candidate/job-hunting-africa-tips-and-advice.php" role="button"><h4>Candidates</h4></a></div>
+        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="about-us.php" role="button"><h4>Clients</h4></a></div>
+        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="contact-adogreen-recruitment.php" role="button"><h4>Contact us</h4></a></div>
         <div class="well">
             <a href="https://www.twitter.com/adogreen" class="btn btn-social-icon btn-twitter">
                 <span class="fa fa-2x fa-twitter"></span>
@@ -53,9 +53,9 @@ include 'includes/header.php';
 <div class="container hidden-xs">
     <div class="row">
         <div class="col-md-12 text-center">
-             <h1 class="heading-underline">Heavy Industry Recruitment</h1>
-             <p>Mining | Engineering | Construction | Energy | Finance | HR | Office Commercial <br/>
-             AdoGreen Africa is a specialist recruitment agency focusing on finding local talent in the various countries in Africa.
+             <h1 class="heading-underline">AdoGreen Africa - Heavy Industry Recruitment</h1>
+             <p>Mining | Engineering | Construction | Roads & Infrastructure | Energy | Finance | HR | Office Commercial <br/>
+             AdoGreen Africa is a specialist recruitment agency focusing on finding local talent within various African countries.
              </p>
         </div>
     </div>
@@ -107,20 +107,20 @@ include 'includes/header.php';
             <h2 class="thin-heading heading-underline">Services</h2>
             <div class="row">
                 <div class="col-sm-12">
-                    <a href="services/recruitment-process-outsourcing-africa.html" role="button"><h4 class="thin-heading">Recruitment Process Outsourcing</h4></a>
+                    <a href="services/recruitment-process-outsourcing-africa.php" role="button"><h4 class="thin-heading">Recruitment Process Outsourcing</h4></a>
                     <p>
                       AdoGreen partners with you to take full responsibility for the management of the entire recruitment process on your behalf.
                     </p>
                 </div>
                 <div class="col-sm-12">
-                    <a href="services/permanent-placement-solutions-africa.html" role="button"><h4 class="thin-heading">Permanent Placement Solutions</h4></a>
+                    <a href="services/permanent-placement-solutions-africa.php" role="button"><h4 class="thin-heading">Permanent Placement Solutions</h4></a>
                     <p>
                       AdoGreen has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments.
                     </p>
                 </div>
              
                 <div class="col-sm-12">
-                    <a href="services/company-targeted-marketing-local-africa.html" role="button"><h4 class="thin-heading">Company Targeted Marketing</h4></a>
+                    <a href="services/company-targeted-marketing-local-africa.php" role="button"><h4 class="thin-heading">Company Targeted Marketing</h4></a>
                     <p>
                       No solution is the same and is developed per client per country, area or need. The focus is to help companies source the best of local talent easily and save money on the recruitment process.
                     </p>
@@ -183,6 +183,5 @@ include 'includes/header.php';
 include 'includes/footer.php';
 include 'includes/javascripts_basic.html';
 ?>
-
     </body>
 </html>
