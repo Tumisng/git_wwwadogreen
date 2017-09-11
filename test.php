@@ -1,5 +1,5 @@
 Get application info
-Load info into an array
+Load Job info into an array
 
 Create Candidate = FALSE
 Create Application = FALSE
@@ -25,3 +25,25 @@ if (Duplicate Email) {
         
     }
 }
+if (UploadCV == TRUE) {
+   Test Doc
+   Upload Doc 
+   Convert Doc 
+}
+
+
+Register CV
+check for duplicate
+if no duplicate - create candidate
+if duplicate - update CV
+
+ <?php
+ include_once("class.emailer.php"); 
+ include_once("class.extendedemailer.php"); 
+ $xemailer = new ExtendedEmailer(); 
+ $xemailer->setSender("hasin@pageflakes.com"); 
+ $xemailer->addRecipients("hasin@somewherein.net");
+ $xemailer->setSubject("Just a Test"); 
+ $xemailer->setBody("Hi Hasin, How are you?");
+ $xemailer->sendEmail();
+ ?>

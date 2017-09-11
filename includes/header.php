@@ -1,3 +1,17 @@
+<?php
+        function curPageURL() {
+         $pageURL = 'http';
+         if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+         $pageURL .= "://";
+         if ($_SERVER["SERVER_PORT"] != "80") {
+          $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+         } else {
+          $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+         }
+         return $pageURL;
+        }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +22,9 @@
 	<meta name="language" content="ENGLISH">
 	<meta name="content-language" content="EN">
 
+        <!-- Indexing -->
+	<meta name="robots" content="<?php if ($strPageRobot!='') {echo $strPageRobot;} else{echo ENV_ROBOT;}?>">
+    
 	<title><?php
                     if ($strPageTitle!='') {
                         echo $strPageTitle;
@@ -17,22 +34,21 @@
 	<meta name="title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>">
 	<meta name="description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>">
 	<meta name="keywords" content="<?php if ($strPageKeywords !='') {echo $strPageKeywords;} else{echo ENV_KEYWORDS;}?>">
-	<meta name="author" content="<?php if ($strPageAuthor !='') {echo $strPageAuthor;} else{echo ENV_PAGEAUTHOR;}?>">
 
-
-	<link rel="canonical" href="<?php ENV_WEBSITE;?>">
+	<link rel="canonical" href="<?php echo ENV_WEBSITE;?>">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,300italic' rel='stylesheet' type='text/css'>
 
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>/assets/css/animate.css">
 
-    <meta property="fb:app_id" content="" />
+    <meta property="fb:app_id" content="126845677382791"/>
     <meta property="og:title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="<?php ENV_WEBSITE;?>" />
+    <meta property="og:url" content="<?php echo curPageURL();?>"/>
     <meta property="og:description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>" />
-    <meta property="og:image" content="<?php if ($strPageImg !='') {echo $strPageImg;} else{ echo ENV_ROOTURL . 'assets/img/logo.png';}?>" />
+    <meta property="og:image" content="<?php if ($strPageImg !='') {echo $strPageImg;} else{ echo ENV_ROOTURL . 'assets/img/logo.png';}?>"/>
+    <meta property="article:publisher" content="https://www.facebook.com/Adogreen/L"/> 
 
     <!-- SEO Twitter  -->
     <meta name="twitter:card" content="summary_large_image">

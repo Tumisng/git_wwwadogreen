@@ -35,13 +35,17 @@
                             <button class="button button-green btn-block" type="submit">Submit</button>
                         </div>
                         <div class="col-lg-6">
-                                <a href="/jobs-africa/job-board.html " class="button btn-block button-blue">Job Board</a>
+                                <a href="/jobs-africa/job-board.php " class="button btn-block button-blue">Job Board</a>
                         </div>
 
                     </div>
                 </form>
             </div>
         </div>
+        <div class="row">
+                    <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 addthis_inline_share_toolbox">
+                    </div>
+                </div>
     </div><!--/container-->
     <!--=== End Content Part ===-->
 <?php    
@@ -71,5 +75,6 @@
 
                 $("#country-list").easyAutocomplete(options);
        </script>
+       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
 </body>
 </html>

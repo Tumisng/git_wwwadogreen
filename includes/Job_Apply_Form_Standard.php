@@ -9,15 +9,30 @@
 
                         <label>Cell Number<span class="color-red">*</span></label>
                         <input type="tel" name="Cell" class="form-control margin-bottom-20" required="">
-
-                        <label>Current Job Title<span class="color-red">*</span></label>
-                        <input type="text" name="JobTitleCandidate" class="form-control margin-bottom-20" required="">
-
-                        <label>Current Company<span class="color-red">*</span></label>
-                        <input type="text" name="CompanyName" class="form-control margin-bottom-20" required="">
                         
-<!--Field of study
-Highest Education-->
+                        <label>Nationality (start typing the country name)<span class="color-red">*</span></label>
+                        <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
+                        
+                        <label for="Relocate">Willing To Relocate?</label>
+                        <select class="form-control" id="Relocate" name="Relocate">
+                                <option>None</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                        </select><br>
+                        <hr>
+                        <h3>Tell Us About Your Qualification/s</h3>
+                        
+                        <label>Qualification + Final year of that experience<span class="color-red">*</span></label>
+                        <select class="form-control" id="YearsExperience" name="YearsExperience">
+                                <option>None</option>
+                                <option>High School</option>
+                                <option>Certificate</option>
+                                <option>Diploma</option>
+                                <option>Bachelors</option>
+                                <option>Masters</option>
+                                <option>Doctorate</option>
+                                <option>Other</option>
+                        </select><br>
 
                         <label>Years Of Work Experience<span class="color-red">*</span></label>
                         <select class="form-control" id="YearsExperience" name="YearsExperience">
@@ -27,20 +42,19 @@ Highest Education-->
                                 <option>3 -5 Years</option>
                                 <option>6 - 10 Years</option>
                                 <option>More Than 10 Years</option>
-                        </select><br>
+                        </select>
+                        <br>
+                        <hr>
+                        <h3>Tell Us About Your Current Employer</h3>
+                        <label>Current Job Title<span class="color-red">*</span></label>
+                        <input type="text" name="JobTitleCandidate" class="form-control margin-bottom-20" required="">
+
+                        <label>Current Company<span class="color-red">*</span></label>
+                        <input type="text" name="CompanyName" class="form-control margin-bottom-20" required="">
                         
+
                         <label>Current Salary (Your Basic)<span class="color-red">*</span></label>
                         <input type="text" name="Salary" class="form-control margin-bottom-20" required="">
-                         
-                        <label>Nationality<span class="color-red">*</span></label>
-                        <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
-                        
-                        <label for="Relocate">Willing To Relocate?</label>
-                        <select class="form-control" id="Relocate" name="Relocate">
-                                <option>None</option>
-                                <option>Yes</option>
-                                <option>No</option>
-                        </select><br>
 
                         <label>Notice Period<span class="color-red">*</span></label>
                         <select class="form-control" id="NoticePeriod" name="NoticePeriod">
@@ -54,11 +68,11 @@ Highest Education-->
                         <option>3 Months</option>
                         <option>Other</option>Other
                         </select><br>
-
-                        <label>Attach CV<span class="color-red">*</span></label>
+                        <hr>
+                        <label>Attach CV (must be a doc, docx or PDF. No scanned CV's please)<span class="color-red">*</span></label>
                         <input type="file" name="FileUpload" class="form-control margin-bottom-20" required="">
 
-                        <label>Comment</label>
+                        <label>Any Extra Comment?</label>
                         <input type="text" name="Comment" class="form-control margin-bottom-20">
 
                     <hr>

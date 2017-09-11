@@ -13,6 +13,7 @@ define('ENV_FOLDER', '/phpTraining/');
 define('ENV_RSS', 'http://localhost:8080/kq-base-v2/web/');
 
 // Site Title, Description etc
+define('ENV_ROBOT', 'index, follow');
 define('ENV_TITLE', 'AdoGreen Africa Recruitment & Jobs');
 define('ENV_KEYWORDS', 'Africa Recruitment | Jobs | Heavy Engineering | Power / Energy | Building Construction | Civil Roads Waterworks | Finance');
 define('ENV_DESCRIPTION', 'AdoGreen Africa Recruitment & Jobs, specialists heavy engineering, power/energy, building and construction, civil roads waterworks, finance');

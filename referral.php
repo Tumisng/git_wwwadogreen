@@ -6,7 +6,7 @@
 	$strPageTitle = 'Referral AdoGreen';
 	$strPageDescription = 'AdoGreen Africa Recruitment Agency - specialist local recruitment in Africa - Power Generation Jobs, Renewable Energy Recruitment, Mining jobs, Renewable Energy Projects, Solar Jobs, Mining Recruitment';
 	$strPageKeywords = 'Africa Recruitment Jobs, Mining recruitment, Construction Jobs, Engineering recruitment, Renewable Energy recruitment, Project managers jobs';
-	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
+        $strPageRobot = 'NOINDEX, NOFOLLOW';
 
 
     include_once ENV_ROOT . 'includes/header.php';
@@ -79,7 +79,11 @@
                                     </select>
                                    
                                     <ul id="live-search-wrapper" class="live-search">
-
+                                                <!--<li>Listings</li>
+                                        <li>Listings</li>
+                                        <li>Listings</li>
+                                        <li>Listings</li>
+                                        <li>Listings</li>-->
                                     </ul>
                                 </div>
                             </div>

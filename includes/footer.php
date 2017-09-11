@@ -13,7 +13,7 @@
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>africa/recruitment-africa-local-specialist-agency.php ">Localisation Recruitment Solution</a></li>
                         </ul>
-                        <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>client-register-job.php" rel="nofollow">Submit A Job Spec</a>
+                        <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>contact-adogreen-recruitment.php" rel="nofollow">Contact Us</a>
                         
                     </div>
                     <!--/col-md-3-->

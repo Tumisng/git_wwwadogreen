@@ -1,8 +1,6 @@
+
             <div>
-                <a rel="nofollow" class="btn btn-block btn-danger" href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a>
-            </div>
-            <div>
-                <a rel="nofollow" class="btn btn-block btn-success" href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Need A Job?</a>
+                <a rel="nofollow" class="btn btn-block btn-success" href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV?</a>
             </div>
 
             <hr>
