@@ -26,35 +26,37 @@
                 <ul class="list-unstyled"> 
                         <?php 
                         $array = array();
-                        echo '11s </br>';
                         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published';
                         //First version loading into an array
                         $json1 = file_get_contents($json_url);
                         $array = json_decode($json1, TRUE);
-                        var_dump($array[2]);
-                        echo '</br>';
-                        
+
                         if(isset($array[2])) {
                         foreach($array[2] as $value)  
                            {
-                                $strBlogId = $value->AppDataId;
-                                $strBlogStatus = $value->Status;
-                                $strBlogTitle = $value->Title;
-                                $strBlogSEODesc = $value->SEODescription;
-                                $strBlogOpenDate = $value->OpenDate;
-                                $strBlogSector = $value->Sector;
-                                echo 'title value is - ' . $strBlogTitle;
+                                $strBlogId = $value['AppDataId'];
+                                $strBlogStatus = $value['Status'];
+                                $strBlogTitle = $value['Title'];
+                                $strBlogSEODesc = $value['SEODescription'];
+                                $strBlogOpenDate = $value['OpenDate'];
+                                $strBlogSector = $value['Sector'];
+                                $strBlogImgId = $value['ImageUploadedId'];
                         ?> 
                                 <li>
-                                        <a href="<?php echo ENV_ROOTURL . 'blog/blogpost.php?id=' . $strBlogId . '&name=' . $strBlogTitle; ?>">
-                                            <div class="card-jobs card-green">
+                                    <div class="col-md-3">
+                                        <a class="card-blog" href="<?php echo ENV_ROOTURL . 'blog/blogpost.php?id=' . $strBlogId . '&name=' . $strBlogTitle; ?>">
+                                            <div class="card card-blue card-blog">
                                                     <div class="card-content"> 
-                                                        <h6 class="category pull-right"><?php echo $strBlogSector . ' / ' ;?></h6>
+                                                        <h6 class="category pull-right"><?php echo $strBlogSector;?></h6>
                                                         <h4 class="title"><?php echo $strBlogTitle;?></h4>
+                                                        <p class="description"><?php echo $strBlogDescription;?></p>
+                                                        <img class="img-responsive" width="100%" src="<?php echo ENV_RSS . 'DMSimage.php?i=' . $strBlogImgId; ?>">
                                                     </div>    
                                             </div>
                                         </a>    
-                                </li>
+                                    </div>
+                                <li>
+                        
                         <?php            
                            }
                         };

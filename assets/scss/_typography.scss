@@ -1,12 +1,12 @@
 // Font Stuff
-$base-font-family: 'Open Sans', sans-serif;
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size: 16px;
 $base-font-weight: 300;
 
-$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading-font-weight: 400;
 
-$fixed-font-family: 'Montserrat';
+$fixed-font-family: 'Open Sans', sans-serif;
 $fixed-font-size: 85%;
 $fixed-line-height: 1.2;
 
@@ -20,6 +20,7 @@ body {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   line-height: 1.6;
+  text-align: justify;
 }
 
 // b {

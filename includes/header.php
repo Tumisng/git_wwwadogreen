@@ -37,7 +37,7 @@
 
 	<link rel="canonical" href="<?php echo ENV_WEBSITE;?>">
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,600,300italic' rel='stylesheet' type='text/css'>
 
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>/assets/css/animate.css">
@@ -69,7 +69,7 @@
 <body>
 
  <header>
-   <nav class="navbar yamm nafbar-default navbar-fixed-top">
+   <nav class="navbar yamm nafbar-default">
         <div class="container">
             <div class="row">
                 <div class="col-cs-12 hidden-xs" id="contact-details">

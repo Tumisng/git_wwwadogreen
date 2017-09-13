@@ -30,7 +30,7 @@
 
     $strPageTitle = $strBlogTitle;
     $strPageDescription = $strBlogSEODesc;
-    $strPageKeywords = $strSEOKeywords;
+    $strPageKeywords = $strBlogSEOKeywords;
     $strPageImg = $strBlogImgId;
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
     
@@ -60,7 +60,11 @@
     </div>
     <div class="row">
         <div class="col-md-9">
-                <?php echo $strBlogDescription; ?>
+            <?php echo $strBlogDescription; ?>
+            
+            <iframe  id="blog-display" src="<?php echo ENV_RSS . 'publicapi/getBlog.php?c=WebPostAdo&f=Description&i=' . $intAppDataId; ?>" style="width:100%; height:100%; border:0;">
+                        
+            </iframe>
         </div>
         <div class="col-md-3">
                 <?php include ENV_ROOT . 'includes/Page_Sidebar.php'; ?>
@@ -98,6 +102,7 @@
 ?>
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
+<script>$('#blog-display').html(strBlogDescription);</script>
 
 </body>
 </html>

@@ -233,3 +233,48 @@
     	margin-bottom:15px;
     }
 }
+
+.card-blog {
+
+	&:hover {
+		border: 0;
+	}
+	a {
+	    text-decoration: none;
+	}
+
+    h4 {
+    	color: $text-color;
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-top: 0;
+	}
+
+	h6 {
+		color: $ado-green;
+		font-size: 10px;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    margin: 0;
+	}
+
+	p {
+		color: $grey-mid-light;
+		font-size: 12px;
+		line-height: 1.2;
+
+	}
+
+	blog-date {
+		position: absolute; 
+		bottom: 5px;
+		right: 5px;
+		font-size: 10px;
+	    font-weight: 700;
+	}
+}
+.blog {
+    a {
+        text-decoration: none;
+    }
+}

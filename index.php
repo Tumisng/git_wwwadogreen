@@ -76,7 +76,7 @@ include 'includes/header.php';
 <div class="container">
     
     <div class="row margin-20">
-        <div class="col-md-6">
+        <div class="col-md-9">
             <h2 class="thin-heading heading-underline">Sectors</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -104,34 +104,17 @@ include 'includes/header.php';
                     <img class="img-responsive" width="100%" src="assets/img/blog/sector-office-commercial.jpg" alt="Africa Office Commercial Recruitment / Jobs">
                 </div>
             </div>
-            <h2 class="thin-heading heading-underline">Services</h2>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="services/recruitment-process-outsourcing-africa.php" role="button"><h4 class="thin-heading">Recruitment Process Outsourcing</h4></a>
-                    <p>
-                      AdoGreen partners with you to take full responsibility for the management of the entire recruitment process on your behalf.
-                    </p>
-                </div>
-                <div class="col-sm-12">
-                    <a href="services/permanent-placement-solutions-africa.php" role="button"><h4 class="thin-heading">Permanent Placement Solutions</h4></a>
-                    <p>
-                      AdoGreen has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments.
-                    </p>
-                </div>
-             
-                <div class="col-sm-12">
-                    <a href="services/company-targeted-marketing-local-africa.php" role="button"><h4 class="thin-heading">Company Targeted Marketing</h4></a>
-                    <p>
-                      No solution is the same and is developed per client per country, area or need. The focus is to help companies source the best of local talent easily and save money on the recruitment process.
-                    </p>
-                </div>    
-            </div>
             
         </div>
+        <div class="col-md-3">
+                <?php include 'includes/Page_Sidebar.php'; ?>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             
-            <a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
-                <h2 class="thin-heading heading-underline">Latest Jobs</h2></a>
+            <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
+                <h4 class="thin-heading heading-underline">Latest Jobs</h4></a>
                 <ul class="list-unstyled" id="job-board-listing"> 
                         <?php 
                         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
@@ -163,7 +146,7 @@ include 'includes/header.php';
                         };
                         ?>
                 </ul> 
-            <a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
+            <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4>View Full Listing</h4>
             </a>
         </div>
