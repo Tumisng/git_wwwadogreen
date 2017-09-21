@@ -1,19 +1,33 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Engineering Jobs In Africa - Specialist Recruitment';
 	$strPageDescription = 'Engineering Jobs In Africa. AdoGreen recruitment is a specialist recruitment of locals in various African Countries';
 	$strPageKeywords = 'Engineering Jobs In Africa Specialist Recruitment Agency';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . 'assets/img/sector-engineering-heavy-industry-jobs-africa.png';
+	$strPageImg = ENV_ROOTURL . 'assets/img/sector-engineering-front.jpg';
 	$strPageCountry = '';
 	$strPageSector = 'Engineering';
 	$strPageJobList = 'Sector';
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 background-engineering">
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -37,9 +51,7 @@
                   Engineering is defined as the innovation, invention, design, building, maintaining, researching, and improving of structures, machinery, apparatus, elements, materials, and processes by means of analytics, mathematics and scientific principles. In short engineering is the combination of use of maths and science to solve the world's problems. Engineering as a discipline is expansive and comprises of a number of specialised fields, each in itself being more specific on particular areas than the other. An example of the different specialised fields of engineering are civil, structural, mechanical, electrical and environmental engineering. An engineer translates a thought or theoretical idea for use in everyday life. 
                 </p><br />
             </div>
-            <div>
-                <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
-            </div>
+            
         </div>
         <!-- ./col-md-7 -->
         <div class="col-md-6">
@@ -63,6 +75,9 @@
                 <p>AdoGreen can assist with requirements within restrictive circumstances like the challenge of working in remote locations, lack of connectivity and media reach, as well as regions unfamiliar to the company.</p>
             </div>
             <?php include ENV_ROOT . 'includes/Page_Sectors.php';?>
+            <div>
+                <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
+            </div>
         </div>
         <!-- ./col-7 -->
         <div class="col-md-2">
@@ -80,7 +95,7 @@
 <!-- ./container fluid -->
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
     </body>
 </html>

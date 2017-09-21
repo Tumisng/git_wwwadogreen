@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
 
     $strPageTitle = 'Africa Power Generation Recruitment & Jobs - Specialist Recruitment Agency';
     $strPageDescription = 'Power generation industry overview, jobs and recruitment in Africa. Power Generation capacity in Africa including - Power Generation Jobs, Transmission Jobs and Recruitment, Substation Recruitment.';
@@ -14,6 +22,12 @@
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 background-power">
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -62,6 +76,9 @@
                         <li>High Voltage Turnkey Projects</li>
                         <li>Transmission Projects</li>
                     </ul>
+                    <div>
+                        <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
+                    </div>
             </div>
         <div class="col-md-3">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
@@ -77,7 +94,7 @@
 
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
     </body>

@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
     
     $strPageTitle = 'Botswana Diamond Mining Sector - Jobs And Recruitment';
     $strPageDescription = 'Diamond mining jobs and recruitment information. AdoGreen recruitment is a specialist recruitment of locals and expats in Botswana';
@@ -91,7 +99,7 @@
 </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 </body>

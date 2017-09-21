@@ -4973,6 +4973,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .thin-heading {
   font-weight: 100; }
 
+.job-listing-title {
+  line-height: 10px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  text-decoration: none; }
+
+.job-listing-description {
+  font-style: italic;
+  font-size: 11px;
+  text-decoration: none; }
+
 .heading-underline {
   display: inline-block;
   border-bottom: 1px solid #8c8b8b; }
@@ -5194,7 +5205,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: #333333;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 0; }
+    margin-top: 0;
+    font-weight: 400; }
   .card-jobs h6 {
     color: #00a500;
     font-size: 10px;
@@ -5700,6 +5712,54 @@ and open the template in the editor.
   padding: 250px;
   background-attachment: fixed; }
 
+.background-finance {
+  text-align: center;
+  position: relative;
+  background: url(../img/finance-front.jpg) no-repeat center;
+  padding-bottom: 600px;
+  background-attachment: fixed; }
+
+.background-manufacturing {
+  text-align: center;
+  position: relative;
+  background: url(../img/sector-manufacturing-main.jpg) no-repeat center;
+  padding-top: 300px;
+  padding-bottom: 400px;
+  background-attachment: fixed; }
+
+.background-construction {
+  text-align: center;
+  position: relative;
+  background: url(../img/sector-construction.jpg) no-repeat center;
+  padding-top: 300px;
+  padding-bottom: 400px;
+  background-attachment: fixed; }
+
+.background-power {
+  text-align: center;
+  position: relative;
+  background: url(../img/sector-power-main.jpg) no-repeat center;
+  padding-top: 300px;
+  padding-bottom: 400px;
+  background-attachment: fixed; }
+
+.background-engineering {
+  text-align: center;
+  position: relative;
+  background: url(../img/sector-engineering-main.jpg) no-repeat center;
+  padding-top: 300px;
+  padding-bottom: 400px;
+  background-attachment: fixed; }
+
+.sector-headings {
+  position: absolute;
+  top: 280px;
+  padding-left: 55px; }
+
+sector-writing {
+  position: absolute;
+  top: 600px; }
+
 * {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
@@ -5707,7 +5767,6 @@ and open the template in the editor.
 
 body {
   background-color: #fff;
-  padding-top: 50px;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
 
 a {
@@ -5736,6 +5795,9 @@ img {
 
 .margin-20 {
   margin: 20px 0; }
+
+.padding-top-page {
+  padding-top: 20px; }
 
 .jumbotron {
   background-color: #EBEBEB; }
@@ -5983,9 +6045,6 @@ address {
   text-decoration: none; }
 
 @media (min-width: 480px) {
-  body {
-    padding-top: 110px; }
-
   h1 {
     font-size: 2em; } }
 @media (min-width: 768px) {
@@ -5997,9 +6056,6 @@ address {
 @media (min-width: 992px) {
   .col-padding-middle {
     padding-left: 0px; }
-
-  body {
-    padding-top: 70px; }
 
   .button {
     padding: 16px 0px;

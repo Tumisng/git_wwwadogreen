@@ -1,7 +1,6 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = 'environment/config.php';
+    include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Referral AdoGreen';
 	$strPageDescription = 'AdoGreen Africa Recruitment Agency - specialist local recruitment in Africa - Power Generation Jobs, Renewable Energy Recruitment, Mining jobs, Renewable Energy Projects, Solar Jobs, Mining Recruitment';
@@ -159,7 +158,7 @@
 </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 

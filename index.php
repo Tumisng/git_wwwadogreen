@@ -1,6 +1,8 @@
 <?php
 
 include_once 'environment/config.php';
+
+$strPageSlider = FALSE;
 include 'includes/header.php';
 
 ?>
@@ -12,9 +14,6 @@ include 'includes/header.php';
             <img src="assets/img/logo-header.png" alt="AdoGreen Recruitment Logo">
         </div>
     </div>
-
-        
-
     <div class="row">
         <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a></div>
         <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="candidate/job-hunting-africa-tips-and-advice.php" role="button"><h4>Candidates</h4></a></div>
@@ -40,21 +39,17 @@ include 'includes/header.php';
     </div>
 </div>
 <!-- *****************     Other screens **********************-->
-<div class="container hidden-xs">
+
+<div class="container hidden-xs padding-top-page">
     <div class="row">
             <div class="col-md-12 frontpage"><img class="img-responsive" width="30%" src="assets/img/logo-header.png" alt="Heavy Industry Recruitment"></div>
-            <div class="col-md-12 text-center">
-                
-                <h2></h2>
-            </div>
-            
     </div>
 </div>
 <div class="container hidden-xs">
     <div class="row">
         <div class="col-md-12 text-center">
              <h1 class="heading-underline">AdoGreen Africa - Heavy Industry Recruitment</h1>
-             <p>Mining | Engineering | Construction | Roads & Infrastructure | Energy | Finance | HR | Office Commercial <br/>
+             <p>Mining | Engineering | Construction | Roads & Infrastructure | Energy | Finance & HR<br/>
              AdoGreen Africa is a specialist recruitment agency focusing on finding local talent within various African countries.
              </p>
         </div>
@@ -62,58 +57,53 @@ include 'includes/header.php';
 </div>    
 
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 text-center row-breaker">
-            <h4 class="thin-heading">Over 8 out of 10 candidates placed through AdoGreen Africa since 2007 still work with their employers, many of which have become senior members of staff leading divisions within their companies.</h4>
-        </div>
-    </div>
-</div>
-
     <!-- ******************* -->
     <!--      Seoncd Row     -->
     <!-- ******************* -->
-<div class="container">
-    
-    <div class="row margin-20">
-        <div class="col-md-9">
-            <h2 class="thin-heading heading-underline">Sectors</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Mining</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/blog/sector-mining.jpg" alt="Africa Mining Recruitment / Jobs">
+    <div class="container-fluid padding-top-page">
+        <div class="row">
+            <a href="sectors/mining-jobs-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                        <img class="img-responsive" width="100%" src="assets/img/sector-mining-front.jpg" alt="Africa Mining Recruitment / Jobs">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Heavy Industry</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/blog/sector-heavy-industry.jpg" alt="Africa recruitment heavy industry">
+            </a>
+            <a href="sectors/engineering-jobs-heavy-industry-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-responsive" width="100%" src="assets/img/sector-engineering-front.jpg" alt="Africa recruitment heavy industry">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Energy</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/sector-power-generation-front.jpg" alt="Africa Power Generation Recruitment / Jobs">
+            </a>
+            <a href="sectors/energy-power-generation-jobs-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-responsive" width="100%" src="assets/img/sector-power-front.jpg" alt="Africa Power Generation Recruitment / Jobs">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Finance</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/blog/sector-finance.jpg" alt="Africa Finance Recruitment / Jobs">
+            </a>
+            <a href="sectors/construction-jobs-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-responsive" width="100%" src="assets/img/sector-construction-front.jpg" alt="Africa Construction Recruitment / Jobs">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Human Resources</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/blog/sector-hr.jpg" alt="Africa Human Resources Recruitment / Jobs">
+            </a>
+            <a href="sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-responsive" width="100%" src="assets/img/sector-manufacturing-front.jpg" alt="Africa Manufacturing Recruitment / Jobs">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <h4 class="thin-heading">Office Commercial</h4>
-                    <img class="img-responsive" width="100%" src="assets/img/blog/sector-office-commercial.jpg" alt="Africa Office Commercial Recruitment / Jobs">
+            </a>
+            <a href="sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-responsive" width="100%" src="assets/img/sector-finance-hr-front.jpg" alt="Africa Finance Recruitment / Jobs">
                 </div>
-            </div>
-            
-        </div>
-        <div class="col-md-3">
-                <?php include 'includes/Page_Sidebar.php'; ?>
+            </a>
+                
+                
+                
+                
+                
         </div>
     </div>
+<div class="container padding-top-page">
+    
     <div class="row">
-        <div class="col-md-6">
-            
-            <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
+        <div class="col-md-10">
+                <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading heading-underline">Latest Jobs</h4></a>
                 <ul class="list-unstyled" id="job-board-listing"> 
                         <?php 
@@ -123,7 +113,7 @@ include 'includes/header.php';
                         $array = json_decode($json1);
 
                         if(isset($array[2])) {
-                          foreach(array_slice($array[2], 0, 5) as $value)  
+                          foreach(array_slice($array[2], 0, 5) as $value)
                            {
                              $strAppDataId = $value->AppDataId;
                              $strJobTitle = $value->JobTitle;
@@ -131,27 +121,31 @@ include 'includes/header.php';
                              $strJobOpenDate = $value->OpenDate;
                              $strJobSector = $value->Sector;
                              $strJobLocation = $value->Location;
-                        ?> 
+                             $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
+                        ?>
                                 <li>
                                         <div class="card-jobs card-green">
-                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitle; ?>">
-                                                        <div class="card-content"> 
+                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitleURL; ?>">
+                                                        <div class="card-content">
                                                             <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation ;?></h6>
                                                             <h4 class="title"><?php echo $strJobTitle;?></h4>
                                                 </a>
-                                        </div>    
+                                        </div>
                                 </li>
-                        <?php            
+                        <?php
                           }
                         };
                         ?>
-                </ul> 
+                </ul>
             <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4>View Full Listing</h4>
             </a>
+
+        </div>
+        <div class="col-md-2 margin-20">
+                <?php include 'includes/Page_Sidebar.php'; ?>
         </div>
     </div>
-    
 </div>
 
 <div class="container-fluid">
@@ -164,7 +158,8 @@ include 'includes/header.php';
 
 <?php
 include 'includes/footer.php';
-include 'includes/javascripts_basic.html';
+include 'includes/js_scripts.php';
+//include 'includes/js_slider.php';
 ?>
     </body>
 </html>

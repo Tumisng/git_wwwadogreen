@@ -1,15 +1,24 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+    $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
+
+    //include_once '../includes/header.php';
     
     $strPageTitle = 'AdoGreen Africa Job Board Heavy Engineering';
     $strPageDescription = 'AdoGreen Africa Job Board - Specialist Recruitment - Heavy Engineering, Mining, Renewable Energy, , Power, Building And Construction';
     $strPageKeywords ='AdoGreen Africa Job Board - Specialist Recruitment - Heavy Engineering, Mining, Renewable Energy, Power, Building And Construction';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
     
-    include_once ENV_ROOT . 'includes/header.php';
-
+            include_once ENV_ROOT . 'includes/header.php';
 echo '
 
 <div class="container-fluid">
@@ -61,7 +70,7 @@ if(isset($array[2])) {
                                         <div class="card-jobs card-green">
                                                 <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name='.$strJobTitleURL; ?>">
                                                         <div class="card-content"> 
-                                                            <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation ;?></h6>
+                                                            <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry; ?></h6>
                                                             <h4 class="title"><?php echo $strJobTitle;?></h4>
                                                             <p class="description hidden-xs"><?php echo $strJobShortDesc;?></p>
                                                         </div> 
@@ -88,7 +97,7 @@ if(isset($array[2])) {
         ';
 
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
     <script>

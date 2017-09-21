@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
     //    Get the AppDataId from the URL
     $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
      
@@ -70,7 +78,7 @@
 <?php    
      
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>-->

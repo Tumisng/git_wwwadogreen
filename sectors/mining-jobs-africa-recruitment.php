@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Mining Jobs In Africa - Specialist Recruitment';
 	$strPageDescription = 'Mining Jobs In Africa. AdoGreen recruitment is a specialist recruitment of locals in various African Countries';
@@ -27,7 +35,7 @@
 	</div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md12 background-mining">
+        <div class="col-md-12 background-mining">
         </div>
     </div>
 </div>
@@ -77,7 +85,7 @@
 </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
     </body>

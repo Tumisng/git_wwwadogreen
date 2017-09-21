@@ -1,19 +1,33 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Construction Jobs In Africa - Heavy Engineering';
 	$strPageDescription = 'Constructioun Jobs In Africa - Heavy Engineering. AdoGreen recruitment is a specialist recruitment of locals in various African Countries';
 	$strPageKeywords = 'Constructioun Jobs In Africa Specialist Recruitment Agency';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . 'assets/img/sector-construction-jobs-recruitment.png';
+	$strPageImg = ENV_ROOTURL . 'assets/img/sector-construction-front.jpg';
 	$strPageCountry = '';
 	$strPageSector = 'Construction';
 	$strPageJobList = 'Sector';
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 background-construction">
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -35,7 +49,6 @@
                 </p>
                 <?php echo ENV_ROOT . 'includes/Pages_Mining_Countries.php';?>
             </div>
-            <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
         </div>
         <div class="col-md-6">
             <div class="well">
@@ -67,6 +80,9 @@
             <p>AdoGreen can assist with requirements within restrictive circumstances like the challenge of working in remote locations, lack of connectivity and media reach, as well as regions unfamiliar to the company.</p>
             </div>
             <?php include ENV_ROOT . 'includes/Page_Sectors.php';?>
+            <div>
+                <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
+            </div>
         </div>
         <!-- ./col-7 -->
         <div class="col-md-2">
@@ -77,7 +93,7 @@
 
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 

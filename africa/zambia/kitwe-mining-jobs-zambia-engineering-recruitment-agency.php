@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+       $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Kitwe Copper Zambia Jobs Recruitment Agency Mining Engineer';
 	$strPageDescription = 'Kitwe a large mining city in Zambia - jobs and recruitment in copper mining. AdoGreen is a specialist recruitment search and placement agency in Zambia';
@@ -71,7 +79,7 @@
 </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
     </body>

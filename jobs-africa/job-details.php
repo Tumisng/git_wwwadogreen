@@ -1,7 +1,15 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+    $strEnvConfigFile = '../environment/config.php';
+    $intLevel = 0;
+    while (!file_exists($strEnvConfigFile)) {
+       $strEnvConfigFile = '../' . $strEnvConfigFile;
+       $intLevel++;
+       // Iterate up 4 levels before giving up - this should never happen!
+       if ($intLevel > 3) {
+           die('Fatal error - environment configuration file could not be located');
+       }
+    }
+    include_once $strEnvConfigFile;
     //    Get the AppDataId from the URL
     $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
      
@@ -33,7 +41,7 @@
             }
     }  
 
-    $strPageTitle = $strJobTitle;
+    $strPageTitle = 'Job:' . $strJobTitle;
     $strPageDescription = $strJobShortDesc;
     $strPageKeywords = 'Job: ' . $strJobCountry . '- ' . $strJobLocation . ' ' . $strJobKeywords;
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
@@ -78,10 +86,14 @@
                                 echo ($new_string);  
                               ?>
                         </ul>
+                </br>
+                <hr>
+                <h4>Share This Job With Someone</h4>
                 <div class="row">
                     <div class="col-md-12 addthis_inline_share_toolbox">
                     </div>
                 </div>
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
                 <div class="row margin-20">
                     <div class="col-md-5 btn-job-apply"><a rel="nofollow" href="<?php echo ENV_ROOTURL.'jobs-africa/job-application.php?id='.$strJobId; ?>" class="button button-green btn-block">Apply Now</a></div>
                     <div class="col-md-2"></div>
@@ -127,10 +139,10 @@
 <?php    
      
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
+
 
 </body>
 </html>

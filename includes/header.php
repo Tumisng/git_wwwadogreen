@@ -40,15 +40,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,600,300italic' rel='stylesheet' type='text/css'>
 
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>/assets/css/animate.css">
-
+    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/animate.css">
+    <?php
+        if ($strPageSlider == TRUE) { ?>
+    <?php }; ?>
     <meta property="fb:app_id" content="126845677382791"/>
     <meta property="og:title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<?php echo curPageURL();?>"/>
     <meta property="og:description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>" />
     <meta property="og:image" content="<?php if ($strPageImg !='') {echo $strPageImg;} else{ echo ENV_ROOTURL . 'assets/img/logo.png';}?>"/>
-    <meta property="article:publisher" content="https://www.facebook.com/Adogreen/L"/> 
+    <meta property="article:publisher" content="https://www.facebook.com/Adogreen/"/> 
 
     <!-- SEO Twitter  -->
     <meta name="twitter:card" content="summary_large_image">

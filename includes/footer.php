@@ -9,8 +9,8 @@
                         <ul class="list-unstyled footer-a">
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/permanent-placement-solutions-africa.php">Permanent Placements</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a></li>
-                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/special-project-recruitment-africa.php">Special Project Recruitment</a></li>
-                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>
+<!--                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/special-project-recruitment-africa.php">Special Project Recruitment</a></li>
+                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>-->
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>africa/recruitment-africa-local-specialist-agency.php ">Localisation Recruitment Solution</a></li>
                         </ul>
                         <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>contact-adogreen-recruitment.php" rel="nofollow">Contact Us</a>
@@ -22,11 +22,12 @@
                     <div class="col-md-3">
                         <h4>Sectors</h4>
                         <ul class="list-unstyled footer-a">
-                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php" role="button">Africa Mining Recruitment & Jobs</a></li>
-                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Africa Construction Recruitment & Jobs</a></li>
-                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Africa Engineering Recruitment & Jobs</a></li>
-                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php" role="button">Africa Power Generation Recruitment & Jobs</a></li>
-                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Africa Manufacturing Recruitment & Jobs</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php" role="button">Africa Mining Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Africa Construction Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Africa Engineering Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php" role="button">Africa Power Generation Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Africa Manufacturing Recruitment</a></li>
                         </ul>
                     </div>
                     <!--/col-md-3-->

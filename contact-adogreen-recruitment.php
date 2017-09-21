@@ -1,7 +1,6 @@
 <?php 
-    $pathConfig = $_SERVER['DOCUMENT_ROOT'];
-    $pathConfig .= '/phpTraining/environment/config.php';
-    include_once $pathConfig;
+    $strEnvConfigFile = 'environment/config.php';
+    include_once $strEnvConfigFile;
     
     include_once ENV_ROOT . 'includes/header.php';
     ?>
@@ -89,7 +88,7 @@
 </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/javascripts_basic.html';
+    include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
     
