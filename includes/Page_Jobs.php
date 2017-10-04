@@ -1,10 +1,14 @@
             <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading">Jobs</h4></a>
             <ul class="list-unstyled" id="job-board-listing"> 
-                    <?php 
-                        if ($strPageJobList == 'Sector'){
+                    <?php
+                        
+                        
+                       if ($strPageJobList == 'Sector'){
+                                $strPageSector=str_ireplace(" ","%20",$strPageSector);
                                 $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Sector=' . $strPageSector;
                         } else {
+                                $strPageCountry=str_ireplace(" ","%20",$strPageCountry);
                                 $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Country=' . $strPageCountry;
                         }
                         //First version loading into an array

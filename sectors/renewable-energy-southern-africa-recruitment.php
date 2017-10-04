@@ -17,7 +17,7 @@
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . 'assets/img/power-renewable-energy-jobs-recruitment.png';
 	$strPageCountry = '';
-	$strPageSector = 'Power';
+	$strPageSector = 'Renewable Energy';
 	$strPageJobList = 'Sector';
 
     include_once ENV_ROOT . 'includes/header.php';

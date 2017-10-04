@@ -65,6 +65,7 @@
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                 <form id="jobApplication" name="jobapp" class="reg-page" enctype="multipart/form-data"  method="post" action="<?php echo ENV_RSS;?>ajax/getJobForm2.php">
                         <input type="hidden" name="FormType" value="JobApplication">
+                        <input type="hidden" name="FormFunctionType" value="JobApplication">
                         <input type="hidden" name="JobId" value="<?php echo $intAppDataId; ?>">
                         <input id="JobTitle" type="hidden" name="JobTitle" value="<?php echo $strJobTitle; ?>">
 

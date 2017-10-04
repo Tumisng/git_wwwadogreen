@@ -16,7 +16,7 @@
 	$strPageKeywords = 'Johannesburg, Level 1 BBBEE JSE Subsidiary Recruitment Agency, South Africa Recruitment Jobs, Mining recruitment, Construction Jobs, Engineering recruitment, Renewable Energy recruitment, Project managers jobs';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/south-africa-johannesburg-recruitment.png';
-	$strPageCountry = 'ZAR';
+	$strPageCountry = 'South Africa';
 	$strPageSector = 'Mining';
 	$strPageJobList = '';
 	    

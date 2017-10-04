@@ -41,10 +41,11 @@
             }
     }  
 
-    $strPageTitle = 'Job:' . $strJobTitle;
+    $strPageTitle = 'Job: ' . $strJobTitle;
     $strPageDescription = $strJobShortDesc;
     $strPageKeywords = 'Job: ' . $strJobCountry . '- ' . $strJobLocation . ' ' . $strJobKeywords;
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
+    $strPageImg = ENV_RSS . 'DMSimage.php?i=' . $strJobImgId;
     
     
     include_once ENV_ROOT . 'includes/header.php';
@@ -60,12 +61,13 @@
     </div>
     <div class="row">
         <div class="col-md-9">
-            <h3>Overview</h3>
-            <p>
-                <?php echo $strJobShortDesc; ?>
-            </p>
+                <ul class="list-unstyled">
+                    <?php
+                                    $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobShortDesc) . '</li>';
+                                    echo ($new_string);  
+                                  ?>
+                </ul>    
             <h3>Detail</h3>
-            <article class="post-content">
                         <ul>
                             <?php
                                 $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobOverview) . '</li>';

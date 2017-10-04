@@ -16,6 +16,9 @@
     $strPageKeywords = 'Diamond Mining Jobs Botswana Agency Recruitment';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
     $strPageImg = ENV_ROOTURL . '/assets/img/botswana-mining-recruitment-jobs.png';
+    $strPageCountry = 'Botswana';
+    $strPageSector = 'Mining';
+    $strPageJobList = '';
     
     include_once ENV_ROOT . 'includes/header.php';
     ?>

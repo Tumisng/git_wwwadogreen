@@ -19,87 +19,104 @@
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
     
             include_once ENV_ROOT . 'includes/header.php';
-echo '
+            
+// Fill the DropDown Country           
+function fill_sector($connect)  {  
+        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Lookup&Cabinet=Job&Field=Sector';
+        $json1 = file_get_contents($json_url);
+        $array = json_decode($json1);
+        $arrResult = array();
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 hidden-xs"></div>
-        <div class="col-md-8">
-            <!-- Html Elements for Search -->
-            <div id="search-container" class="panel">
-                <div class="panel-body">
-                    <input type="text" id="search-input" placeholder="Search jobs!">
-                <ul id="results-container"></ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 hidden-xs">
+        if(isset($array[2])) {
+          foreach ($array[2] as $value) {
 
-        </div>
-        <div class="col-md-8">
-            <div class="panel">
-                    <div class="panel-heading">
-                        <h3>Job board</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-unstyled joblist" id="job-board-listing">
-';
+             $strSector = $value->DisplayValue;
+             echo $strSector .'</br>';
+             array_push($arrResult,$strSector);
+          }
+        }
 
-$json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
+        sort($arrResult);
+        print_r($arrResult);
+        foreach ($arrResult as $row) {
+          $output .= '<option value="' . $row . '">' . $row. '</option>';
+          echo $row;
+        }  
+        return $output; 
+ }   
+ 
+// Fill the Jobs
+ function fill_job($connect)  {  
+        $output = '';  
+        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
+        $json1 = file_get_contents($json_url);
+        $array = json_decode($json1);
 
-$json1 = file_get_contents($json_url);
-$array = json_decode($json1);
-
-if(isset($array[2])) {
-  foreach ($array[2] as $value) {
-     $strAppDataId = $value->AppDataId;
-     $strJobTitle = $value->JobTitle;
-     $strJobShortDesc = $value->ShortDescription;
-     $strJobOpenDate = $value->OpenDate;
-     $strJobSector = $value->Sector;
-     $strJobLocation = $value->Location;
-//    replace %20 in the URL
-     $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
-     
-?> 
-                                <li>
+        if(isset($array[2])) {
+            foreach ($array[2] as $value) {
+               $strAppDataId = $value->AppDataId;
+               $strJobTitle = $value->JobTitle;
+               $strJobContract = $value->ContractType;
+               $strJobShortDesc = $value->ShortDescription;
+               $strJobOpenDate = $value->OpenDate;
+               $strJobSector = $value->Sector;
+               $strJobLocation = $value->Location;
+               $strJobCountry = $value->Country;
+          //    replace %20 in the URL
+               $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
+               $output .= '<li>
                                         <div class="card-jobs card-green">
-                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name='.$strJobTitleURL; ?>">
+                                                <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL .'">
                                                         <div class="card-content"> 
-                                                            <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry; ?></h6>
-                                                            <h4 class="title"><?php echo $strJobTitle;?></h4>
-                                                            <p class="description hidden-xs"><?php echo $strJobShortDesc;?></p>
+                                                            <h6 class="category pull-right">'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</h6>
+                                                            <h4 class="title">'. $strJobTitle .'</h4>
+                                                            <p class="description hidden-xs">' . $strJobShortDesc . '</p>
                                                         </div> 
                                                         <div>
-                                                        <p class="job-date"><i>Date Posted:<?php echo $strJobOpenDate ;?></i></p>
+                                                        <p class="job-date"><i>Date Posted:' . $strJobOpenDate . '</i></p>
                                                         </div>
                                                 </a>
                                         </div>    
-                                </li>
-<?php            
-  }
-}
+                                </li>';
+                }
+        }
+        return $output;
+ }     
 
- echo '
-                        </ul>
+            
+ ?>
+        <div class="container">
+            <div class="row padding-bottom-20">
+                    <div class="col-md-8">
+                        <h4>What Job Are You Looking For?</h4>
+                        <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
                     </div>
 
-              </div>
+                    <div class="col-md-4">
+                       <h4>Search Sector</h4>
+                        <select class="btn btn-block btn-lg" name="sector" id="sector">  
+                            <option value="">All</option>  
+                            <?php echo fill_sector($connect); ?>  
+                       </select>  
+                    </div>
+                </div>    
+             </br>
         </div>
-        <div class="col-md-2 hidden-xs">
+        <div class="container">  
+                    <div class="row" id="show_sector"> 
+                        
+                        <ul class="list-unstyled joblist" id="job-board-listing">
+                         <?php echo fill_job($connect);?> 
+                        </ul>
 
-        </div>
-</div>        
-        ';
+                    </div>  
+        </div>    
+<?php
 
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
-
+              
     <script>
         $("#search-input").on("keyup", function () {
         var search = $(this).val().trim().toLowerCase();
@@ -108,6 +125,23 @@ if(isset($array[2])) {
         }).hide();        
         });
     </script>
+            
+     <script>  
+        $(document).ready(function(){  
+             $('#sector').change(function(){  
+                  var sector = $(this).val();  
+                  $.ajax({  
+                       url:"load_data.php",  
+                       method:"POST",  
+                       data:{sector,sector},  
+                       success:function(data){  
+                            $('#show_sector').html(data);  
+                       }  
+                  });  
+             });  
+        });  
+ </script>  
+    
     
     </body>
 </html>
