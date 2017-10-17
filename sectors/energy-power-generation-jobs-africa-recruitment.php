@@ -15,7 +15,7 @@
     $strPageDescription = 'Power generation industry overview, jobs and recruitment in Africa. Power Generation capacity in Africa including - Power Generation Jobs, Transmission Jobs and Recruitment, Substation Recruitment.';
     $strPageKeywords = 'Africa Power Generation Jobs,Power Generation Recruitment, Power Generation Projects, Transmission Jobs, Energy Africa Recruitment, projects, power generation projects, power generation recruitment, energy, jobs, career, recruitment, jobs';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-    $strPageImg = ENV_ROOTURL . 'assets/img/power-generation-jobs-africa-recruitment.png';
+    $strPageImg = ENV_ROOTURL . 'assets/img/sector-power-front.jpg';
     $strPageCountry = '';
     $strPageSector = 'Power Generation';
     $strPageJobList = 'Sector';
@@ -24,7 +24,7 @@
 ?>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 background-power">
+        <div class="col-md-12 background-power background-img">
         </div>
     </div>
 </div>
@@ -40,7 +40,7 @@
     </div>
     <div class="row">
         <div class="col-md-9">
-                    <p>We are a leading provider of skilled personnel in the Power Generation field, and a recruitment partner of choice to many companies working in Africa. We focus on providing clients with local candidates but have an extensive database of active expat candidates who work and will work in Africa. We have actively placed key personnel in the African environment.
+            <p class="summary-yellow">We are a leading provider of skilled personnel in the Power Generation field, and a recruitment partner of choice to many companies working in Africa. We focus on providing clients with local candidates but have an extensive database of active expat candidates who work and will work in Africa. We have actively placed key personnel in the African environment.
                     </p>
                     <h3>Why AdoGreen Africa Recruitment?</h3>
                         <p>

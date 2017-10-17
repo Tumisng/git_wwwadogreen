@@ -35,7 +35,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12  background-finance">
+        <div class="col-md-12  background-finance background-img">
 <!--            <img class="img-responsive" width="100%"src="<?php echo ENV_ROOTURL; ?>assets/img/finance-front.jpg" alt="AdoGreen Recruitment Logo">-->
            
         </div>
@@ -46,8 +46,8 @@
         <div class="col-md-12 sector-headings">
             <img src="<?php echo ENV_ROOTURL; ?>assets/img/ado-seethrough.png" alt="AdoGreen Recruitment Logo">
             <h1><?php echo $strPageTitle; ?></h1>
-            <p class="post-meta">
-                Specialist recruitment in Africa for finance and hr positions.
+            <p>
+                Specialist recruitment in Africa for finance and HR positions.
             </p>
         </div>
     </div>
@@ -57,7 +57,7 @@
         <!-- ./col-md-7 -->
         <div class="col-md-9">
             <div class="col-md-3 service-block-grey-front">
-                <p class="text-center">
+                <p class="text-center" style="font-size: 14px; font-style: italic;">
                 AdoGreen Africa is a specialist recruitment agency focusing on finding local talent in various African countries within the finance & HR sector.
             </p>
             </div>

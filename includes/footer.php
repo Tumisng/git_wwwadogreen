@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row">
                     <!-- About -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
 
                         <h4>Clients</h4>
                         <ul class="list-unstyled footer-a">
@@ -16,10 +16,10 @@
                         <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>contact-adogreen-recruitment.php" rel="nofollow">Contact Us</a>
                         
                     </div>
-                    <!--/col-md-3-->
+                    <!--/col-md-3 col-sm-6-->
                     <!-- End About -->
                     <!-- Latest -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <h4>Sectors</h4>
                         <ul class="list-unstyled footer-a">
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR Recruitment</a></li>
@@ -30,10 +30,10 @@
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Africa Manufacturing Recruitment</a></li>
                         </ul>
                     </div>
-                    <!--/col-md-3-->
+                    <!--/col-md-3 col-sm-6-->
                     <!-- End Latest -->
                     <!-- Link List -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="headline">
                             <h4>Candidate Useful Links</h4></div>
                         <ul class="list-unstyled footer-a">
@@ -48,7 +48,7 @@
                     <!--/col-md-3-->
                     <!-- End Link List -->
                     <!-- Address -->
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                     <h4>Contact Details</h4>
                         <address>
                         

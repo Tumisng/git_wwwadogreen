@@ -35,7 +35,7 @@
 	</div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 background-mining">
+        <div class="col-md-12 background-mining background-img">
         </div>
     </div>
 </div>
@@ -53,13 +53,13 @@
         <!-- ./col-md-7 -->
         <div class="col-md-9">
             <div class="col-md-3 service-block-grey-front">
-                <p class="text-center">
+                <p class="text-center" style="font-size:10px; font-style: italic;">
                 AdoGreen Africa is a specialist recruitment agency focusing on finding local talent in various African countries within the mining industry
             </p>
             </div>
             <div class="col-md-9">
-                <p>
-                Mines in Africa collectively produce over 60 mineral and metal products where Africa is the major producer of the world’s most important of these minerals and metals. This includes: Gold, Diamonds, Uranium, Manganese, Chromium, Nickel, Bauxite and Cobalt. What is interesting, is that although Africa has so much to contribute, its contribution in regards to major metals (Lead, Zinc and Copper) is less than 7%. It is estimated that Africa hosts about 30% of the planet's mineral reserves, of which 40% is of Gold, 60% of Cobalt and 90% of Platinum. This makes Africa a very strategic producer of these precious metals. Because of the number of mines in Africa, there is a huge demand for specialised labour. We will list our client requirements on this site.
+                <p class="summary">
+                Mines in Africa collectively produce over 60 mineral and metal products where Africa is the major producer of the world’s most important of these minerals and metals. This includes: Gold, Diamonds, Uranium, Manganese, Chromium, Nickel, Bauxite and Cobalt. What is interesting, is that although Africa has so much to contribute, its contribution in regards to major metals (Lead, Zinc and Copper) is less than 7%. It is estimated that Africa hosts about 30% of the planet's mineral reserves, of which 40% is of Gold, 60% of Cobalt and 90% of Platinum. This makes Africa a very strategic producer of these precious metals. Because of the number of mines in Africa, there is a huge demand for specialised labour. 
             </p>
             <?php include  ENV_ROOT . 'includes/Page_Mining_Countries.php';?>
             <h3>Working In Africa?</h3>

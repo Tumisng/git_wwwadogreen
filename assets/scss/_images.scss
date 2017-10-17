@@ -1,72 +1,119 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+CSS for main images loaded in pages etc.
 */
 /* 
     Created on : Sep 13, 2017, 2:05:35 PM
     Author     : natie
 */
 
-.background-mining {
-    text-align: center;
-    position: relative;
-    background: url(../img/mining-man-on-stand.jpg) no-repeat center;
-    padding: 250px;
-    background-attachment: fixed;
+@media (min-width: 480px){
 }
 
-.background-finance {
-    text-align: center;
-    position: relative;
-    background: url(../img/finance-front.jpg) no-repeat center;
-    padding-bottom: 600px;
-    background-attachment: fixed;
+@media (min-width: 768px){
+
 }
 
-.background-manufacturing {
-    text-align: center;
-    position: relative;
-    background: url(../img/sector-manufacturing-main.jpg) no-repeat center;
-    padding-top: 300px;
-    padding-bottom: 400px;
-    background-attachment: fixed;
+@media (min-width: 992px){
+    
+    .sector-headings {
+        position: absolute;
+        top: 180px;
+        padding-left: 55px;
+    }
+
+    sector-writing {
+        position: absolute;
+        top: 600px;
+    }
+    
+    .background-img {
+        text-align: center;
+        position: relative;
+        padding-top:388px;
+    }
+    
+    .background-construction {
+        background: url(../img/sector-construction.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+        
+    }
+    .background-engineering{
+        background: url(../img/sector-engineering-main.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
+    .background-power {
+        background: url(../img/sector-power-main.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
+    .background-mining {
+        background: url(../img/mining-man-on-stand.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
+
+    .background-finance {
+        background: url(../img/finance-front.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
+
+    .background-manufacturing {
+        background: url(../img/sector-manufacturing-main.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
 }
 
-.background-construction {
-    text-align: center;
-    position: relative;
-    background: url(../img/sector-construction.jpg) no-repeat center;
-    padding-top: 300px;
-    padding-bottom: 400px;
-    background-attachment: fixed;
+@media (min-width: 1200px){
+    .background-img {
+        padding-top: 700px;
+    }
+    .background-power {
+        padding-top:500px;
+    }
+    .background-engineering {
+        padding-top: 400px;
+    }
+    .background-finance {
+        padding-top: 420px;
+    }
+    .background-manufacturing {
+        padding-top: 460px;
+    }
+    .background-construction {
+        padding-top: 550px;
+    }
+    .sector-headings {
+        top: 230px;
+    }
 }
 
-.background-power {
-    text-align: center;
-    position: relative;
-    background: url(../img/sector-power-main.jpg) no-repeat center;
-    padding-top: 300px;
-    padding-bottom: 400px;
-    background-attachment: fixed;
-}
-
-.background-engineering{
-    text-align: center;
-    position: relative;
-    background: url(../img/sector-engineering-main.jpg) no-repeat center;
-    padding-top: 300px;
-    padding-bottom: 400px;
-    background-attachment: fixed;
-}
-
-.sector-headings {
-    position: absolute;
-    top: 280px;
-    padding-left: 55px;
-}
-
-sector-writing {
-    position: absolute;
-    top: 600px;
+@media (min-width: 1500px){
+    .background-img {
+        padding-top: 700px;
+    }
+    .background-power {
+        padding-top:600px;
+    }
+    .background-engineering {
+        padding-top: 500px;
+    }
+    .background-finance {
+        padding-top: 520px;
+    }
+    .background-construction {
+        padding-top: 650px;
+    }
+    .sector-headings {
+        top: 230px;
+    }
 }

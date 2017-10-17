@@ -87,11 +87,5 @@
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
-
-
-
-
-
-
     </body>
 </html>

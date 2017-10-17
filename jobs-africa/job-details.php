@@ -55,7 +55,7 @@
     <div class="row">
         <div class="col-md-12 job-header">
             <h1><?php echo $strJobTitle;?></h1>
-            <p><i>Date posted: <span><?php echo $strJobOpenDate;?></span> Agent:  <span><?php echo $strJobAssignedTo;?> </span></i></p>
+            <p><i>Agent:  <span><?php echo $strJobAssignedTo;?> </span></i></p>
             <img class="visible-xs img-responsive" width="100%" src="<?php echo ENV_RSS . 'DMSimage.php?i=' . $strJobImgId; ?>">
         </div>
     </div>

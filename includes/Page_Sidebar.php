@@ -1,7 +1,7 @@
 
-                <a rel="nofollow" class="btn btn-block button-green" href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV</a>
+            <a rel="nofollow" class="btn btn-block button-green" href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV</a>
 
-                <a rel="nofollow" class="btn btn-block button-red" href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Submit A Job Spec</a>
+            <a rel="nofollow" class="btn btn-block button-red" href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Submit A Job Spec</a>
 
             <a rel="nofollow" class="btn btn-block button-blue" href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php">Job Board</a>
 

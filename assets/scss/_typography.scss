@@ -4,7 +4,7 @@ $base-font-size: 16px;
 $base-font-weight: 300;
 
 $heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$heading-font-weight: 400;
+$heading-font-weight: 700;
 
 $fixed-font-family: 'Open Sans', sans-serif;
 $fixed-font-size: 85%;
@@ -63,8 +63,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .heading-underline {
-	display: inline-block;
+    display: inline-block;
     border-bottom: 1px solid #8c8b8b;
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+
+.heading-underline-h3 {
+    padding: 20px 0px 10px 0px;
+    margin: 20px 0px;
+}
+
+.heading-overview {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.paragraph {
+    p {
+        line-height: 22px;
+        font-size: 15px;
+/*        max-width: 480px;*/
+    }
 }
 
 .quiet { color: $quiet-color; }

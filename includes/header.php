@@ -75,7 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-cs-12 hidden-xs" id="contact-details">
-                    contact: tel (SA) +27 87 813 0303 email info@adogreen.com
+                    <i class="fa fa-lg fa-phone" aria-hidden="true"></i> +27 87 813 0303 - <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@adogreen.com" style="color:#fff;">info@adogreen.com</a>
                 </div>
             </div>
             <div class="navbar-header">
@@ -85,7 +85,7 @@
                 <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/index.html" rel="nofollow">
-                    <img src="<?php echo ENV_ROOTURL . 'assets/img/logo-header.svg '; ?>" width="138" height="30" alt="">
+                    <img src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-2.png'; ?>" width="138" height="30" alt="">
                 </a>
             </div>
             <div id="navbar-collapse-1" class="navbar-collapse collapse">
@@ -102,12 +102,12 @@
                             <li>
                               <a  href="<?php echo ENV_ROOTURL; ?>services/permanent-placement-solutions-africa.php">Permanent Placement Solution</a>
                             </li>
-                            <li>
+<!--                            <li>
                               <a  href="<?php echo ENV_ROOTURL; ?>services/special-project-recruitment-africa.php">Special Recruitment Projects</a>
-                            </li>
-                            <li>
+                            </li>-->
+<!--                            <li>
                               <a href="<?php echo ENV_ROOTURL; ?>services/company-targeted-marketing-local-africa.php">Company Targeted Marketing</a>
-                            </li>
+                            </li>-->
                             <li>
                               <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php">Localisation Recruitment</a>
                             </li>
@@ -120,7 +120,7 @@
                         <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false">Candidates</a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                             <li>
-                                <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php" rel="nofollow">Need A Job?</a>
+                                <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
                             </li>
                             <li>
                                 <a href="<?php echo ENV_ROOTURL; ?>candidate/job-hunting-africa-tips-and-advice.php">Job Hunting?</a>

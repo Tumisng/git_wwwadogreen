@@ -48,7 +48,7 @@ function fill_sector($connect)  {
 // Fill the Jobs
  function fill_job($connect)  {  
         $output = '';  
-        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
+        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
         $json1 = file_get_contents($json_url);
         $array = json_decode($json1);
 
@@ -68,12 +68,12 @@ function fill_sector($connect)  {
                                         <div class="card-jobs card-green">
                                                 <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL .'">
                                                         <div class="card-content"> 
-                                                            <h6 class="category pull-right">'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</h6>
+                                                            <h6 class="category pull-right hidden-xs">'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</h6>
                                                             <h4 class="title">'. $strJobTitle .'</h4>
                                                             <p class="description hidden-xs">' . $strJobShortDesc . '</p>
                                                         </div> 
                                                         <div>
-                                                        <p class="job-date"><i>Date Posted:' . $strJobOpenDate . '</i></p>
+                                                        <p class="hidden-lg hidden-md hidden-sm" ><small >'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</small></p>
                                                         </div>
                                                 </a>
                                         </div>    

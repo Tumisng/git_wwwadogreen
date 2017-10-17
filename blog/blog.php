@@ -49,10 +49,12 @@
                                 $strBlogOpenDate = $value['OpenDate'];
                                 $strBlogSector = $value['Sector'];
                                 $strBlogImgId = $value['ImageUploadedId'];
+                                
+                                $strBlogTitleUrl=str_ireplace(" ","-",$strBlogTitle);
                         ?> 
                                 <li>
                                     <div class="col-md-3">
-                                        <a class="card-blog" href="<?php echo ENV_ROOTURL . 'blog/blogpost.php?id=' . $strBlogId . '&name=' . $strBlogTitle; ?>">
+                                        <a class="card-blog" href="<?php echo ENV_ROOTURL . 'blog/blogpost.php?id=' . $strBlogId . '&name=' . $strBlogTitleUrl; ?>">
                                             <div class="card card-blue card-blog">
                                                     <div class="card-content"> 
                                                         <h6 class="category pull-right"><?php echo $strBlogSector;?></h6>

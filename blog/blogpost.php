@@ -71,13 +71,10 @@
         <div class="col-md-9" >
             <div id="blog-display"></div>
             <?php
-            echo $strBlog;
-            echo $strBlogDescription;?>
             
-            <iframe src="<?php echo ENV_RSS . 'publicapi/getBlog.php?c=WebPostAdo&f=Description&i=' . $intAppDataId; ?>" style="width:100%; height:100%; border:0;">
-                        
-            </iframe>
-        </div>
+            echo htmlspecialchars_decode(stripslashes($strBlogDescription));
+            ?>
+                    </div>
         <div class="col-md-3">
                 <?php include ENV_ROOT . 'includes/Page_Sidebar.php'; ?>
         </div>
@@ -86,24 +83,7 @@
             <div class="col-md-12 addthis_inline_share_toolbox">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 margin-20">
-                    <a rel="nofollow" href="<?php echo ENV_ROOTURL . 'referral.php' ;?>" class="button button-red btn-block">Refer Someone Now</a>
-                    <h3>Did you know that you can make commission referring someone if they get the job!</h3>
-                <hr>
-                <p>Please note that all referrals are confidential, so we will not disclose your name to your referral.</p>
-                <ul>
-                    <li>You are more than welcome to let them know that you have referred them.</li>
-                    <li>Referrals work on a first come first serve basis, so should we already be in contact with the person you have referred, or where someone else has already referred them for this position, we will let you know in the next week or two as we come to your referral information. Our system automatically contacts the person you have referred on our behalf.</li>
-                    <li>Should the person you have referred be in line and interested in this position, we will be submitting their application, and only upon CV submission, will we inform you that the process has started for them.</li>
-                </ul>
-                <p>&nbsp;</p>
-                <p>Commission pay-out is processed only after the candidate starts with the company where we will then require your banking details.</p>
 
-            </div>
-        </div>
-       
-    
 </div>
 
 

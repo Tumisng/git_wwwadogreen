@@ -34,22 +34,21 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
             <a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/renewable-energy-southern-africa-recruitment.php " role="button"><h4>Renewable Energy Recruitment Africa</h4></a>
             <div class="hidden-xs">
                 <p>
                   <a href="<?php echo ENV_ROOTURL; ?>/africa/botswana/recruitment-local-botswana-citizens-firm.php">Botswana </a>  has indicated that they are looking to produce all of their own energy and have surplus for sale. SADEC region have of late been struggling with a huge amount of shortfall to the current energy needs.
-                </p><br />
+                </p>
                 <?php include ENV_ROOT . 'includes/Page_Recruitment_Partner.php';?>
                 <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
             </div>
          </div>    
-        <div class="col-md-6">
-            <h2>Overview - Botswana Renewable Energy</h2>
-            <p>
+        <div class="col-md-7">
+            <p class="summary">
               Despite the reliance on power generation from coal and importing electricity from South Africa, Botswana’s region has bountiful sources of renewable energy in which to draw from. Recently Botswana has been plagued by the shortage of electricity because of electricity problems in South Africa. The country has now committed to plans to generate electricity from renewable resources such as gas and solar, resources which the country has in plenty.
-            </p><br />
+            </p>
             <p>
               The country receives over 3,200 hours of sunshine per year. The average insolation on a horizontal surface is 21 millijoules per square meter, this being one of the highest rates of insolation found in the world. Some areas of the region have shown potential for the generation of energy through wind, Botswana’s average wind speed at the height of 100 meter is 5-7 m/s. There is also potential for biomass production as the cattle population exceeds the human population. 
             </p><br />

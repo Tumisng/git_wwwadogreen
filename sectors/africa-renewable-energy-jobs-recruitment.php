@@ -44,22 +44,21 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
         </div>
         <!-- ./col-md-4 -->
-        <div class="col-md-6">
+        <div class="col-md-7">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Specialist African Renewable Energy Recruitment</h2>
-                    <p>
+                    <p class="summary">
                         We are a leading provider of skilled personnel in the - Renewable Energy Recruitment field, and a recruitment partner of choice to many companies working in Africa. We focus on providing clients with local candidates but have an extensive database of active expat candidates who work and will work in Africa. We have actively placed key personnel in the African environment.
                     </p>
                     <br>
                     <p>
                         Owing to the success of tried and tested recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments. This has positioned us with the confidence to embrace any recruitment need and challenge within Africa.
                     </p>
-                    <br>
+
                     <h3>Renewable Energy Facts - 2015</h3>
                     <h4>Power Generation From Renewable Energy Sources</h4>
                     <ul>
@@ -78,7 +77,7 @@
                         <li>Oil usage in the United States of America fell by 8.5% from 2005 to 2014</li>
                         <li>93 billion liters of biofuels that were produced across the world in 2009 displaced the equivalent of 68 billion liters of gasoline (estimate), which is about 5% of world's gasoline production</li>
                     </ul>
-                    <h2>History of Renewable Energy</h2>
+                    <h3>History of Renewable Energy</h3>
                     <ul>
                         <li>Before the development of coal in the 19th century, almost all energy that was used was renewable</li>
                         <li>The oldest known use of renewable energy is the use of traditional biomass to fuel fires, the second oldest form of renewable energy is probably the use of wind to drive ships over water mass</li>

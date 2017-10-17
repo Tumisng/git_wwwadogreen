@@ -49,9 +49,9 @@ include 'includes/header.php';
     <div class="row">
         <div class="col-md-12 text-center">
              <h1 class="heading-underline">AdoGreen Africa - Heavy Industry Recruitment</h1>
-             <p>Mining | Engineering | Construction | Roads & Infrastructure | Energy | Finance & HR<br/>
+<!--             <p class="heading-overview">
              AdoGreen Africa is a specialist recruitment agency focusing on finding local talent within various African countries.
-             </p>
+             </p>-->
         </div>
     </div>
 </div>    
@@ -60,7 +60,7 @@ include 'includes/header.php';
     <!-- ******************* -->
     <!--      Seoncd Row     -->
     <!-- ******************* -->
-    <div class="container-fluid padding-top-page">
+    <div class="container-fluid ">
         <div class="row">
             <a href="sectors/mining-jobs-africa-recruitment.php">
                 <div class="col-md-2 col-sm-6">
@@ -92,22 +92,50 @@ include 'includes/header.php';
                     <img class="img-responsive" width="100%" src="assets/img/sector-finance-hr-front.jpg" alt="Africa Finance Recruitment / Jobs">
                 </div>
             </a>
-                
-                
-                
-                
-                
         </div>
     </div>
-<div class="container padding-top-page">
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center heading-underline-h3">Established since 2007, AdoGreen Africa has years of experience within the African Market</h3>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-8 paragraph padding-bottom-40">
+                
+                <p>
+                    With years of experience within the African market, AdoGreen Africa has developed  a proven methodology in targeting local talent through networking capabilities.  Our goal is to source right company and cultural fit. 
+                </p>
+                <p>
+                    Local First Recruitment: AdoGreen Africa has developed various methods for reaching local candidates within African countries that conventional recruitment methods lack.  We achieve this much faster and more economically than other recruitment methods used. Our focus lies mainly within the heavy industry sectors, however we have been highly successful in working over a diverse range of others as well.
+                    We assist companies with their growth areas when moving into new locations within Africa.</p>
+                <p>    
+                    Although our specialisation is on sourcing local candidates, we do provide experienced expats with working experience in Africa, and are able to  assist irrespective of the location. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a rel="nofollow" class="button  btn-block button-green text-center" href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV</a></br>
+                <a rel="nofollow" class="button  btn-block button-red text-center" href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a></br>   
+                <a rel="nofollow" class="button  btn-block button-blue text-center" href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php">Job Board</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container padding-bottom-20">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>    
+<!--<div class="container padding-top-page">
     <div class="row">
         <div class="col-md-10">
                 <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading heading-underline">Latest Jobs</h4></a>
                 <ul class="list-unstyled" id="job-board-listing"> 
                         <?php 
-                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open';
+                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
                         //First version loading into an array
                         $json1 = file_get_contents($json_url);
                         $array = json_decode($json1);
@@ -137,24 +165,16 @@ include 'includes/header.php';
                         };
                         ?>
                 </ul>
-            <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
-                <h4>View Full Listing</h4>
-            </a>
+            <a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a>
 
         </div>
         <div class="col-md-2 margin-20">
-                <?php include 'includes/Page_Sidebar.php'; ?>
+  
         </div>
     </div>
-</div>
+</div>-->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 text-center row-breaker">
-            <h4 class="thin-heading">Adogreen Africa specialises in finding local talent across Africa</h4>
-        </div>
-    </div>
-</div>
+
 
 <?php
 include 'includes/footer.php';

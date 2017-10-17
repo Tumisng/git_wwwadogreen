@@ -1,15 +1,15 @@
             <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
-                <h4 class="thin-heading">Jobs</h4></a>
+                <h4 class="thin-heading">Go To Job Board</h4></a>
             <ul class="list-unstyled" id="job-board-listing"> 
                     <?php
                         
                         
                        if ($strPageJobList == 'Sector'){
                                 $strPageSector=str_ireplace(" ","%20",$strPageSector);
-                                $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Sector=' . $strPageSector;
+                                $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&Sector=' . $strPageSector;
                         } else {
                                 $strPageCountry=str_ireplace(" ","%20",$strPageCountry);
-                                $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Country=' . $strPageCountry;
+                                $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&Country=' . $strPageCountry;
                         }
                         //First version loading into an array
                         $json1 = file_get_contents($json_url);
@@ -31,9 +31,10 @@
                                                                     <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitleURL; ?>">
                                                                             <div class="card-content"> 
                                                                                 
-                                                                                <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry; ?></h6>
+                                                                                <h6 class="category pull-right hidden-xs"><?php echo $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry; ?></h6>
                                                                                 <h4 class="title"><?php echo $strJobTitle;?></h4>
-                                                                                <p class="job-listing-description"><?php echo $strJobShortDesc; ?></p>
+                                                                                <p class="job-listing-description"><?php echo $strJobShortDesc; ?></br>
+                                                                                <small class="hidden-lg hidden-md hidden-sm" ><?php echo $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry; ?></small></p>
                                                                     </a>
                                                             </div>    
                                                     </li>

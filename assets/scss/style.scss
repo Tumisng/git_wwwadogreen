@@ -26,10 +26,7 @@ a {
     &:hover {
         color: $link-hover-color;
     }
-    
-
 }
-
 
 img {
     max-width: 100%;
@@ -38,10 +35,33 @@ img {
 .frontpage {
     img {
         margin: auto;
+        padding-top:10px;
     }
 }
 
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
 
+.summary {
+    font-size: 22px;
+    font-size: 1.675rem;
+    border: 5px solid $ado-green;
+    border-width: 5px 0;
+    border-image: linear-gradient(to right,$ado-dark-green,$ado-green) 10;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.summary-yellow {
+    font-size: 22px;
+    font-size: 1.675rem;
+    border: 5px solid $yellow-light;
+    border-width: 5px 0;
+    border-image: linear-gradient(to right,$yellow-dark,$yellow-light) 10;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
 
 .no-padding {
     padding: 0;
@@ -169,10 +189,6 @@ li.breadactive {
     }
 }
 
-
-
-
-
 // Front Page
 
 .page-header {
@@ -207,12 +223,17 @@ li.breadactive {
     background-color: $ado-green;
 }
 
+.btn-info {
+    background-color: $ado-blue-dark;
+    color: #fff;
+}
+
 .btn-padding {
     padding: 5px;
 }
 
 .btn-block {
-    text-align: left;
+    text-align: center;
 }
 
 .btn-job-apply {
@@ -444,10 +465,6 @@ address {
 	.col-padding-middle {
         padding-left: 0px;
     }
-    
-    body {
-
-    }
 
     .button {
         padding: 16px 0px;
@@ -459,6 +476,5 @@ address {
 	.button {
         padding: 16px 16px;
         font-size: 18px;
-        text-align: left;
     }
 }
