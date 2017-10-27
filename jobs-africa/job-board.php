@@ -88,12 +88,12 @@ function fill_sector($connect)  {
         <div class="container">
             <div class="row padding-bottom-20">
                     <div class="col-md-8">
-                        <h4>What Job Are You Looking For?</h4>
+                        <h3>What Job Are You Looking For?</h3>
                         <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
                     </div>
 
                     <div class="col-md-4">
-                       <h4>Search Sector</h4>
+                       <h3>Search Sector</h3>
                         <select class="btn btn-block btn-lg" name="sector" id="sector">  
                             <option value="">All</option>  
                             <?php echo fill_sector($connect); ?>  
@@ -141,8 +141,6 @@ function fill_sector($connect)  {
              });  
         });  
  </script>  
-    
-    
     </body>
 </html>
 

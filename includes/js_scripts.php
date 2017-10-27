@@ -3,7 +3,7 @@
 <!-- Script to open and close menu on hover with mouse -->
 <!--<script src="<?php echo ENV_ROOTURL; ?>assets/js/bootstrap.min.js"> </script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="<?php echo ENV_ROOTURL; ?>assets/js/main.js"></script>
 <!-- load Font Awesome asynchronously -->
 <script type="text/javascript">
   (function() {
@@ -15,6 +15,45 @@
   })();
 </script>
 <!--Revolution Slider Script-->
+<script>
+    jQuery(document).ready(function($){
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 300,
+        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+        offset_opacity = 1200,
+        //duration of the top scrolling animation (in ms)
+        scroll_top_duration = 700,
+        //grab the "back to top" link
+        $back_to_top = $('.cd-top');
+
+        //hide or show the "back to top" link
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+
+        //smooth scroll to top
+        $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0 ,
+                }, scroll_top_duration
+            );
+        });
+
+    });
+</script>
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.animate-fade-in', { duration: 2000 });
+    sr.reveal('.animate-fade-in-right', { 
+                duration: 2000,
+                origin: 'right',
+            });
+
+</script>
 
 <!--Google Tracking Code-->
 <?php

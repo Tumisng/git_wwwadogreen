@@ -1,3 +1,6 @@
+<div>
+<a href="#0" class="cd-top">Top</a>
+</div>
 <footer>
     <div class="container-fluid footer-main hidden-xs">
             <div class="container">

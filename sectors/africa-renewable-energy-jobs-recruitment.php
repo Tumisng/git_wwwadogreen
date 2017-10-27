@@ -22,7 +22,7 @@
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
-<div class="container-fluid">
+<div class="container-fluid cd-main-content sub-nav">
     <div class="row">
             <img class="img-responsive" width="100%" src="<?php echo ENV_ROOTURL;?>assets/img/front-power-generation.png" alt="Africa Renewable Energy Jobs And Recruitment">
             <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="5" onMouseOver="this.stop()" onMouseOut="this.start()"><i>

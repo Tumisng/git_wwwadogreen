@@ -45,9 +45,9 @@
     <div class="row">
         <div class="col-md-12 sector-headings">
             <img src="<?php echo ENV_ROOTURL; ?>assets/img/ado-seethrough.png" alt="AdoGreen Recruitment Logo">
-            <h1><?php echo $strPageTitle; ?></h1>
+            <h1><b>Finance & HR Jobs </b> In Africa - Specialist Recruitment</h1>
             <p>
-                Specialist recruitment in Africa for finance and HR positions.
+                Dedicated database of candidates in the heavy industry in Africa
             </p>
         </div>
     </div>

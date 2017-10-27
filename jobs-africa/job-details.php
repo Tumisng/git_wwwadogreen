@@ -54,7 +54,7 @@
   <div class="container">
     <div class="row">
         <div class="col-md-12 job-header">
-            <h1><?php echo $strJobTitle;?></h1>
+            <h1><b><?php echo $strJobTitle;?></b></h1>
             <p><i>Agent:  <span><?php echo $strJobAssignedTo;?> </span></i></p>
             <img class="visible-xs img-responsive" width="100%" src="<?php echo ENV_RSS . 'DMSimage.php?i=' . $strJobImgId; ?>">
         </div>
@@ -90,18 +90,18 @@
                         </ul>
                 </br>
                 <hr>
-                <h4>Share This Job With Someone</h4>
-                <div class="row">
-                    <div class="col-md-12 addthis_inline_share_toolbox">
-                    </div>
-                </div>
+                
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
                 <div class="row margin-20">
                     <div class="col-md-5 btn-job-apply"><a rel="nofollow" href="<?php echo ENV_ROOTURL.'jobs-africa/job-application.php?id='.$strJobId; ?>" class="button button-green btn-block">Apply Now</a></div>
                     <div class="col-md-2"></div>
                     <div class="col-md-5 btn-job-apply"><a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-board.php' ;?>" class="button btn-block button-blue">Job Board</a></div>
                 </div>
-                
+                <h4>Share This Job With Someone</h4>
+                <div class="row">
+                    <div class="col-md-12 addthis_inline_share_toolbox">
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12 margin-20">
                             <a rel="nofollow" href="<?php echo ENV_ROOTURL . 'referral.php' ;?>" class="button button-red btn-block">Refer Someone Now</a>

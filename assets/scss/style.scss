@@ -16,7 +16,7 @@
 
 body {
     background-color: #fff;
-
+    margin-top:80px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -24,7 +24,7 @@ a {
     color: $text-color;
     text-decoration: underline;
     &:hover {
-        color: $link-hover-color;
+        color: $ado-blue-dark;
     }
 }
 
@@ -138,7 +138,17 @@ li.breadactive {
 .row-breaker {
     background-color: $grey-light;
     padding: 30px 15px;
+    margin-bottom: 40px;
 }
+
+.front-sector {
+    padding: 40px 15px 80px 15px;
+}
+
+.front-img-no-space {
+    padding: 0px;
+}
+
 //
 // Panels
 //
@@ -391,7 +401,66 @@ li.breadactive {
 
     }
 }
+// 
+// Back to top
+// 
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
 
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+
+	box-shadow: 0 0 10px rgba(#000, .05);
+
+	/* image replacement properties */
+	overflow: hidden; 
+	text-indent: 100%;
+	white-space: nowrap;
+
+	background: rgba($ado-blue-dark, .8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+
+	visibility: hidden;
+	opacity: 0;
+
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+
+	&.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
+		-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+		-moz-transition: opacity .3s 0s, visibility 0s 0s;
+		transition: opacity .3s 0s, visibility 0s 0s;
+	}
+
+	&.cd-is-visible { /* the button becomes visible */
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&.cd-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+		opacity: .5;
+	}
+
+	.no-touch &:hover {
+		background-color: rgba($ado-blue-dark, 1);
+		opacity: 1;
+	}
+
+	@media (min-width: 480px){
+		right: 20px;
+		bottom: 20px;
+	}
+
+	@media (min-width: 768px){
+		height: 60px;
+		width: 60px;
+		right: 30px;
+		bottom: 100px;
+	}
+}
 
 // 
 // Footer
@@ -399,7 +468,7 @@ li.breadactive {
 
 
 .footer-main {
-    background-color: $ado-dark-green;
+    background-color: $footer-background;
     color: $white;
     p {
         font-size: 12px;
@@ -442,7 +511,8 @@ address {
 //
 
 @media (min-width: 480px){
-	body {
+    body {
+        margin-top: 0px;
     }
     h1 {
         font-size: 2em;
@@ -462,7 +532,10 @@ address {
 }
 
 @media (min-width: 992px){
-	.col-padding-middle {
+    body {
+        margin-top: 80px;
+    }
+    .col-padding-middle {
         padding-left: 0px;
     }
 

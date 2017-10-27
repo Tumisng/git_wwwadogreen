@@ -1,12 +1,13 @@
 // Font Stuff
-$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Raleway', sans-serif;
 $base-font-size: 16px;
-$base-font-weight: 300;
+$base-font-weight: 400;
 
-$heading-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$heading-font-weight: 700;
+$heading-font-family: 'Raleway', sans-serif;
+$heading-font-weight: 300;
 
-$fixed-font-family: 'Open Sans', sans-serif;
+$nav-font-family: 'Lato', sans-serif;
+$fixed-font-family :'Lato', sans-serif;
 $fixed-font-size: 85%;
 $fixed-line-height: 1.2;
 
@@ -19,25 +20,37 @@ body {
   font-size: $base-font-size;
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  line-height: 1.6;
   text-align: justify;
 }
 
-// b {
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 18px;
-// }
+p {
+    line-height: 29px;
+}
 
 
 // Headings and typography
+h1,.h1 {
+    font-weight: 200;
+}
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { 
+
+h1,h2,h3,.h1 {
+    color: $grey-darker;
+}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { 
 	font-family: $heading-font-family; 
 	font-weight: $heading-font-weight; 
 }
 
-.h1, .h2 { line-height: 1.1; }
-.h3, .h4 { line-height: 1.3; }
+.heading-upper {
+    text-transform: uppercase;
+}
+
+h1,h2{line-height: 1.4}
+h3, h4 {line-height: 1.7;}
+
+.h1, .h2 { line-height: 1.8; }
+.h3, .h4 { line-height: 1.9; }
 .h1 { font-size: 400%; letter-spacing: -2px; }
 .h2 { font-size: 250%; letter-spacing: -1px; }
 .h3 { font-size: 200%; }
@@ -49,6 +62,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .thin-heading {
 	font-weight: 100;
 }
+
 
 .job-listing-title {
     line-height: 10px;
@@ -81,8 +95,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .paragraph {
     p {
-        line-height: 22px;
-        font-size: 15px;
+        line-height: 29px;
+        font-size: 16px;
 /*        max-width: 480px;*/
     }
 }
@@ -92,7 +106,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .loud  { color: $loud-color; }
 
 .italic { font-style: italic; }
-.bold   { font-weight: 700; @extend .loud; }
+.bold   { font-weight: 700;
+             font-size: 500%;
+}
 
 .block-margins { margin: 1em 0; }
 
@@ -101,9 +117,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 //  -------------------
 
+@media (min-width: 768px){
+    .bold {
+        font-size: 350%;
+    }
+    
+    .h1 {
+        font-size: 250%
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 992px){
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 

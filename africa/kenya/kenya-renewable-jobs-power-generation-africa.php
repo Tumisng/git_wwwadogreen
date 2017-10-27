@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-md-4">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
-                    <a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/renewable-energy-southern-africa-recruitment.html" role="button"><h4>Renewable Energy Recruitment Africa</h4></a>
+                    <a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/renewable-energy-southern-africa-recruitment.php" role="button"><h4>Renewable Energy Recruitment Africa</h4></a>
             <div class="hidden-xs small">
                 <p>
                     Kenya is officially known as the Republic of Kenya. The capital of Kenya is Nairobi. Kenya's neighbours are Tanzania, South Sudan, <a href="<?php echo ENV_ROOTURL; ?>/africa/ethiopia/ethiopia-jobs-hydro-power-generation.php"">Ethiopia</a>, and Somalia. Kenya has a population of roughly 45 million people (2014). The main language is English.

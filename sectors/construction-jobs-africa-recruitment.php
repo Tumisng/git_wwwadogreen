@@ -21,13 +21,18 @@
 	$strPageJobList = 'Sector';
 
     include_once ENV_ROOT . 'includes/header.php';
-?>
-<div class="container-fluid hidden-xs hidden-sm">
-    <div class="row">
-        <div class="col-md-12 background-construction background-img">
-        </div>
-    </div>
-</div>
+
+    if (Detect::isComputer()) {
+            echo 
+                    '<div class="container-fluid hidden-xs hidden-sm">
+                        <div class="row">
+                            <div class="col-md-12 background-construction background-img">
+                            </div>
+                        </div>
+                    </div>';
+    }
+    ?>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 hidden-xs hidden-sm">

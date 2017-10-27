@@ -4933,20 +4933,37 @@ button.close {
 body {
   color: #333333;
   font-size: 16px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 1.6;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   text-align: justify; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
+p {
+  line-height: 29px; }
+
+h1, .h1 {
+  font-weight: 200; }
+
+h1, h2, h3, .h1 {
+  color: #333333; }
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300; }
+
+.heading-upper {
+  text-transform: uppercase; }
+
+h1, h2 {
+  line-height: 1.4; }
+
+h3, h4 {
+  line-height: 1.7; }
 
 .h1, .h2 {
-  line-height: 1.1; }
+  line-height: 1.8; }
 
 .h3, .h4 {
-  line-height: 1.3; }
+  line-height: 1.9; }
 
 .h1 {
   font-size: 400%;
@@ -4966,7 +4983,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 130%; }
 
 .fixed {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 85%;
   line-height: 1.2; }
 
@@ -4999,8 +5016,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 17px; }
 
 .paragraph p {
-  line-height: 22px;
-  font-size: 15px;
+  line-height: 29px;
+  font-size: 16px;
   /*        max-width: 480px;*/ }
 
 .quiet {
@@ -5009,14 +5026,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .small {
   font-size: 12px; }
 
-.loud, .bold {
+.loud {
   color: #ff0101; }
 
 .italic {
   font-style: italic; }
 
 .bold {
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 500%; }
 
 .block-margins {
   margin: 1em 0; }
@@ -5027,9 +5045,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .ordered-list {
   list-style: decimal; }
 
+@media (min-width: 768px) {
+  .bold {
+    font-size: 350%; }
+
+  .h1 {
+    font-size: 250%; }
+
+  h3 {
+    font-size: 20px; } }
 @media (min-width: 992px) {
   body {
-    font-size: 14px; } }
+    font-size: 16px; } }
 .yamm .nav,
 .yamm .collapse,
 .yamm .dropup,
@@ -5051,31 +5078,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   left: auto; }
 
 .menu-bold a {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 12px; }
 
 .navbar {
   margin-bottom: 0;
-  background-color: #006500;
+  background-color: rgba(6, 101, 162, 0.8);
   color: #fafafa; }
 
 .navbar-fixed-top {
-  background-color: #006500;
+  background-color: rgba(6, 101, 162, 0.8);
   color: #fafafa; }
 
 .nav a {
   text-decoration: none;
   font-size: 12px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fafafa; }
 .nav li a:hover, .nav li:focus {
-  background-color: #7A7A7A;
+  background-color: #6d6d6d;
   color: #fff; }
 
 .dropdown-menu > li > a {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 12px;
   text-transform: none;
@@ -5085,7 +5112,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #7A7A7A;
+  background-color: #6d6d6d;
   color: #fafafa; }
 
 .navbar-right .dropdown-menu {
@@ -5109,9 +5136,346 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   position: relative; }
 
 #contact-details {
-  font-size: 10px;
+  font-size: 12px;
   display: inline-block;
   float: right; }
+
+/* -------------------------------- 
+
+1. Auto-Hiding Navigation - Simple
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+.cd-auto-hide-header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  /* Force Hardware Acceleration */
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform .5s; }
+  .cd-auto-hide-header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .cd-auto-hide-header.is-hidden {
+    transform: translateY(-100%); }
+  @media only screen and (min-width: 1024px) {
+    .cd-auto-hide-header {
+      height: 80px; } }
+
+.cd-auto-hide-header .logo,
+.cd-auto-hide-header .nav-trigger {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%); }
+
+.cd-auto-hide-header .logo {
+  left: 5%; }
+  .cd-auto-hide-header .logo a, .cd-auto-hide-header .logo img {
+    display: block; }
+
+.cd-auto-hide-header .nav-trigger {
+  /* vertically align its content */
+  display: table;
+  height: 100%;
+  padding: 0 1em;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #25283D;
+  font-weight: bold;
+  right: 0;
+  border-left: 1px solid #f2f2f2; }
+  .cd-auto-hide-header .nav-trigger span {
+    /* vertically align inside parent element */
+    display: table-cell;
+    vertical-align: middle; }
+  .cd-auto-hide-header .nav-trigger em, .cd-auto-hide-header .nav-trigger em::after, .cd-auto-hide-header .nav-trigger em::before {
+    /* this is the menu icon */
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 22px;
+    background-color: #25283D;
+    backface-visibility: hidden; }
+  .cd-auto-hide-header .nav-trigger em {
+    /* this is the menu central line */
+    margin: 6px auto 14px;
+    transition: background-color .2s; }
+  .cd-auto-hide-header .nav-trigger em::before, .cd-auto-hide-header .nav-trigger em::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    transition: transform .2s; }
+  .cd-auto-hide-header .nav-trigger em::before {
+    /* this is the menu icon top line */
+    transform: translateY(-6px); }
+  .cd-auto-hide-header .nav-trigger em::after {
+    /* this is the menu icon bottom line */
+    transform: translateY(6px); }
+  @media only screen and (min-width: 1024px) {
+    .cd-auto-hide-header .nav-trigger {
+      display: none; } }
+
+.cd-auto-hide-header.nav-open .nav-trigger em {
+  /* transform menu icon into a 'X' icon */
+  background-color: rgba(255, 255, 255, 0); }
+.cd-auto-hide-header.nav-open .nav-trigger em::before {
+  /* rotate top line */
+  transform: rotate(-45deg); }
+.cd-auto-hide-header.nav-open .nav-trigger em::after {
+  /* rotate bottom line */
+  transform: rotate(45deg); }
+
+.cd-primary-nav {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  padding-right: 5%; }
+  .cd-primary-nav .dropdown-menu > li > a {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-bottom: solid 1px #eee;
+    padding: 6px 15px; }
+  .cd-primary-nav > ul {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.2); }
+    .cd-primary-nav > ul a {
+      text-decoration: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-bottom: solid 1px #eee;
+      padding: 6px 15px;
+      /* target primary-nav links */
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid #3191d0; }
+      .cd-primary-nav > ul a:hover, .cd-primary-nav > ul a.active {
+        color: #3499DB;
+        box-shadow: inset 0 -3px #0665A2; }
+  @media only screen and (min-width: 1024px) {
+    .cd-primary-nav {
+      /* vertically align its content */
+      display: table; }
+      .cd-primary-nav > ul {
+        /* vertically align inside parent element */
+        display: table-cell;
+        vertical-align: middle;
+        /* reset mobile style */
+        position: relative;
+        width: auto;
+        top: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none; }
+        .cd-primary-nav > ul::after {
+          clear: both;
+          content: "";
+          display: block; }
+        .cd-primary-nav > ul li {
+          display: inline-block;
+          float: left;
+          margin-right: 1.5em; }
+          .cd-primary-nav > ul li:last-of-type {
+            margin-right: 0; }
+        .cd-primary-nav > ul a {
+          /* reset mobile style */
+          height: 30px;
+          line-height: normal;
+          padding: 0;
+          border: none; } }
+
+.nav-open .cd-primary-nav ul,
+.cd-primary-nav ul:target {
+  /* 
+  	show primary nav - mobile only 
+  	:target is used to show navigation on no-js devices
+  */
+  display: block; }
+  @media only screen and (min-width: 1024px) {
+    .nav-open .cd-primary-nav ul,
+    .cd-primary-nav ul:target {
+      display: table-cell; } }
+
+/* -------------------------------- 
+
+2. Auto-Hiding Navigation - with Sub Nav
+
+-------------------------------- */
+.cd-secondary-nav {
+  position: relative;
+  z-index: 1;
+  clear: both;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(6, 101, 162, 0.8);
+  /* Force Hardware Acceleration */
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform .5s; }
+  .cd-secondary-nav.nav-end::after {
+    opacity: 0; }
+  .cd-secondary-nav ul, .cd-secondary-nav li, .cd-secondary-nav a {
+    height: 100%; }
+  .cd-secondary-nav ul {
+    /* enables a flex context for all its direct children */
+    display: flex;
+    padding: 0 5%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; }
+    .cd-secondary-nav ul::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .cd-secondary-nav li {
+    display: inline-block;
+    float: left;
+    /* do not shrink - elements float on the right of the element */
+    flex-shrink: 0; }
+    .cd-secondary-nav li:last-of-type {
+      padding-right: 20px; }
+  .cd-secondary-nav a {
+    display: block;
+    color: #ffffff;
+    opacity: .6;
+    line-height: 50px;
+    padding: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
+      opacity: 1;
+      background-color: #fafafa;
+      color: #333333;
+      box-shadow: inset 0 -3px #0665A2; }
+  @media only screen and (min-width: 1024px) {
+    .cd-secondary-nav {
+      height: 70px;
+      overflow: visible; }
+      .cd-secondary-nav ul {
+        /* reset mobile style */
+        display: block;
+        text-align: center; }
+      .cd-secondary-nav li {
+        /* reset mobile style */
+        float: none;
+        flex-shrink: 1; }
+      .cd-secondary-nav a {
+        line-height: 70px; }
+        .cd-secondary-nav a.active {
+          box-shadow: inset 0 -3px #0665A2; } }
+
+/* -------------------------------- 
+
+3. Auto-Hiding Navigation - with Sub Nav + Hero Image
+
+-------------------------------- */
+.cd-secondary-nav.fixed {
+  position: fixed;
+  top: 60px; }
+.cd-secondary-nav.slide-up {
+  transform: translateY(-60px); }
+@media only screen and (min-width: 1024px) {
+  .cd-secondary-nav.fixed {
+    top: 80px;
+    /* fixes a bug where nav and subnab move with a slight delay */
+    box-shadow: 0 -6px 0 #25283D; }
+  .cd-secondary-nav.slide-up {
+    transform: translateY(-80px); } }
+
+/* -------------------------------- 
+
+Main content
+
+-------------------------------- */
+.cd-main-content {
+  padding: 60px 5% 2em;
+  overflow: hidden; }
+  .cd-main-content.sub-nav {
+    /* to be used if there is sub nav */
+    padding-top: 110px; }
+  .cd-main-content.sub-nav-hero {
+    /* to be used if there is hero image + subnav */
+    padding-top: 0; }
+    .cd-main-content.sub-nav-hero.secondary-nav-fixed {
+      margin-top: 50px; }
+  .cd-main-content p {
+    max-width: 1024px;
+    line-height: 1.6;
+    margin: 2em auto;
+    font-family: "Lato", sans-serif;
+    color: #a5a8a9; }
+  @media only screen and (min-width: 1024px) {
+    .cd-main-content {
+      padding-top: 80px; }
+      .cd-main-content.sub-nav {
+        padding-top: 150px; }
+      .cd-main-content.sub-nav-hero.secondary-nav-fixed {
+        margin-top: 70px; }
+      .cd-main-content p {
+        font-size: 2.4rem; } }
+
+/*
+	adjust the positioning of in-page links
+	http://nicolasgallagher.com/jump-links-and-viewport-positioning/
+*/
+.cd-main-content.sub-nav :target::before,
+.cd-main-content.sub-nav-hero :target::before {
+  display: block;
+  content: "";
+  margin-top: -50px;
+  height: 50px;
+  visibility: hidden; }
+  @media only screen and (min-width: 1024px) {
+    .cd-main-content.sub-nav :target::before,
+    .cd-main-content.sub-nav-hero :target::before {
+      margin-top: -70px;
+      height: 70px; } }
+
+/* -------------------------------- 
+
+Intro Section
+
+-------------------------------- */
+.cd-hero {
+  /* vertically align its content */
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  height: 300px;
+  background: url(../img/front-pic-sectors.jpg) no-repeat center center; }
+  .cd-hero .cd-hero-content {
+    /* vertically align inside parent element */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .cd-hero {
+      height: 400px;
+      background: url(../img/front-pic-sectors-smaller.jpg) no-repeat center center; } }
+  @media only screen and (min-width: 1024px) {
+    .cd-hero {
+      height: 600px;
+      margin-top: 80px;
+      background: url(../img/front-pic-sectors.jpg) no-repeat center center;
+      background-size: 100%; } }
 
 @media (min-width: 768px) {
   #logo {
@@ -5167,7 +5531,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     right: 5px;
     margin-bottom: 0px; }
     .card-small .btn:hover {
-      background-color: #7A7A7A;
+      background-color: #6d6d6d;
       color: #fafafa; }
 
 .card-listing {
@@ -5719,6 +6083,43 @@ CSS for main images loaded in pages etc.
     Author     : natie
 */
 @media (min-width: 992px) {
+  .parallax-content {
+    padding: 0px 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    height: 400px; }
+    .parallax-content h1 {
+      color: #fafafa;
+      padding-top: 200px;
+      text-shadow: 0 1px 0 #424242, 0 0 5px #424242; }
+    .parallax-content p {
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
+      text-transform: uppercase; }
+
+  .parallax-content-2 {
+    padding: 0px 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    height: 400px; }
+    .parallax-content-2 h1 {
+      color: #fafafa;
+      padding-top: 80px;
+      text-shadow: 0 1px 0 #424242, 0 0 5px #424242; }
+    .parallax-content-2 p {
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
+      margin-top: 40px; }
+    .parallax-content-2 .paralax-heading {
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
+      text-transform: uppercase; }
+
   .sector-headings {
     position: absolute;
     top: 180px;
@@ -5752,7 +6153,7 @@ CSS for main images loaded in pages etc.
     background-position: top; }
 
   .background-mining {
-    background: url(../img/mining-man-on-stand.jpg) no-repeat center;
+    background: url(../img/pages-coal-cat-truck.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: 100%;
     background-position: top; }
@@ -5767,6 +6168,38 @@ CSS for main images loaded in pages etc.
     background: url(../img/sector-manufacturing-main.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: 100%;
+    background-position: top; }
+
+  .background-front-construction {
+    background: url(../img/sector-front-construction.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 600px;
+    background-position: top; }
+
+  .background-front-excavator {
+    background: url(../img/front-excavator.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 600px;
+    background-position: top; }
+
+  .pages-coal-cat-truck {
+    background: url(../img/pages-coal-cat-truck.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 600px;
+    background-position: top; }
+
+  .background-coal-mining {
+    background: url(../img/pages-coal-mining-excavator.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    height: 350px;
     background-position: top; } }
 @media (min-width: 1200px) {
   .background-img {
@@ -5787,6 +6220,9 @@ CSS for main images loaded in pages etc.
   .background-construction {
     padding-top: 550px; }
 
+  .background-coal-mining {
+    padding-top: 500px; }
+
   .sector-headings {
     top: 230px; } }
 @media (min-width: 1500px) {
@@ -5805,6 +6241,9 @@ CSS for main images loaded in pages etc.
   .background-construction {
     padding-top: 650px; }
 
+  .background-coal-mining {
+    padding-top: 500px; }
+
   .sector-headings {
     top: 230px; } }
 * {
@@ -5814,13 +6253,14 @@ CSS for main images loaded in pages etc.
 
 body {
   background-color: #fff;
+  margin-top: 80px;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
 
 a {
   color: #333333;
   text-decoration: underline; }
   a:hover {
-    color: #00a500; }
+    color: #0665A2; }
 
 img {
   max-width: 100%; }
@@ -5885,7 +6325,7 @@ img {
   padding: 15px 0 0 0;
   text-align: right;
   margin-bottom: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   font-size: 10px; }
   .breadcrumb .active {
@@ -5909,7 +6349,14 @@ li.breadactive {
 
 .row-breaker {
   background-color: #EBEBEB;
-  padding: 30px 15px; }
+  padding: 30px 15px;
+  margin-bottom: 40px; }
+
+.front-sector {
+  padding: 40px 15px 80px 15px; }
+
+.front-img-no-space {
+  padding: 0px; }
 
 .panel {
   border: 0px;
@@ -5989,7 +6436,7 @@ li.breadactive {
 
 .button {
   border: none;
-  font-style: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: "Raleway", sans-serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -6094,8 +6541,51 @@ li.breadactive {
     font-size: 10px;
     text-transform: uppercase; }
 
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(6, 101, 162, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s; }
+  .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s; }
+  .cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1; }
+  .cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5; }
+  .no-touch .cd-top:hover {
+    background-color: #0665a2;
+    opacity: 1; }
+  @media (min-width: 480px) {
+    .cd-top {
+      right: 20px;
+      bottom: 20px; } }
+  @media (min-width: 768px) {
+    .cd-top {
+      height: 60px;
+      width: 60px;
+      right: 30px;
+      bottom: 100px; } }
+
 .footer-main {
-  background-color: #006500;
+  background-color: #6d6d6d;
   color: #fafafa; }
   .footer-main p {
     font-size: 12px; }
@@ -6118,6 +6608,9 @@ address {
   text-decoration: none; }
 
 @media (min-width: 480px) {
+  body {
+    margin-top: 0px; }
+
   h1 {
     font-size: 2em; } }
 @media (min-width: 768px) {
@@ -6127,6 +6620,9 @@ address {
   .jumbotron p p {
     font-size: 16px !important; } }
 @media (min-width: 992px) {
+  body {
+    margin-top: 80px; }
+
   .col-padding-middle {
     padding-left: 0px; }
 
