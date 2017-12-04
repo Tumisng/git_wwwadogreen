@@ -40,8 +40,10 @@
     $strPageTitle = $strBlogTitle;
     $strPageDescription = $strBlogSEODesc;
     $strPageKeywords = $strBlogSEOKeywords;
-    $strPageImg = $strBlogImgId;
+    $strPageImg = ENV_RSS . 'DMSimage.php?i=' . $strBlogImgId;
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
+    $strPageSector = $strBlogSector;
+    $strPageJobList = 'Sector';
     
     include_once ENV_ROOT . 'includes/header.php';
 ?> 
@@ -51,7 +53,7 @@
                 <ol class="breadcrumb">
                           <li><a href="/index.php">AdoGreen Recruitment Africa</a></li>
                           <li><a href="/blog/index.php" >Blog</a></li>
-                          <li class="active"></li>
+                          <li class="active"><?php echo $strBlogTitle;?></li>
                     </ol>
             </div>
     </div>
@@ -59,31 +61,79 @@
 
   <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12">
             <img class="img-responsive" width="100%" src="<?php echo ENV_RSS . 'DMSimage.php?i=' . $strBlogImgId; ?>">
-        </div>
-        <div class="col-md-8 job-header">
             <h1 class="h1"><?php echo $strBlogTitle;?></h1>
             <p class="post-meta"><i>Date posted: <span><?php echo $strBlogOpenDate;?></i></p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-9" >
+        <div class="col-md-9 animate-fade-in" >
             <div id="blog-display"></div>
             <?php
             
             echo htmlspecialchars_decode(stripslashes($strBlogDescription));
             ?>
                     </div>
-        <div class="col-md-3">
+        <div class="col-md-3 animate-fade-in">
+                <h4>Sector: <?php echo $strBlogSector;?></h4>
+                <h4>Category: <?php echo $strBlogCategory;?></h4>
+                <h4>Country: <?php echo $strBlogCountry;?></h4>
                 <?php include ENV_ROOT . 'includes/Page_Sidebar.php'; ?>
+                <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
         </div>
     </div>   
-        <div class="row">
-            <div class="col-md-12 addthis_inline_share_toolbox">
-            </div>
+    <div class="row">
+        <div class="col-md-12 addthis_inline_share_toolbox">
         </div>
-
+    </div>
+  <div class="row animate-fade-in">
+        <ul class="list-unstyled"> 
+                        <?php 
+                        $array = array();
+                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published&Sector=' . $strBlogSector;
+                        //First version loading into an array
+                        $json1 = file_get_contents($json_url);
+                        $array = json_decode($json1, TRUE);
+                        
+                        $i=0;
+                        if(isset($array[2])) {
+                        foreach($array[2] as $value)  
+                           {
+                                if($i==4) break;
+                                $strBlog2Id = $value['AppDataId'];
+                                $strBlog2Status = $value['Status'];
+                                $strBlog2Title = $value['Title'];
+                                $strBlog2SEODesc = $value['SEODescription'];
+                                $strBlog2OpenDate = $value['OpenDate'];
+                                $strBlog2Sector = $value['Sector'];
+                                $strBlog2ImgId = $value['ImageUploadedId'];
+                                
+                                $strBlog2TitleUrl=str_ireplace(" ","-",$strBlog2Title);
+                                if ($strBlog2Id != $strBlogId) {
+                        ?> 
+                                <li>
+                                    <div class="col-md-3">
+                                        <a class="card-blog" href="<?php echo ENV_ROOTURL . 'blog/blogpost.php?id=' . $strBlog2Id . '&name=' . $strBlog2TitleUrl; ?>">
+                                            <div class="card card-blue card-blog">
+                                                    <div class="card-content"> 
+                                                        <h6 class="category pull-right"><?php echo $strBlog2Sector;?></h6>
+                                                        <h4 class="title"><?php echo $strBlog2Title;?></h4>
+                                                        <img class="img-responsive" width="100%" src="<?php echo ENV_RSS . 'DMSimage.php?i=' . $strBlog2ImgId; ?>">
+                                                    </div>    
+                                            </div>
+                                        </a>    
+                                    </div>
+                                <li>
+                        
+                        <?php            
+                                $i++;
+                                }
+                           }
+                        };
+                        ?>
+                </ul>     
+    </div>
 </div>
 
 

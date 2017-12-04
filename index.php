@@ -2,7 +2,7 @@
 
 include_once 'environment/config.php';
 
-$strPageSlider = FALSE;
+$strPageSlider = TRUE;
 $strPageHero = TRUE;
 include 'includes/header.php';
 
@@ -52,24 +52,24 @@ if (Detect::isComputer() || Detect::isTablet()) {
                  <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa has years of experience within the African Market</h3>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                
-            </div> 
+
+            </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-8 paragraph padding-bottom-40  animate-fade-in">
-                
+
                 <p>
-                    With years of experience within the African market, AdoGreen Africa has developed  a proven methodology in targeting local talent through networking capabilities.  Our goal is to source right company and cultural fit. 
+                    With years of experience within the African market, AdoGreen Africa has developed  a proven methodology in targeting local talent through networking capabilities.  Our goal is to source right company and cultural fit.
                 </p>
                 <p>
                     Local First Recruitment: AdoGreen Africa has developed various methods for reaching local candidates within African countries that conventional recruitment methods lack.  We achieve this much faster and more economically than other recruitment methods used. Our focus lies mainly within the heavy industry sectors, however we have been highly successful in working over a diverse range of others as well.
                     We assist companies with their growth areas when moving into new locations within Africa.</p>
-                <p>    
-                    Although our specialisation is on sourcing local candidates, we do provide experienced expats with working experience in Africa, and are able to  assist irrespective of the location. 
+                <p>
+                    Although our specialisation is on sourcing local candidates, we do provide experienced expats with working experience in Africa, and are able to  assist irrespective of the location.
                 </p>
             </div>
             <div class="col-md-4 animate-fade-in-right">
@@ -82,7 +82,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
             <a class="btn btn-lg btn-default btn-block " href="#">
                     <i class="fa fa-check fa-2x text-center"></i> <h5>Local Talent Focus</h5>
                 </a>
-                    
+
 
             <a class="btn btn-lg btn-default btn-block " href="#">
                     <i class="fa fa-diamond fa-2x text-center"></i><h5>Established For 10 + Years</h5>
@@ -96,7 +96,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
         }
 if (Detect::isComputer() || Detect::isTablet()) {
    echo '
-       
+
     <!-- ******************* -->
     <!--      Seoncd Row     -->
     <!-- ******************* -->
@@ -160,40 +160,40 @@ if (Detect::isComputer() || Detect::isTablet()) {
                                 <p>It’s about understanding what we do, who our clients need, and having the capability to network strategically and timeously, capitalising on all resources available and exceeding expectations. Where faced with a challenge, we are the go-to agency. It’s about delivering on exact specs and offering the relationship and communication required to achieve success for everyone involved in the process. </p>
                 </div>
                 <div class="col-md-2"></div>
-                
+
             </div>
         </div>
     </div>
-    
-    '
-    ;
-}
-?> 
-
     <div class="container-fluid ">
         <div class="row">
                  <div class="col-md-2"></div>
                  <div class="col-md-6 text-left paragraph  animate-fade-in">
                      <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment</h1>
                      <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
-                     
+
                      <p class="text-left">AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
- 
-                         We understand Africa, and the need to source experienced <b>expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
+
+                         We understand Africa, and the need to source <b>experienced expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
                         </p>
                  </div>
                  <div class="col-md-4 front-img-no-space  animate-fade-in-right">
                      <img class="img-responsive" src="assets/img/front-wind-farm.jpg">
                  </div>
-                 
+
             </div>
         </div>
-    </div> 
+    </div>
+    '
+    ;
+}
+?>
+
+
 
 <!--<div class="container-fluid row-breaker">
     <div class="row">
         <div class="col-md-12">
-            
+
         </div>
     </div>
 </div>
@@ -201,10 +201,10 @@ if (Detect::isComputer() || Detect::isTablet()) {
     <div class="row">
         <h2>Heavy Industry Recruitment</h2>
         <div class="col-md-8">
-            
+
         </div>
         <div class="col-md-4">
-            
+
         </div>
     </div>
 </div>-->
@@ -213,8 +213,8 @@ if (Detect::isComputer() || Detect::isTablet()) {
         <div class="col-md-10">
                 <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading heading-underline">Latest Jobs</h4></a>
-                <ul class="list-unstyled" id="job-board-listing"> 
-                        <?php 
+                <ul class="list-unstyled" id="job-board-listing">
+                        <?php
                         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
                         //First version loading into an array
                         $json1 = file_get_contents($json_url);
@@ -249,7 +249,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
 
         </div>
         <div class="col-md-2 margin-20">
-  
+
         </div>
     </div>
 </div>-->

@@ -1,4 +1,4 @@
-<?php 
+<?php
     $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,16 +12,16 @@
     include_once $strEnvConfigFile;
 
     //include_once '../includes/header.php';
-    
+
     $strPageTitle = 'AdoGreen Africa Job Board Heavy Engineering';
     $strPageDescription = 'AdoGreen Africa Job Board - Specialist Recruitment - Heavy Engineering, Mining, Renewable Energy, , Power, Building And Construction';
     $strPageKeywords ='AdoGreen Africa Job Board - Specialist Recruitment - Heavy Engineering, Mining, Renewable Energy, Power, Building And Construction';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-    
+
             include_once ENV_ROOT . 'includes/header.php';
-            
-// Fill the DropDown Country           
-function fill_sector($connect)  {  
+
+// Fill the DropDown Country
+function fill_sector($connect)  {
         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Lookup&Cabinet=Job&Field=Sector';
         $json1 = file_get_contents($json_url);
         $array = json_decode($json1);
@@ -41,13 +41,13 @@ function fill_sector($connect)  {
         foreach ($arrResult as $row) {
           $output .= '<option value="' . $row . '">' . $row. '</option>';
           echo $row;
-        }  
-        return $output; 
- }   
- 
+        }
+        return $output;
+ }
+
 // Fill the Jobs
- function fill_job($connect)  {  
-        $output = '';  
+ function fill_job($connect)  {
+        $output = '';
         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
         $json1 = file_get_contents($json_url);
         $array = json_decode($json1);
@@ -67,23 +67,22 @@ function fill_sector($connect)  {
                $output .= '<li>
                                         <div class="card-jobs card-green">
                                                 <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL .'">
-                                                        <div class="card-content"> 
+                                                        <div class="card-content">
                                                             <h6 class="category pull-right hidden-xs">'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</h6>
                                                             <h4 class="title">'. $strJobTitle .'</h4>
                                                             <p class="description hidden-xs">' . $strJobShortDesc . '</p>
-                                                        </div> 
+                                                        </div>
                                                         <div>
                                                         <p class="hidden-lg hidden-md hidden-sm" ><small >'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</small></p>
                                                         </div>
                                                 </a>
-                                        </div>    
+                                        </div>
                                 </li>';
                 }
         }
         return $output;
- }     
+ }
 
-            
  ?>
         <div class="container">
             <div class="row padding-bottom-20">
@@ -92,55 +91,54 @@ function fill_sector($connect)  {
                         <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 hidden-xs">
                        <h3>Search Sector</h3>
-                        <select class="btn btn-block btn-lg" name="sector" id="sector">  
-                            <option value="">All</option>  
-                            <?php echo fill_sector($connect); ?>  
-                       </select>  
+                        <select class="btn btn-block btn-lg" name="sector" id="sector">
+                            <option value="">All</option>
+                            <?php echo fill_sector($connect); ?>
+                       </select>
                     </div>
-                </div>    
+                </div>
              </br>
         </div>
-        <div class="container">  
-                    <div class="row" id="show_sector"> 
-                        
+        <div class="container">
+                    <div class="row" id="show_sector">
+
                         <ul class="list-unstyled joblist" id="job-board-listing">
-                         <?php echo fill_job($connect);?> 
+                         <?php echo fill_job($connect);?>
                         </ul>
 
-                    </div>  
-        </div>    
+                    </div>
+        </div>
 <?php
-
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
-              
+
     <script>
         $("#search-input").on("keyup", function () {
         var search = $(this).val().trim().toLowerCase();
         $(".card-jobs").show().filter(function () {
         return $(this).text().toLowerCase().indexOf(search) < 0;
-        }).hide();        
+        }).hide();
         });
     </script>
-            
-     <script>  
-        $(document).ready(function(){  
-             $('#sector').change(function(){  
-                  var sector = $(this).val();  
-                  $.ajax({  
-                       url:"load_data.php",  
-                       method:"POST",  
-                       data:{sector,sector},  
-                       success:function(data){  
-                            $('#show_sector').html(data);  
-                       }  
-                  });  
-             });  
-        });  
- </script>  
+
+     <script>
+        $(document).ready(function(){
+             $('#sector').change(function(){
+                  var sector = $(this).val();
+                  $.ajax({
+                       url:"load_data.php",
+                       method:"POST",
+                       data:{sector,sector},
+                       success:function(data){
+                            $('#show_sector').html(data);
+                       }
+                  });
+             });
+        });
+ </script>
     </body>
 </html>
 

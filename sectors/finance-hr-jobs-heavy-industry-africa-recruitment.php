@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -22,7 +22,7 @@
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
-<div class="breadcrumbs hidden-xs">
+<!--<div class="breadcrumbs hidden-xs">
     <div class="container">
         <h2 class="pull-left breadcrumbh2">Finance & HR Recruitment</h2>
         <ul class="pull-right breadcrumb">
@@ -31,17 +31,16 @@
             <li class="breadactive">Finance & HR Africa</li>
         </ul>
     </div>
-</div>
+</div>-->
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12  background-finance background-img">
-<!--            <img class="img-responsive" width="100%"src="<?php echo ENV_ROOTURL; ?>assets/img/finance-front.jpg" alt="AdoGreen Recruitment Logo">-->
-           
+
         </div>
     </div>
 </div>
-<div class="container>
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12 sector-headings">
             <img src="<?php echo ENV_ROOTURL; ?>assets/img/ado-seethrough.png" alt="AdoGreen Recruitment Logo">

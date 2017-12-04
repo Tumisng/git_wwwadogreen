@@ -164,6 +164,22 @@ CSS for main images loaded in pages etc.
         height: 350px;
         background-position: top;
     }
+    
+    /*Candidates*/
+        .background-job-hunting {
+        background: url(../img/job-hunting-advice.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        height: 350px;
+        background-position: top;
+        }
+        .background-cv-writing {
+        background: url(../img/candidate-cv-writing.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        height: 350px;
+        background-position: top;
+    }
 }
 
 @media (min-width: 1200px){
@@ -186,6 +202,12 @@ CSS for main images loaded in pages etc.
         padding-top: 550px;
     }
     .background-coal-mining {
+        padding-top: 500px;
+    }
+    .background-job-hunting {
+        padding-top: 500px;
+    }
+    .background-cv-writing {
         padding-top: 500px;
     }
     .sector-headings {
@@ -211,6 +233,12 @@ CSS for main images loaded in pages etc.
     }
     .background-coal-mining {
         padding-top: 500px;
+    }
+    .background-job-hunting  {
+        padding-top: 500px;
+    }
+    .background-cv-writing {
+         padding-top: 500px;
     }
     .sector-headings {
         top: 230px;

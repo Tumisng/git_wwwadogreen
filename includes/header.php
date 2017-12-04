@@ -13,12 +13,12 @@
 
         include_once ENV_ROOT . 'lib/detect.php';
         include_once ENV_ROOT . 'includes/head.php';
-        
+
 ?>
 <script src="<?php echo ENV_ROOTURL . 'assets/plugins/scroll/scrollreveal.min.js'; ?>"></script>
-    
+
 <body>
-    <?php 
+    <?php
     if (Detect::isMobile()) {
         ?>
            <nav class="navbar yamm nafbar-default">
@@ -94,7 +94,7 @@
             </div>
         </div>
     </nav>
-<?php 
+<?php
     }
 
     if (Detect::isComputer() || Detect::isTablet()) {
@@ -172,23 +172,23 @@
                     <i class="fa fa-lg fa-phone" aria-hidden="true"></i> +27 87 813 0303 - <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@adogreen.com">info@adogreen.com</a>
                 </div>
 	</nav> <!-- .cd-primary-nav -->
-    
+
 </header> <!-- .cd-auto-hide-header -->
 
-<?php 
+<?php
     if ($strPageHero == TRUE) {
         echo '
             <section class="cd-hero">
-                <div class="cd-hero-content">
-                    <!-- your content here -->
-                </div>
+                <div class="cd-hero-content">';
+                    include_once ENV_ROOT . 'includes/slider_Front_Page.php';
+        echo '</div>
             </section> <!-- .cd-hero -->'
         ;
 ?>
 
 <nav class="cd-secondary-nav">
 
-	<ul>  
+	<ul>
                 <li><a href="<?php echo ENV_ROOTURL . 'index.php'; ?>" class="current dropdown-toggle">Home</a></li>
 		<li><a href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV</a></li>
 		<li><a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a></li>
@@ -200,7 +200,7 @@
 		<li><a href="#0">Buy</a></li>-->
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
-<?php 
+<?php
     }
     };?>
 

@@ -22,18 +22,23 @@
 	    
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <h1><?php echo $strPageTitle; ?></h1>
-            <p class="post-meta">
-                Published: Aug 2017
-            </p>
-            <hr>
+        <div class="col-md-12  background-cv-writing animate-fade-in">
         </div>
     </div>
+</div>
+<div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12 text-center">
+             <h1 class="heading-underline h1 animate-fade-in"><b>CV Writing </b> - Job Hunting Tips</h1>
+             <h3 class="text-center heading-upper animate-fade-in">If you are looking for career advice, informative industry information, how to write a better CV, becoming more marketable, tips on job hunting and also coaching through the resignation process read some of our easy tips on the recruitment process.</h3>
+        </div>
+    </div>
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 animate-fade-in">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
                     <div class="well margin-20">
                 <h3>Free Downloadable CV Examples</h3>
@@ -42,11 +47,6 @@
                 <i class="fa fa-file-word-o"><a href="<?php echo ENV_ROOTURL; ?>assets/docs/candidates/cv-geologist-example.doc">Geologist CV Example</a></i>
             </div>
             <div class="hidden-xs">
-                <p>
-                    If you are looking for career advice, informative industry information, how to write a better CV, becoming more marketable, tips on job hunting and also coaching through the resignation process. At AdoGreen, we understand the frustrations and restrictions candidates face at times, and value the opportunity to make your life easier through the job search process. </p>
-                <br>
-                <p>
-                    We offer interview tips and will help wherever we can. Even if you as a candidate are never placed through our agency, we will certainly help you as a candidate wherever we can and understand your need for information and advice. You have come to the right place!</p>
             </div>
         </div>
         <div class="col-md-6">
@@ -83,7 +83,7 @@
             <p><strong>CV WRITING TIP NO 30:</strong> Do not oversell yourself. When candidates overemphasis generic character strengths and competencies that cannot be proven in relation to technical competence, you come across as a salesman and not a candidate. Stick to technical strengths and achievements, not overemphasising things like &lsquo;Great Leader&rsquo;</p>
             <p><strong>CV WRITING TIP NO 31:</strong> Be careful of the font you use. You may love certain weird fonts that ironically you never find anyone using. Well there is a reason for this. Don&rsquo;t get fancy on your CV. Keep is simple, clinical, and professional. The best fonts to choose from would be examples such as Arial, Calibri and Verdana. Keep it safe and avoid giving your reader a head ache. </p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 animate-fade-in">
             <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -23,7 +23,7 @@
     include_once ENV_ROOT . 'includes/header.php';
 
     if (Detect::isComputer()) {
-            echo 
+            echo
                     '<div class="container-fluid hidden-xs hidden-sm">
                         <div class="row">
                             <div class="col-md-12 background-construction background-img">
@@ -59,13 +59,13 @@
             </p>
             <h4>Infrastructure Construction</h4>
             <p>Infrastructure construction which is also referred to as civil or heavy engineering. The type of infrastructure includes bridges, highways, dams, water and utility distribution</p>
-            <h4>Industrial Construction</h4>  
+            <h4>Industrial Construction</h4>
             <p>Industrial construction which involves the construction of manufacturing plants, power generation plants, refineries and mills</p>
             <h4>Renewable Energy Construction</h4>
             <p>As the continent with the largest recorded growth in renewable energy, Africa’s construction sector has greatly benefitted from the increased need for renewable energy infrastructure. The majority of Energy and Power projects on the continent are renewable energy projects. Angola, Kenya, Sierra Leone, South Africa and Uganda being the stand out countries with renewable energy focus.</p>
             <h3>Working In Africa?</h3>
             <p>
-                There are many job opportunities in the construction sector all around Africa. These positions can vary from fly in fly out, to “you have to stay for x months”, to getting danger pay, to staying in camps. These jobs can be so diverse, and depending on the person, you could really find the ideal position that suits your preferences. From dangerous, to the general office jobs, from start-up to well established companies, and from no red tape to plenty of it. I am convinced (should you have the right experience that the client is looking for) that you could find the ideal job in the construction industry on your living expectations. 
+                There are many job opportunities in the construction sector all around Africa. These positions can vary from fly in fly out, to “you have to stay for x months”, to getting danger pay, to staying in camps. These jobs can be so diverse, and depending on the person, you could really find the ideal position that suits your preferences. From dangerous, to the general office jobs, from start-up to well established companies, and from no red tape to plenty of it. I am convinced (should you have the right experience that the client is looking for) that you could find the ideal job in the construction industry on your living expectations.
             </p>
               <h3>Specialist Construction Recruitment In Africa</h3>
               <p>AdoGreen is a specialist recruitment agency focusing on finding local talent in various African countries in the construction industry. Why AdoGreen is so effective in working within Africa, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practises for these type of environments for expanding and established companies. </p>
