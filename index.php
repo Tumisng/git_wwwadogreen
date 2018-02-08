@@ -1,13 +1,12 @@
 <?php
-
 include_once 'environment/config.php';
 
 $strPageSlider = TRUE;
 $strPageHero = TRUE;
 include 'includes/header.php';
 
-        if (Detect::isMobile()) {
-            echo '
+if (Detect::isMobile()) {
+    echo '
                 <!-- *****************     Mobile screen **********************-->
                 <div class="container-fluid visible-xs">
                     <div class="row">
@@ -40,11 +39,11 @@ include 'includes/header.php';
                     </div>
                 </div>
             '
-            ;
-        }
+    ;
+}
 
 if (Detect::isComputer() || Detect::isTablet()) {
-        echo '
+    echo '
     <div class="container cd-main-content sub-nav-hero">
         <div class="row">
             <div class="col-md-12 text-center  animate-fade-in">
@@ -92,10 +91,10 @@ if (Detect::isComputer() || Detect::isTablet()) {
         </div>
     </div>
             '
-            ;
-        }
+    ;
+}
 if (Detect::isComputer() || Detect::isTablet()) {
-   echo '
+    echo '
 
     <!-- ******************* -->
     <!--      Seoncd Row     -->
@@ -214,36 +213,35 @@ if (Detect::isComputer() || Detect::isTablet()) {
                 <a  href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading heading-underline">Latest Jobs</h4></a>
                 <ul class="list-unstyled" id="job-board-listing">
-                        <?php
-                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
-                        //First version loading into an array
-                        $json1 = file_get_contents($json_url);
-                        $array = json_decode($json1);
+<?php
+$json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
+//First version loading into an array
+$json1 = file_get_contents($json_url);
+$array = json_decode($json1);
 
-                        if(isset($array[2])) {
-                          foreach(array_slice($array[2], 0, 5) as $value)
-                           {
-                             $strAppDataId = $value->AppDataId;
-                             $strJobTitle = $value->JobTitle;
-                             $strJobShortDesc = $value->ShortDescription;
-                             $strJobOpenDate = $value->OpenDate;
-                             $strJobSector = $value->Sector;
-                             $strJobLocation = $value->Location;
-                             $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
-                        ?>
-                                <li>
-                                        <div class="card-jobs card-green">
-                                                <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitleURL; ?>">
-                                                        <div class="card-content">
-                                                            <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation ;?></h6>
-                                                            <h4 class="title"><?php echo $strJobTitle;?></h4>
-                                                </a>
-                                        </div>
-                                </li>
-                        <?php
-                          }
-                        };
-                        ?>
+if (isset($array[2])) {
+    foreach (array_slice($array[2], 0, 5) as $value) {
+        $strAppDataId = $value->AppDataId;
+        $strJobTitle = $value->JobTitle;
+        $strJobShortDesc = $value->ShortDescription;
+        $strJobOpenDate = $value->OpenDate;
+        $strJobSector = $value->Sector;
+        $strJobLocation = $value->Location;
+        $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
+        ?>
+                                                        <li>
+                                                                <div class="card-jobs card-green">
+                                                                        <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL; ?>">
+                                                                                <div class="card-content">
+                                                                                    <h6 class="category pull-right"><?php echo $strJobSector . ' / ' . $strJobLocation; ?></h6>
+                                                                                    <h4 class="title"><?php echo $strJobTitle; ?></h4>
+                                                                        </a>
+                                                                </div>
+                                                        </li>
+        <?php
+    }
+};
+?>
                 </ul>
             <a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a>
 
@@ -261,5 +259,5 @@ include 'includes/footer.php';
 include 'includes/js_scripts.php';
 //include 'includes/js_slider.php';
 ?>
-    </body>
+</body>
 </html>

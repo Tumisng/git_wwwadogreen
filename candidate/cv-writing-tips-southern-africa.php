@@ -1,27 +1,27 @@
-<?php 
-       $strEnvConfigFile = '../environment/config.php';
-    $intLevel = 0;
-    while (!file_exists($strEnvConfigFile)) {
-       $strEnvConfigFile = '../' . $strEnvConfigFile;
-       $intLevel++;
-       // Iterate up 4 levels before giving up - this should never happen!
-       if ($intLevel > 3) {
-           die('Fatal error - environment configuration file could not be located');
-       }
+<?php
+$strEnvConfigFile = '../environment/config.php';
+$intLevel = 0;
+while (!file_exists($strEnvConfigFile)) {
+    $strEnvConfigFile = '../' . $strEnvConfigFile;
+    $intLevel++;
+    // Iterate up 4 levels before giving up - this should never happen!
+    if ($intLevel > 3) {
+        die('Fatal error - environment configuration file could not be located');
     }
-    include_once $strEnvConfigFile;
+}
+include_once $strEnvConfigFile;
 
-	$strPageTitle = 'CV Writing Africa Job Hunting Tips';
-	$strPageDescription = 'CV writing tips for the African Industry. Job hunting? Get free info here.';
-	$strPageKeywords = 'CV writing Africa Job hunting tips';
-	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/candidate-cv-writing.png';
-	$strPageCountry = '';
-	$strPageSector = '';
-	$strPageJobList = '';
-	    
-	    include_once ENV_ROOT . 'includes/header.php';
-	    ?>
+$strPageTitle = 'CV Writing Africa Job Hunting Tips';
+$strPageDescription = 'CV writing tips for the African Industry. Job hunting? Get free info here.';
+$strPageKeywords = 'CV writing Africa Job hunting tips';
+$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
+$strPageImg = ENV_ROOTURL . '/assets/img/candidate-cv-writing.png';
+$strPageCountry = '';
+$strPageSector = '';
+$strPageJobList = '';
+
+include_once ENV_ROOT . 'includes/header.php';
+?>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12  background-cv-writing animate-fade-in">
@@ -31,16 +31,16 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center">
-             <h1 class="heading-underline h1 animate-fade-in"><b>CV Writing </b> - Job Hunting Tips</h1>
-             <h3 class="text-center heading-upper animate-fade-in">If you are looking for career advice, informative industry information, how to write a better CV, becoming more marketable, tips on job hunting and also coaching through the resignation process read some of our easy tips on the recruitment process.</h3>
+            <h1 class="heading-underline h1 animate-fade-in"><b>CV Writing </b> - Job Hunting Tips</h1>
+            <h3 class="text-center heading-upper animate-fade-in">If you are looking for career advice, informative industry information, how to write a better CV, becoming more marketable, tips on job hunting and also coaching through the resignation process read some of our easy tips on the recruitment process.</h3>
         </div>
     </div>
-</div> 
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-4 animate-fade-in">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
-                    <div class="well margin-20">
+                 <div class="well margin-20">
                 <h3>Free Downloadable CV Examples</h3>
                 <i class="fa fa-file-word-o"><a href="<?php echo ENV_ROOTURL; ?>assets/docs/candidates/cv-admin-example.doc"> Admin CV Example</a></i><br />
                 <i class="fa fa-file-word-o"><a href="<?php echo ENV_ROOTURL; ?>assets/docs/candidates/cv-artisan-example.doc"> Artisan CV Example</a></i><br />
@@ -50,8 +50,8 @@
             </div>
         </div>
         <div class="col-md-6">
-            <p><strong>CV WRITING TIP NO 1:</strong> Avoid sending scanned copies of your CV. Most database CV searches are done through key word searches. Your CV will not come up on a search if recognised as a fax/scanned copy as the system will recognise it as an image file and therefore it will not be searchable</p>
-            <p><strong>CV WRITING TIP NO 2:</strong> Use as many relevant key words (to your experience) on your CV. Remember that when your CV is saved onto a database, people will do a search to find relevant candidates by key-word searching. If you have done SAP and it is not on your CV, a search for all candidates having done SAP will mean that your CV won&rsquo;t come up on the search if omitted.</p>
+            <p><strong>CV WRITING TIP NO 1/31:</strong> Avoid sending scanned copies of your CV. Most database CV searches are done through key word searches. Your CV will not come up on a search if recognised as a fax/scanned copy as the system will recognise it as an image file and therefore it will not be searchable</p>
+<!--            <p><strong>CV WRITING TIP NO 2:</strong> Use as many relevant key words (to your experience) on your CV. Remember that when your CV is saved onto a database, people will do a search to find relevant candidates by key-word searching. If you have done SAP and it is not on your CV, a search for all candidates having done SAP will mean that your CV won&rsquo;t come up on the search if omitted.</p>
             <p><strong>CV WRITING TIP NO 3.</strong> Make sure you elaborate in detail on actual duties and responsibilities in each job position. Recruiters and companies will want to see specifically what you have done within each position. Leaving this off may get people to presume you do not have enough experience for the relevant requirement</p>
             <p><strong>CV WRITING TIP NO 4:</strong> Do not story-tell on your CV. Ideally, you need a bullet pointed breakdown of duties and&nbsp;responsibilities. You CV must be punchy, to the point, and detailed in this. No one has time to read a long story of when and how you got the job, why you enjoyed it, the things you like doing etc. People scan over a CV for a quick overview. A story-telling CV will get side-lined most of the time.</p>
             <p><strong>CV WRITING TIP NO 5:</strong> Dates are EXTREMELY important. Surprisingly, many people just list their jobs, or for example say 8 years at a certain company, then 9 months at this company etc. This can&nbsp;raise questions in employment gaps, possibly sabbaticals, and unemployment periods and potentially create a bit of suspicion as to why you would have omitted this information. It does not have to be for e.g.: 4th March 2012 - 19 April 2014, but rather March 2012 - April 2014 will suffice. Dates place your experience within a progressive and linear time frame and assist with&nbsp;being short-listed more easily.</p>
@@ -81,17 +81,22 @@
             <p><strong>CV WRITING TIP NO 28:</strong> Make sure your CV is always immediately available and properly updated. Are you still running around with memory sticks, and a wad of certificates that you are always scanning for applications? Create a template in your drafts within your private email account (Yahoo/Gmail etc.) and edit in accordance with the position you are applying to. Email yourself a complete and detailed application from yourself (from drafts), and should you want to apply to a position, simply click forward on that email now sent to your own inbox, and edit the email accordingly. Bcc yourself in on all your applications so you can track what you are doing. No more carrying around of memory sticks and certificates that can get lost and no more forgetting who and what you applied to.</p>
             <p><strong>CV WRITING TIP NO 29:</strong> Make sure the info on your CV makes sense and the dates add up. Your CV on every social media site must be consistent. I.e. Your Linkedin profile, Facebook info, Skillspages etc. must be consistent. Should two CVs of yours be viewed through different sources (and people do) with contradicting dates, you could disqualify yourself from being shortlisted as it may be too suspicious. Be honest on your CV and don&rsquo;t make up stuff, especially dates. Should an employer want a reference on you and speak with someone who you worked with previously at a company where you have given falsified information, kiss the job goodbye. Don&rsquo;t take chances with such a important document. These days it is so easy to get accurate information on somebody owing to the advancement of social media. (Remember that you can be found on a simple google search)</p>
             <p><strong>CV WRITING TIP NO 30:</strong> Do not oversell yourself. When candidates overemphasis generic character strengths and competencies that cannot be proven in relation to technical competence, you come across as a salesman and not a candidate. Stick to technical strengths and achievements, not overemphasising things like &lsquo;Great Leader&rsquo;</p>
-            <p><strong>CV WRITING TIP NO 31:</strong> Be careful of the font you use. You may love certain weird fonts that ironically you never find anyone using. Well there is a reason for this. Don&rsquo;t get fancy on your CV. Keep is simple, clinical, and professional. The best fonts to choose from would be examples such as Arial, Calibri and Verdana. Keep it safe and avoid giving your reader a head ache. </p>
+    <p><strong>CV WRITING TIP NO 31:</strong> Be careful of the font you use. You may love certain weird fonts that ironically you never find anyone using. Well there is a reason for this. Don&rsquo;t get fancy on your CV. Keep is simple, clinical, and professional. The best fonts to choose from would be examples such as Arial, Calibri and Verdana. Keep it safe and avoid giving your reader a head ache. </p>-->
+            <p>Click Here To Connect With Yvette's Posts On LinkedIn</p>
+            <a href="https://www.linkedin.com/in/yvielee/detail/recent-activity/shares/"><img class="img-responsive" src="<?php echo ENV_ROOTURL; ?>assets/img/social-linkedin-yvette.png" width="100%" alt="Yvette Rautenbach Linkedin Recruitment Consultant Africa"></a>
         </div>
         <div class="col-md-2 animate-fade-in">
-            <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>
+
+
+
+            <?php include ENV_ROOT . 'includes/Page_Sidebar.php'; ?>
         </div>
     </div>
 </div>
 <?php
-    include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/js_scripts.php';
+include ENV_ROOT . 'includes/footer.php';
+include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
-    </body>
+</body>
 </html>

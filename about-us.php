@@ -1,27 +1,27 @@
 <?php
-    $strEnvConfigFile = 'environment/config.php';
-    include_once $strEnvConfigFile;
+$strEnvConfigFile = 'environment/config.php';
+include_once $strEnvConfigFile;
 
-    include_once ENV_ROOT . 'includes/header.php';
-    ?>
+include_once ENV_ROOT . 'includes/header.php';
+?>
 
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center  animate-fade-in">
             <h1 class="heading-underline h1">Why <b>AdoGreen?</b></h1>
             <h3 class="heading-upper">
-                  AdoGreen Recruitment has been established for 10 years and functions as a specialist recruitment consultancy in the African region. Over 80% of candidates placed still work with the employer, many of which have become senior members of staff leading large divisions at the company.
-                </h3>
+                ADOGREEN RECRUITMENT HAS BEEN ESTABLISHED FOR 10 YEARS AND FUNCTIONS AS A SPECIALIST RECRUITMENT CONSULTANCY IN THE AFRICAN REGION. AROUND 7/10 CANDIDATES PLACED, STILL WORK WITH THEIR EMPLOYER, MANY OF WHICH HAVE BECOME SENIOR MEMBERS OF STAFF LEADING LARGE DIVISIONS AT THE COMPANY. We believe in longevity and an effective long term recruitment solution. We are excited to partner with candidates who can offer stability, loyalty and have the right career motives, coming with an excellent track record.
+            </h3>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-        	<h3>Overview</h3>
+            <h3>Overview</h3>
             <p>Owing to the success of <strong>tried and tested</strong> recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments. This has positioned us with the confidence to embrace any <a href="/africa/recruitment-africa-local-specialist-agency.html">recruitment</a> need and challenge within
                 <a href="/africa/recruitment-africa-local-specialist-agency.html">Africa</a>. Although there is a primary focus of 4 largely broad sectors, we are <strong>technically and intelligently</strong> equipped with the experience to tackle the most challenging of assignments.
             </p>
-        	<h3>Targeted Approach:</h3>
+            <h3>Targeted Approach:</h3>
             <p>
                 Our approach is refined to not only <strong>identify technically and commercially competent</strong> candidates, but to <strong> understand</strong> our client’s  organisational and personal requirements in line with cultural and departmental fits. We shortlist the very best of potentially  suitable candidates for our clients, and from there, benchmark and select the strongest candidates of that final shortlist to  offer the most superior selection choice. By this, <strong>we strategically limit</strong> the number of applications submitted to our clients 
                 to save time and money for our clients within the recruitment process. Depending on the position and request of clients, our  average CV submission is <strong>3 CVs per job spec</strong>.
@@ -52,8 +52,8 @@
     </div>
 </div>
 <?php
-    include ENV_ROOT . 'includes/footer.php';
-    include ENV_ROOT . 'includes/js_scripts.php';
+include ENV_ROOT . 'includes/footer.php';
+include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 
