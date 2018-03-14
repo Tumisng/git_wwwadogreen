@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -19,7 +19,7 @@
 	$strPageCountry = 'Mozambique';
 	$strPageSector = 'Mining';
 	$strPageJobList = '';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">
@@ -46,7 +46,7 @@
                     </li>
                     <li>Capital City: Maputo</li>
                 </ul>
-                <?php echo ENV_ROOT . 'includes/Pages_Mining_Countries';?> <?php include ENV_ROOT . 'includes/Page_Recruitment_Partner.php';?>
+                <?php ENV_ROOT . 'includes/Pages_Mining_Countries';?> <?php include ENV_ROOT . 'includes/Page_Recruitment_Partner.php';?>
             </div>
             <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
         </div>

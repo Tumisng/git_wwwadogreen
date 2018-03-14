@@ -17,7 +17,7 @@
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>africa/recruitment-africa-local-specialist-agency.php ">Localisation Recruitment Solution</a></li>
                         </ul>
                         <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>contact-adogreen-recruitment.php" rel="nofollow">Contact Us</a>
-                        
+
                     </div>
                     <!--/col-md-3 col-sm-6-->
                     <!-- End About -->
@@ -54,7 +54,7 @@
                     <div class="col-md-3 col-sm-6">
                     <h4>Contact Details</h4>
                         <address>
-                        
+
                             <strong>AdoGreen Africa Recruitment</strong>
                             <br/> South Africa Offices
                             <br/> Phone: +27 (0) 87 813 0303
@@ -106,7 +106,7 @@
             <div class="col-xs-12">
                 <p class="text-center">
                     <small>
-                        2015 &copy; All Rights Reserved AdoGreen.
+                        &copy; <?php echo date("Y"); ?>; All Rights Reserved AdoGreen.
                         Built by <a rel="nofollow" href="http://www.koneqt.com">Koneqt</a> Running on
                         <a href="http://www.koneqt.com">Koneqt CMS and CRM platform </a>
                     </small>

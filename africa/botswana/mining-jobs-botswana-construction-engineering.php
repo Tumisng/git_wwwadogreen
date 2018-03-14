@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -10,7 +10,7 @@
        }
     }
     include_once $strEnvConfigFile;
-    
+
     $strPageTitle = 'Botswana Mining Sector - Jobs And Recruitment';
     $strPageDescription = 'Mining industry and jobs In Botswana. AdoGreen recruitment is a specialist recruitment of locals and expats in Botswana';
     $strPageKeywords = 'Mining Jobs Botswana Recruitment Agency';
@@ -18,7 +18,7 @@
     $strPageImg = ENV_ROOTURL . 'assets/img/botswana-mining-recruitment-jobs.png';
     $strPageCountry = 'Botswana';
     $strPageSector = 'Mining';
-    
+
     include_once ENV_ROOT . 'includes/header.php';
     ?>
 
@@ -55,9 +55,9 @@
                     Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you. AdoGreen has extensive experience in the local Botswana market successfully assisting startups with their recruitment needs.
                 </p>
                 <br>
-                <?php echo ENV_ROOT . 'includes/Pages_Mining_Countries';?>
+                <?php ENV_ROOT . 'includes/Pages_Mining_Countries';?>
             </div>
-            
+
         </div>
         <div class="col-md-6 well">
             <p>

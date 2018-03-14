@@ -1,7 +1,7 @@
 /*
 CSS for main images loaded in pages etc.
 */
-/* 
+/*
     Created on : Sep 13, 2017, 2:05:35 PM
     Author     : natie
 */
@@ -16,7 +16,7 @@ CSS for main images loaded in pages etc.
 }
 
 @media (min-width: 992px){
-    
+
     .parallax-content {
 
         padding: 0px 20px;
@@ -38,7 +38,7 @@ CSS for main images loaded in pages etc.
             text-transform: uppercase;
         }
     }
-    
+
     .parallax-content-2 {
 
         padding: 0px 20px;
@@ -52,24 +52,24 @@ CSS for main images loaded in pages etc.
             padding-top: 80px;
             text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
         }
-        
+
         p {
             font-size: 18px;
             color: #fff;
             text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
             margin-top: 40px;
         }
-         
+
         .paralax-heading {
             font-size: 24px;
             color: #fff;
             text-shadow: 0 1px 0 #424242, 0 0 5px #424242;
             text-transform: uppercase;
         }
-        
-        
+
+
     }
-    
+
     .sector-headings {
         position: absolute;
         top: 180px;
@@ -80,19 +80,19 @@ CSS for main images loaded in pages etc.
         position: absolute;
         top: 600px;
     }
-    
+
     .background-img {
         text-align: center;
         position: relative;
         padding-top:388px;
     }
-    
+
     .background-construction {
         background: url(../img/sector-construction.jpg) no-repeat center;
         background-attachment: fixed;
         background-size: 100%;
         background-position: top;
-        
+
     }
     .background-engineering{
         background: url(../img/sector-engineering-main.jpg) no-repeat center;
@@ -100,6 +100,14 @@ CSS for main images loaded in pages etc.
         background-size: 100%;
         background-position: top;
     }
+
+    .background-petrochemical{
+        background: url(../img/sector-petrochemical-main.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: top;
+    }
+
     .background-power {
         background: url(../img/sector-power-main.jpg) no-repeat center;
         background-attachment: fixed;
@@ -142,7 +150,7 @@ CSS for main images loaded in pages etc.
         height: 600px;
         background-position: top;
     }
-    
+
   .pages-coal-cat-truck {
         background: url(../img/pages-coal-cat-truck.jpg) no-repeat center;
         background-attachment: fixed;
@@ -151,11 +159,11 @@ CSS for main images loaded in pages etc.
         height: 600px;
         background-position: top;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     .background-coal-mining {
         background: url(../img/pages-coal-mining-excavator.jpg) no-repeat center;
         background-attachment: fixed;
@@ -164,7 +172,7 @@ CSS for main images loaded in pages etc.
         height: 350px;
         background-position: top;
     }
-    
+
     /*Candidates*/
         .background-job-hunting {
         background: url(../img/job-hunting-advice.jpg) no-repeat center;
@@ -191,6 +199,9 @@ CSS for main images loaded in pages etc.
     }
     .background-engineering {
         padding-top: 400px;
+    }
+    .background-petrochemical {
+        padding-top: 500px;
     }
     .background-finance {
         padding-top: 420px;
@@ -227,6 +238,9 @@ CSS for main images loaded in pages etc.
     }
     .background-finance {
         padding-top: 520px;
+    }
+    .background-petrochemical {
+        padding-top: 500px;
     }
     .background-construction {
         padding-top: 650px;

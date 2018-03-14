@@ -9,9 +9,17 @@
 
                         <label>Cell Number<span class="color-red">*</span></label>
                         <input type="tel" name="Cell" class="form-control margin-bottom-20" required="">
-                        
+
                         <label>Nationality (start typing the country name)<span class="color-red">*</span></label>
                         <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
+
+                        <label>Ethnic<span class="color-red">*</span></label>
+                        <select class="form-control" id="Ethnic" name="Ethnic">
+                                <option>Black</option>
+                                <option>White</option>
+                                <option>India</option>
+                                <option>Asian</option>
+                        </select><br>
                         
                         <label for="Relocate">Willing To Relocate?</label>
                         <select class="form-control" id="Relocate" name="Relocate">
@@ -21,9 +29,9 @@
                         </select><br>
                         <hr>
                         <h3>Tell Us About Your Qualification/s</h3>
-                        
+
                         <label>Qualification + Final year of that experience<span class="color-red">*</span></label>
-                        <select class="form-control" id="YearsExperience" name="YearsExperience">
+                        <select class="form-control" id="Qualification" name="Qualification">
                                 <option>None</option>
                                 <option>High School</option>
                                 <option>Certificate</option>
@@ -51,7 +59,7 @@
 
                         <label>Current Company<span class="color-red">*</span></label>
                         <input type="text" name="CompanyName" class="form-control margin-bottom-20" required="">
-                        
+
 
                         <label>Current Salary (Your Basic)<span class="color-red">*</span></label>
                         <input type="text" name="Salary" class="form-control margin-bottom-20" required="">

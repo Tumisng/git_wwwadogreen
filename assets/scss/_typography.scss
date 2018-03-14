@@ -37,9 +37,9 @@ h1,.h1 {
 h1,h2,h3,.h1 {
     color: $grey-darker;
 }
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { 
-	font-family: $heading-font-family; 
-	font-weight: $heading-font-weight; 
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
 }
 
 .heading-upper {
@@ -68,12 +68,12 @@ h3, h4 {line-height: 1.7;}
     line-height: 10px;
     margin-bottom: 0px;
     font-weight: 600;
-    text-decoration: none; 
+    text-decoration: none;
 }
 .job-listing-description {
     font-style: italic;
     font-size: 11px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .heading-underline {
@@ -110,6 +110,10 @@ h3, h4 {line-height: 1.7;}
              font-size: 500%;
 }
 
+.white {
+    color: $white;
+}
+
 .block-margins { margin: 1em 0; }
 
 .unordered-list { list-style-type: disc; }
@@ -121,7 +125,7 @@ h3, h4 {line-height: 1.7;}
     .bold {
         font-size: 350%;
     }
-    
+
     .h1 {
         font-size: 250%
     }

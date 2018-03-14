@@ -5036,6 +5036,9 @@ h3, h4 {
   font-weight: 700;
   font-size: 500%; }
 
+.white {
+  color: #fafafa; }
+
 .block-margins {
   margin: 1em 0; }
 
@@ -6078,7 +6081,7 @@ hr.style11 {
 /*
 CSS for main images loaded in pages etc.
 */
-/* 
+/*
     Created on : Sep 13, 2017, 2:05:35 PM
     Author     : natie
 */
@@ -6142,6 +6145,12 @@ CSS for main images loaded in pages etc.
 
   .background-engineering {
     background: url(../img/sector-engineering-main.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top; }
+
+  .background-petrochemical {
+    background: url(../img/sector-petrochemical-main.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: 100%;
     background-position: top; }
@@ -6226,6 +6235,9 @@ CSS for main images loaded in pages etc.
   .background-engineering {
     padding-top: 400px; }
 
+  .background-petrochemical {
+    padding-top: 500px; }
+
   .background-finance {
     padding-top: 420px; }
 
@@ -6258,6 +6270,9 @@ CSS for main images loaded in pages etc.
 
   .background-finance {
     padding-top: 520px; }
+
+  .background-petrochemical {
+    padding-top: 500px; }
 
   .background-construction {
     padding-top: 650px; }

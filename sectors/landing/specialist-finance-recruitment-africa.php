@@ -1,4 +1,4 @@
-<?php 
+<?php
     $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -68,7 +68,7 @@
     <meta property="og:url" content="<?php echo curPageURL();?>"/>
     <meta property="og:description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>" />
     <meta property="og:image" content="<?php if ($strPageImg !='') {echo $strPageImg;} else{ echo ENV_ROOTURL . 'assets/img/logo.png';}?>"/>
-    <meta property="article:publisher" content="https://www.facebook.com/Adogreen/"/> 
+    <meta property="article:publisher" content="https://www.facebook.com/Adogreen/"/>
 
     <!-- SEO Twitter  -->
     <meta name="twitter:card" content="summary_large_image">
@@ -120,7 +120,7 @@
 					<div class="landing-text wow fadeInUp">
 						<h2>Dedicated African Recruitment</h2>
 				<p>
-					In being established for over 10 years now, AdoGreen understands the importance of recruiting key financial staff who can partner with their employers to be an integral part of the success of the company. Offering the expertise and experience required, we source highly skilled and qualified candidates across all levels of the Finance Sector. 
+					In being established for over 10 years now, AdoGreen understands the importance of recruiting key financial staff who can partner with their employers to be an integral part of the success of the company. Offering the expertise and experience required, we source highly skilled and qualified candidates across all levels of the Finance Sector.
 				</br>
 					If requiring local candidates within areas of skills shortages in Africa, AdoGreen can assist you with a required solution.
 				</p>
@@ -286,7 +286,7 @@
 
 					<!-- /.testimonial 3 -->
 					<div class="testi-item">
-					
+
 						<div class="box">
 
 							<!-- /.testimonial content -->
@@ -310,11 +310,11 @@
 				<div class="row contact-row">
 
 					<div class="col-md-12">
-            
+
                         <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php" role="button">
                 <h4 class="thin-heading">Jobs</h4></a>
-			            <ul class="list-unstyled" id="job-board-listing"> 
-			                    <?php 
+			            <ul class="list-unstyled" id="job-board-listing">
+			                    <?php
 			                        if ($strPageJobList == 'Sector'){
 			                                $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Sector=' . $strPageSector;
 			                        } else {
@@ -325,7 +325,7 @@
 			                        $array = json_decode($json1);
 
 			                        if(isset($array[2])) {
-			                          foreach ($array[2] as $value) {  
+			                          foreach ($array[2] as $value) {
 			                             $strAppDataId = $value->AppDataId;
 			                             $strJobTitle = $value->JobTitle;
 			                             $strJobShortDesc = $value->ShortDescription;
@@ -334,11 +334,11 @@
 			                             $strJobLocation = $value->Location;
 			                             $strJobImgId = $value->ImageUploadedId;
 			                             $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
-			                    ?> 
+			                    ?>
                                 <li>
                                         <div class="card-jobs card-green">
                                                 <a href="<?php echo ENV_ROOTURL . 'jobs-africa/job-details.php?id='.$strAppDataId.'&name='.$strJobTitleURL; ?>">
-                                                        <div class="card-content"> 
+                                                        <div class="card-content">
                                                             <h2 class="title"><?php echo $strJobTitle . ' - ' . $strJobLocation;?></h2>
                                                 </a>
                                         </div>
@@ -347,7 +347,7 @@
 		  						}
 							};
 							?>
-			            	</ul> 
+			            	</ul>
         			</div>
 				</div>
 			</div>
@@ -368,7 +368,7 @@
 						<li><a class="wow fadeInUp" href="https://linkedin.com/company/adogreen" data-wow-delay="0.6s"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
-			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright AdoGreen Africa 2017 - Designed by <a href="http://www.themissingfloor.com">The Missing Floor</a></div>
+			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright AdoGreen Africa &copy; <?php echo date("Y"); ?> - Designed by <a href="http://www.themissingfloor.com">The Missing Floor</a></div>
 			<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
 		</div>
 	</div>
@@ -384,5 +384,22 @@
 	<script>
 		new WOW().init();
 	</script>
+<?php
+        if($strLive == TRUE) {
+ ?>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-26956746-1', 'auto');
+    ga('require', 'linkid');
+    ga('send', 'pageview');
+
+</script>
+<?php
+};
+?>
   </body>
 </html>
