@@ -20,27 +20,27 @@
 
             include_once ENV_ROOT . 'includes/header.php';
 
-// Fill the DropDown Country
-function fill_sector($connect)  {
+function fill_buttons_with_sector($connect)  {
         $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Lookup&Cabinet=Job&Field=Sector';
         $json1 = file_get_contents($json_url);
         $array = json_decode($json1);
         $arrResult = array();
+        $output = '';
 
+    $row = '';
         if(isset($array[2])) {
-          foreach ($array[2] as $value) {
-
+          foreach ($array[2] as $value)
+            {
              $strSector = $value->DisplayValue;
-             echo $strSector .'</br>';
              array_push($arrResult,$strSector);
           }
         }
 
         sort($arrResult);
-        print_r($arrResult);
-        foreach ($arrResult as $row) {
-          $output .= '<option value="' . $row . '">' . $row. '</option>';
-          echo $row;
+        foreach ($arrResult as $row)
+        {
+
+          $output .= '<div class="col-md-3"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "myFunction(this)"  type = "submit" value="' . $row . '" ></input></div>';
         }
         return $output;
  }
@@ -82,33 +82,60 @@ function fill_sector($connect)  {
         }
         return $output;
  }
+// Fill Country
+ function get_country()
+ {
+        $output = '';
+        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&f=Country';
+        $json1 = file_get_contents($json_url);
+        $array = json_decode($json1);
+        $arrResult = [];
+        $found = false;
+
+        if(isset($array[2]))
+        {
+          foreach ($array[2] as $value)
+          {
+             $strCountry = $value->Country;
+             array_push($arrResult,$strCountry);
+          }
+        }
+        sort($arrResult);
+
+        $line = array_unique($arrResult);
+
+        foreach ($line as $row)
+        {
+          $output .= '<input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "submit" value="' . $row . '" ></input>';
+        }
+        return $output;
+ }
 
  ?>
         <div class="container">
             <div class="row padding-bottom-20">
-                    <div class="col-md-8">
-                        <h3>What Job Are You Looking For?</h3>
-                        <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
-                    </div>
-
-                    <div class="col-md-4 hidden-xs">
-                       <h3>Search Sector</h3>
-                        <select class="btn btn-block btn-lg" name="sector" id="sector">
-                            <option value="">All</option>
-                            <?php echo fill_sector($connect); ?>
-                       </select>
-                    </div>
+                    <?php echo fill_buttons_with_sector($connect); ?>
+            </div>
+            <div class="row padding-bottom-20">
+                <div class="col-md-12">
+                    <h3>What Job Are You Looking For?</h3>
+                    <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
                 </div>
+             </div>
              </br>
         </div>
         <div class="container">
-                    <div class="row" id="show_sector">
-
-                        <ul class="list-unstyled joblist" id="job-board-listing">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8" id="show_sector">
+                <ul class="list-unstyled joblist" id="job-board-listing">
                          <?php echo fill_job($connect);?>
                         </ul>
-
-                    </div>
+            </div>
+            <div class="col-md-2">
+            Countries:
+                </br> <?php echo get_country(); ?>
+            </div>
         </div>
 <?php
     include ENV_ROOT . 'includes/footer.php';
@@ -138,7 +165,40 @@ function fill_sector($connect)  {
                   });
              });
         });
- </script>
+     </script>
+     <script>
+          function myFunction(objSectorName)
+          {
+
+         var sector = objSectorName.value;
+                  $.ajax({
+                       url:"load_data.php",
+                       method:"POST",
+
+                       data:{sector,sector},
+                       success:function(data){
+                            $('#show_sector').html(data);
+                       }
+                  });
+          }
+     </script>
+     
+     <script>
+          function function_fill_by_country(objCountryName)
+          {
+
+         var country = objCountryName.value;
+                  $.ajax({
+                       url:"load_data.php",
+                       method:"POST",
+
+                       data:{country,country},
+                       success:function(data){
+                            $('#show_sector').html(data);
+                       }
+                  });
+          }
+     </script>
     </body>
 </html>
 
