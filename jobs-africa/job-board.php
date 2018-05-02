@@ -12,6 +12,7 @@ while (!file_exists($strEnvConfigFile))
     }
 }
 include_once $strEnvConfigFile;
+//include_once ENV_ROOT . 'includes/libJobBoard.php';
 
 //include_once '../includes/header.php';
 
@@ -117,7 +118,7 @@ function get_country()
         $countryNameWithOutSpaces = str_replace(' ', '', $row);
 
         $output .= '<input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src='.'../assets/img/'.$countryNameWithOutSpaces.'.gif value="'.'' . $row . '" >'.$row.' </input>';
-        
+
         }
     return $output;
 }
@@ -125,7 +126,7 @@ function get_country()
 <div class="container">
 
     <div>
-        
+
     </div>
     <div class="row padding-bottom-20">
 <?php echo fill_buttons_with_sector($connect); ?>
