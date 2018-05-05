@@ -4,6 +4,9 @@ include_once 'environment/config.php';
 $strPageSlider = TRUE;
 $strPageHero = TRUE;
 include 'includes/header.php';
+include 'includes/front_page_slider.php';
+
+
 
 if (Detect::isMobile()) {
     echo '
@@ -188,7 +191,6 @@ if (Detect::isComputer() || Detect::isTablet()) {
 ?>
 
 
-
 <!--<div class="container-fluid row-breaker">
     <div class="row">
         <div class="col-md-12">
@@ -251,9 +253,6 @@ if (isset($array[2])) {
         </div>
     </div>
 </div>-->
-
-
-
 <?php
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
