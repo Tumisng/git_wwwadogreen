@@ -8,9 +8,9 @@ include_once ENV_ROOT . 'includes/header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center  animate-fade-in">
-            <h1 class="heading-underline h1">Why <b>AdoGreen?</b></h1>
+            <h1 class="heading-underline h1">Why <b>AdoGreen Africa?</b></h1>
             <h3 class="heading-upper">
-                ADOGREEN RECRUITMENT HAS BEEN ESTABLISHED FOR 10 YEARS AND FUNCTIONS AS A SPECIALIST RECRUITMENT CONSULTANCY IN THE AFRICAN REGION. AROUND 7/10 CANDIDATES PLACED, STILL WORK WITH THEIR EMPLOYER, MANY OF WHICH HAVE BECOME SENIOR MEMBERS OF STAFF LEADING LARGE DIVISIONS AT THE COMPANY. We believe in longevity and an effective long term recruitment solution. We are excited to partner with candidates who can offer stability, loyalty and have the right career motives, coming with an excellent track record.
+                ADOGREEN AFRICA HAS BEEN ESTABLISHED SINCE 2007 AND FUNCTIONS AS A SPECIALIST RECRUITMENT, HUMAN RESOURCES AND RPO CONSULTANCY IN THE AFRICAN REGION. We believe in longevity and an effective long term relationships with our clients and candidates. We are excited to partner with candidates who can offer stability, loyalty and have the right career motives, coming with an excellent track record.
             </h3>
             <hr>
         </div>
@@ -18,8 +18,8 @@ include_once ENV_ROOT . 'includes/header.php';
     <div class="row">
         <div class="col-md-12">
             <h3>Overview</h3>
-            <p>Owing to the success of <strong>tried and tested</strong> recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments. This has positioned us with the confidence to embrace any <a href="/africa/recruitment-africa-local-specialist-agency.html">recruitment</a> need and challenge within
-                <a href="/africa/recruitment-africa-local-specialist-agency.html">Africa</a>. Although there is a primary focus of 4 largely broad sectors, we are <strong>technically and intelligently</strong> equipped with the experience to tackle the most challenging of assignments.
+            <p>Owing to the success of <strong>tried and tested</strong> recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen Africa has been able to deliver above expectation on recruitment specs, human resources and RPO across a spectrum of diverse environments. This has positioned us with the confidence to embrace any <a href="/africa/recruitment-africa-local-specialist-agency.php">recruitment</a>, HR and <a href="/services/recruitment-process-outsourcing-africa.php">RPO</a> need and challenge within
+                <a href="/africa/recruitment-africa-local-specialist-agency.php">Africa</a>. Although there is a primary focus of 6 largely broad sectors, we are <strong>technically and intelligently</strong> equipped with the experience to tackle the most challenging of assignments.
             </p>
             <h3>Targeted Approach:</h3>
             <p>
@@ -30,7 +30,7 @@ include_once ENV_ROOT . 'includes/header.php';
         <div class="col-md-12">
             <h3>Technology Built For Africa:</h3>
             <p>
-                AdoGreen has a highly efficient and cost-effective recruitment system designed to deliver from small to large-scale recruitment campaigns within the African environment, using our state of the art recruitment portal,
+                AdoGreen Africa has a highly efficient and cost-effective recruitment system designed to deliver from small to large-scale recruitment campaigns within the African environment, using our state of the art recruitment portal,
                 <a href="http://www.recruitment-software-solutions.co.za">Regeneration Recruitment Software.</a> Our methodologies are completely transparent and highly targeted in response to each unique client need with particular focus on the African continent.
             </p>
             <div class="row">

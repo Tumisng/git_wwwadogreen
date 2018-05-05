@@ -22,9 +22,9 @@ if($strLive == TRUE) {
 //SITE SETTINGS
 // Site Title, Description etc
 define('ENV_ROBOT', 'index, follow');
-define('ENV_TITLE', 'AdoGreen Africa Recruitment & Jobs');
-define('ENV_KEYWORDS', 'Africa Recruitment | Jobs | Heavy Engineering | Power / Energy | Building Construction | Civil Roads Waterworks | Finance');
-define('ENV_DESCRIPTION', 'AdoGreen Africa Recruitment & Jobs, specialists heavy engineering, power/energy, building and construction, civil roads waterworks, finance');
+define('ENV_TITLE', 'AdoGreen Africa Recruiment | HR | RPO');
+define('ENV_KEYWORDS', 'Africa Recruitment | HRO | RPO | Jobs | Heavy Engineering | Power / Energy | Building Construction | Civil Roads Waterworks | Finance');
+define('ENV_DESCRIPTION', 'AdoGreen Africa Recruitment | HRO | RPO & Jobs, specialists heavy engineering, power/energy, building and construction, civil roads waterworks, finance');
 define('ENV_WEBSITE', 'http://www.adogreen.com/');
 
 

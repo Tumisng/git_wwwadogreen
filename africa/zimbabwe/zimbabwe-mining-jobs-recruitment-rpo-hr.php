@@ -11,12 +11,12 @@
     }
     include_once $strEnvConfigFile;
 
-    $strPageTitle = 'Botswana Diamond Mining Sector - Jobs And Recruitment';
-    $strPageDescription = 'Diamond mining jobs and recruitment information. AdoGreen recruitment is a specialist recruitment of locals and expats in Botswana';
-    $strPageKeywords = 'Diamond Mining Jobs Botswana Agency Recruitment';
+    $strPageTitle = 'Zimbabwe Mining Jobs | Recruitment | RPO | Human Resources';
+    $strPageDescription = 'Zimbabwe Mining RPO | Recruitment | Human Resource Agency';
+    $strPageKeywords = 'Zimbabwe Mining RPO | Recruitment | Human Resource Agency';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-    $strPageImg = ENV_ROOTURL . '/assets/img/botswana-mining-recruitment-jobs.png';
-    $strPageCountry = 'Botswana';
+    $strPageImg = ENV_ROOTURL . '/assets/img/Zimbabwe-mining-recruitment-jobs.png';
+    $strPageCountry = 'Zimbabwe';
     $strPageSector = 'Mining';
     $strPageJobList = '';
 
@@ -28,7 +28,7 @@
         <div class="col-md-12">
             <h1><?php echo $strPageTitle; ?></h1>
             <p class="post-meta">
-                Published: December 2015
+                Published: May 2018
             </p>
             <hr>
         </div>
@@ -39,14 +39,14 @@
                  <a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.html " role="button"><h4>Mining</h4></a>
             <div class="hidden-xs">
                 <p>
-                    Botswana’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, Zimbabwe, and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a>. Like Zambia, Botswana is completely land locked.
+                    Zimbabwe’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, <a href="<?php echo ENV_ROOTURL; ?>africa/botswana/mining-jobs-botswana-construction-engineering.html">Botswana</a>, and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a> and <a href="<?php echo ENV_ROOTURL; ?>africa/mozambique/mozambique-mining-jobs-engineering-construction-recruitment.html">Mozambique</a>. Like Zambia and Botswana, Zimbabwe is completely land locked.
                 </p>
                 <br />
                 <p>
-                    Large mining companies operating in Botswana include De Beers which have been working with the Botswana government. This resulted the starting of the mining company called Debswana.
+                    Zimbabwe is currently undergoing major growth in various sectors with large investments flowing into the country. Many companies are moving and are in need of specialist services in the human resources sector.
                 </p>
                 <br />
-                <h4>Right Recruitment Tools For Botswana</h4>
+                <h4>Right Recruitment Tools For Zimbabwe</h4>
                 <p>
                     <a href="recruitment-local-botswana-citizens-firm.html">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for <a href="recruitment-local-botswana-citizens-firm.html">full time, part time or contract work in Botswana</a>. Our database consist of all levels of candidates from office commercial to project managers and CEOs – all Motswana citizens. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
                 </p>
@@ -81,16 +81,16 @@
             </p>
             <br>
             <p>
-                If diamonds mine would be measured by the value of the recovered diamonds, then <a href="jwaneng-mining-jobs-engineering-recruitment-agency.php">Jwaneng would be the richest diamond mine in the world</a> Jwaneng is an open pit mine in the Kalahari Desert Botswana.
+                If diamonds mine would be measured by the value of the recovered diamonds, then <a href="jwaneng-mining-jobs-engineering-recruitment-agency.html">Jwaneng would be the richest diamond mine in the world</a> Jwaneng is an open pit mine in the Kalahari Desert Botswana.
             </p>
             <br>
             <div>
                 <h3>Specialist Local Recruitment</h3>
                 <p>
-                    AdoGreen has been specialising and the placement and recruitment of locals and expats in Botswana. We have developed key relationships within Botswana and abroad. We are able to assist from a SME with a few open positions to large scale recruitment needs of bigger projects. We understand the Botswana culture and environment and are capable to give good advice in regards to the recruitment sector and what to expect in Botswana.
+                    AdoGreen Africa has been specialising in Recruitment, Human Resources and Recruitment Process Outsourcing in Zimbabwe. AdoGreen Africa focuses on local first recruitment.  We have developed key relationships within Zimbabwe and abroad. We are able to assist from a SME with a few open positions to large scale recruitment, HR and RPO needs of bigger projects. We understand the Zimbabwean culture and environment and are capable to give good advice in regards to the recruitment sector and what to expect in Zimbabwe.
                 </p>
                 <br />
-                <p>Botswana has a small population in relation to other African countries and there are high demand on the skilled local workforce. As a client you want to work with an agency who understands the <a href="recruitment-local-botswana-citizens-firm.php">job and recruitment market in Botswana</a> at every level being able to provide insight into your expansion and needs. In Botswana often putting a add in the newspaper does not mean you will get the candidates. We have an extensive referral network and have built up a highly reputable name in the local Botswana Industry. Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you.
+                <p>Zimbabwe has a much larger population than its neighbour Botswana. Because of various reasons many of the skilled labour moved to neighbouring countries and abroad and therefore are in high demand on the skilled local workforce. As a client you want to work with an agency who understands the <a href="recruitment-local-botswana-citizens-firm.html">job and recruitment market in Botswana</a> at every level being able to provide insight into your expansion and needs. In Botswana often putting a add in the newspaper does not mean you will get the candidates. We have an extensive referral network and have built up a highly reputable name in the local Botswana Industry. Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you.
                 </p>
                 <br/>
             </div>

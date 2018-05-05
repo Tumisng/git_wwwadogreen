@@ -1,7 +1,7 @@
 <?php
 include_once 'environment/config.php';
 
-$strPageSlider = TRUE;
+$strPageSlider = FALSE;
 $strPageHero = TRUE;
 include 'includes/header.php';
 
@@ -47,75 +47,13 @@ if (Detect::isComputer() || Detect::isTablet()) {
     <div class="container cd-main-content sub-nav-hero">
         <div class="row">
             <div class="col-md-12 text-center  animate-fade-in">
-                 <h1 class="heading-underline h1"><b>AdoGreen Africa</b> - Heavy Industry Recruitment</h1>
-                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa has years of experience within the African Market</h3>
+                 <h1 class="h1"><b>ADOGREEN AFRICA</b></h1>
+                 <h1 class="heading-underline h2">Specialist Recruitment | HRO | RPO</h1>
+                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in he African market</h3>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-            </div>
-        </div>
-        <div class="row animate-fade-in">
-            <div class="col-md-8 paragraph padding-bottom-40  animate-fade-in">
-
-                <p>
-                    With years of experience within the African market, AdoGreen Africa has developed  a proven methodology in targeting local talent through networking capabilities.  Our goal is to source right company and cultural fit.
-                </p>
-                <p>
-                    Local First Recruitment: AdoGreen Africa has developed various methods for reaching local candidates within African countries that conventional recruitment methods lack.  We achieve this much faster and more economically than other recruitment methods used. Our focus lies mainly within the heavy industry sectors, however we have been highly successful in working over a diverse range of others as well.
-                    We assist companies with their growth areas when moving into new locations within Africa.</p>
-                <p>
-                    Although our specialisation is on sourcing local candidates, we do provide experienced expats with working experience in Africa, and are able to  assist irrespective of the location.
-                </p>
-            </div>
-            <div class="col-md-4 animate-fade-in-right">
-
-                <a class="btn btn-lg btn-default btn-block" href="#">
-                    <i class="fa fa-bullseye fa-2x  text-center"></i><h5> Specialist Recruitment</h5>
-                </a>
-
-
-            <a class="btn btn-lg btn-default btn-block " href="#">
-                    <i class="fa fa-check fa-2x text-center"></i> <h5>Local Talent Focus</h5>
-                </a>
-
-
-            <a class="btn btn-lg btn-default btn-block " href="#">
-                    <i class="fa fa-diamond fa-2x text-center"></i><h5>Established For 10 + Years</h5>
-                </a>
-
-            </div>
-        </div>
-    </div>
-            '
-    ;
-}
-if (Detect::isComputer() || Detect::isTablet()) {
-    echo '
-
-    <!-- ******************* -->
-    <!--      Seoncd Row     -->
-    <!-- ******************* -->
-        <div class="container-fluid padding-bottom-40 background-front-construction">
-        <div class="row padding-bottom-40  animate-fade-in">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 parallax-content">
-                <h1 class="animate-fade-in bold">Specialist Heavy Industry Recruitment For Africa</h1>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-    </div>
-    <div class="container-fluid front-sector">
-        <div class="row padding-bottom-40">
-            <div class="col-md-12  text-center  animate-fade-in">
-                <h1 class="heading-underline h1">Sectors Focus</h1>
-                <h3 class="text-center">Established since 2007, AdoGreen Africa has years of experience within the African Market</h3>
-            </div>
-        </div>
-        <div class="row padding-bottom-40  animate-fade-in">
+    <div class="row padding-bottom-40  animate-fade-in">
             <a href="sectors/mining-jobs-africa-recruitment.php">
                 <div class="col-md-2 col-sm-6">
                         <img class="img-responsive" width="100%" src="assets/img/sector-mining-front.jpg" alt="Africa Mining Recruitment / Jobs">
@@ -147,8 +85,64 @@ if (Detect::isComputer() || Detect::isTablet()) {
                 </div>
             </a>
         </div>
+
+            '
+    ;
+}
+if (Detect::isComputer() || Detect::isTablet()) {
+    echo '
+
+    <!-- ******************* -->
+    <!--      Seoncd Row     -->
+    <!-- ******************* -->
+    <div class="container-fluid padding-bottom-40 background-front-construction">
+        <div class="row padding-bottom-40  animate-fade-in">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 parallax-content">
+                <h1 class="animate-fade-in bold">Specialist Heavy Industry Recruitment </br> Human Resource & Recruitment Process Outsourcing </br>For Africa</h1>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                </br>
+                </br>
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-8 paragraph padding-bottom-40  animate-fade-in">
+
+                <p>
+                    With years of experience within the African market, AdoGreen Africa has developed  a proven methodology in targeting local talent through networking capabilities.  Our goal is to source right company and cultural fit.
+                </p>
+                <p>
+                    Local First Recruitment: AdoGreen Africa has developed various methods for reaching local candidates within African countries that conventional recruitment methods lack.  We achieve this much faster and more economically than other recruitment methods used. Our focus lies mainly within the heavy industry sectors, however we have been highly successful in working over a diverse range of others as well.
+                    We assist companies with their growth areas when moving into new locations within Africa.</p>
+                <p>
+                    Although our specialisation is on sourcing local candidates, we do provide experienced expats with working experience in Africa, and are able to  assist irrespective of the location.
+                </p>
+            </div>
+            <div class="col-md-4 animate-fade-in-right">
+
+                <a class="btn btn-lg btn-default btn-block" href="services/recruitment-process-outsourcing-africa.php">
+                    <i class="fa fa-bullseye fa-2x  text-center"></i><h5> Specialist Recruitment</h5>
+                </a>
+
+
+            <a class="btn btn-lg btn-default btn-block " href="#">
+                    <i class="fa fa-check fa-2x text-center"></i> <h5>Human Resources</h5>
+                </a>
+
+
+            <a class="btn btn-lg btn-default btn-block " href="services/recruitment-process-outsourcing-africa.php">
+                    <i class="fa fa-diamond fa-2x text-center"></i><h5>RPO</h5>
+                </a>
+
+            </div>
+        </div>
+    </div>s
     <div class="container-fluid background-front-excavator">
         <div class="row padding-bottom-40  animate-fade-in">
             <div class="col-md-12 parallax-content-2">
@@ -167,10 +161,10 @@ if (Detect::isComputer() || Detect::isTablet()) {
         <div class="row">
                  <div class="col-md-2"></div>
                  <div class="col-md-6 text-left paragraph  animate-fade-in">
-                     <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment</h1>
+                     <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment | HR | RPO</h1>
                      <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
 
-                     <p class="text-left">AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
+                     <p class="text-left">AdoGreen Africa provides key fundamental services for companies in Africa whether it is Recruitment Process Outsourcing, Human Resource Outsourcing or Specialist Recruitment. AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
 
                          We understand Africa, and the need to source <b>experienced expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
                         </p>

@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -19,7 +19,7 @@
 	$strPageCountry = 'Zambia';
 	$strPageSector = 'Mining';
 	$strPageJobList = 'Sector';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">
@@ -37,7 +37,7 @@
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
                     <div class="well hidden-xs">
                 <p>
-                    Zambia’s neighbouring countries are the DRC (Democratic Republic of Congo), Tanzania, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/mozambique/mozambique-mining-jobs-engineering-construction-recruitment.html">Mozambique</a>, Zimbabwe, <a href="<?php echo ENV_ROOTURL; ?>africa/botswana/mining-jobs-botswana-construction-engineering.html">Botswana</a> and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a>.
+                    Zambia’s neighbouring countries are the DRC (Democratic Republic of Congo), Tanzania, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/mozambique/mozambique-mining-jobs-engineering-construction-recruitment.html">Mozambique</a>, Zimbabwe, <a href="<?php echo ENV_ROOTURL; ?>africa/botswana/mining-jobs-botswana-construction-engineering.html">Botswana</a>.
                 </p>
                 <br />
                 <p>

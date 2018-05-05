@@ -30,6 +30,7 @@
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Africa Construction Recruitment</a></li>
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Africa Engineering Recruitment</a></li>
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php" role="button">Africa Power Generation Recruitment</a></li>
+                            <li><a href="<?php echo ENV_ROOTURL;?>sectors/africa-renewable-energy-jobs-recruitment.php" role="button">Africa Renewable Energy Recruitment</a></li>
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Africa Manufacturing Recruitment</a></li>
                         </ul>
                     </div>
@@ -55,7 +56,8 @@
                     <h4>Contact Details</h4>
                         <address>
 
-                            <strong>AdoGreen Africa Recruitment</strong>
+                            <strong>AdoGreen Africa</strong>
+                            <strong>Recruitment | HR | RPO</strong>
                             <br/> South Africa Offices
                             <br/> Phone: +27 (0) 87 813 0303
                             <br/> Fax: +27 (0) 86 607 1173
