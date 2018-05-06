@@ -187,7 +187,7 @@ include_once ENV_ROOT . 'includes/head.php';
 //            </section> <!-- .cd-hero -->'
 //            };
 //                ;
-             ?>
+            ?>
 
                 <nav class="cd-secondary-nav">
 

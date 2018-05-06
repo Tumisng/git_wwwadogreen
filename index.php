@@ -4,6 +4,9 @@ include_once 'environment/config.php';
 $strPageSlider = FALSE;
 $strPageHero = TRUE;
 include 'includes/header.php';
+//include 'includes/front_page_slider.php';
+
+
 
 if (Detect::isMobile()) {
     echo '

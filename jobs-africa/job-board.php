@@ -12,7 +12,6 @@ while (!file_exists($strEnvConfigFile))
     }
 }
 include_once $strEnvConfigFile;
-//include_once ENV_ROOT . 'includes/libJobBoard.php';
 
 //include_once '../includes/header.php';
 
@@ -116,9 +115,9 @@ function get_country()
     foreach ($line as $row)
     {
         $countryNameWithOutSpaces = str_replace(' ', '', $row);
-
-        $output .= '<input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src='.'../assets/img/'.$countryNameWithOutSpaces.'.gif value="'.'' . $row . '" >'.$row.' </input>';
-
+//btn btn-block button-green
+        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src='.'../assets/img/flags/'.$countryNameWithOutSpaces.'.svg value="'.'' . $row . '" >'.$row.' </input>';
+        
         }
     return $output;
 }
@@ -126,7 +125,7 @@ function get_country()
 <div class="container">
 
     <div>
-
+        
     </div>
     <div class="row padding-bottom-20">
 <?php echo fill_buttons_with_sector($connect); ?>
@@ -139,6 +138,16 @@ function get_country()
     </div>
     </br>
 </div>
+<style>
+    .img-flag-icon
+{
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 150px
+}
+
+</style>
 <div class="container">
     <div class="col-md-2">
     </div>
@@ -178,6 +187,7 @@ include ENV_ROOT . 'includes/js_scripts.php';
                     $('#show_sector').html(data);
                 }
             });
+<<<<<<< HEAD
         });
     });
 </script>

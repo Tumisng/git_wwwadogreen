@@ -5126,6 +5126,15 @@ h3, h4 {
   display: inline-block;
   padding: 0; }
 
+.img-flag-icon
+{
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 150px
+}
+
+
 #logo {
   background: url("/assets/img/logo-header.svg") 0 0 no-repeat !important;
   width: 80px;
