@@ -29,33 +29,8 @@
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
 <!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/animate.css">-->
     <?php if ($strPageSlider == TRUE) { ?>
-        <!-- REVOLUTION STYLE SHEETS -->
-        <link rel="stylesheet" type="text/css" href="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/css/settings.css">
-        <!-- REVOLUTION LAYERS STYLES -->
 
-
-        <link rel="stylesheet" type="text/css" href="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/css/layers.css">
-
-        <!-- REVOLUTION NAVIGATION STYLES -->
-        <link rel="stylesheet" type="text/css" href="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/css/navigation.css">
-
-        <!-- FONT AND STYLE FOR BASIC DOCUMENTS, NO NEED FOR FURTHER USAGE IN YOUR PROJECTS-->
-        <link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo ENV_ROOTURL; ?>assets/plugins/assets/css/noneed.css">
-        <!-- REVOLUTION JS FILES -->
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<!--        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="<?php echo ENV_ROOTURL; ?>assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+    
     <?php }; ?>
     <meta property="fb:app_id" content="126845677382791"/>
     <meta property="og:title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>" />

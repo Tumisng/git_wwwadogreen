@@ -39,7 +39,7 @@
                  <a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.html " role="button"><h4>Mining</h4></a>
             <div class="hidden-xs">
                 <p>
-                    Zimbabwe’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, <a href="<?php echo ENV_ROOTURL; ?>africa/botswana/mining-jobs-botswana-construction-engineering.html">Botswana</a>, and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a> and <a href="<?php echo ENV_ROOTURL; ?>africa/mozambique/mozambique-mining-jobs-engineering-construction-recruitment.html">Mozambique</a>. Like Zambia and Botswana, Zimbabwe is completely land locked.
+                    Zimbabwe’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, <a href="<?php echo ENV_ROOTURL; ?>africa/botswana/mining-jobs-botswana-construction-engineering.html">Botswana</a>, and <a href="<?php echo ENV_ROOTURL; ?>africa/mozambique/mozambique-mining-jobs-engineering-construction-recruitment.html">Mozambique</a>. Like Zambia and Botswana, Zimbabwe is completely land locked.
                 </p>
                 <br />
                 <p>
@@ -48,7 +48,7 @@
                 <br />
                 <h4>Right Recruitment Tools For Zimbabwe</h4>
                 <p>
-                    <a href="recruitment-local-botswana-citizens-firm.html">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for <a href="recruitment-local-botswana-citizens-firm.html">full time, part time or contract work in Botswana</a>. Our database consist of all levels of candidates from office commercial to project managers and CEOs – all Motswana citizens. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
+                    <a href="recruitment-local-botswana-citizens-firm.html">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Zimbabwean candidates (local citizens) whether it is for <a href="recruitment-local-botswana-citizens-firm.html">full time, part time or contract work in Botswana</a>. Our database consist of all levels of candidates from office commercial to project managers and CEOs – all Zimbabweab citizens. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise human resource service.
                 </p>
                 <br>
             </div>
