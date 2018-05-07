@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Contact AdoGreen Afrca Recruitment</h1>
+            <h1>Contact AdoGreen Africa Recruitment</h1>
             <p>Owing to the success of <strong>tried and tested</strong> recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen Africa has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments. This has positioned us with the confidence to embrace any recruitment need and challenge within Africa. Although there is a primary focus on heavy industry and sectors, we continue to be successful in fulfilling broader specs beyond these requirements.
             </p>
             <hr>
@@ -31,11 +31,13 @@
                     <li><a href="#"><i class="fa fa-phone"></i> +27 87 813 0303</a></li>
                     <li><a href="http://www.adogreen.com"><i class="fa fa-globe"></i> http://www.adogreen.com</a></li>
                 </ul>
+                </br>
                 <ul class="list-unstyled who margin-bottom-30">
                     <li><i class="fa fa-home"></i> Botswana
                         <br>Plot 47 Unit 9 </br>
                         Gaborone International Commerce Park </li>
                 </ul>
+                </br>
                 <ul class="list-unstyled who margin-bottom-30">
                     <li>Industrial Assessments</li>
                     <li><i class="fa fa-home"></i> Rustenburg
