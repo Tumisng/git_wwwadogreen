@@ -52,7 +52,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
             <div class="col-md-12 text-center  animate-fade-in">
                  <h1 class="h1"><b>ADOGREEN AFRICA</b></h1>
                  <h1 class="heading-underline h2">Specialist Recruitment | HRO | RPO</h1>
-                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in he African market</h3>
+                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
             </div>
         </div>
     </div>
