@@ -36,10 +36,10 @@
     <div class="row">
         <div class="col-md-4">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
-                 <a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.html " role="button"><h4>Mining</h4></a>
+                 <a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.php " role="button"><h4>Mining</h4></a>
             <div class="hidden-xs">
                 <p>
-                    Botswana’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, Zimbabwe, and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a>. Like Zambia, Botswana is completely land locked.
+                    Botswana’s neighbouring countries are South Africa, Malawi, <a href="<?php echo ENV_ROOTURL; ?>africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.php">Zambia</a>, Zimbabwe, and <a href="<?php echo ENV_ROOTURL; ?>africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.php">Namibia</a>. Like Zambia, Botswana is completely land locked.
                 </p>
                 <br />
                 <p>
@@ -48,7 +48,7 @@
                 <br />
                 <h4>Right Recruitment Tools For Botswana</h4>
                 <p>
-                    <a href="recruitment-local-botswana-citizens-firm.html">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for <a href="recruitment-local-botswana-citizens-firm.html">full time, part time or contract work in Botswana</a>. Our database consist of all levels of candidates from office commercial to project managers and CEOs – all Motswana citizens. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
+                    <a href="recruitment-local-botswana-citizens-firm.php">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for <a href="recruitment-local-botswana-citizens-firm.php">full time, part time or contract work in Botswana</a>. Our database consist of all levels of candidates from office commercial to project managers and CEOs – all Motswana citizens. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
                 </p>
                 <br>
             </div>
@@ -66,7 +66,7 @@
             <h3>Debswana Diamond Mining</h3>
             <p>
                 Debswana (a 50-50 joint association of De Beers) represented all jewel preparation in Botswana from its four mines. This agreement is deemed to be one of the best in the mining industry in Africa. It has provided a stable environment for the
-                <a href="mining-jobs-botswana-construction-engineering.html">mining industry in Botswana</a> to grow and develop. In 2005, Debswana treated something like 31.2 million metric tons (Mt) of mineral to yield 31,890,000 carats (6,378 kg), which was a weight increment of more than 2% contrasted and 2004. Debswana’s jewel creation incorporated 148,900,000 carats (29,780 kg) from the 34-year-old Orapa Mine, which was a 7% decay contrasted and 2004; 15,600,000 carats (3,120 kg) from the 23-year-old Jwaneng Mine, which was a 14% increment contrasted and 2004; 1,097,000 carats (219.4 kg) from the 20-year-old Letlhakane Mine, which was a 6% expansion contrasted and 2004; and 246,278 carats (49.2556 kg) from the 2-year-old Damtshaa Mine, which was a 27% decrease from that of 2004. The preparation decrease at Orapa was credited to the departure of a pull way due to an incline disappointment and a blaze, which devastated a stacking shovel.
+                <a href="mining-jobs-botswana-construction-engineering.php">mining industry in Botswana</a> to grow and develop. In 2005, Debswana treated something like 31.2 million metric tons (Mt) of mineral to yield 31,890,000 carats (6,378 kg), which was a weight increment of more than 2% contrasted and 2004. Debswana’s jewel creation incorporated 148,900,000 carats (29,780 kg) from the 34-year-old Orapa Mine, which was a 7% decay contrasted and 2004; 15,600,000 carats (3,120 kg) from the 23-year-old Jwaneng Mine, which was a 14% increment contrasted and 2004; 1,097,000 carats (219.4 kg) from the 20-year-old Letlhakane Mine, which was a 6% expansion contrasted and 2004; and 246,278 carats (49.2556 kg) from the 2-year-old Damtshaa Mine, which was a 27% decrease from that of 2004. The preparation decrease at Orapa was credited to the departure of a pull way due to an incline disappointment and a blaze, which devastated a stacking shovel.
             </p>
             <br />
             <h3>Diamond Sales Moving To Botswana</h3>

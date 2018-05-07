@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -10,7 +10,7 @@
        }
     }
     include_once $strEnvConfigFile;
-    
+
     $strPageTitle = 'Ghana Mining Jobs - Specialist Recruitment Gold';
     $strPageDescription = 'Ghana mining industry jobs. Specialist recruitment in Africa';
     $strPageKeywords = 'Ghana Mining Jobs Specialist Recruitment Agency Gold';
@@ -19,10 +19,10 @@
     $strPageCountry = 'Ghana';
     $strPageSector = 'Renewable';
     $strPageJobList = '';
-    
+
     include_once ENV_ROOT . 'includes/header.php';
     ?>
-   
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -54,12 +54,12 @@
 
                 <br>
                 <?php include ENV_ROOT . 'includes/Page_Recruitment_Partner.php';?>
-                
+
             </div>
             <div class="hidden-xs">
                     <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
             </div>
-        </div>         
+        </div>
         <div class="col-md-6 well">
             <div>
                 <div>
@@ -81,6 +81,9 @@
                     </p>
                     <br>
                     <p>
+                AdoGreen Africa is a specialist Recruitment | HR | RPO consultancy focusing on finding local talent in <?php echo $strPageCountry; ?>. As a client you want to work with an agency who understands the job and recruitment market at every level being able to provide insight into your expansion and needs. We have an extensive referral network and have built up trusted relationships and a highly reputable name in <?php echo $strPageCountry; ?>. Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you.
+            </p>
+                    <p>
                         Whether you are looking for market and salary information or running a recruitment drive for large scale projects we have the expertise and tools to assist you. Why AdoGreen is so effective in working within Africa, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships.
                     </p>
                     <br>
@@ -90,7 +93,7 @@
                     <br>
                 </div>
             </div>
-            
+
         </div>
         <div class="col-md-2">
             <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>
@@ -100,6 +103,6 @@
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
- 
+
     </body>
 </html>

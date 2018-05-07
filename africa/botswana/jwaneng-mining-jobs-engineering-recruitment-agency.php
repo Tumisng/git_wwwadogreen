@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -18,7 +18,7 @@
     $strPageImg = ENV_ROOTURL . '/assets/img/botswana-jwaneng-mining-jobs.png';
     $strPageCountry = 'Botswana';
     $strPageSector = 'Mining';
-    
+
     include_once ENV_ROOT . 'includes/header.php';
     ?>
 <div class="container">
@@ -26,7 +26,7 @@
         <div class="col-md-12">
             <h1>Jwaneng Industry - Diamond Mining, Engineering Jobs And Recruitment</h1>
             <p class="post-meta">
-                Published: December 2015
+                Published: May 2018
             </p>
             <hr>
         </div>
@@ -45,24 +45,24 @@
         <div class="col-md-6">
             <h2>Recruitment needs in Botswana?</h2>
             <p>
-                <a href="recruitment-local-botswana-citizens-firm.php">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for full time, part time or contract work in Botswana. Our database consist of all levels of <b>active local Botswana </b>candidates from office commercial to project managers and CEOs. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
+                <a href="recruitment-local-botswana-citizens-firm.php">New business contract or critical staffing needs in Botswana?</a> We specialise in the recruitment of Motswana candidates (local citizens) whether it is for full time, part time or contract work in Botswana. Setting up of a new HR department or in need of RPO )Recruitment Process Outsourcing). Our database consist of all levels of <b>active local Botswana </b>candidates from office commercial to project managers and CEOs. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
             </p>
             <h3>Why AdoGreen?</h3>
                 <p>AdoGreen has established itself as a leading recruitment agency within <a href="/africa/botswana/mining-jobs-botswana-construction-engineering.php">Botswana</a>. Through our well developed network we target the most sought after local talent including those passive on the job market. We work with you to expand your business in Botswana with a strong local presence.
                 </p>
             <h3>Jwaneng (Botswana) Richest Diamond Mine</h3>
-                <p>Situated in the Naledi River Valley of the Kalahari in the Southern District of Botswana is the town of Jwaneng. 
-                    It is about 120 km west of Gaborone. 
-                    Although Jwaneng is inside the Southern District it is not part of this 
+                <p>Situated in the Naledi River Valley of the Kalahari in the Southern District of Botswana is the town of Jwaneng.
+                    It is about 120 km west of Gaborone.
+                    Although Jwaneng is inside the Southern District it is not part of this
                     district but rather a separate district with its own Town Council.</p><br>
-                <p>Jwaneng is home to the richest diamond mine in the world Jwaneng Diamond mine in regards to Gem-Quality Diamonds, 
-                    carries little resemblance to the meaning of its name “a place of small stones” (Setswana). The pipe was discovered 
-                    in the Valley of the Stars “Naledi River Valley” in 1972. Jwaneng Diamond Mine is a partnership between the Botswana 
-                    government and the De Beers group, and began operations in 1982 when it was opened by the then President of Botswana, 
-                    His Excellency Sir Ketumile Masire. It is an open pit mine. When Jwaneng started as a town it was a closed town and 
+                <p>Jwaneng is home to the richest diamond mine in the world Jwaneng Diamond mine in regards to Gem-Quality Diamonds,
+                    carries little resemblance to the meaning of its name “a place of small stones” (Setswana). The pipe was discovered
+                    in the Valley of the Stars “Naledi River Valley” in 1972. Jwaneng Diamond Mine is a partnership between the Botswana
+                    government and the De Beers group, and began operations in 1982 when it was opened by the then President of Botswana,
+                    His Excellency Sir Ketumile Masire. It is an open pit mine. When Jwaneng started as a town it was a closed town and
                     you had to have permission from the owners Debswana to live there.</p><br>
-                <p>The mine employs over 2100 people and operates its own Airport and Hospital. This mine is also the first in Botswana 
-                    to receive its ISO 14001 certificate for environmental compliance, and it comes with no surprise that it is known for 
+                <p>The mine employs over 2100 people and operates its own Airport and Hospital. This mine is also the first in Botswana
+                    to receive its ISO 14001 certificate for environmental compliance, and it comes with no surprise that it is known for
                     its outstanding safety record nationally and internationally.</p><br>
                 <p>Jwaneng is home to the Jwana Game Park and is host to the threatened Lappet-Faced Vulture.</p><br>
 

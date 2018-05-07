@@ -35,7 +35,7 @@
             <a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.php" role="button"><h4>Mining Sector</h4></a>
             <div class="well hidden-xs">
                 <p>
-                    Botswana’s neighbouring countries are South Africa, Malawi, <a href="/africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.html">Zambia</a>, Zimbabwe, and <a href="/africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.html">Namibia</a>. Like Zambia, Botswana is completely land locked.
+                    Botswana’s neighbouring countries are South Africa, Malawi, <a href="/africa/zambia/zambia-mining-jobs-engineering-construction-recruitment.php">Zambia</a>, Zimbabwe, and <a href="/africa/namibia/namibia-mining-jobs-engineering-construction-recruitment.php">Namibia</a>. Like Zambia, Botswana is completely land locked.
                 </p>
                 <br />
                 <p>
@@ -87,7 +87,7 @@
                 <p>AdoGreen is a specialist recruitment agency focusing on finding local talent in various African countries in the mining industry. Botswana has a high demand on the skilled local workforce. As a client you want to work with an agency who understands the job and recruitment market in Botswana being able to provide insight into your expansion and needs. We have an extensive referral network and have built up trusted relationships and a highly reputable name in the Industry. </p>
                 <br>
                 <p>
-                Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.html ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within Botswana, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in Botswana with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
+                Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within Botswana, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in Botswana with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
                 <br>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -10,7 +10,7 @@
        }
     }
     include_once $strEnvConfigFile;
-    
+
     $strPageTitle = 'Francistown Botswana -  Jobs in Engineering Construction  - Recruitment Firm';
     $strPageDescription = 'Francistown Jobs Botswana Engineering Construction Recruitment Firm';
     $strPageKeywords = 'Francistown Jobs Botswana Engineering Construction Recruitment Firm. AdoGreen A|frica is a specialist recruitment search and placement agency';
@@ -18,10 +18,10 @@
     $strPageImg = ENV_ROOTURL . '/assets/img/botswana-francistown-jobs-recruitment-firm.png';
     $strPageCountry = 'Botswana';
     $strPageSector = 'Mining';
-    
+
     include_once ENV_ROOT . 'includes/header.php';
     ?>
-        
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -75,7 +75,7 @@
             </p>
             <h2>Why AdoGreen?</h2>
             <p>
-                Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.html ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within Botswana, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in Botswana with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
+                Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within Botswana, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in Botswana with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
             </p>
             <br>
             <p>Our Executive Search And Recruitment Plan includes services such as headhunting, scarce skills shortage recruitment, market research, skills research and various other services. We have often help projects get off the ground in Botswana doing the whole recruitment process. This is a dedicated tailored approach tailored made and different for every client.
