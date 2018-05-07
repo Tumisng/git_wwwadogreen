@@ -30,7 +30,7 @@
             <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
             overflow: hidden;">
                 <div>
-                    <img data-u="image" src="<?php echo ENV_ROOTURL; ?>assets/img/sector-mining-front.jpg" />
+                    <img class="img-responsive" data-u="image" src="<?php echo ENV_ROOTURL; ?>assets/img/sector-mining-front.jpg" />
                 </div>
                 <div>
                     <img data-u="image" src="<?php echo ENV_ROOTURL; ?>assets/img/sector-engineering-front.jpg" />

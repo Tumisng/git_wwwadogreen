@@ -1,4 +1,4 @@
-<?php 
+<?php
         $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,7 +12,7 @@
     include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Ghana Renewable Energy Projects And Industry Overview - May Week 1';
-	$strPageDescription = 'Overview of Ghana's Renewable Energy Projects And Industry';
+	$strPageDescription = 'Overview of Ghanas Renewable Energy Projects And Industry';
 	$strPageKeywords = 'Ghana Power Generation recruitment , Ghana Renewable Energy, Ghana Wind Energy, Ghana Solar Energy';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/sector-renewable-energy-main.png';

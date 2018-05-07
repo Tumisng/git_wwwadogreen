@@ -178,6 +178,9 @@ include_once ENV_ROOT . 'includes/head.php';
             </header> <!-- .cd-auto-hide-header -->
 
         <?php
+            if ($strPageSlider == TRUE) {
+                include_once ENV_ROOT . 'includes/slider_Front_Page.php';
+            }
             if ($strPageHero == TRUE) {
                 echo '
             <section class="cd-hero">

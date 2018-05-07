@@ -1,7 +1,7 @@
 <?php
 include_once 'environment/config.php';
 
-$strPageSlider = FALSE;
+$strPageSlider = TRUE;
 $strPageHero = TRUE;
 include 'includes/header.php';
 //include 'includes/front_page_slider.php';

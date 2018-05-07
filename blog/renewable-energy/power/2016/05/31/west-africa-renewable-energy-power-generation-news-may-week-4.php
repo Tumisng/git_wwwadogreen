@@ -1,4 +1,4 @@
-<?php 
+<?php
         $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,7 +12,7 @@
     include_once $strEnvConfigFile;
 
 	$strPageTitle = 'West Africa - Nigeria, Ghana - Renewable Energy Industry Overview - May week 4';
-	$strPageDescription = 'Overview of the West Africa's Renewable Energy Industry';
+	$strPageDescription = 'Overview of the West Africas Renewable Energy Industry';
 	$strPageKeywords = 'Ghana Power Generation recruitment , Ghana Renewable Energy, Ghana Wind Energy, Ghana Solar Energy, West Africa Renewable Energy, Nigeria Energy';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/sector-renewable-energy-main.png';

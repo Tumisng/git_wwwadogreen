@@ -1,4 +1,4 @@
-<?php 
+<?php
         $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,7 +12,7 @@
     include_once $strEnvConfigFile;
 
 	$strPageTitle = 'East Africa - Kenya Tanzania - Renewable Energy Industry Overview - May week 4';
-	$strPageDescription = 'Overview of the East Africa's Renewable Energy Industry';
+	$strPageDescription = 'Overview of the East Africas Renewable Energy Industry';
 	$strPageKeywords = 'Kenya Power Generation recruitment , Kenya Renewable Energy, Kenya Wind Energy, Kenya Solar Energy, East Africa Renewable Energy, Ethiopia Energy';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/sector-renewable-energy-main.png';

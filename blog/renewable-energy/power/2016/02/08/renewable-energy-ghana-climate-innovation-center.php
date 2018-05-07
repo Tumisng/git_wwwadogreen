@@ -1,4 +1,4 @@
-<?php 
+<?php
         $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -11,7 +11,7 @@
     }
     include_once $strEnvConfigFile;
 
-	$strPageTitle = 'Funding for the Ghana's Climate Innovation Center';
+	$strPageTitle = 'Funding for the Ghanas Climate Innovation Center';
 	$strPageDescription = 'In the second quarter of 2016 the Climate Innovation Center is expected to open in Ghana.';
 	$strPageKeywords = 'Ghana Renewable energy recruitment, Ghana renewable energy jobs, Africa, Jobs, solar power jobs, solar recruitment, solar renewable energy projects, news';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';

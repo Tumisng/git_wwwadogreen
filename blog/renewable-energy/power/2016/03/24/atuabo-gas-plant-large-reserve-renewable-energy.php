@@ -1,4 +1,4 @@
-<?php 
+<?php
         $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,7 +12,7 @@
     include_once $strEnvConfigFile;
 
 	$strPageTitle = 'Large silica reserves found in Ghana at the Atuabo Gas Plant';
-	$strPageDescription = 'The Atuabo Gas Processing Plant has been found to be sitting on a gold bearing geological belt and the best silica reserve in the country, thereby limiting the country's potential to generate revenue from the resource when its commercial viability is ascertained in future.';
+	$strPageDescription = 'The Atuabo Gas Processing Plant has been found to be sitting on a gold bearing geological belt and the best silica reserve in the country, thereby limiting the countrys potential to generate revenue from the resource when its commercial viability is ascertained in future.';
 	$strPageKeywords = 'Ghana Renewable energy jobs , Gas Projects, renewable jobs, renewable projects';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/blog/ghana-atuabo-gas-plant.jpg';
