@@ -1,8 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="<?php echo ENV_ROOTURL; ?>assets/plugins/yamm/menuopen.min.js"></script>
 <!-- Script to open and close menu on hover with mouse -->
-<!--<script src="<?php echo ENV_ROOTURL; ?>assets/js/bootstrap.min.js"> </script>-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="<?php echo ENV_ROOTURL; ?>assets/js/bootstrap.min.js"> </script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 <script src="<?php echo ENV_ROOTURL; ?>assets/js/main.js"></script>
 <!-- load Font Awesome asynchronously -->
 <script type="text/javascript">
@@ -29,7 +29,7 @@
         //hide or show the "back to top" link
         $(window).scroll(function(){
             ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-            if( $(this).scrollTop() > offset_opacity ) { 
+            if( $(this).scrollTop() > offset_opacity ) {
                 $back_to_top.addClass('cd-fade-out');
             }
         });
@@ -48,7 +48,7 @@
 <script>
     window.sr = ScrollReveal();
     sr.reveal('.animate-fade-in', { duration: 2000 });
-    sr.reveal('.animate-fade-in-right', { 
+    sr.reveal('.animate-fade-in-right', {
                 duration: 2000,
                 origin: 'right',
             });

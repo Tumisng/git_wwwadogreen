@@ -11,8 +11,8 @@
     }
     include_once $strEnvConfigFile;
 
-	$strPageTitle = 'Mining Jobs In Africa - Specialist Recruitment';
-	$strPageDescription = 'Mining Jobs In Africa. AdoGreen recruitment is a specialist recruitment of locals in various African Countries';
+	$strPageTitle = 'Mining Jobs In Africa - Specialist Recruitment | HR | RPO';
+	$strPageDescription = 'Mining Jobs In Africa. AdoGreen Africa is a specialist recruitment | HR | RPO agency sourcing locals in various African Countries';
 	$strPageKeywords = 'Mining Jobs In Africa Specialist Recruitment Agency';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . 'assets/img/sector-mining-industry-jobs-recruitment.png';

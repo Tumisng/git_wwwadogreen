@@ -3,22 +3,20 @@ $strLive = FALSE;
 $strPageSlider = FALSE;
 
 if($strLive == TRUE) {
- define('ENV_ROOT', 'C:/xampp/htdocs/phpTraining/');
+ define('ENV_ROOT', '/var/www/vhosts/www.adogreen.com/');
 
- define('ENV_ROOTURL', 'http://localhost/phpTraining/');
+ define('ENV_ROOTURL', 'http://www.adogreen.com/');
 
  define('ENV_RSS', 'https://adogreen.koneqt.com/');
-} 
+} else {
+        // Absolute path to application root folder (must end with a forward slash)
+        define('ENV_ROOT', '/Applications/mappstack-7.0.28-1/apache2/htdocs/wwwadogreen/');
 
-else {
-// Absolute path to application root folder (must end with a forward slash)
-define('ENV_ROOT', 'C:/xampp/htdocs/phpTraining/');
+        // URL path to application root folder (must end with a forward slash)
+        define('ENV_ROOTURL', 'http://localhost:8081/wwwadogreen/');
 
-// URL path to application root folder (must end with a forward slash)
-define('ENV_ROOTURL', 'http://localhost/phpTraining/');
-
-//URL to RSS V2 Server when needed
-define('ENV_RSS', 'https://adogreen.koneqt.com/');
+        //URL to RSS V2 Server when needed
+         define('ENV_RSS', 'https://adogreen.koneqt.com/');
 };
 
 //SITE SETTINGS

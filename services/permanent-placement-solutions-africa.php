@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -11,9 +11,9 @@
     }
     include_once $strEnvConfigFile;
 
-	$strPageTitle = 'Permanent Placement Solutions Africa';
-	$strPageDescription = 'Permanent Placement Recruitment Solution for Africa';
-	$strPageKeywords = 'Permanent Placement Solutions Africa';
+	$strPageTitle = 'Africa - Recruitment | Permanent Placement Solutions Africa';
+	$strPageDescription = 'Africa - Recruitment | Permanent Placement Recruitment Solution for Africa';
+	$strPageKeywords = 'Africa - Recruitment | Permanent Placement Solutions Africa';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . 'assets/img/services-permanent-placement-recruitment-africa.png';
 	$strPageCountry = '';
@@ -37,7 +37,7 @@
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
                     <div class="hidden-xs">
                 <p>
-                    AdoGreen Africa Recruitment has been established for 10 years and function as a specialist recruitment consultancy in the African region. Over 80% of candidates placed still work at the employer, many of which have become senior members leading large divisions at the company.
+                    AdoGreen Africa Recruitment has been established since 2007 and provides Recruitment | HR | RPO consultancy services in the African region. 
                 </p>
             </div>
 

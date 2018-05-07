@@ -178,15 +178,14 @@ include_once ENV_ROOT . 'includes/head.php';
             </header> <!-- .cd-auto-hide-header -->
 
         <?php
-//            if ($strPageSlider == TRUE) {
-//                echo '
-//            <section class="cd-hero">
-//                <div class="cd-hero-content">';
-//                include_once ENV_ROOT . 'includes/slider_Front_Page.php';
-//                echo '</div>
-//            </section> <!-- .cd-hero -->'
-//            };
-//                ;
+            if ($strPageHero == TRUE) {
+                echo '
+            <section class="cd-hero">
+                <div class="cd-hero-content">';
+                include_once ENV_ROOT . 'includes/slider_Front_Page.php';
+                echo '</div>
+            </section> <!-- .cd-hero -->'
+                ;
             ?>
 
                 <nav class="cd-secondary-nav">
@@ -204,6 +203,7 @@ include_once ENV_ROOT . 'includes/head.php';
                     </ul>
                 </nav> <!-- .cd-secondary-nav -->
                 <?php
+            }
         };
         ?>
 
