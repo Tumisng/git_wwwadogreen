@@ -47,6 +47,7 @@ if (Detect::isMobile()) {
 
 if (Detect::isComputer() || Detect::isTablet()) {
     echo '
+
     <div class="container cd-main-content sub-nav-hero">
         <div class="row">
             <div class="col-md-12 text-center  animate-fade-in">
