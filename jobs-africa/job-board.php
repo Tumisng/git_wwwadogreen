@@ -121,7 +121,7 @@ function get_country()
     {
         $countryNameWithOutSpaces = str_replace(' ', '', $row);
 //btn btn-block button-green
-        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOTURL . 'assets/img/flags/'.$countryNameWithOutSpaces . '.svg" value="'.'' . $row . '" >'.$row.' </input>';
+        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOTURL . 'assets/img/flags/'.$countryNameWithOutSpaces . '.svg" value="'.'' . $row . '" ><small>' . $row . '</small></input>';
 
         }
     return $output;
@@ -158,8 +158,8 @@ width: 150px
         </ul>
     </div>
     <div class="col-md-2">
-        Countries:
-        </br> <?php echo get_country(); ?>
+        <h3>Countries:</h3>
+        <?php echo get_country(); ?>
     </div>
 </div>
 <?php
