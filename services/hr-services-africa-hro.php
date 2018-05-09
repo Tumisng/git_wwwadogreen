@@ -132,6 +132,8 @@
         </div>
         <div class="col-md-3">
             <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>
+            <h4>Services</h4>
+            <?php include ENV_ROOT . 'includes/Page_Services.php';?>
         </div>
     </div>
 </div>
