@@ -1,9 +1,18 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="<?php echo ENV_ROOTURL; ?>assets/plugins/yamm/menuopen.min.js"></script>
+<?php
+    if($strLive == TRUE) {
+        echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>';
+        echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>';
+    } else {
+    echo '<script src="' . ENV_ROOTURL .'assets/js/jquery-3.3.1.min.js"></script>';
+    echo '<script src="' . ENV_ROOTURL . 'assets/js/bootstrap.min.js"> </script>';
+    };
+?>
+
+<script src="<?php echo ENV_ROOTURL; ?>assets/plugins/yamm/menuopen.min.js"> </script>
+
 <!-- Script to open and close menu on hover with mouse -->
-<script src="<?php echo ENV_ROOTURL; ?>assets/js/bootstrap.min.js"> </script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-<script src="<?php echo ENV_ROOTURL; ?>assets/js/main.js"></script>
+
+
 <!-- load Font Awesome asynchronously -->
 <script type="text/javascript">
   (function() {

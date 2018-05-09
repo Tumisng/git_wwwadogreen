@@ -3,26 +3,32 @@
 </div>
 <footer>
     <div class="container-fluid footer-main hidden-xs">
-            <div class="container">
+<!--            <div class="container">-->
                 <div class="row">
                     <!-- About -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 hidden-sm"></div>
+                    <div class="col-md-2 col-sm-6">
 
-                        <h4>Clients</h4>
+                        <h4>Services</h4>
                         <ul class="list-unstyled footer-a">
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/permanent-placement-solutions-africa.php">Permanent Placements</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a></li>
 <!--                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/special-project-recruitment-africa.php">Special Project Recruitment</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>-->
-                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>africa/recruitment-africa-local-specialist-agency.php ">Localisation Recruitment Solution</a></li>
+                            <li>
+                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php ">Human Resources Services</a>
+                            </li>
+                            <li>
+                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
+                            </li>
                         </ul>
                         <a class="btn btn-danger btn-block" href="<?php echo ENV_ROOTURL;?>contact-adogreen-recruitment.php" rel="nofollow">Contact Us</a>
 
                     </div>
-                    <!--/col-md-3 col-sm-6-->
+                    <!--/col-md-2 col-sm-6-->
                     <!-- End About -->
                     <!-- Latest -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-6">
                         <h4>Sectors</h4>
                         <ul class="list-unstyled footer-a">
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR Recruitment</a></li>
@@ -34,10 +40,10 @@
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Africa Manufacturing Recruitment</a></li>
                         </ul>
                     </div>
-                    <!--/col-md-3 col-sm-6-->
+                    <!--/col-md-2 col-sm-6-->
                     <!-- End Latest -->
                     <!-- Link List -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-6">
                         <div class="headline">
                             <h4>Candidate Useful Links</h4></div>
                         <ul class="list-unstyled footer-a">
@@ -49,10 +55,10 @@
                             </li>
                         </ul>
                     </div>
-                    <!--/col-md-3-->
+                    <!--/col-md-2-->
                     <!-- End Link List -->
                     <!-- Address -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-2 col-sm-6">
                     <h4>Contact Details</h4>
                         <address>
 
@@ -97,10 +103,10 @@
                             </ul>
                         </div>
                     </div>
-                    <!--/col-md-3-->
+                    <!--/col-md-2-->
                     <!-- End Address -->
                 </div>
-            </div>
+<!--            </div>-->
     </div>
     <!--Copyright-->
     <div class="container-fluid copyright">

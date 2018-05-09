@@ -103,7 +103,8 @@ if (Detect::isComputer() || Detect::isTablet()) {
         <div class="row padding-bottom-40  animate-fade-in">
             <div class="col-md-2"></div>
             <div class="col-md-8 parallax-content">
-                <h1 class="animate-fade-in bold">Specialist Heavy Industry Recruitment </br> Human Resource & Recruitment Process Outsourcing </br>For Africa</h1>
+                <h1 class="animate-fade-in bold">Heavy Industry Focus Within Africa</h1>
+                <p class="paralax-heading">Specialist Recruitment | Human Resources | Recruitment Process Outsourcing | Psychometry</p>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -150,7 +151,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
     <div class="container-fluid background-front-excavator">
         <div class="row padding-bottom-40  animate-fade-in">
             <div class="col-md-12 parallax-content-2">
-                <h1 class="bold">Our Passion</h1>
+                <h1 class="bold">Targeting Talent</h1>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <p class="paralax-heading">At AdoGreen Africa, we are passionate about people, achieving excellence and delivering a service that is trusted, where the proof is in the high caliber candidates who we place.</p>

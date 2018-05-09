@@ -5034,7 +5034,7 @@ h3, h4 {
 
 .bold {
   font-weight: 700;
-  font-size: 500%; }
+  font-size: 400%; }
 
 .white {
   color: #fafafa; }
@@ -5125,15 +5125,6 @@ h3, h4 {
 .logo {
   display: inline-block;
   padding: 0; }
-
-.img-flag-icon
-{
-border: 1px solid #ddd;
-border-radius: 4px;
-padding: 5px;
-width: 150px
-}
-
 
 #logo {
   background: url("/assets/img/logo-header.svg") 0 0 no-repeat !important;
@@ -6235,6 +6226,9 @@ CSS for main images loaded in pages etc.
     height: 350px;
     background-position: top; } }
 @media (min-width: 1200px) {
+  .sector-headings {
+    top: 80px; }
+
   .background-img {
     padding-top: 700px; }
 
@@ -6296,7 +6290,7 @@ CSS for main images loaded in pages etc.
     padding-top: 500px; }
 
   .sector-headings {
-    top: 230px; } }
+    top: 150px; } }
 * {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
@@ -6318,6 +6312,17 @@ img {
 .frontpage img {
   margin: auto;
   padding-top: 10px; }
+
+.carousel-caption {
+  bottom: 80px; }
+  .carousel-caption h1 {
+    font-size: 24px;
+    color: #fafafa;
+    text-shadow: -1px 0 #333333, 0 0px 5px #333333, 1px 0 #333333, 0 -1px #333333; }
+  .carousel-caption h3 {
+    font-size: 50px;
+    color: #fafafa;
+    text-shadow: -1px 0 #333333, 0 0px 5px #333333, 1px 0 #333333, 0 -1px #333333; }
 
 .padding-bottom-40 {
   padding-bottom: 40px; }
@@ -6637,11 +6642,14 @@ li.breadactive {
 
 .footer-main {
   background-color: #6d6d6d;
-  color: #fafafa; }
+  color: #fafafa;
+  padding: 40px 0; }
+  .footer-main h4 {
+    font-size: 24px; }
   .footer-main p {
-    font-size: 12px; }
+    font-size: 14px; }
   .footer-main li {
-    font-size: 12px; }
+    font-size: 14px; }
   .footer-main a {
     color: #EBEBEB; }
 
@@ -6671,6 +6679,11 @@ address {
   body {
     margin-top: 80px; }
 
+  .carousel-caption {
+    bottom: 100px; }
+    .carousel-caption h1 {
+      font-size: 80px; }
+
   .col-padding-middle {
     padding-left: 0px; }
 
@@ -6680,6 +6693,16 @@ address {
 @media (min-width: 1200px) {
   .button {
     padding: 16px 16px;
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .carousel-caption {
+    bottom: 100px; }
+    .carousel-caption h1 {
+      font-size: 80px; } }
+@media (min-width: 1400px) {
+  .carousel-caption {
+    bottom: 100px; }
+    .carousel-caption h1 {
+      font-size: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

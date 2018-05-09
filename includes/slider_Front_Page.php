@@ -7,37 +7,41 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+<!--        <li data-target="#myCarousel" data-slide-to="4"></li>-->
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide img-responsive"  width="100%"  src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/mining-recruitment-africa.jpg" alt="First slide">
 
-          <div class="container">
+          <div class="container-fluid">
+<!--              <img class="img-carousel-caption" src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-2.png'; ?>" width="138" height="30" alt="">-->
             <div class="carousel-caption">
-              <h1>Youth for your skin</h1>
-               <p class=">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> 
+              <h1 class="bold">AdoGreen Africa</h1>
+               <h3>Specialist Recruitment | HR | RPO Services</h3>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>about-us.php" role="button">Read More</a></p>
+            </div>
+          </div>
+        </div>
+         <div class="item">
+          <img class="second-slide img-responsive"  width="100%"  src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/mining-recruitment-africa.jpg" alt="Second slide">
+          <div class="container-fluid">
+            <div class="carousel-caption">
+              <h1 class="bold">Mining & Construction</h1>
+               <h3>Specialist Recruitment | HR | RPO Services</h3>
+              <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.php" role="button">Read More</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/renewable-energy-recruitment.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <h1>Beauty from the inside out</h1>
-                    </div>
-
-              <!-- <p class=">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
-            </div>
+          <img class="third-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/renewable-energy-recruitment.jpg" alt="Third slide">
+            <div class="container-fluid carousel-caption">
+                        <h1 class="bold">Renewable Energy & Power Generation</h1>
+                        <h3>Specialist Recruitment | HR | RPO Services</h3>
+                        <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>sectors/africa-renewable-energy-jobs-recruitment.php" role="button">Read More</a></p>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/front-slider-3.jpg" alt="Third slide">
+          <img class="fourth-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/renewable-energy-recruitment.jpg" alt="Fourth slide">
           <div class="container">
             <div class="carousel-caption">
                     <div class="col-md-6">

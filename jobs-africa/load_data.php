@@ -2,7 +2,7 @@
 // =============================================================================
 //  Load the Job/s relating to the drop down value of country and industry
 //
-//  Author: Natie Rautenbach
+//  Author: Natie Rautenbach + Upgraded by Mou Mokete
 //  Date written: 03/10/2017
 //  (c) AdoGreen Africa / The Missing Floor
 //==============================================================================
@@ -29,8 +29,8 @@
            $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&Sector=' . $strSearch;
       }else if( $_POST["country"] != '')
       {
-      
-                $strSearch = $_POST["country"];
+
+          $strSearch = $_POST["country"];
           $strSearch=str_ireplace(" ","%20",$_POST["country"]);
            $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&Country=' . $strSearch;
 
@@ -76,7 +76,7 @@
         }
       $output .= '</ul>';
       echo $output;
-  
+
  }
  ?>
 

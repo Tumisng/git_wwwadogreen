@@ -7,7 +7,6 @@ CSS for main images loaded in pages etc.
 */
 
 
-
 @media (min-width: 480px){
 }
 
@@ -191,6 +190,9 @@ CSS for main images loaded in pages etc.
 }
 
 @media (min-width: 1200px){
+      .sector-headings {
+        top: 80px;
+    }
     .background-img {
         padding-top: 700px;
     }
@@ -255,6 +257,6 @@ CSS for main images loaded in pages etc.
          padding-top: 500px;
     }
     .sector-headings {
-        top: 230px;
+        top: 150px;
     }
 }

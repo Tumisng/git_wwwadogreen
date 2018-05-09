@@ -33,20 +33,22 @@
                 </ul>
                 </br>
                 <ul class="list-unstyled who margin-bottom-30">
-                    <li><i class="fa fa-home"></i> Botswana
-                        <br>Plot 47 Unit 9 </br>
-                        Gaborone International Commerce Park </li>
-                </ul>
-                </br>
-                <ul class="list-unstyled who margin-bottom-30">
                     <li>Industrial Assessments</li>
                     <li><i class="fa fa-home"></i> Rustenburg
                         <br>Multiprac Building </br>
                         167A Church Street </li>
                 </ul>
+                </br>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><i class="fa fa-home"></i>Botswana
+                        <br>Plot 47 Unit 9 </br>
+                        Gaborone International Commerce Park </li>
+                </ul>
+                </br>
+
 
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
                 <!-- Business Hours -->
                 <div class="headline"><h2>Business Hours +2GMT</h2></div>
                 <ul class="list-unstyled margin-bottom-30">
@@ -55,13 +57,13 @@
                     <li><strong>Sunday:</strong> Closed</li>
                 </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
 
             <div>
-                <a class="btn btn-block btn-danger" href="<?php echo ENV_ROOTURL;?>client-register-job.html">Need Staff?</a>
+                <a class="btn btn-block btn-danger" href="<?php echo ENV_ROOTURL;?>client-register-job.php">Need Staff?</a>
             </div>
             <div>
-                <a class="btn btn-block btn-success" href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.html">Need A Job?</a>
+                <a class="btn btn-block btn-success" href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.php">Need A Job?</a>
             </div>
             <hr>
 
@@ -81,8 +83,7 @@
             <a rel="nofollow" href="https://www.youtube.com/c/adogreen" class="btn btn-social-icon btn-youtube">
                 <span class="fa fa-youtube"></span>
             </a>
-            <h4>AdoGreen Recruitment on LinkedIn</h4>
-                <a href="https://www.linkedin.com/company/adogreen"><img class="img-responsive" src="assets/img/social-linkedin.png" width="100%"></a>
+<!--                <a href="https://www.linkedin.com/company/adogreen"><img class="img-responsive" src="assets/img/social-linkedin.png" width="100%"></a>-->
             </div>
         </div>
     <!-- ./row -->
@@ -94,7 +95,7 @@
         </div>
         <div class="col-md-4">
             <h3>Dr. Amanda Agathagelou</h3>
-            <p>Pshycologist - Industrial | Consulting</p>
+            <p>Psychologist - Industrial | Consulting</p>
             <img class="img-responsive" src="assets/img/social-linkedin-amanda.png" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa">
         </div>
         <div class="col-md-4">

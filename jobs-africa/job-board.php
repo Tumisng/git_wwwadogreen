@@ -1,4 +1,11 @@
 <?php
+// =============================================================================
+//  basic job board for AdoGreen
+//
+//  Author: Natie Rautenbach + Upgraded by Mou Mokete
+//  Date written: 03/10/2017
+//  (c) AdoGreen Africa / The Missing Floor
+//==============================================================================
 $strEnvConfigFile = '../environment/config.php';
 $intLevel = 0;
 while (!file_exists($strEnvConfigFile))
@@ -12,8 +19,6 @@ while (!file_exists($strEnvConfigFile))
     }
 }
 include_once $strEnvConfigFile;
-
-//include_once '../includes/header.php';
 
 $strPageTitle = 'AdoGreen Africa Job Board Heavy Engineering';
 $strPageDescription = 'AdoGreen Africa Job Board - Specialist Recruitment - Heavy Engineering, Mining, Renewable Energy, , Power, Building And Construction';
@@ -116,19 +121,15 @@ function get_country()
     {
         $countryNameWithOutSpaces = str_replace(' ', '', $row);
 //btn btn-block button-green
-        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src='.'../assets/img/flags/'.$countryNameWithOutSpaces.'.svg value="'.'' . $row . '" >'.$row.' </input>';
-        
+        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOT . 'assets/img/flags/'.$countryNameWithOutSpaces.'.svg value="'.'' . $row . '" >'.$row.' </input>';
+
         }
     return $output;
 }
 ?>
 <div class="container">
-
-    <div>
-        
-    </div>
     <div class="row padding-bottom-20">
-<?php echo fill_buttons_with_sector($connect); ?>
+    <?php echo fill_buttons_with_sector($connect); ?>
     </div>
     <div class="row padding-bottom-20">
         <div class="col-md-12">
@@ -187,7 +188,6 @@ include ENV_ROOT . 'includes/js_scripts.php';
                     $('#show_sector').html(data);
                 }
             });
-<<<<<<< HEAD
         });
     });
 </script>
@@ -223,36 +223,6 @@ include ENV_ROOT . 'includes/js_scripts.php';
             }
         });
     }
-</script>
-<script>
-
-    $(document).ready(function() {
-    $('#searchterm').on('submit', function(e) {
-    //Stop the form from submitting itself to the server.
-    e.preventDefault();
-            var searchwords = $('#searchwords').val();
-            var jobid = $('#job').val();
-            if (jobid != '')
-    {
-
-    $('#loadingmessage').show();
-            console.log(jobid);
-            console.log(searchwords);
-            $.ajax({
-            type: "POST",
-                    dataType: 'json',
-                    url: 'ajax/Recruitment/getRecruitAdvancedSearch.php',
-                    data: {searchwords: searchwords, jobid: jobid},
-                    success: function(data) {
-                    console.log(data);
-                            $('#loadingmessage').hide();
-                            $('#searchresult').dataTable({
-
-                    }
-                    }
-                    };
-                    }
-
 </script>
 </body>
 </html>
