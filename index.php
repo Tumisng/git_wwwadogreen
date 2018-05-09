@@ -111,9 +111,9 @@ if (Detect::isComputer() || Detect::isTablet()) {
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                </br>
-                </br>
+            <div class="col-md-12 text-center  animate-fade-in">
+                 <h1 class="heading-underline h2">Overview</h1>
+                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
             </div>
         </div>
         <div class="row animate-fade-in">
@@ -145,6 +145,9 @@ if (Detect::isComputer() || Detect::isTablet()) {
                     <i class="fa fa-diamond fa-2x text-center"></i><h5>RPO</h5>
                 </a>
 
+                <a class="btn btn-lg btn-default btn-block " href="services/industrial-psychometric-services-africa.php ">
+                    <i class="fa fa-dot-circle fa-2x text-center"></i><h5>Industrial And Clinical Psychometric Services</h5>
+                </a>
             </div>
         </div>
     </div>s
