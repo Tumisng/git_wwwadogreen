@@ -49,12 +49,12 @@ include_once ENV_ROOT . 'includes/head.php';
                                 <li>
                                     <a  href="<?php echo ENV_ROOTURL; ?>services/permanent-placement-solutions-africa.php">Permanent Placement Solution</a>
                                 </li>
-                                <!--                            <li>
-                                                              <a  href="<?php echo ENV_ROOTURL; ?>services/special-project-recruitment-africa.php">Special Recruitment Projects</a>
-                                                            </li>-->
-                                <!--                            <li>
-                                                              <a href="<?php echo ENV_ROOTURL; ?>services/company-targeted-marketing-local-africa.php">Company Targeted Marketing</a>
-                                                            </li>-->
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
+                                </li>
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php">Localisation Recruitment</a>
                                 </li>
