@@ -70,7 +70,7 @@ include_once ENV_ROOT . 'includes/header.php';
 </div>
 <div class="container-fluid row-breaker padding-bottom-40">
     <div class="row">
-        <div class="col-md-12 text-center text-uppercase"
+        <div class="col-md-12 text-center text-uppercase">
              <h4>Understand exactly what is motivating you. What are the motivating factors in your life?</h4>
         </div>
     </div>
