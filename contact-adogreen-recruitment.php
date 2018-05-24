@@ -26,7 +26,7 @@
         <div class="col-md-5">
                 <div class="headline"><h2>Contact Details</h2></div>
                 <ul class="list-unstyled who margin-bottom-30">
-                    <li><i class="fa fa-home"></i> South Africa Head Office</li>
+                    <li> <h3> <i class="fa fa-home"></i> South Africa Head Office</li></h3>
                     <li><a href="#"><i class="fa fa-envelope"></i> info@adogreen.com</a></li>
                     <li><a href="#"><i class="fa fa-phone"></i> +27 87 813 0303</a></li>
                     <li><a href="http://www.adogreen.com"><i class="fa fa-globe"></i> http://www.adogreen.com</a></li>
@@ -34,14 +34,14 @@
                 </br>
                 <ul class="list-unstyled who margin-bottom-30">
                     <li>Industrial Assessments</li>
-                    <li><i class="fa fa-home"></i> Rustenburg
-                        <br>Multiprac Building </br>
+                    <h3><li> <i class="fa fa-home"></i> Rustenburg</h3>
+                        Multiprac Building </br>
                         167A Church Street </li>
                 </ul>
-                </br>
+                
                 <ul class="list-unstyled who margin-bottom-30">
-                    <li><i class="fa fa-home"></i>Botswana
-                        <br>Plot 47 Unit 9 </br>
+                    <li><h3><i class="fa fa-home"></i>Botswana</h3>
+                        Plot 47 Unit 9 </br>
                         Gaborone International Commerce Park </li>
                 </ul>
                 </br>
