@@ -73,6 +73,9 @@ include_once ENV_ROOT . 'includes/header.php';
             <?php
             echo htmlspecialchars_decode(stripslashes($strBlogDescription));
             ?>
+            <div class="row">
+                <div class="col-md-12 addthis_inline_share_toolbox"></div>
+            </div>
         </div>
         <div class="col-md-3 animate-fade-in">
             <h4>Sector: <?php echo $strBlogSector; ?></h4>
@@ -82,10 +85,7 @@ include_once ENV_ROOT . 'includes/header.php';
             <?php include ENV_ROOT . 'includes/Page_Jobs.php'; ?>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 addthis_inline_share_toolbox">
-        </div>
-    </div>
+
     <div class="row animate-fade-in">
         <ul class="list-unstyled">
             <?php

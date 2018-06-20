@@ -13,14 +13,15 @@
                         <label>Nationality (start typing the country name)<span class="color-red">*</span></label>
                         <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
 
-                        <label>Ethnic<span class="color-red">*</span></label>
+                        <label>Ethnicity<span class="color-red">*</span></label>
                         <select class="form-control" id="Ethnic" name="Ethnic">
                                 <option>Black</option>
                                 <option>White</option>
-                                <option>India</option>
+                                <option>Colored</option>
+                                <option>Indian</option>
                                 <option>Asian</option>
                         </select><br>
-                        
+
                         <label for="Relocate">Willing To Relocate?</label>
                         <select class="form-control" id="Relocate" name="Relocate">
                                 <option>None</option>
