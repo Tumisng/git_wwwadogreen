@@ -1,4 +1,4 @@
-<?php 
+<?php
     $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -13,12 +13,12 @@
     include_once '../includes/header.php';
     //    Get the AppDataId from the URL
     $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-     
+
     $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&i=' . $intAppDataId. '&f=JobTitle,AppDataId,Status';
     //First version loading into an array
     $json = file_get_contents($json_url);
     $array = json_decode($json);
-    
+
     if(isset($array[2])) {
             foreach ($array[2] as $value) {
                     $strJobId = $value->AppDataId;
@@ -26,7 +26,7 @@
                     $strJobTitle = $value->JobTitle;
 //                    $strJobKeywords = $value->Keywords;
 //                    $strJobAssignedTo = $value->AssignedToName;
-//                    $strJobImgId = $value->ImageUploadedId; 
+//                    $strJobImgId = $value->ImageUploadedId;
 //                    $strJobOpenDate = $value->OpenDate;
 //                    $strJobSector = $value->Sector;
 //                    $strJobContract = $value->ContractType;
@@ -40,15 +40,15 @@
 //                    $strJobRequirements = $value->MinimumRequirements;
 //                    $strJobSalary =$value->Salary;
             }
-    }  
+    }
 
     $strPageTitle = $strJobTitle;
     $strPageKeywords = 'Application Form';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-    
-    
-    
-?> 
+
+
+
+?>
     <!-- CSS file -->
     <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/plugins/autocomplete/easy-autocomplete.min.css">
 
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-md-12 job-header text-center">
                 <h2 id="job-title"><?php echo $strJobTitle; ?></h2>
-                <h4 class="loud"><?php if ($strJobStatus=='closed') { 
+                <h4 class="loud"><?php if ($strJobStatus=='closed') {
                     echo 'Please note: This job is closed. However, please do still register your CV here for similar future positions. Thank you!.';}?></h4>
             </div>
         </div>
@@ -87,16 +87,16 @@
     </div><!--/container-->
     <!--=== End Content Part ===-->
 
-    
-<?php    
-     
+
+<?php
+
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
     <!-- JS file -->
 <script src="<?php echo ENV_ROOTURL; ?>assets/plugins/autocomplete/jquery.easy-autocomplete.min.js"> </script>
 
-    
+
     <script>
             var getUrlParameter = function getUrlParameter(sParam) {
                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -133,8 +133,9 @@
                 };
 
                 $("#country-list").easyAutocomplete(options);
+                $("#country-list2").easyAutocomplete(options);
        </script>
-       
-       
+
+
        </body>
 </html>

@@ -38,7 +38,7 @@
                         Multiprac Building </br>
                         167A Church Street </li>
                 </ul>
-                
+
                 <ul class="list-unstyled who margin-bottom-30">
                     <li><h3><i class="fa fa-home"></i>Botswana</h3>
                         Plot 47 Unit 9 </br>
@@ -106,12 +106,6 @@
         </div>
      </div>
      <div class="row">
-        <div class="col-md-4">
-            <h3>Andre Langley</h3>
-            <p>Recruitment Process Outsourcing Specialist</p>
-            <a href="https://www.linkedin.com/in/3bmsandrelangley/"><img class="img-responsive" src="assets/img/social-linkedin-andre.png" width="100%" alt="Andre Langley Linkedin Heavy Industry RPO Africa"></a>
-
-        </div>
         <div class="col-md-4">
             <h3>Natie Rautenbach</h3>
             <p>Director | CIO</p>

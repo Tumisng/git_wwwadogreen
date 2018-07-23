@@ -174,6 +174,18 @@ include ENV_ROOT . 'includes/js_scripts.php';
             return $(this).text().toLowerCase().indexOf(search) < 0;
         }).hide();
     });
+ $(function() {
+    'use strict';
+    $('#search-input').on('click',function() {
+        $(this).css({
+            'background-color':'#00a500',
+            "color":"white",
+            "padding":"5px",
+            "height":"60px",
+            "font-size":"24px"
+        });
+    });
+});
 </script>
 
 <script>

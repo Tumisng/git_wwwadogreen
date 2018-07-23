@@ -13,6 +13,11 @@
                         <label>Nationality (start typing the country name)<span class="color-red">*</span></label>
                         <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
 
+                        <label>Current Work Location (start typing the country name)<span class="color-red">*</span></label>
+                        <input id="country-list2" name="CurrentLocation" class="form-control margin-bottom-20" required=""/>
+
+
+
                         <label>Ethnicity<span class="color-red">*</span></label>
                         <select class="form-control" id="Ethnic" name="Ethnic">
                                 <option>Black</option>
@@ -56,14 +61,14 @@
                         <hr>
                         <h3>Tell Us About Your Current Employer</h3>
                         <label>Current Job Title<span class="color-red">*</span></label>
-                        <input type="text" name="JobTitleCandidate" class="form-control margin-bottom-20" required="">
+                        <input type="text" name="JobTitleCandidate" class="form-control margin-bottom-20" required>
 
                         <label>Current Company<span class="color-red">*</span></label>
-                        <input type="text" name="CompanyName" class="form-control margin-bottom-20" required="">
+                        <input type="text" name="CompanyName" class="form-control margin-bottom-20" required>
 
 
                         <label>Current Salary (Your Basic)<span class="color-red">*</span></label>
-                        <input type="text" name="Salary" class="form-control margin-bottom-20" required="">
+                        <input type="text" name="Salary" class="form-control margin-bottom-20" required>
 
                         <label>Notice Period<span class="color-red">*</span></label>
                         <select class="form-control" id="NoticePeriod" name="NoticePeriod">
@@ -79,7 +84,7 @@
                         </select><br>
                         <hr>
                         <label>Attach CV (must be a doc, docx or PDF. No scanned CV's please)<span class="color-red">*</span></label>
-                        <input type="file" name="FileUpload" class="form-control margin-bottom-20" required="">
+                        <input type="file" id="attachment" name="FileUpload" class="form-control margin-bottom-20" required>
 
                         <label>Any Extra Comment?</label>
                         <input type="text" name="Comment" class="form-control margin-bottom-20">
