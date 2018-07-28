@@ -12,7 +12,7 @@ while (!file_exists($strEnvConfigFile))
         }
     }
 include_once $strEnvConfigFile;
-include_once '../inc/header.php';
+include_once 'inc/header.php';
 //    Get the AppDataId from the URL
 $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 

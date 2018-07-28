@@ -9,6 +9,7 @@
 ?>
 
 <script src="<?php echo ENV_ROOTURL; ?>assets/plugins/yamm/menuopen.min.js"> </script>
+<script src="<?php echo ENV_ROOTURL; ?>assets/plugins/slider_jssor/main.js"> </script>
 
 <!-- Script to open and close menu on hover with mouse -->
 
@@ -23,7 +24,6 @@
     document.getElementsByTagName('head')[0].appendChild(css);
   })();
 </script>
-<!--Revolution Slider Script-->
 <script>
     jQuery(document).ready(function($){
         // browser window scroll (in pixels) after which the "back to top" link is shown

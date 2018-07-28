@@ -83,7 +83,7 @@ function fill_job($connect)
             $strQualifications = $value->MinimumRequirements;
             //    replace %20 in the URL
             $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
-            $output .= '<li>
+            $output .= '
                              
                     <!-- Job item -->
                     <div class="col-xs-12 card-jobs">
@@ -130,10 +130,7 @@ function fill_job($connect)
                             </footer>
                         </a>
                     </div>
-                    <!-- END Job item -->
-
-
-                                </li>';
+                    <!-- END Job item -->';
             }
         }
     return $output;

@@ -76,8 +76,8 @@
     padding: 6px 15px;
 }
 
-.nav .open > a, 
-.nav .open > a:hover, 
+.nav .open > a,
+.nav .open > a:hover,
 .nav .open > a:focus {
 	background-color: $grey-mid;
 	color: $white;
@@ -89,9 +89,9 @@
 	right: auto;
 	left: auto;
 }
-// 
+//
 // header logo
-// 
+//
 
 .logo {
 	display: inline-block;
@@ -127,7 +127,7 @@
 @import 'partials/mixins'; // custom mixins
 
 @import 'partials/layout'; // responsive grid and media queries
-/* -------------------------------- 
+/* --------------------------------
 
 1. Auto-Hiding Navigation - Simple
 
@@ -158,7 +158,7 @@
 	}
 }
 
-.cd-auto-hide-header .logo, 
+.cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
 	position: absolute;
 	@include center(y);
@@ -250,7 +250,7 @@
 	float: right;
 	height: 100%;
 	padding-right: 5%;
-        
+
         .dropdown-menu > li > a {
             font-family: $nav-font-family;
             font-weight: 700;
@@ -259,7 +259,7 @@
             border-bottom: solid 1px #eee;
             padding: 6px 15px;
         }
-    
+
 	> ul {
 		position: absolute;
 		z-index: 2;
@@ -326,15 +326,15 @@
 				padding: 0;
 				border: none;
 			}
-                        
+
 		}
 	}
 }
 
-.nav-open .cd-primary-nav ul, 
+.nav-open .cd-primary-nav ul,
 .cd-primary-nav ul:target {
-	/* 
-		show primary nav - mobile only 
+	/*
+		show primary nav - mobile only
 		:target is used to show navigation on no-js devices
 	*/
 	display: block;
@@ -344,7 +344,7 @@
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 2. Auto-Hiding Navigation - with Sub Nav
 
@@ -434,7 +434,7 @@
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 3. Auto-Hiding Navigation - with Sub Nav + Hero Image
 
@@ -465,7 +465,7 @@
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main content
 
@@ -521,20 +521,20 @@ Main content
 */
 
 .cd-main-content.sub-nav :target::before,
-.cd-main-content.sub-nav-hero :target::before { 
+.cd-main-content.sub-nav-hero :target::before {
 	display: block;
-  	content: ""; 
-  	margin-top: -$secondary-nav-height-small; 
-  	height: $secondary-nav-height-small; 
-  	visibility: hidden; 
+  	content: "";
+  	margin-top: -$secondary-nav-height-small;
+  	height: $secondary-nav-height-small;
+  	visibility: hidden;
 
   	@include MQ(L) {
-  		margin-top: -$secondary-nav-height; 
+  		margin-top: -$secondary-nav-height;
   		height: $secondary-nav-height;
   	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Intro Section
 
@@ -547,7 +547,7 @@ Intro Section
 	width: 100%;
 	margin-top: $header-height-small;
 	height: 300px;
-	background: url(../img/front-pic-sectors.jpg) no-repeat center center;
+/*	background: url(../img/front-pic-sectors.jpg) no-repeat center center;*/
 
 
 	.cd-hero-content {
@@ -559,14 +559,14 @@ Intro Section
 
 	@include MQ(M) {
 		height: 400px;
-                background: url(../img/front-pic-sectors-smaller.jpg) no-repeat center center;
+/*                background: url(../img/front-pic-sectors-smaller.jpg) no-repeat center center;*/
 	}
 
 	@include MQ(L) {
 		height: 600px;
 		margin-top: $header-height;
-                background: url(../img/front-pic-sectors.jpg) no-repeat center center;
-                background-size: 100%;
+/*                background: url(../img/front-pic-sectors.jpg) no-repeat center center;
+                background-size: 100%;*/
 	}
 }
 
@@ -576,7 +576,7 @@ Intro Section
 }
 
 @media (min-width: 768px){
-	
+
 	#logo {
 		width: 144px;
 	    // height: 36px;

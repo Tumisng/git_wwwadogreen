@@ -26,7 +26,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
 <!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/reset.css">-->
-    <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo ENV_ROOTURL; ?>assets/css/app.min.css" rel="stylesheet" type="text/css">
+     <link href="<?php echo ENV_ROOTURL; ?>assets/css/custom.css" rel="stylesheet" type="text/css">
+
 <!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/animate.css">-->
     <?php if ($strPageSlider == TRUE) { ?>
 

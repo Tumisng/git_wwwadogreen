@@ -9,7 +9,7 @@ include 'includes/header.php';
 
 
 if (Detect::isMobile()) {
-    echo '
+?>
                 <!-- *****************     Mobile screen **********************-->
                 <div class="container-fluid visible-xs">
                     <div class="row">
@@ -41,60 +41,108 @@ if (Detect::isMobile()) {
                         </div>
                     </div>
                 </div>
-            '
-    ;
+<?php
 }
 
 if (Detect::isComputer() || Detect::isTablet()) {
-    echo '
-
+ ?>
     <div class="container cd-main-content sub-nav-hero">
+
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center  animate-fade-in">
-                 <h1 class="h1"><b>ADOGREEN AFRICA</b></h1>
-                 <h1 class="heading-underline h2">Specialist Recruitment | HRO | RPO</h1>
-                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
+            <div class="col-md-12 animate-fade-in text-center">
+                <h1 class="front-sectors"><b>Sectors</b></h1>
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-sectors">
+                <h2>Mining</h2>
+
+                <p>
+                    With extensive experience and industry knowledge of working into the mining sector across Africa, covering all commodities, facing the most challenging of requirements, we are well positioned to source the best of talent available within the industry. Our expertise enables us to understand the technical requirements of the mining sector and highly defined client needs. Our years of experience set us apart to save our valued clients time and money to identify the best within the industry.
+                </p>
+                <hr class="style1">
+            </div>
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-mining.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-renewable.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+            <div class="col-md-6 padding-sectors">
+                <h2>Power & Renewable Energy</h2>
+
+                <p>
+                    Be it Wind Power, Solar, Hydropower and Geothermal Energy projects, we are well positioned to effectively source some of the best candidates within the market based on our effective recruitment methodologies through strategic networking and headhunting.
+
+    We have years of experience recruiting for highly skilled candidates within OHL, transmission and distribution, power stations, transformers and switchgear.
+                </p>
+                <hr class="style1">
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-sectors">
+                <h2>Engineering</h2>
+
+                <p>
+                    We are highly targeted in our approach to finding skilled and experienced candidates within the market, particularly when presented with skills shortages. With a focus on middle-level to director-level candidates, our success lies in sourcing the best of technical capabilities.
+                </p>
+                <hr class="style1">
+            </div>
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-engineering.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-building.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+            <div class="col-md-6 padding-sectors">
+                <h2>Building and Construction</h2>
+
+                <p>
+                    Our focus lies in sourcing various technical capabilities for construction companies throughout South Africa, and sub-Saharan Africa, enabling our clients to meet tight budgets and timelines through the provision of highly professional built environment personnel.
+                </p>
+                <hr class="style1">
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-sectors">
+                <h2>HR & Finance</h2>
+
+                <p>
+                    We cover a broad range of HR & financial requirements mostly within heavy industry sectors. It is all about people having a passion and a purpose to see the organisation succeed, where the right human capital can ultimately define this success. In finance, we cover all levels ranging from Bookkeepers to Financial Directors, where we find the best and most relevant sector specific candidates to align with your company focus and cultural fit.
+                </p>
+                <hr class="style1">
+            </div>
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-finance.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+        </div>
+        <div class="row animate-fade-in">
+            <div class="col-md-6 padding-none">
+                <img class="img-responsive" src="assets/img/front-sector-manufacture.jpg" width=100% alt="front-sector-mining"/>
+            </div>
+            <div class="col-md-6 padding-sectors">
+                <h2>Manufacturing</h2>
+
+                <p>
+                    Our manufacturing recruiting services help drive your financial and operational results. We understand the importance of partnering with our clients to understand key requirements to gain a competitive edge within the market, and provide quality professional, engineering and technical talent with the most relevant skills and experience.
+                </p>
+                <hr class="style1">
             </div>
         </div>
     </div>
-    <div class="row padding-bottom-40  animate-fade-in">
-            <a href="sectors/mining-jobs-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                        <img class="img-responsive" width="100%" src="assets/img/sector-mining-front.jpg" alt="Africa Mining Recruitment / Jobs">
-                </div>
-            </a>
-            <a href="sectors/engineering-jobs-heavy-industry-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" width="100%" src="assets/img/sector-engineering-front.jpg" alt="Africa recruitment heavy industry">
-                </div>
-            </a>
-            <a href="sectors/energy-power-generation-jobs-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" width="100%" src="assets/img/sector-power-front.jpg" alt="Africa Power Generation Recruitment / Jobs">
-                </div>
-            </a>
-            <a href="sectors/construction-jobs-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" width="100%" src="assets/img/sector-construction-front.jpg" alt="Africa Construction Recruitment / Jobs">
-                </div>
-            </a>
-            <a href="sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" width="100%" src="assets/img/sector-manufacturing-front.jpg" alt="Africa Manufacturing Recruitment / Jobs">
-                </div>
-            </a>
-            <a href="sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" width="100%" src="assets/img/sector-finance-hr-front.jpg" alt="Africa Finance Recruitment / Jobs">
-                </div>
-            </a>
-        </div>
 
-            '
-    ;
+
+
+<?php
 }
 if (Detect::isComputer() || Detect::isTablet()) {
-    echo '
+    ?>
 
     <!-- ******************* -->
     <!--      Seoncd Row     -->
@@ -184,13 +232,12 @@ if (Detect::isComputer() || Detect::isTablet()) {
             </div>
         </div>
     </div>
-    '
-    ;
+<?php
 }
 
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
-//include 'includes/js_slider.php';
+include 'includes/js_slider.php';
 ?>
 </body>
 </html>

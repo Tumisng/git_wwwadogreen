@@ -31,6 +31,11 @@ img {
     max-width: 100%;
 }
 
+.font-black {
+    color: $black !important;
+    text-shadow: 0 0 $white !important;
+}
+
 .frontpage {
     img {
         margin: auto;
@@ -56,6 +61,32 @@ img {
 
 .padding-bottom-40 {
     padding-bottom: 40px;
+}
+
+.padding-none {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.front-sectors {
+        font-size: 80px !important;
+        font-weight: 100;
+        padding-bottom: 50px;
+}
+
+.padding-sectors {
+    padding: 50px 80px;
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        padding-bottom: 30px;
+    }
+    h2 {
+        font-size: 58px;
+        line-height: 2;
+        font-weight: 100;
+        padding-top: 30px;
+    }
 }
 
 .summary {
