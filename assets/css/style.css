@@ -5004,7 +5004,7 @@ h3, h4 {
 .heading-underline {
   display: inline-block;
   border-bottom: 1px solid #8c8b8b;
-  padding: 20px 0px;
+  padding: 80px 0px 20px 0px;
   margin: 20px 0px; }
 
 .heading-underline-h3 {
@@ -6331,6 +6331,15 @@ img {
 .padding-bottom-40 {
   padding-bottom: 40px; }
 
+.padding-top-40 {
+  padding-top: 40px; }
+
+.padding-bottom-80 {
+  padding-bottom: 80px; }
+
+.padding-top-80 {
+  padding-top: 80px; }
+
 .padding-none {
   padding-left: 0px;
   padding-right: 0px; }
@@ -6486,6 +6495,9 @@ li.breadactive {
   margin-bottom: 4px;
   text-decoration: none; }
 
+btn-services h6 {
+  font-size: 18px !important; }
+
 .btn-danger {
   background-color: #ff0101;
   border-color: #ff0101; }
@@ -6609,12 +6621,13 @@ li.breadactive {
 
 #search-input {
   display: inline-block;
-  padding: .5em;
+  padding: .7em;
   width: 100%;
-  font-size: 0.8em;
+  font-size: 1.3em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #00a500; }
 
 .job-header {
   padding: 30px 15px 0px 15px; }

@@ -13,10 +13,23 @@
                         <label>Nationality (start typing the country name)<span class="color-red">*</span></label>
                         <input id="country-list" name="Nationality" class="form-control margin-bottom-20" required=""/>
 
-                        <label>Current Work Location (start typing the country name)<span class="color-red">*</span></label>
-                        <input id="country-list2" name="CurrentLocation" class="form-control margin-bottom-20" required=""/>
+                        <hr><br>
 
+                        <label>Current Work Location (start by selecting country - then state - then city)<span class="color-red">*</span></label>
 
+                        <select name="CurrentCountry" class="countries order-alpha presel-byip  group-continents group-order-af" id="countryId">
+                        <option value="">Select Country</option>
+                        </select>
+                        <select name="CurrentState" class="states order-alpha" id="stateId">
+                            <option value="">Select State</option>
+                        </select>
+                        <select name="CurrentCity" class="cities order-alpha" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+                        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                        <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+
+                        <hr><br>
 
                         <label>Ethnicity<span class="color-red">*</span></label>
                         <select class="form-control" id="Ethnic" name="Ethnic">
@@ -65,7 +78,6 @@
 
                         <label>Current Company<span class="color-red">*</span></label>
                         <input type="text" name="CompanyName" class="form-control margin-bottom-20" required>
-
 
                         <label>Current Salary (Your Basic)<span class="color-red">*</span></label>
                         <input type="text" name="Salary" class="form-control margin-bottom-20" required>

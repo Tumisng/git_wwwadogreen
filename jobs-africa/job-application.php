@@ -48,9 +48,11 @@
 
 
 
+
 ?>
     <!-- CSS file -->
     <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/plugins/autocomplete/easy-autocomplete.min.css">
+    <script type= "text/javascript" src = "<?php echo ENV_ROOTURL; ?>/assets/data/countries.js"></script>
 
 <!--=== Content Part ===-->
     <div class="container">
@@ -59,6 +61,7 @@
                 <h2 id="job-title"><?php echo $strJobTitle; ?></h2>
                 <h4 class="loud"><?php if ($strJobStatus=='closed') {
                     echo 'Please note: This job is closed. However, please do still register your CV here for similar future positions. Thank you!.';}?></h4>
+                        
             </div>
         </div>
         <div class="row">
@@ -115,7 +118,7 @@
 
        </script>
        <script>
-           var options = {
+        var options = {
 	url: "<?php echo ENV_ROOTURL; ?>assets/data/countries.xml",
 
                         dataType: "xml",
@@ -135,7 +138,25 @@
                 $("#country-list").easyAutocomplete(options);
                 $("#country-list2").easyAutocomplete(options);
        </script>
+       <script>
+            function print_country(country_id){
+                // given the id of the <select> tag as function argument, it inserts <option> tags
+                var option_str = document.getElementById(country_id);
+                var x, i=0;
+                for(x in country_arr){
+                        option_str.options[i++] = new Option(country_arr[x],country_arr[x]);
+                }
+            }
 
+            function print_state(state_id, state_index){
+                var option_str = document.getElementById(state_id);
+                var x, i=0; state_index++;
+                var state_arr = s_a[state_index].split("|");
+                for(x in state_arr){
+                    option_str.options[i++] = new Option(state_arr[x],state_arr[x]);
+                }
+            }
+       </script>
 
        </body>
 </html>

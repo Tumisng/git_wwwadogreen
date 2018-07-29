@@ -41,6 +41,24 @@ if (Detect::isMobile()) {
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <h1 class="text-center">Sectors</h1>
+                        <div class="col-xs-12  btn-padding"><a class="button button-red btn-block" href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php " role="button">Mining</a></div>
+                        <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Engineering</a></div>
+                        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php " role="button">Power</a></div>
+                        <div class="col-xs-12 btn-padding"><a class="button button-brown btn-block" href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Manufacturing</a></div>
+                        <div class="col-xs-12 btn-padding"><a class="button button-orange btn-block" href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Construction</a></div>
+                        <div class="col-xs-12 btn-padding"><a class="button button-purple btn-block" href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance</a></div>
+                    </div>
+                    <div class="row">
+                        <h1 class="text-center">Services</h1>
+                        <?php
+                            include 'includes/Page_Services.php';
+                        ?>
+                    </div>
+
+                </div>
 <?php
 }
 
@@ -213,22 +231,17 @@ if (Detect::isComputer() || Detect::isTablet()) {
             </div>
         </div>
     </div>
-    <div class="container-fluid ">
-        <div class="row">
-                 <div class="col-md-2"></div>
-                 <div class="col-md-6 text-left paragraph  animate-fade-in">
+    <div class="container ">
+        <div class="row padding-bottom-80">
+                 <div class="col-md-12 text-center  animate-fade-in ">
                      <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment | HR | RPO</h1>
                      <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
 
-                     <p class="text-left">AdoGreen Africa provides key fundamental services for companies in Africa whether it is Recruitment Process Outsourcing, Human Resource Outsourcing or Specialist Recruitment. AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
+                     <p>AdoGreen Africa provides key fundamental services for companies in Africa whether it is Recruitment Process Outsourcing, Human Resource Outsourcing or Specialist Recruitment. AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
 
                          We understand Africa, and the need to source <b>experienced expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
                         </p>
                  </div>
-                 <div class="col-md-4 front-img-no-space  animate-fade-in-right">
-                     <img class="img-responsive" src="assets/img/front-wind-farm.jpg">
-                 </div>
-
             </div>
         </div>
     </div>
@@ -237,7 +250,9 @@ if (Detect::isComputer() || Detect::isTablet()) {
 
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
-include 'includes/js_slider.php';
+if (Detect::isComputer() || Detect::isTablet()) {
+    include 'includes/js_slider.php';
+}
 ?>
 </body>
 </html>
