@@ -61,7 +61,7 @@
                 <h2 id="job-title"><?php echo $strJobTitle; ?></h2>
                 <h4 class="loud"><?php if ($strJobStatus=='closed') {
                     echo 'Please note: This job is closed. However, please do still register your CV here for similar future positions. Thank you!.';}?></h4>
-                        
+
             </div>
         </div>
         <div class="row">
@@ -86,6 +86,7 @@
                     </div>
                 </form>
             </div>
+            <br><br>
         </div>
     </div><!--/container-->
     <!--=== End Content Part ===-->

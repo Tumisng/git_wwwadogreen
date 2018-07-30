@@ -63,6 +63,18 @@ img {
     padding-bottom: 40px;
 }
 
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.padding-bottom-80 {
+    padding-bottom: 80px;
+}
+
+.padding-top-80 {
+    padding-top: 80px;
+}
+
 .padding-none {
     padding-left: 0px;
     padding-right: 0px;
@@ -270,6 +282,13 @@ li.breadactive {
     text-decoration: none;
 }
 
+btn-services {
+    h6 {
+       font-size: 18px !important;
+    }
+
+}
+
 .btn-danger {
     background-color: $ado-red;
     border-color: $ado-red;
@@ -431,12 +450,13 @@ li.breadactive {
 
 #search-input {
     display: inline-block;
-    padding: .5em;
+    padding: .7em;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 1.3em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: $ado-green;
 }
 
 .job-header {
