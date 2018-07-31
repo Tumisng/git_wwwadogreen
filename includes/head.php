@@ -8,6 +8,7 @@
 	<meta name="language" content="ENGLISH">
 	<meta name="content-language" content="EN">
 
+
         <!-- Indexing -->
 	<meta name="robots" content="<?php if ($strPageRobot!='') {echo $strPageRobot;} else{echo ENV_ROBOT;}?>">
 
@@ -25,13 +26,10 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-<!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/reset.css">-->
+
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
 <!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/animate.css">-->
-    <?php if ($strPageSlider == TRUE) { ?>
 
-    
-    <?php }; ?>
     <meta property="fb:app_id" content="126845677382791"/>
     <meta property="og:title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>" />
     <meta property="og:type" content="article" />
