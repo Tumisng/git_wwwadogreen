@@ -8,7 +8,7 @@ include 'includes/header.php';
 
 
 
-if (Detect::isMobile()) {
+if (Detect::isMobile() || Detect::isTablet()) {
 ?>
                 <!-- *****************     Mobile screen **********************-->
                 <div class="container-fluid visible-xs">
@@ -62,7 +62,7 @@ if (Detect::isMobile()) {
 <?php
 }
 
-if (Detect::isComputer() || Detect::isTablet()) {
+if (Detect::isComputer()) {
  ?>
     <div class="container cd-main-content sub-nav-hero">
 
@@ -159,7 +159,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
 
 <?php
 }
-if (Detect::isComputer() || Detect::isTablet()) {
+if (Detect::isComputer()) {
     ?>
 
     <!-- ******************* -->
@@ -250,7 +250,7 @@ if (Detect::isComputer() || Detect::isTablet()) {
 
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
-if (Detect::isComputer() || Detect::isTablet()) {
+if (Detect::isComputer()) {
     include 'includes/js_slider.php';
 }
 ?>

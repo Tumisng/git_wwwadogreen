@@ -11,7 +11,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide img-responsive"  width="100%"  src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/AdoGreenLogo.png" alt="First slide">
+          <img class="first-slide img-responsive" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/AdoGreenLogo.png" alt="First slide">
           <div class="container-fluid">
 <!--              <img class="img-carousel-caption" src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-2.png'; ?>" width="138" height="30" alt="">-->
             <div class="carousel-caption">

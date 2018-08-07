@@ -6712,13 +6712,19 @@ address {
     font-size: 2.5em; }
 
   .jumbotron p p {
-    font-size: 16px !important; } }
+    font-size: 16px !important; }
+
+  .carousel-indicators {
+    bottom: -16px; } }
 @media (min-width: 992px) {
   body {
     margin-top: 80px; }
 
+  .cd-hero {
+    margin-top: -20px; }
+
   .carousel-caption {
-    bottom: 100px; }
+    bottom: 18px; }
     .carousel-caption h1 {
       font-size: 80px; }
 
@@ -6734,7 +6740,7 @@ address {
     font-size: 18px; }
 
   .carousel-caption {
-    bottom: 100px; }
+    bottom: -20px; }
     .carousel-caption h1 {
       font-size: 80px; } }
 @media (min-width: 1400px) {
