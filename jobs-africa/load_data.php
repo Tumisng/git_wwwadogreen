@@ -2,7 +2,7 @@
 // =============================================================================
 //  Load the Job/s relating to the drop down value of country and industry
 //
-//  Author: Natie Rautenbach + Upgraded by Mou Mokete
+//  Author: Natie Rautenbach + Upgraded by Mou Thabang
 //  Date written: 03/10/2017
 //  (c) AdoGreen Africa / The Missing Floor
 //==============================================================================
@@ -60,14 +60,20 @@
                $strJobTitleURL=str_ireplace(" ","-",$strJobTitle);
                $output .= '<li>
                                         <div class="card-jobs card-green">
-                                                <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL .'">
-                                                        <div class="card-content">
-                                                            <h6 class="category pull-right">'. $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry .'</h6>
-                                                            <h4 class="title">'. $strJobTitle .'</h4>
+                                                <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL . '">
+                                                        <div class="col-md-2 hidden-xs">
+                                                        <img width = "80%" height="80%" src="' . ENV_ROOTURL . 'assets/img/icon-' . $strJobSector . '.jpg">
+                                                        </div>
+
+                                                        <div class="col-md-10 card-content">
+                                                            <h4 class="title">' . $strJobTitle . '</h4>
                                                             <p class="description hidden-xs">' . $strJobShortDesc . '</p>
+                                                            <h6 class="category pull-right hidden-xs">' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</h6>
+                                                            <h6 class="category pull-left hidden-xs"> Date Posted:' . $strJobOpenDate  . '</h6>
+                                                           
                                                         </div>
                                                         <div>
-                                                        <p class="job-date"><i>Date Posted:' . $strJobOpenDate . '</i></p>
+                                                        <p class="hidden-lg hidden-md hidden-sm" ><small >' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</small></p>
                                                         </div>
                                                 </a>
                                         </div>

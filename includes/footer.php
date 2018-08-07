@@ -6,8 +6,8 @@
 <!--            <div class="container">-->
                 <div class="row">
                     <!-- About -->
-                    <div class="col-md-2 hidden-sm"></div>
-                    <div class="col-md-2 col-sm-6">
+                    <div class="col-md-1 hidden-sm"></div>
+                    <div class="col-md-3 col-sm-6">
 
                         <h4>Services</h4>
                         <ul class="list-unstyled footer-a">
@@ -28,7 +28,7 @@
                     <!--/col-md-2 col-sm-6-->
                     <!-- End About -->
                     <!-- Latest -->
-                    <div class="col-md-2 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                         <h4>Sectors</h4>
                         <ul class="list-unstyled footer-a">
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR Recruitment</a></li>
@@ -51,14 +51,14 @@
                                 <a href="<?php echo ENV_ROOTURL;?>about-us.php" rel="nofollow">About Us</a>
                             </li>
                             <li>
-                                <a href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
+                                <a href="<?php echo ENV_ROOTURL;?>jobs/register-cv.php" rel="nofollow">Register Your CV</a>
                             </li>
                         </ul>
                     </div>
                     <!--/col-md-2-->
                     <!-- End Link List -->
                     <!-- Address -->
-                    <div class="col-md-2 col-sm-6">
+                    <div class="col-md-3 col-sm-6">
                     <h4>Contact Details</h4>
                         <address>
 
