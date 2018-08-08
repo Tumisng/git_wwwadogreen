@@ -13,15 +13,15 @@ function curPageURL() {
     }
     return $pageURL;
 }
-
-include_once ENV_ROOT . 'lib/detect.php';
+require_once ENV_ROOT . 'lib/Mobile_Detect.php';
+require_once ENV_ROOT . 'lib/detect.php';
 include_once ENV_ROOT . 'includes/head.php';
 ?>
 <script src="<?php echo ENV_ROOTURL . 'assets/plugins/scroll/scrollreveal.min.js'; ?>"></script>
 
 <body>
     <?php
-    if (Detect::isMobile()) {
+    if (Detect::isMobile()|| Detect::isTablet()) {
         ?>
         <nav class="navbar yamm nafbar-default">
             <div class="container">
@@ -99,7 +99,7 @@ include_once ENV_ROOT . 'includes/head.php';
         <?php
     }
 
-    if (Detect::isComputer() || Detect::isTablet()) {
+    if (Detect::isComputer()) {
         ?>
         <header>
             <header class="cd-auto-hide-header">

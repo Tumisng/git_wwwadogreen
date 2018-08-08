@@ -1,13 +1,13 @@
 <?php
 /*!
- * Developed by Kevin Warren, https://twitter.com/SkynetWebS
+ * Developed by Kevin Warren, https://twitter.com/KevinTWarren
  *
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
- * Detect Device 1.0.3
+ * Detect Device 1.0.4
  *
- * Last Modification Date: 28/04/2016
+ * Last Modification Date: 20/11/2017
  */
 require_once 'Mobile_Detect.php';
 class Detect {
@@ -66,7 +66,7 @@ class Detect {
 	public static function version($var) {
 		return self::$detect->version($var);
 	}
-	
+
 	public static function isEdge() {
 		$agent = $_SERVER['HTTP_USER_AGENT'];
 		if (preg_match('/Edge\/\d+/', $agent)) {
@@ -75,7 +75,7 @@ class Detect {
 			return false;
 		}
 	}
-	
+
 	public static function __callStatic($name, $arguments) {
 		if (substr($name, 0, 2) != 'is') {
 			$trace = current(debug_backtrace());
@@ -124,7 +124,10 @@ class Detect {
 			if (self::$detect->version('Android') !== false) {
 				$version = ' ' . self::$detect->version('Android');
 				switch (true) {
-					case self::$detect->version('Android') >= 5.0: $codeName = ' (Lollipop)'; break;
+                    case self::$detect->version('Android') >= 8.0: $codeName = ' (Oreo)'; break;
+					case self::$detect->version('Android') >= 7.0: $codeName = ' (Nougat)'; break;
+                    case self::$detect->version('Android') >= 6.0: $codeName = ' (Marshmallow)'; break;
+                    case self::$detect->version('Android') >= 5.0: $codeName = ' (Lollipop)'; break;
 					case self::$detect->version('Android') >= 4.4: $codeName = ' (KitKat)'; break;
 					case self::$detect->version('Android') >= 4.1: $codeName = ' (Jelly Bean)'; break;
 					case self::$detect->version('Android') >= 4.0: $codeName = ' (Ice Cream Sandwich)'; break;
@@ -141,7 +144,11 @@ class Detect {
 		} elseif (preg_match('/Linux/', $agent)) {
 			$os = 'Linux';
 		} elseif (preg_match('/Mac OS X/', $agent)) {
-			if (preg_match('/Mac OS X 10_11/', $agent) || preg_match('/Mac OS X 10.11/', $agent)) {
+			if (preg_match('/Mac OS X 10_13/', $agent) || preg_match('/Mac OS X 10.13/', $agent)) {
+				$os = 'OS X (High Sierra)';
+			} elseif (preg_match('/Mac OS X 10_12/', $agent) || preg_match('/Mac OS X 10.12/', $agent)) {
+				$os = 'OS X (Sierra)';
+			} elseif (preg_match('/Mac OS X 10_11/', $agent) || preg_match('/Mac OS X 10.11/', $agent)) {
 				$os = 'OS X (El Capitan)';
 			} elseif (preg_match('/Mac OS X 10_10/', $agent) || preg_match('/Mac OS X 10.10/', $agent)) {
 				$os = 'OS X (Yosemite)';
@@ -167,7 +174,7 @@ class Detect {
 				$os = 'Mac OS X (Cheetah)';
 			}
 		} elseif (self::$detect->isWindowsPhoneOS()) {
-			$icon = 'windowsphone8';
+			//$icon = 'windowsphone8';
 			if (self::$detect->version('WindowsPhone') !== false) {
 				$version = ' ' . self::$detect->version('WindowsPhoneOS');
 				/*switch (true) {
@@ -192,11 +199,18 @@ class Detect {
 				default: $codeName = ' NT v' . self::$detect->version('Windows NT'); break;
 			}
 			$os = 'Windows' . $codeName;
-		}
+		} elseif (self::$detect->isiOS()) {
+            if (self::$detect->isTablet()) {
+                $version = ' ' . self::$detect->version('iPad');
+            } else {
+                $version = ' ' . self::$detect->version('iPhone');
+            }
+            $os = 'iOS' . $version;
+        }
 		return $os;
 
 	}
-	
+
 	public static function browser() {
 		$agent = $_SERVER['HTTP_USER_AGENT'];
 		$browser = 'Unknown Browser';

@@ -3,17 +3,17 @@ $strLive = FALSE;
 $strPageSlider = FALSE;
 
 if($strLive == TRUE) {
- define('ENV_ROOT', '/var/www/vhosts/www.adogreen.com/');
+ define('ENV_ROOT', 'C:/xampp/htdocs/wwwadogreen/');
 
- define('ENV_ROOTURL', 'http://www.adogreen.com/');
+ define('ENV_ROOTURL', 'http://localhost/wwwadogreen/');
 
  define('ENV_RSS', 'https://adogreen.koneqt.com/');
 } else {
         // Absolute path to application root folder (must end with a forward slash)
-        define('ENV_ROOT', '/Applications/mappstack-7.0.28-1/apache2/htdocs/wwwadogreen/');
+        define('ENV_ROOT', 'C:/xampp/htdocs/wwwadogreen/');
 
         // URL path to application root folder (must end with a forward slash)
-        define('ENV_ROOTURL', 'http://localhost:8081/wwwadogreen/');
+        define('ENV_ROOTURL', 'http://localhost/wwwadogreen/');
 
         //URL to RSS V2 Server when needed
          define('ENV_RSS', 'https://adogreen.koneqt.com/');
