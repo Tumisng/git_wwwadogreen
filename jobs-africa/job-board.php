@@ -61,11 +61,11 @@ function fill_job($connect)
     $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
     $json1 = file_get_contents($json_url);
     $array = json_decode($json1);
-
     if (isset($array[2]))
     {
         foreach ($array[2] as $value)
         {
+            
             $strAppDataId = $value->AppDataId;
             $strJobTitle = $value->JobTitle;
             $strJobContract = $value->ContractType;
@@ -97,6 +97,7 @@ function fill_job($connect)
                                         </div>
                                 </li>';
         }
+       
     }
     return $output;
 }
@@ -133,7 +134,7 @@ function get_country()
     return $output;
 }
 ?>
-<div class="container">
+<div class="container"  id="sector_container">
     <div class="row padding-bottom-20">
     <?php echo fill_buttons_with_sector($connect); ?>
     </div>
@@ -144,6 +145,7 @@ function get_country()
         </div>
     </div>
     </br>
+    <h3 class="text-center"><span id="resultCount"></span></h3>
 </div>
 <style>
     .img-flag-icon
@@ -174,6 +176,7 @@ include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 <script>
+    
     $("#search-input").on("keyup", function () {
         var search = $(this).val().trim().toLowerCase();
         $(".card-jobs").show().filter(function () {
@@ -192,6 +195,8 @@ include ENV_ROOT . 'includes/js_scripts.php';
         });
     });
 });
+
+
 </script>
 
 <script>
@@ -212,7 +217,6 @@ include ENV_ROOT . 'includes/js_scripts.php';
 <script>
     function myFunction(objSectorName)
     {
-
         var sector = objSectorName.value;
         $.ajax({
             url: "load_data.php",
@@ -223,14 +227,16 @@ include ENV_ROOT . 'includes/js_scripts.php';
                 $('#show_sector').html(data);
             }
         });
+        
+        
     }
 </script>
 
 <script>
     function function_fill_by_country(objCountryName)
     {
-
         var country = objCountryName.value;
+
         $.ajax({
             url: "load_data.php",
             method: "POST",

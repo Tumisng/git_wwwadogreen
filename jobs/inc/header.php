@@ -67,8 +67,8 @@ include_once ENV_ROOT . 'inc/head.php';
           <li>
             <a href="#">Candidate</a>
             <ul>
-                <li><a href="<?php echo ENV_ROOTURL; ?> jobs/register-cv.php">Register CV</a></li>
-                <li><a href="../referral.php">Refer a Candidate</a></li>
+                <li><a href="<?php echo ENV_ROOTURL; ?>jobs/register-cv.php">Register CV</a></li>
+                <li><a href="<?php echo ENV_ROOTURL; ?>referral.php">Refer a Candidate</a></li>
             </ul>
           </li>
           
