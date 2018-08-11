@@ -65,7 +65,7 @@ function fill_job($connect)
     {
         foreach ($array[2] as $value)
         {
-            
+
             $strAppDataId = $value->AppDataId;
             $strJobTitle = $value->JobTitle;
             $strJobContract = $value->ContractType;
@@ -74,13 +74,14 @@ function fill_job($connect)
             $strJobSector = $value->Sector;
             $strJobLocation = $value->Location;
             $strJobCountry = $value->Country;
+            $strJobImgId = $value->ImageUploadedId; 
             //    replace %20 in the URL
             $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
             $output .= '<li>
                                         <div class="card-jobs card-green">
                                                 <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL . '">
-                                                        <div class="col-md-2">
-                                                        <img width = "80%" height="80%" src="' . ENV_ROOTURL . 'assets/img/icon-' . $strJobSector . '.jpg">
+                                                        <div class="img-job col-md-2">
+                                                        <img class="img-responsive" width="100%" src="'.  ENV_RSS . 'DMSimage.php?i=' . $strJobImgId . '">
                                                         </div>
 
                                                         <div class="col-md-10 card-content">
@@ -88,7 +89,7 @@ function fill_job($connect)
                                                             <p class="description hidden-xs">' . $strJobShortDesc . '</p>
                                                             <h6 class="category pull-right hidden-xs">' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</h6>
                                                             <h6 class="category pull-left hidden-xs"> Date Posted:' . $strJobOpenDate  . '</h6>
-                                                           
+
                                                         </div>
                                                         <div>
                                                         <p class="hidden-lg hidden-md hidden-sm" ><small >' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</small></p>
@@ -97,7 +98,7 @@ function fill_job($connect)
                                         </div>
                                 </li>';
         }
-       
+
     }
     return $output;
 }
@@ -176,7 +177,7 @@ include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 <script>
-    
+
     $("#search-input").on("keyup", function () {
         var search = $(this).val().trim().toLowerCase();
         $(".card-jobs").show().filter(function () {
@@ -227,8 +228,8 @@ include ENV_ROOT . 'includes/js_scripts.php';
                 $('#show_sector').html(data);
             }
         });
-        
-        
+
+
     }
 </script>
 
