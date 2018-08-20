@@ -44,7 +44,7 @@
 	<meta name="content-language" content="EN">
 
 <!-- /.website title -->
-<title>Recruitment Software Solutions</title>
+<title>Recruitment Consultant Jobs George Garden Route South Africa</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>">
 	<meta name="keywords" content="<?php if ($strPageKeywords !='') {echo $strPageKeywords;} else{echo ENV_KEYWORDS;}?>">
@@ -92,7 +92,7 @@
 <div id="top"></div>
 
 <!-- /.parallax full screen background image -->
-<div class="fullscreen landing parallax" style="background-image:url('images/garden-route-botanical-garden.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
+<div class="fullscreen landing parallax" style="background-image:url('images/garden-route-botanical-garden.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100" alt="Recruitment Consultant Jobs south Africa George">
 
 	<div class="overlay">
 		<div class="container">
@@ -125,7 +125,7 @@
 					</div>
 					<div class="landing-text wow fadeInUp">
 						<h2>AdoGreen Africa</h2>
-                                            <p>AdoGreen Africa has a well established specialist recruitment agency established since 2007</p>
+                                            <p>AdoGreen Africa is a well established specialist recruitment agency established since 2007</p>
 					</div>
 
 
