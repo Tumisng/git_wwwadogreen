@@ -58,10 +58,12 @@ function fill_buttons_with_sector($connect)
 function fill_job($connect)
 {
     $output = '';
-    $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes';
+    $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&s=OpenDate';
     $json1 = file_get_contents($json_url);
     $array = json_decode($json1);
     if (isset($array[2]))
+
+
     {
         foreach ($array[2] as $value)
         {
@@ -74,9 +76,10 @@ function fill_job($connect)
             $strJobSector = $value->Sector;
             $strJobLocation = $value->Location;
             $strJobCountry = $value->Country;
-            $strJobImgId = $value->ImageUploadedId; 
+            $strJobImgId = $value->ImageUploadedId;
             //    replace %20 in the URL
             $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
+
             $output .= '<li>
                                         <div class="card-jobs card-green">
                                                 <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL . '">
@@ -159,9 +162,7 @@ width: 150px
 
 </style>
 <div class="container">
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-8" id="show_sector">
+    <div class="col-md-10" id="show_sector">
         <ul class="list-unstyled joblist" id="job-board-listing">
 <?php echo fill_job($connect); ?>
         </ul>

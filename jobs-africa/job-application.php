@@ -12,7 +12,7 @@
     include_once $strEnvConfigFile;
     include_once '../includes/header.php';
     //    Get the AppDataId from the URL
-    $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+    $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_NUMBER_INT);
 
     $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&i=' . $intAppDataId. '&f=JobTitle,AppDataId,Status';
     //First version loading into an array
