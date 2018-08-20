@@ -65,6 +65,7 @@ if (isset($_POST["sector"]) || isset($_POST["country"]))
             $strJobSector = $value->Sector;
             $strJobLocation = $value->Location;
             $strJobCountry = $value->Country;
+            $strJobImgId = $value->ImageUploadedId;
             //    replace %20 in the URL
             $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
             $output .= '<li>
@@ -90,7 +91,8 @@ if (isset($_POST["sector"]) || isset($_POST["country"]))
         }
 
     }
-    return $output;
+    $output .= '</ul>';
+    echo $output;
     }
 ?>
 <script>
