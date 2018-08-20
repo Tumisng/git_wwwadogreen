@@ -54,6 +54,7 @@ function fill_buttons_with_sector($connect)
     return $output;
 }
 
+
 // Fill the Jobs
 function fill_job($connect)
 {
@@ -61,8 +62,8 @@ function fill_job($connect)
     $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&s=OpenDate';
     $json1 = file_get_contents($json_url);
     $array = json_decode($json1);
-    if (isset($array[2]))
 
+    if (isset($array[2]))
 
     {
         foreach ($array[2] as $value)
