@@ -14,7 +14,7 @@ include_once $strEnvConfigFile;
 $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 
 $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&i=' . $intAppDataId;
-$strBlog = ENV_RSS . 'publicapi/getBlog.php?c=WebPostAdo&f=Description&i=' . $intAppDataId;
+//$strBlog = ENV_RSS . 'publicapi/getBlog.php?c=WebPostAdo&f=Description&i=' . $intAppDataId;
 //First version loading into an array
 $json = file_get_contents($json_url);
 $array = json_decode($json);
@@ -51,8 +51,8 @@ include_once ENV_ROOT . 'includes/header.php';
     <div class="row">
         <div class="col-md-12">
             <ol class="breadcrumb">
-                <li><a href="/index.php">AdoGreen Recruitment Africa</a></li>
-                <li><a href="/blog/index.php" >Blog</a></li>
+                <li><a href="<?php echo ENV_ROOTURL;?>index.php">AdoGreen Africa Recruitment Africa</a></li>
+                <li><a href="<?php echo ENV_ROOTURL;?>blog/index.php" >Blog</a></li>
                 <li class="active"><?php echo $strBlogTitle; ?></li>
             </ol>
         </div>
@@ -90,7 +90,7 @@ include_once ENV_ROOT . 'includes/header.php';
         <ul class="list-unstyled">
             <?php
             $array = array();
-            $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published&Sector=' . $strBlogSector;
+            $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published&f=Status,Title,SEODescription,OpenDate,Sector,ImageUploadedId&Sector=' . $strBlogSector;
             //First version loading into an array
             $json1 = file_get_contents($json_url);
             $array = json_decode($json1, TRUE);
