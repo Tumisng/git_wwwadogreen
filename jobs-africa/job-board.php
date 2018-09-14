@@ -59,9 +59,10 @@ function fill_buttons_with_sector($connect)
 function fill_job($connect)
 {
     $output = '';
-    $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&s=OpenDate';
+    $json_url = ENV_RSS . 'ajax/Recruitment/getOpenJobs.php';
     $json1 = file_get_contents($json_url);
     $array = json_decode($json1);
+
 
     if (isset($array[2]))
 
@@ -71,7 +72,6 @@ function fill_job($connect)
 
             $strAppDataId = $value->AppDataId;
             $strJobTitle = $value->JobTitle;
-            $strJobContract = $value->ContractType;
             $strJobShortDesc = $value->ShortDescription;
             $strJobOpenDate = $value->OpenDate;
             $strJobSector = $value->Sector;

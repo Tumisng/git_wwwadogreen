@@ -35,7 +35,7 @@
                 <ul class="list-unstyled">
                         <?php
                         $array = array();
-                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published';
+                        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=WebPostAdo&Status=Published&f=Status,Title,SEODescription,OpenDate,Sector,ImageUploadedId';
 //                        echo $json_url;
                         //First version loading into an array
                         $json1 = file_get_contents($json_url);

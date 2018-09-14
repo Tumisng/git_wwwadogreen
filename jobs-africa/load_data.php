@@ -30,7 +30,7 @@ if (isset($_POST["sector"]) || isset($_POST["country"]))
         {
         $strSearch = $_POST["sector"];
         $strSearch = str_ireplace(" ", "%20", $_POST["sector"]);
-        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Sector=' . $strSearch;
+        $json_url = ENV_RSS . 'ajax/Recruitment/getOpenJobs.php?Sector=' . $strSearch;
         }
     else if ($_POST["country"] != '')
         {
@@ -41,7 +41,7 @@ if (isset($_POST["sector"]) || isset($_POST["country"]))
         }
     else
         {
-        $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes';
+        $json_url = ENV_RSS . 'ajax/Recruitment/getOpenJobs.php';
         }
 
 
