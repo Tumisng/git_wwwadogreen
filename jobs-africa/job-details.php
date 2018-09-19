@@ -1,4 +1,4 @@
-<?php 
+<?php
     $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -12,12 +12,12 @@
     include_once $strEnvConfigFile;
     //    Get the AppDataId from the URL
     $intAppDataId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-     
+
     $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&i=' . $intAppDataId;
     //First version loading into an array
     $json = file_get_contents($json_url);
     $array = json_decode($json);
-    
+
     if(isset($array[2])) {
             foreach ($array[2] as $value) {
                     $strJobId = $value->AppDataId;
@@ -25,7 +25,7 @@
                     $strJobTitle = $value->JobTitle;
                     $strJobKeywords = $value->Keywords;
                     $strJobAssignedTo = $value->AssignedToName;
-                    $strJobImgId = $value->ImageUploadedId; 
+                    $strJobImgId = $value->ImageUploadedId;
                     $strJobOpenDate = $value->OpenDate;
                     $strJobSector = $value->Sector;
                     $strJobContract = $value->ContractType;
@@ -39,17 +39,17 @@
                     $strJobRequirements = $value->MinimumRequirements;
                     $strJobSalary =$value->Salary;
             }
-    }  
+    }
 
-    $strPageTitle = 'Job: ' . $strJobTitle;
+    $strPageTitle = 'Job: ' . $strJobTitle . ' - Sector - ' . $strJobSector;
     $strPageDescription = $strJobShortDesc;
     $strPageKeywords = 'Job: ' . $strJobCountry . '- ' . $strJobLocation . ' ' . $strJobKeywords;
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
     $strPageImg = ENV_RSS . 'DMSimage.php?i=' . $strJobImgId;
-    
-    
+
+
     include_once ENV_ROOT . 'includes/header.php';
-?> 
+?>
 
   <div class="container">
     <div class="row">
@@ -64,33 +64,33 @@
                 <ul class="list-unstyled">
                     <?php
                                     $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobShortDesc) . '</li>';
-                                    echo ($new_string);  
+                                    echo ($new_string);
                                   ?>
-                </ul>    
+                </ul>
             <h3>Detail</h3>
                         <ul>
                             <?php
                                 $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobOverview) . '</li>';
-                                echo ($new_string);  
+                                echo ($new_string);
                               ?>
                         </ul>
                 <h3>Job Description</h3>
                         <ul>
                             <?php
                                 $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobDescription) . '</li>';
-                                echo ($new_string);  
+                                echo ($new_string);
                               ?>
                         </ul>
                 <h3>Minimum Requirements</h3>
                          <ul>
                             <?php
                                 $new_string = '<li>' . str_replace("\n", '</li><li>', $strJobRequirements) . '</li>';
-                                echo ($new_string);  
+                                echo ($new_string);
                               ?>
                         </ul>
                 </br>
                 <hr>
-                
+
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d6e96a310897697"></script>
                 <div class="row margin-20">
                     <div class="col-md-5 btn-job-apply"><a rel="nofollow" href="<?php echo ENV_ROOTURL.'jobs-africa/job-application.php?id='.$strJobId; ?>" class="button button-green btn-block">Apply Now</a></div>
@@ -115,7 +115,7 @@
                         </ul>
                         <p>&nbsp;</p>
                         <p>Commission pay-out is processed only after the candidate starts with the company where we will then require your banking details.</p>
-                        
+
                     </div>
                 </div>
         </div>
@@ -130,7 +130,7 @@
             </div>
 
             <hr>
-            <div> 
+            <div>
                 <a class="button button-blue btn-block" rel="nofollow" href="https://www.linkedin.com/company/adogreen"><img class="img-responsive" src="/assets/img/social-linkedin.png" width="100%" alt="Linkedin AdoGreen Africa Specialist Recruitment"></a>
             </div>
         </div>
@@ -138,8 +138,8 @@
 </div>
 
 
-<?php    
-     
+<?php
+
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>

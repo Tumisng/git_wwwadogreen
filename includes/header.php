@@ -16,6 +16,7 @@ function curPageURL() {
 require_once ENV_ROOT . 'lib/Mobile_Detect.php';
 require_once ENV_ROOT . 'lib/detect.php';
 include_once ENV_ROOT . 'includes/head.php';
+
 ?>
 <script src="<?php echo ENV_ROOTURL . 'assets/plugins/scroll/scrollreveal.min.js'; ?>"></script>
 
