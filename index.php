@@ -70,12 +70,12 @@ if (Detect::isComputer()) {
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 animate-fade-in text-center">
-                <h1 class="front-sectors"><b>Sectors</b></h1>
+                <h1 class="front-sectors"><b>Recruitment in Africa - Sectors</b></h1>
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2>Mining</h2>
+                <h2>African Mining Recruitment</h2>
 
                 <p>
                     With extensive experience and industry knowledge of working into the mining sector across Africa, covering all commodities, facing the most challenging of requirements, we are well positioned to source the best of talent available within the industry. Our expertise enables us to understand the technical requirements of the mining sector and highly defined client needs. Our years of experience set us apart to save our valued clients time and money to identify the best within the industry.
@@ -91,7 +91,7 @@ if (Detect::isComputer()) {
                 <img class="img-responsive" src="assets/img/front-sector-renewable.jpg" width=100% alt="front-sector-mining"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Power & Renewable Energy</h2>
+                <h2>Power & Renewable Energy Recruitment In Africa</h2>
 
                 <p>
                     Be it Wind Power, Solar, Hydropower and Geothermal Energy projects, we are well positioned to effectively source some of the best candidates within the market based on our effective recruitment methodologies through strategic networking and headhunting.
@@ -103,7 +103,7 @@ if (Detect::isComputer()) {
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2>Engineering</h2>
+                <h2>African Engineering Recruitment</h2>
 
                 <p>
                     We are highly targeted in our approach to finding skilled and experienced candidates within the market, particularly when presented with skills shortages. With a focus on middle-level to director-level candidates, our success lies in sourcing the best of technical capabilities.
@@ -119,7 +119,7 @@ if (Detect::isComputer()) {
                 <img class="img-responsive" src="assets/img/front-sector-building.jpg" width=100% alt="front-sector-mining"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Building and Construction</h2>
+                <h2>Building and Construction Recruitment In Africa</h2>
 
                 <p>
                     Our focus lies in sourcing various technical capabilities for construction companies throughout South Africa, and sub-Saharan Africa, enabling our clients to meet tight budgets and timelines through the provision of highly professional built environment personnel.
@@ -129,7 +129,7 @@ if (Detect::isComputer()) {
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2>HR & Finance</h2>
+                <h2>African HR & Finance Recruitment</h2>
 
                 <p>
                     We cover a broad range of HR & financial requirements mostly within heavy industry sectors. It is all about people having a passion and a purpose to see the organisation succeed, where the right human capital can ultimately define this success. In finance, we cover all levels ranging from Bookkeepers to Financial Directors, where we find the best and most relevant sector specific candidates to align with your company focus and cultural fit.
@@ -145,7 +145,7 @@ if (Detect::isComputer()) {
                 <img class="img-responsive" src="assets/img/front-sector-manufacture.jpg" width=100% alt="front-sector-mining"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Manufacturing</h2>
+                <h2>Manufacturing Recruitment In Africa</h2>
 
                 <p>
                     Our manufacturing recruiting services help drive your financial and operational results. We understand the importance of partnering with our clients to understand key requirements to gain a competitive edge within the market, and provide quality professional, engineering and technical talent with the most relevant skills and experience.
@@ -169,7 +169,7 @@ if (Detect::isComputer()) {
         <div class="row padding-bottom-40  animate-fade-in">
             <div class="col-md-2"></div>
             <div class="col-md-8 parallax-content">
-                <h1 class="animate-fade-in bold">Heavy Industry Focus Within Africa</h1>
+                <h1 class="animate-fade-in bold">Heavy Industry Recruitment Focus Within Africa</h1>
                 <p class="paralax-heading">Specialist Recruitment | Human Resources | Recruitment Process Outsourcing | Psychometry</p>
             </div>
             <div class="col-md-2"></div>
@@ -179,7 +179,7 @@ if (Detect::isComputer()) {
         <div class="row">
             <div class="col-md-12 text-center  animate-fade-in">
                  <h1 class="heading-underline h2">Overview</h1>
-                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
+                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa Recruitment provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
             </div>
         </div>
         <div class="row animate-fade-in">

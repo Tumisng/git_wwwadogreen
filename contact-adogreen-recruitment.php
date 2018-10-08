@@ -28,7 +28,7 @@
                 <ul class="list-unstyled who margin-bottom-30">
                     <li> <h3> <i class="fa fa-home"></i> South Africa Head Office</li></h3>
                     <li><a href="#"><i class="fa fa-envelope"></i> info@adogreen.com</a></li>
-                    <li><a href="#"><i class="fa fa-phone"></i> +27 87 813 0303</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i> +27 10 140 0951</a></li>
                     <li><a href="http://www.adogreen.com"><i class="fa fa-globe"></i> http://www.adogreen.com</a></li>
                 </ul>
                 </br>

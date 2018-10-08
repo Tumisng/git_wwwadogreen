@@ -65,7 +65,7 @@
                             <strong>AdoGreen Africa</strong>
                             <strong>Recruitment | HR | RPO</strong>
                             <br/> South Africa Offices
-                            <br/> Phone: +27 (0) 87 813 0303
+                            <br/> Phone: +27 (0) 21 140 0899
                             <br/> Fax: +27 (0) 86 607 1173
                             <br/> Email: <a href="mailto:info@adogreen.com" rel="nofollow">info@adogreen.com</a>
                             <br/> Monday - Friday 8:00 - 16:30 +2GMT

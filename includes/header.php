@@ -172,7 +172,7 @@ include_once ENV_ROOT . 'includes/head.php';
                         </li>
                     </ul>
                     <div class="hidden-xs" id="contact-details">
-                        <i class="fa fa-lg fa-phone" aria-hidden="true"></i> +27 87 813 0303 - <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@adogreen.com">info@adogreen.com</a>
+                        <i class="fa fa-lg fa-phone" aria-hidden="true"></i> +27 21 140 0899 - <i class="fa fa-lg fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@adogreen.com">info@adogreen.com</a>
                     </div>
                 </nav> <!-- .cd-primary-nav -->
 

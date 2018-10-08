@@ -16,8 +16,8 @@
 <!--              <img class="img-carousel-caption" src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-2.png'; ?>" width="138" height="30" alt="">-->
             <div class="carousel-caption">
               <h1 class="bold font-black"></h1>
-               <h3 class="font-black" >Specialist Recruitment | HR | RPO Services</h3>
-               <p class="font-black text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Recruitment, Human Resources and RPO services in the African market</p>
+               <h3 class="font-black" >African Recruitment | HR | RPO Services</h3>
+               <p class="font-black text-center heading-upper">Established since 2007, AdoGreen Africa Recruitment provides specialist Recruitment, Human Resources and RPO services in the African market</p>
               <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>about-us.php" role="button">Read More</a></p>
             </div>
           </div>
