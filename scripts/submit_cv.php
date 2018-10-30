@@ -1,23 +1,23 @@
 <?php
 
 /*
- * submit_cv.php - version 2 Alex Mattelaer 20151013 
- * 
+ * submit_cv.php - version 2 Alex Mattelaer 20151013
+ *
  * Used as a generic POST destination for html forms that submit data and (optionally) an uploaded file
  * The results will be emailed to the address specified below ("TargetEmailAddress")
- * 
+ *
  * Fields on the form can be called anything you like, but the document upload field (optional)
  * MUST be called FileUpload and must have a type of file:
- * 
+ *
  * <input type="file" name="FileUpload" id="FileUpload" required=" />
- * 
+ *
  * The HTML form itself must have the following attributes (at least):
  * <form method="post" enctype="multipart/form-data" action="../scripts/submit_cv.php">
  */
 
 // -------------- Settings you can customise --------------------------------------------------------------------------
 // Email address to send the information to
-$strTargetEmailAddress = 'adogreenjobs@gmail.com';
+$strTargetEmailAddress = 'info@adogreen.com';
 //$strTargetEmailAddress = 'alex@koneqt.com';
 
 // Default subject for the email
@@ -26,7 +26,7 @@ $strEmailSubject = 'From:'.$_SERVER['HTTP_HOST'].' from page: '.basename(__FILE_
 // Permitted file name extensions
 $arrValidExtensions = array('doc', 'docx', 'pdf', 'odt');
 
-// Maximum file size (in Megabytes)   
+// Maximum file size (in Megabytes)
 $intMaxFileSizeMb = 50;
 
 // Temporary folder to store uploaded documents - path must end with /

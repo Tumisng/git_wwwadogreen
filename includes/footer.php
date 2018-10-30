@@ -51,7 +51,7 @@
                                 <a href="<?php echo ENV_ROOTURL;?>about-us.php" rel="nofollow">About Us</a>
                             </li>
                             <li>
-                                <a href="<?php echo ENV_ROOTURL;?>jobs/register-cv.php" rel="nofollow">Register Your CV</a>
+                                <a href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
                             </li>
                         </ul>
                     </div>

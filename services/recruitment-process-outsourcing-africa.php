@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -37,8 +37,8 @@
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
                     <div class="hidden-xs">
                 <h2>Definition</h2>
-                <p> Recruitment process outsourcing (RPO) is a type of Business Process Outsourcing (BPO) where a client transfers all or only part of its recruitment function from medium to large scale to an external service provider. The RPO process differs greatly from adhoc <a href="services/permanent-placement-solutions-africa.html">Permanent Placement Solutions</a> where it assumes ownership of the recruitment process, the design thereof, responsibility of the results and technology behind the design. It is a process whereby most or all of recruitment requirements are allocated to an external system</p>
-               
+                <p> Recruitment process outsourcing (RPO) is a type of Business Process Outsourcing (BPO) where a client transfers all or only part of its recruitment function from medium to large scale to an external service provider. The RPO process differs greatly from adhoc <a href="services/permanent-placement-solutions-africa.php">Permanent Placement Solutions</a> where it assumes ownership of the recruitment process, the design thereof, responsibility of the results and technology behind the design. It is a process whereby most or all of recruitment requirements are allocated to an external system</p>
+
 
                 <h3>Benefits of using AdoGreen Africa’s RPO option</h3>
                 <ul>
