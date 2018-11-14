@@ -144,6 +144,16 @@ function get_country()
     <?php echo fill_buttons_with_sector($connect); ?>
     </div>
     <div class="row padding-bottom-20">
+        <style>input[type=text] {
+            width: 130px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.6s ease-in-out;
+        }
+
+        /* When the input field gets focus, change its width to 100% */
+        input[type=text]:focus {
+            width: 100%;
+        }</style>
         <div class="col-md-12">
             <h3>What Job Are You Looking For?</h3>
             <input type="text" id="search-input" placeholder="Search - Job Names Or Country">
@@ -179,7 +189,7 @@ include ENV_ROOT . 'includes/js_scripts.php';
 ?>
 
 <script>
-
+    $("#search-input").focus();
     $("#search-input").on("keyup", function () {
         var search = $(this).val().trim().toLowerCase();
         $(".card-jobs").show().filter(function () {
