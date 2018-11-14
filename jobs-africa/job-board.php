@@ -27,69 +27,10 @@ $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 
 include_once ENV_ROOT . 'includes/header.php';
 
-function fill_buttons_with_sector($connect)
-{
-    $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Lookup&Cabinet=Job&Field=Sector';
-    $json1 = file_get_contents($json_url);
-    $array = json_decode($json1);
-    $arrResult = array();
-    $output = '';
-
-    $row = '';
-    if (isset($array[2]))
-    {
-        foreach ($array[2] as $value)
-        {
-            $strSector = $value->DisplayValue;
-            array_push($arrResult, $strSector);
-        }
-    }
-
-    sort($arrResult);
-    foreach ($arrResult as $row)
-    {
-
-        $output .= '<div class="col-md-3"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "myFunction(this)"  type = "submit" value="' . $row . '" ></input></div>';
-    }
-    return $output;
-}
-
-// Fill Country
-function get_country()
-{
-    $output = '';
-    $json_url = ENV_RSS . 'ajax/getCmsDataLF.php?c=Job&Status=open&Published=yes&f=Country';
-    $json1 = file_get_contents($json_url);
-    $array = json_decode($json1);
-    $arrResult = [];
-    $found = false;
-
-    if (isset($array[2]))
-    {
-        foreach ($array[2] as $value)
-        {
-            $strCountry = $value->Country;
-            array_push($arrResult, $strCountry);
-        }
-    }
-    sort($arrResult);
-
-    $line = array_unique($arrResult);
-
-    foreach ($line as $row)
-    {
-        $countryNameWithOutSpaces = str_replace(' ', '', $row);
-//btn btn-block button-green
-        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOTURL . 'assets/img/flags/'.$countryNameWithOutSpaces . '.svg" value="'.'' . $row . '" ></input>';
-
-        }
-    return $output;
-}
 ?>
 <div class="container">
     <div class="row padding-bottom-20" id="country_container">
-        <h3>Choose Country:</h3>
-           <?php echo get_country(); ?>
+
     </div>
     <div class="row padding-bottom-20">
         <style>input[type=text] {
