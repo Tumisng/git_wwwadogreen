@@ -24,7 +24,7 @@ include_once $strEnvConfigFile;
 
 
 $output = '';
-if (isset($_POST["sector"]) || isset($_POST["country"]))
+if (isset($_POST["sector"]) || isset($_POST["country"]) || isset($_POST["all"]))
     {
     if ($_POST["sector"] != '')
         {
@@ -96,7 +96,6 @@ if (isset($_POST["sector"]) || isset($_POST["country"]))
     }
 ?>
 <script>
-
     var count_jobs = $('#show_sector ul').children('li').length;
     var elmnt = document.getElementById("sector_container");
     document.getElementById("resultCount").textContent = count_jobs + " job(s) found.";

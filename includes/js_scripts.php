@@ -7,7 +7,7 @@
     echo '<script src="' . ENV_ROOTURL . 'assets/js/bootstrap.min.js"> </script>';
     };
 ?>
-
+<script src="<?php echo ENV_ROOTURL; ?>assets/js/settings.js"> </script>
 <script src="<?php echo ENV_ROOTURL; ?>assets/plugins/yamm/menuopen.min.js"> </script>
 <script src="<?php echo ENV_ROOTURL; ?>assets/plugins/slider_jssor/main.js"> </script>
 
@@ -18,7 +18,7 @@
 <script type="text/javascript">
   (function() {
     var css = document.createElement('link');
-    css.href = 'http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+    css.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
     css.rel = 'stylesheet';
     css.type = 'text/css';
     document.getElementsByTagName('head')[0].appendChild(css);

@@ -54,59 +54,6 @@ function fill_buttons_with_sector($connect)
     return $output;
 }
 
-
-// Fill the Jobs
-function fill_job($connect)
-{
-    $output = '';
-    $json_url = ENV_RSS . 'ajax/Recruitment/getOpenJobs.php';
-    $json1 = file_get_contents($json_url);
-    $array = json_decode($json1);
-
-
-    if (isset($array[2]))
-
-    {
-        foreach ($array[2] as $value)
-        {
-
-            $strAppDataId = $value->AppDataId;
-            $strJobTitle = $value->JobTitle;
-            $strJobShortDesc = $value->ShortDescription;
-            $strJobOpenDate = $value->OpenDate;
-            $strJobSector = $value->Sector;
-            $strJobLocation = $value->Location;
-            $strJobCountry = $value->Country;
-            $strJobImgId = $value->ImageUploadedId;
-            //    replace %20 in the URL
-            $strJobTitleURL = str_ireplace(" ", "-", $strJobTitle);
-
-            $output .= '<li>
-                                        <div class="card-jobs card-green">
-                                                <a href="' . ENV_ROOTURL . 'jobs-africa/job-details.php?id=' . $strAppDataId . '&name=' . $strJobTitleURL . '">
-                                                        <div class="img-job col-md-2">
-                                                        <img class="img-responsive" width="100%" src="'.  ENV_RSS . 'DMSimage.php?i=' . $strJobImgId . '">
-                                                        </div>
-
-                                                        <div class="col-md-10 card-content">
-                                                            <h4 class="title">' . $strJobTitle . '</h4>
-                                                            <p class="description hidden-xs">' . $strJobShortDesc . '</p>
-                                                            <h6 class="category pull-right hidden-xs">' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</h6>
-                                                            <h6 class="category pull-left hidden-xs"> Date Posted:' . $strJobOpenDate  . '</h6>
-
-                                                        </div>
-                                                        <div>
-                                                        <p class="hidden-lg hidden-md hidden-sm" ><small >' . $strJobSector . ' / ' . $strJobLocation . ' / ' . $strJobCountry . '</small></p>
-                                                        </div>
-                                                </a>
-                                        </div>
-                                </li>';
-        }
-
-    }
-    return $output;
-}
-
 // Fill Country
 function get_country()
 {
@@ -133,15 +80,16 @@ function get_country()
     {
         $countryNameWithOutSpaces = str_replace(' ', '', $row);
 //btn btn-block button-green
-        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOTURL . 'assets/img/flags/'.$countryNameWithOutSpaces . '.svg" value="'.'' . $row . '" ><small>' . $row . '</small></input>';
+        $output .= '<input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "function_fill_by_country(this)"  type = "image" src="'. ENV_ROOTURL . 'assets/img/flags/'.$countryNameWithOutSpaces . '.svg" value="'.'' . $row . '" ></input>';
 
         }
     return $output;
 }
 ?>
-<div class="container"  id="sector_container">
-    <div class="row padding-bottom-20">
-    <?php echo fill_buttons_with_sector($connect); ?>
+<div class="container">
+    <div class="row padding-bottom-20" id="country_container">
+        <h3>Choose Country:</h3>
+           <?php echo get_country(); ?>
     </div>
     <div class="row padding-bottom-20">
         <style>input[type=text] {
@@ -163,104 +111,30 @@ function get_country()
     <h3 class="text-center"><span id="resultCount"></span></h3>
 </div>
 <style>
-    .img-flag-icon
-{
-border: 1px solid #ddd;
-border-radius: 4px;
-padding: 5px;
-width: 150px
-}
+    .img-flag-icon {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px
+    }
 
 </style>
 <div class="container">
     <div class="col-md-10" id="show_sector">
         <ul class="list-unstyled joblist" id="job-board-listing">
-<?php echo fill_job($connect); ?>
+
         </ul>
     </div>
-    <div class="col-md-2">
-        <h3>Countries:</h3>
-        <?php echo get_country(); ?>
+    <div class="col-md-2" id="sector_container">
+
     </div>
 </div>
 <?php
 include ENV_ROOT . 'includes/footer.php';
 include ENV_ROOT . 'includes/js_scripts.php';
+echo '<script src="' . ENV_ROOTURL . 'assets/js/app-job-board.js"> </script>';
 ?>
 
-<script>
-    $("#search-input").focus();
-    $("#search-input").on("keyup", function () {
-        var search = $(this).val().trim().toLowerCase();
-        $(".card-jobs").show().filter(function () {
-            return $(this).text().toLowerCase().indexOf(search) < 0;
-        }).hide();
-    });
- $(function() {
-    'use strict';
-    $('#search-input').on('click',function() {
-        $(this).css({
-            'background-color':'#00a500',
-            "color":"white",
-            "padding":"5px",
-            "height":"60px",
-            "font-size":"24px"
-        });
-    });
-});
-
-
-</script>
-
-<script>
-    $(document).ready(function () {
-        $('#sector').change(function () {
-            var sector = $(this).val();
-            $.ajax({
-                url: "load_data.php",
-                method: "POST",
-                data: {sector, sector},
-                success: function (data) {
-                    $('#show_sector').html(data);
-                }
-            });
-        });
-    });
-</script>
-<script>
-    function myFunction(objSectorName)
-    {
-        var sector = objSectorName.value;
-        $.ajax({
-            url: "load_data.php",
-            method: "POST",
-
-            data: {sector, sector},
-            success: function (data) {
-                $('#show_sector').html(data);
-            }
-        });
-
-
-    }
-</script>
-
-<script>
-    function function_fill_by_country(objCountryName)
-    {
-        var country = objCountryName.value;
-
-        $.ajax({
-            url: "load_data.php",
-            method: "POST",
-
-            data: {country, country},
-            success: function (data) {
-                $('#show_sector').html(data);
-            }
-        });
-    }
-</script>
 </body>
 </html>
 
