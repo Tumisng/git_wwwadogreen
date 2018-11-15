@@ -171,6 +171,7 @@ function loadAllSectors() {
 //            console.log(data);
 //          Move only values from Array [2] into a var
             var objSectors = data[2];
+            objSectors.sort(sortArray);
 //            Cycle through objSectors which holds the actual values
             var returnHtml ='';
             returnHtml += '<h3>Sectors:</h3>';
@@ -187,6 +188,15 @@ function loadAllSectors() {
     });
 }
 
+
+function sortArray(a, b) {
+    if (a['DisplayValue'] === b['DisplayValue']) {
+        return 0;
+    }
+    else {
+        return (a['DisplayValue'] < b['DisplayValue']) ? -1 : 1;
+    }
+}
 
 
 
