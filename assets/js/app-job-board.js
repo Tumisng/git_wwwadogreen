@@ -120,7 +120,7 @@ function loadOpenJobs() {
 
                 returnHtml += '<li>';
                 returnHtml += '  <div class="card-jobs card-green">';
-                returnHtml += '     <a href="' + Ado_Url + 'jobs-africa/job-details.php?id=' + objJobs[i]['AppDataId'] + '&name=' + objJobs[i]['JobTitle'] + '">';
+                returnHtml += '     <a href="' + Ado_Url + '/jobs-africa/job-details.php?id=' + objJobs[i]['AppDataId'] + '&name=' + objJobs[i]['JobTitle'] + '">';
                 returnHtml += '         <div class="img-job col-md-2">';
                 returnHtml += '             <img class="img-responsive" width="100%" src="' + KQ_Url + '/DMSimage.php?i='+ objJobs[i]['ImageUploadedId'] + '">';
                 returnHtml += '         </div>';
