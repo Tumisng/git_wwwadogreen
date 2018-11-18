@@ -32,6 +32,9 @@ include_once ENV_ROOT . 'includes/header.php';
     <div class="row padding-bottom-20" id="country_container">
 
     </div>
+    <div id='loadingmessage' style='display:none' class="text-center row padding-bottom-20">
+    <img src='<?php echo ENV_ROOTURL;?>assets/img/ajax-loader.gif'/>
+</div>
     <div class="row padding-bottom-20">
         <style>input[type=text] {
             width: 130px;

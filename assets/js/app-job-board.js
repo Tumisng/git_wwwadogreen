@@ -1,12 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * app-job-boards.js for job board functionality
+ *
  * Author: Natie Rautenbach
- * Date Written:
+ * Date Written:14Nov2018
  * (c) AdoGreen Africa 2018
  */
 $(function () {
-
+    $('#loadingmessage').show();
     loadAllSectors();
     loadOpenJobs();
 
@@ -19,22 +19,6 @@ $("#search-input").on("keyup", function () {
         return $(this).text().toLowerCase().indexOf(search) < 0;
     }).hide();
 });
-
-
-//$('#sector').change(function () {
-//
-//    var sector = $(this).val();
-//
-//    $.ajax({
-//        url: "load_data.php",
-//        method: "POST",
-//        data: {sector, sector},
-//        success: function (data) {
-//            $('#show_sector').html(data);
-//        }
-//    });
-//
-//});
 
 $(function() {
    'use strict';
@@ -58,6 +42,7 @@ function loadOpenJobs() {
 
         success: function (data) {
 //          console.log(data);
+            $('#loadingmessage').hide();
 
             loadJobs(data);
 
@@ -88,12 +73,14 @@ function fillCountry(objCountryName){
     var country = objCountryName.value;
 
     $.ajax({
+
         url: KQ_Url + "/ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Country=" + country,
         method: "POST",
         datatype: "json",
 
         success: function (data) {
 
+        $('#loadingmessage').hide();
         loadJobs(data,"Selected");
 
         }
@@ -129,7 +116,7 @@ function loadAllSectors() {
 }
 
 function loadJobs(data,loadAll){
-console.log(data);
+            console.log(data);
 //          Move only values from Array [2] into a var
             var objJobs = data[2];
 
