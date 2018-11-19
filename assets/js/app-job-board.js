@@ -157,7 +157,7 @@ function loadJobs(data,loadAll){
 
 // Upload all the unique Flags
             var returnHtmlCountry;
-            returnHtmlCountry = '<h3>Choose Country:</h3>';
+            returnHtmlCountry = '<h3></h3>';
 
             for (var i = 0; i < objCountry.length; i++) {
 //                console.log(objCountry[i]);

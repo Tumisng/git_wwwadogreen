@@ -1609,7 +1609,7 @@ output {
 
 textarea.form-control {
   height: auto; }
-
+f
 input[type="search"] {
   -webkit-appearance: none; }
 
@@ -6763,3 +6763,18 @@ address {
       font-size: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/*
+    Custom Job-board Style
+*/
+
+
+
+ .site-header{background-image: url(../img/Reg.jpg);
+     position:relative;background-attachment:fixed;-webkit-background-size:cover;background-size:cover;background-repeat:no-repeat;padding:120px 0;z-index:0;color:#fff}
+ .site-header:before{position:absolute;content:"";top:0;left:0;right:0;bottom:0;z-index:-1;background-color:rgba(0,24,40,.55)}
+.site-header.size-lg{padding:180px 0}
+ .site-header h1{font-family:Montserrat,sans-serif;font-weight:700;font-size:44px;line-height:76px;margin-bottom:24px;letter-spacing:2px; color: white}
+ .site-header h2,
+ .site-header mark{
+     color:rgba(92,190,254,0.8);background-color:transparent;font-weight:700}
