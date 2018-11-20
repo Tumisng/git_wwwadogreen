@@ -75,7 +75,7 @@ if (Detect::isComputer()) {
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2>African Mining Recruitment</h2>
+                <h2 >African Mining Recruitment</h2>
 
                 <p>
                     With extensive experience and industry knowledge of working into the mining sector across Africa, covering all commodities, facing the most challenging of requirements, we are well positioned to source the best of talent available within the industry. Our expertise enables us to understand the technical requirements of the mining sector and highly defined client needs. Our years of experience set us apart to save our valued clients time and money to identify the best within the industry.
@@ -91,7 +91,7 @@ if (Detect::isComputer()) {
                 <img class="img-responsive" src="assets/img/front-sector-renewable.jpg" width=100% alt="front-sector-mining"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Power & Renewable Energy Recruitment In Africa</h2>
+                <h2 >Power & Renewable Energy Recruitment In Africa</h2>
 
                 <p>
                     Be it Wind Power, Solar, Hydropower and Geothermal Energy projects, we are well positioned to effectively source some of the best candidates within the market based on our effective recruitment methodologies through strategic networking and headhunting.

@@ -6350,16 +6350,17 @@ img {
   padding-bottom: 50px; }
 
 .padding-sectors {
-  padding: 50px 80px; }
+  padding: 0px 50px; }
   .padding-sectors p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.5;
     padding-bottom: 30px; }
   .padding-sectors h2 {
-    font-size: 58px;
+    font-size: 40px;
     line-height: 2;
     font-weight: 100;
-    padding-top: 30px; }
+    padding-top: 30px;
+        text-align: left;}
 
 .summary {
   font-size: 22px;

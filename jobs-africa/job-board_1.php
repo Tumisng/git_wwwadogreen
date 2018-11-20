@@ -35,6 +35,13 @@ include_once ENV_ROOT . 'includes/header.php';
             <div class="row padding-bottom-20">
                 <style>input[type=text] {
                         width: 130px;
+                        border: 2px solid #ccc;
+                        font-size: 20px;
+                        background: white;
+                        background-image: url(../assets/img/search2.png);
+                        padding: 30px;
+                        background-position: 5px 15px;
+                        background-repeat: no-repeat;
                         -webkit-transition: width 0.4s ease-in-out;
                         transition: width 0.6s ease-in-out;
                     }
@@ -42,21 +49,25 @@ include_once ENV_ROOT . 'includes/header.php';
                     input[type=text]:focus {
                         width: 100%;
                     }
-                    
+
                     .trigger input[type="checkbox"] + span {
                         visibility: hidden;
                         opacity: 0;
+                        width: 10px;
                         transition: visibility 0s linear 0.33s, opacity 0.33s linear;
                     }
+
                     .trigger input[type="checkbox"]:checked + span {
                         visibility: visible;
                         opacity: 1;
+                         width: 10px;
                         transition-delay: 0s;
                     }
                     .msg {
                     }
                 </style>
                 <h2 class="">What Job Are You Looking For?</h2>
+
 
                 <input type="text" id="search-input" placeholder="Search - Job Names Or Country"><br><br>
                 <div class="trigger" >
@@ -71,11 +82,10 @@ include_once ENV_ROOT . 'includes/header.php';
     </div>
 </div>
 
-<div class="container" >
+
+<div class="container">
     <div class="row padding-bottom-20" id="country_container">
-
     </div>
-
     </br>
     <h3 class="text-center"><span id="resultCount"></span></h3>
 </div>
