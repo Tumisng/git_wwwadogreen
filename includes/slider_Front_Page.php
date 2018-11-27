@@ -11,11 +11,11 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide img-responsive" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/AdoGreenLogo.png" alt="First slide">
+          <img class="first-slide img-responsive" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/AdoGreenLogo.png" alt="First slide" style="width:100%;" />
           <div class="container-fluid">
 <!--              <img class="img-carousel-caption" src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-2.png'; ?>" width="138" height="30" alt="">-->
             <div class="carousel-caption">
-              <h1 class="bold font-black"></h1>
+              <!--<h1 class="bold font-black"></h1>-->
                <h3 class="font-black" >African Recruitment | HR | RPO Services</h3>
                <p class="font-black text-center heading-upper">Established since 2007, AdoGreen Africa Recruitment provides specialist Recruitment, Human Resources and RPO services in the African market</p>
               <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>about-us.php" role="button">Read More</a></p>
@@ -23,7 +23,7 @@
           </div>
         </div>
          <div class="item">
-          <img class="second-slide img-responsive"  width="100%"  src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/mining-recruitment-africa.jpg" alt="Second slide">
+          <img class="second-slide img-responsive"  style="width:100%;"  src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/mining-recruitment-africa.jpg" alt="Second slide" />
           <div class="container-fluid">
             <div class="carousel-caption">
               <h1 class="bold">Mining</h1>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="item">
-            <img class="third-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/engineering.jpg" alt="Third slide">
+            <img class="third-slide" style="width:100%;" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/engineering.jpg" alt="Third slide" >
             <div class="container-fluid carousel-caption">
                         <h1 class="bold">Engineering & Construction</h1>
                         <h3>Specialist Recruitment | HR | RPO Services</h3>
@@ -49,7 +49,7 @@
           </div>
         </div>
           <div class="item">
-            <img class="fourth-slide" width="100%" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/finance-hr.jpg" alt="Third slide">
+            <img class="fourth-slide" style="width:100%;" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/finance-hr.jpg" alt="Third slide" />
             <div class="container-fluid carousel-caption">
                         <h1 class="bold">Finance & HR</h1>
                         <h3>Specialist Recruitment | HR | RPO Services</h3>

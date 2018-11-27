@@ -15,7 +15,7 @@
 
 
 <!-- load Font Awesome asynchronously -->
-<script type="text/javascript">
+<script>
   (function() {
     var css = document.createElement('link');
     css.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
@@ -82,7 +82,7 @@ if($strLive == TRUE) {
 
 
 <!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
+<script>
 //<![CDATA[
 var owa_baseUrl = 'http://social.viraladco.com/owa1/';
 var owa_cmds = owa_cmds || [];

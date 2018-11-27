@@ -38,7 +38,6 @@ include_once ENV_ROOT . 'includes/header.php';
                         border: 2px solid #ccc;
                         font-size: 20px;
                         background: white;
-                        background-image: url(../assets/img/search2.png);
                         padding: 30px;
                         background-position: 5px 15px;
                         background-repeat: no-repeat;

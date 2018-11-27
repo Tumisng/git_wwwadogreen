@@ -18,9 +18,10 @@ require_once ENV_ROOT . 'lib/detect.php';
 include_once ENV_ROOT . 'includes/head.php';
 
 ?>
-<script src="<?php echo ENV_ROOTURL . 'assets/plugins/scroll/scrollreveal.min.js'; ?>"></script>
+
 
 <body>
+    <script src="<?php echo ENV_ROOTURL . 'assets/plugins/scroll/scrollreveal.min.js'; ?>"></script>
     <?php
     if (Detect::isMobile()|| Detect::isTablet()) {
         ?>
@@ -43,7 +44,7 @@ include_once ENV_ROOT . 'includes/head.php';
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Clients</a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a>
                                 </li>
@@ -66,7 +67,7 @@ include_once ENV_ROOT . 'includes/head.php';
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false">Candidates</a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
                                 </li>
@@ -102,7 +103,6 @@ include_once ENV_ROOT . 'includes/head.php';
 
     if (Detect::isComputer()) {
         ?>
-        <header>
             <header class="cd-auto-hide-header">
                 <div class="logo"><a href="#0"><img src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-test.png'; ?>" alt="AdoGreen Africa Recruitment Logo"></a></div>
 
@@ -211,4 +211,3 @@ include_once ENV_ROOT . 'includes/head.php';
         };
         ?>
 
-    </header>

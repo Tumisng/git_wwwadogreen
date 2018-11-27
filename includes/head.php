@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="locale" content="EN">
-	<meta name="language" content="ENGLISH">
-	<meta name="content-language" content="EN">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="locale" content="EN">
+    <meta name="language" content="ENGLISH">
+    <meta name="content-language" content="EN">
 
 
-        <!-- Indexing -->
-	<meta name="robots" content="<?php if ($strPageRobot!='') {echo $strPageRobot;} else{echo ENV_ROBOT;}?>">
+    <!-- Indexing -->
+    <meta name="robots" content="<?php if ($strPageRobot!='') {echo $strPageRobot;} else{echo ENV_ROBOT;}?>">
 
-	<title><?php
-                    if ($strPageTitle!='') {
-                        echo $strPageTitle;
-                    } else{
-                        echo ENV_TITLE;
-                    }?></title>
-	<meta name="title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>">
-	<meta name="description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>">
-	<meta name="keywords" content="<?php if ($strPageKeywords !='') {echo $strPageKeywords;} else{echo ENV_KEYWORDS;}?>">
+    <title><?php
+                if ($strPageTitle!='') {
+                    echo $strPageTitle;
+                } else{
+                    echo ENV_TITLE;
+                }?></title>
+    <meta name="title" content="<?php if ($strPageTitle!='') {echo $strPageTitle;} else{echo ENV_TITLE;}?>">
+    <meta name="description" content="<?php if ($strPageDescription!='') {echo $strPageDescription;} else{echo ENV_DESCRIPTION;}?>">
+    <meta name="keywords" content="<?php if ($strPageKeywords !='') {echo $strPageKeywords;} else{echo ENV_KEYWORDS;}?>">
 
-	<link rel="canonical" href="<?php echo ENV_WEBSITE;?>">
+    <link rel="canonical" href="<?php echo ENV_WEBSITE;?>">
 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
 
     <link href="<?php echo ENV_ROOTURL; ?>assets/css/style.css" rel="stylesheet" type="text/css">
 <!--    <link rel="stylesheet" href="<?php echo ENV_ROOTURL; ?>assets/css/animate.css">-->

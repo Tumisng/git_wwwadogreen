@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
     $(function(){
         $("#myCarousel").carousel({
              interval="3000"
