@@ -7,7 +7,7 @@
  */
 $(function ()
     {
-        $('#loadingmessage').show();
+       $('#loadingmessage').show();
         loadAllSectors();
         loadOpenJobs();
         
@@ -18,18 +18,38 @@ $(function ()
         {
                 $('.country-dropdown').toggleClass('active');
         });
+        
+        $(".setLabel-Sector").click(function ()
+        {
+                $('.sector-dropdown').toggleClass('active');
+        });
+        
 
         $("#listCountries").click(function ()
         {
             
-            $('.opC').click( function() 
+            $('.country').click( function() 
             {
-                console.log($(this).text());
-                $('.selLabel').text($(this).text());
+                $('.selLabel').($(this).text());
                 $('.country-dropdown').removeClass('active');
+                fillCountry($(this).text().trim());       
             });
                 
         });
+
+        $("#listSectors").click(function ()
+        {
+            
+            $('.sectors').click( function() 
+            {
+                $('.setLabel-Sector').text($(this).text());
+                $('.sector-dropdown').removeClass('active');
+               changeSector($(this).text().trim()); 
+            });
+                
+        });
+
+
 
         
     });
@@ -67,7 +87,7 @@ function loadOpenJobs()
 
 function changeSector(objSectorName)
     {
-        var sector = objSectorName.value;
+        var sector = objSectorName;
 
         $.ajax({
             url: KQ_Url + "/ajax/Recruitment/getOpenJobs.php?Sector=" + sector,
@@ -76,9 +96,7 @@ function changeSector(objSectorName)
 
             success: function (data)
                 {
-
-                    loadJobs(data, "Selected");
-
+                    loadJobs(data);
                 }
         });
     }
@@ -88,11 +106,11 @@ function fillCountry(objCountryName)
     {
 
 //
-        var country = objCountryName.value;
+        var country = objCountryName;
 
         $.ajax({
 
-            url: KQ_Url + "/ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Country=" + country,
+            url: KQ_Url + "/ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Country="+country,
             method: "POST",
             datatype: "json",
 
@@ -100,7 +118,7 @@ function fillCountry(objCountryName)
                 {
 
                     $('#loadingmessage').hide();
-                    loadJobs(data, "Selected");
+                    loadJobs(data);
 
                 }
         });
@@ -122,22 +140,24 @@ function loadAllSectors()
                     objSectors.sort(sortArray);
 //            Cycle through objSectors which holds the actual values
                     var returnHtml = '';
-                    returnHtml += '<h3>Sectors:</h3>';
+                    returnHtml += '';
 
                     for (var i = 0; i < objSectors.length; i++)
                         {
-                            returnHtml += '<div class="col-md-12"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "changeSector(this)"  type = "submit" value="' + objSectors[i]['DisplayValue'] + '" ></input></div>'
+                        returnHtml += '<li class="sectors"><span> '+ objSectors[i]['DisplayValue'] +'</span></li>';
+           
+     //      returnHtml += '<div class="col-md-12"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "changeSector(this)"  type = "submit" value="' + objSectors[i]['DisplayValue'] + '" ></input></div>'
 
 //                console.log(objSectors[i]['DisplayValue']);
 
                         }
 //            console.log(returnHtml);
-                    $('#sector_container').html(returnHtml);
+                    $('#listSectors').html(returnHtml);
                 }
         });
     }
 
-function loadJobs(data, loadAll)
+function loadJobs(data)
     {
         console.log(data);
 //          Move only values from Array [2] into a var
@@ -181,26 +201,17 @@ function loadJobs(data, loadAll)
         returnHtml += '</ul>';
 
 // Upload all the unique Flags
-        var returnHtmlCountry;
         var returnHtmlCountry2;
-        returnHtmlCountry = '<h3></h3>';
         returnHtmlCountry2 = '';
         for (var i = 0; i < objCountry.length; i++)
             {
 //                console.log(objCountry[i]);
                 var picFlag = objCountry[i].replace(/\s/g, '');
-                returnHtmlCountry += '<div class="col-md-3"><input class="img-flag-icon" id = "sectorBtn" name = "sectorBtn"  onclick= "fillCountry(this)"  type = "image" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg" value="' + objCountry[i] + '" ></input></div>';
-                returnHtmlCountry2 += '<li class="opC"><span><img  width="35px" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg"> '+objCountry[i]+'</span></li>';
+                returnHtmlCountry2 += '<li class="country"><span><img  width="25px" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg"> '+objCountry[i]+'</span></li>';
             }
          
-        if (loadAll === "Selected")
-            {
-                //    Button to load all the jobs again
-                returnHtmlCountry += '<div class="col-md-3"><button class="btn btn-info" onclick= "loadOpenJobs()">Load All Jobs</button></div>';
-            }
 
 //           console.log(objCountry);
-        $('#country_container').html(returnHtmlCountry);
         $('#job-board-listing').html(returnHtml);
         $('#listCountries').html(returnHtmlCountry2);
         $("#search-input").focus();

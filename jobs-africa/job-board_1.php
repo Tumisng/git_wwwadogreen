@@ -2,7 +2,7 @@
 // =============================================================================
 //  basic job board for AdoGreen
 //
-//  Author: Natie Rautenbach + Upgraded by Mou Mokete
+//  Author: Natie Rautenbach + Upgraded by Mou Thabang
 //  Date written: 03/10/2017
 //  (c) AdoGreen Africa / The Missing Floor
 //==============================================================================
@@ -28,9 +28,6 @@ $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 include_once ENV_ROOT . 'includes/header.php';
 ?>
 <div class="container">
-    <div class="row padding-bottom-20" id="country_container">
-
-    </div>
     <div id='loadingmessage' style='display:none' class="text-center row padding-bottom-20">
         <img src='<?php echo ENV_ROOTURL; ?>assets/img/ajax-loader.gif'/>
     </div>
@@ -62,12 +59,18 @@ include_once ENV_ROOT . 'includes/header.php';
 
 </style>
 <div class="container">
-    <div class="col-md-10" id="show_sector">
+    <div class="col-md-9" id="show_sector">
         <ul class="list-unstyled joblist" id="job-board-listing">
 
         </ul>
     </div>
-    <div class="col-md-2" id="sector_container">
+    <div class="col-md-2" >
+        <div class="sector-dropdown">
+           <span class="setLabel-Sector">Choose Sector</span>
+            <input type="hidden" name="cd-dropdown">
+            <ul class="sector-dropdown-list" id="listSectors">
+            </ul>
+        </div>
 
     </div>
 </div>
