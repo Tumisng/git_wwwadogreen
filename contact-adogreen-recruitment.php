@@ -40,7 +40,7 @@
                 </ul>
 
                 <ul class="list-unstyled who margin-bottom-30">
-                    <li><h3><i class="fa fa-home"></i>Botswana</h3>
+                    <li><h3><i class="fa fa-home"></i>Botswana - AdoGreen Botswana HQ</h3>
                         Plot 47 Unit 9 </br>
                         Gaborone International Commerce Park </li>
                 </ul>
@@ -100,7 +100,7 @@
         </div>
         <div class="col-md-4">
             <h3>Neo Nwako</h3>
-            <p>Director AdoGreen Botswana</p>
+            <p>Director/Shareholder AdoGreen Botswana</p>
             <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-linkedin-neo.png" width="100%" alt="Neo Nwako Director Botswana"></a>
 
         </div>
@@ -108,7 +108,7 @@
      <div class="row">
         <div class="col-md-4">
             <h3>Natie Rautenbach</h3>
-            <p>Director | CIO</p>
+            <p>Director | CIO AdoGreen Africa</p>
             <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-linkedin-natie.png" width="100%" alt="Natie Rautenbach CIO Africa"></a>
 
         </div>
