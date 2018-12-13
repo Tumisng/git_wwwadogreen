@@ -28,7 +28,7 @@ $(function ()
         $("#listCountries").click(function ()
         {
 
-            $('.country').click( function() 
+            $('.country').click( function()
             {
                 $('.selLabel').text($(this).text());
                 $('.country-dropdown').removeClass('active');
@@ -144,11 +144,7 @@ function loadAllSectors()
 
                     for (var i = 0; i < objSectors.length; i++)
                         {
-                        returnHtml += '<li class="sectors"><span> '+ objSectors[i]['DisplayValue'] +'</span></li>';
-
-     //      returnHtml += '<div class="col-md-12"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "changeSector(this)"  type = "submit" value="' + objSectors[i]['DisplayValue'] + '" ></input></div>'
-
-//                console.log(objSectors[i]['DisplayValue']);
+                        returnHtml += '<li class="sectors" value="' + objSectors[i]['Value'] + '"><span> '+ objSectors[i]['DisplayValue'] +'</span></li>';
 
                         }
 //            console.log(returnHtml);

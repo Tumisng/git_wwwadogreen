@@ -32,11 +32,13 @@ include_once ENV_ROOT . 'includes/header.php';
         <img src='<?php echo ENV_ROOTURL; ?>assets/img/ajax-loader.gif'/>
     </div>
     <div class="row padding-bottom-20">
-        <h3 class="text-center">What Job Are You Looking For?</h3>
-        <div class="col-md-12 text-center" >
-
+        <div class="col-md-12 text-center">
+            <h3 class="text-center">What Job Are You Looking For?</h3>
             <input type="searching" id="search-input" placeholder="Search">
-            <p class="text-center">Filter by country:</p>
+        </div>
+    </div>
+    <div class="row padding-bottom-20">
+        <div class="col-md-3 text-center" >
             <div class="country-dropdown">
                 <span class="selLabel">Choose country</span>
                 <input type="hidden" name="cd-dropdown">
@@ -45,7 +47,17 @@ include_once ENV_ROOT . 'includes/header.php';
                 </ul>
             </div>
         </div>
-    </div> 
+        <div class="col-md-3 text-center" >
+            <div class="sector-dropdown">
+                <span class="setLabel-Sector">Choose Sector</span>
+                <input type="hidden" name="cd-dropdown">
+                <ul class="sector-dropdown-list" id="listSectors">
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 text-center" >
+        </div>
+    </div>
     </br>
     <h3 class="text-center"><span id="resultCount"></span></h3>
 </div>
@@ -59,19 +71,16 @@ include_once ENV_ROOT . 'includes/header.php';
 
 </style>
 <div class="container">
-    <div class="col-md-9" id="show_sector">
-        <ul class="list-unstyled joblist" id="job-board-listing">
+    <div class="row">
+        <div class="col-md-9" id="show_sector">
+            <ul class="list-unstyled joblist" id="job-board-listing">
 
-        </ul>
-    </div>
-    <div class="col-md-2" >
-        <div class="sector-dropdown">
-           <span class="setLabel-Sector">Choose Sector</span>
-            <input type="hidden" name="cd-dropdown">
-            <ul class="sector-dropdown-list" id="listSectors">
             </ul>
         </div>
+        <div class="col-md-2" >
 
+
+        </div>
     </div>
 </div>
 <?php
