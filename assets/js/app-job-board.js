@@ -10,48 +10,48 @@ $(function ()
        $('#loadingmessage').show();
         loadAllSectors();
         loadOpenJobs();
-        
-        
-        
+
+
+
     // Custom dropdown for countries
         $(".selLabel").click(function ()
         {
                 $('.country-dropdown').toggleClass('active');
         });
-        
+
         $(".setLabel-Sector").click(function ()
         {
                 $('.sector-dropdown').toggleClass('active');
         });
-        
+
 
         $("#listCountries").click(function ()
         {
-            
+
             $('.country').click( function() 
             {
-                $('.selLabel').($(this).text());
+                $('.selLabel').text($(this).text());
                 $('.country-dropdown').removeClass('active');
-                fillCountry($(this).text().trim());       
+                fillCountry($(this).text().trim());
             });
-                
+
         });
 
         $("#listSectors").click(function ()
         {
-            
-            $('.sectors').click( function() 
+
+            $('.sectors').click( function()
             {
                 $('.setLabel-Sector').text($(this).text());
                 $('.sector-dropdown').removeClass('active');
-               changeSector($(this).text().trim()); 
+               changeSector($(this).text().trim());
             });
-                
+
         });
 
 
 
-        
+
     });
 
 //Search bar inputs
@@ -145,7 +145,7 @@ function loadAllSectors()
                     for (var i = 0; i < objSectors.length; i++)
                         {
                         returnHtml += '<li class="sectors"><span> '+ objSectors[i]['DisplayValue'] +'</span></li>';
-           
+
      //      returnHtml += '<div class="col-md-12"><input class="btn btn-block button-green" id = "sectorBtn" name = "sectorBtn"  onclick= "changeSector(this)"  type = "submit" value="' + objSectors[i]['DisplayValue'] + '" ></input></div>'
 
 //                console.log(objSectors[i]['DisplayValue']);
@@ -209,7 +209,7 @@ function loadJobs(data)
                 var picFlag = objCountry[i].replace(/\s/g, '');
                 returnHtmlCountry2 += '<li class="country"><span><img  width="25px" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg"> '+objCountry[i]+'</span></li>';
             }
-         
+
 
 //           console.log(objCountry);
         $('#job-board-listing').html(returnHtml);
