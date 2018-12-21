@@ -210,7 +210,7 @@ function loadJobs(data)
 //           console.log(objCountry);
         $('#job-board-listing').html(returnHtml);
         $('#listCountries').html(returnHtmlCountry2);
-        $("#search-input").focus();
+     //   $("#search-input").focus();
     }
 
 function sortArray(a, b)

@@ -8,62 +8,64 @@ include 'includes/header.php';
 
 
 
-if (Detect::isMobile() || Detect::isTablet()) {
-?>
-                <!-- *****************     Mobile screen **********************-->
-                <div class="container-fluid visible-xs">
-                    <div class="row">
-                        <div class="col-xs-12 no-padding-sides">
-                            <img src="assets/img/logo-header.png" alt="AdoGreen Recruitment Logo">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="candidate/job-hunting-africa-tips-and-advice.php" role="button"><h4>Candidates</h4></a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="about-us.php" role="button"><h4>Clients</h4></a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="contact-adogreen-recruitment.php" role="button"><h4>Contact us</h4></a></div>
-                        <div class="well">
-                            <a href="https://www.twitter.com/adogreen" class="btn btn-social-icon btn-twitter">
-                                <span class="fa fa-2x fa-twitter"></span>
-                            </a>
-                            <a href="https://www.facebook.com/AdoGreen" class="btn btn-social-icon btn-facebook">
-                                <span class="fa fa-2x fa-facebook"></span>
-                            </a>
-                            <a href="https://www.linkedin.com/company/adogreen" class="btn btn-social-icon btn-linkedin">
-                                <span class="fa fa-2x fa-linkedin"></span>
-                            </a>
-                            <a href="https://plus.google.com/+AdoGreen" class="btn btn-social-icon btn-google">
-                                <span class="fa fa-2x fa-google"></span>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UC2q1Bd8xhguoi6dfIWiWu5Q" class="btn btn-social-icon btn-youtube">
-                            <span class="fa fa-2x fa-youtube"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <h1 class="text-center">Sectors</h1>
-                        <div class="col-xs-12  btn-padding"><a class="button button-red btn-block" href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php " role="button">Mining</a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Engineering</a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php " role="button">Power</a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-brown btn-block" href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Manufacturing</a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-orange btn-block" href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Construction</a></div>
-                        <div class="col-xs-12 btn-padding"><a class="button button-purple btn-block" href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance</a></div>
-                    </div>
-                    <div class="row">
-                        <h1 class="text-center">Services</h1>
-                        <?php
-                            include 'includes/Page_Services.php';
-                        ?>
-                    </div>
+if (Detect::isMobile() || Detect::isTablet())
+    {
+    ?>
+    <!-- *****************     Mobile screen **********************-->
+    <div class="container-fluid visible-xs">
+        <div class="row">
+            <div class="col-xs-12 no-padding-sides">
+                <img src="assets/img/logo-header.png" alt="AdoGreen Recruitment Logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="jobs-africa/job-board.php " role="button"><h4>Job Board</h4></a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="candidate/job-hunting-africa-tips-and-advice.php" role="button"><h4>Candidates</h4></a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="about-us.php" role="button"><h4>Clients</h4></a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="contact-adogreen-recruitment.php" role="button"><h4>Contact us</h4></a></div>
+            <div class="well">
+                <a href="https://www.twitter.com/adogreen" class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-2x fa-twitter"></span>
+                </a>
+                <a href="https://www.facebook.com/AdoGreen" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-2x fa-facebook"></span>
+                </a>
+                <a href="https://www.linkedin.com/company/adogreen" class="btn btn-social-icon btn-linkedin">
+                    <span class="fa fa-2x fa-linkedin"></span>
+                </a>
+                <a href="https://plus.google.com/+AdoGreen" class="btn btn-social-icon btn-google">
+                    <span class="fa fa-2x fa-google"></span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC2q1Bd8xhguoi6dfIWiWu5Q" class="btn btn-social-icon btn-youtube">
+                    <span class="fa fa-2x fa-youtube"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center">Sectors</h1>
+            <div class="col-xs-12  btn-padding"><a class="button button-red btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/mining-jobs-africa-recruitment.php " role="button">Mining</a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-blue btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Engineering</a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-green btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/energy-power-generation-jobs-africa-recruitment.php " role="button">Power</a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-brown btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Manufacturing</a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-orange btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/construction-jobs-africa-recruitment.php" role="button">Construction</a></div>
+            <div class="col-xs-12 btn-padding"><a class="button button-purple btn-block" href="<?php echo ENV_ROOTURL; ?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance</a></div>
+        </div>
+        <div class="row">
+            <h1 class="text-center">Services</h1>
+            <?php
+            include 'includes/Page_Services.php';
+            ?>
+        </div>
 
-                </div>
-<?php
-}
+    </div>
+    <?php
+    }
 
-if (Detect::isComputer()) {
- ?>
+if (Detect::isComputer())
+    {
+    ?>
     <div class="container cd-main-content sub-nav-hero">
 
     </div>
@@ -73,6 +75,122 @@ if (Detect::isComputer()) {
                 <h1 class="front-sectors"><b>Recruitment in Africa - Sectors</b></h1>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container">
+                        <div class="sector-icon ">
+                            <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/mining.png">
+                        </div>
+                        <div class="sector-content ">
+                            <h3 class="title">Mining</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container">
+                        <div class="sector-icon">
+<img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/engineering.png">                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Engineering</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container">
+                        <div class="sector-icon">
+
+                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Power.png">
+
+                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Power</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container blue">
+                        <div class="sector-icon">
+                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Manufacturing.png">
+
+
+                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Manufacturing</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container blue">
+                        <div class="sector-icon">
+                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Construction.png">
+
+
+                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Construction</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container blue">
+                        <div class="sector-icon">
+ <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/HR.png">
+
+
+                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Finance and HR</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="sector-container blue">
+                        <div class="sector-icon">
+                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Renewable.png">
+
+
+                        </div>
+                        <div class="sector-content">
+                            <h3 class="title">Renewable Energy</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </div> 
+
+
+
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
                 <h2 >African Mining Recruitment</h2>
@@ -96,7 +214,7 @@ if (Detect::isComputer()) {
                 <p>
                     Be it Wind Power, Solar, Hydropower and Geothermal Energy projects, we are well positioned to effectively source some of the best candidates within the market based on our effective recruitment methodologies through strategic networking and headhunting.
 
-    We have years of experience recruiting for highly skilled candidates within OHL, transmission and distribution, power stations, transformers and switchgear.
+                    We have years of experience recruiting for highly skilled candidates within OHL, transmission and distribution, power stations, transformers and switchgear.
                 </p>
                 <hr class="style1">
             </div>
@@ -157,9 +275,10 @@ if (Detect::isComputer()) {
 
 
 
-<?php
-}
-if (Detect::isComputer()) {
+    <?php
+    }
+if (Detect::isComputer())
+    {
     ?>
 
     <!-- ******************* -->
@@ -178,8 +297,8 @@ if (Detect::isComputer()) {
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center  animate-fade-in">
-                 <h1 class="heading-underline h2">Overview</h1>
-                 <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa Recruitment provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
+                <h1 class="heading-underline h2">Overview</h1>
+                <h3 class="text-center heading-upper">Established since 2007, AdoGreen Africa Recruitment provides specialist Recruitment, Human Resources and RPO services in the African market</h3>
             </div>
         </div>
         <div class="row animate-fade-in">
@@ -202,12 +321,12 @@ if (Detect::isComputer()) {
                 </a>
 
 
-            <a class="btn btn-lg btn-default btn-block " href="#">
+                <a class="btn btn-lg btn-default btn-block " href="#">
                     <i class="fa fa-check fa-2x text-center"></i> <h5>Human Resources</h5>
                 </a>
 
 
-            <a class="btn btn-lg btn-default btn-block " href="services/recruitment-process-outsourcing-africa.php">
+                <a class="btn btn-lg btn-default btn-block " href="services/recruitment-process-outsourcing-africa.php">
                     <i class="fa fa-diamond fa-2x text-center"></i><h5>RPO</h5>
                 </a>
 
@@ -224,7 +343,7 @@ if (Detect::isComputer()) {
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <p class="paralax-heading">At AdoGreen Africa, we are passionate about people, achieving excellence and delivering a service that is trusted, where the proof is in the high caliber candidates who we place.</p>
-                                <p>It’s about understanding what we do, who our clients need, and having the capability to network strategically and timeously, capitalising on all resources available and exceeding expectations. Where faced with a challenge, we are the go-to agency. It’s about delivering on exact specs and offering the relationship and communication required to achieve success for everyone involved in the process. </p>
+                    <p>It’s about understanding what we do, who our clients need, and having the capability to network strategically and timeously, capitalising on all resources available and exceeding expectations. Where faced with a challenge, we are the go-to agency. It’s about delivering on exact specs and offering the relationship and communication required to achieve success for everyone involved in the process. </p>
                 </div>
                 <div class="col-md-2"></div>
 
@@ -233,26 +352,27 @@ if (Detect::isComputer()) {
     </div>
     <div class="container ">
         <div class="row padding-bottom-80">
-                 <div class="col-md-12 text-center  animate-fade-in ">
-                     <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment | HR | RPO</h1>
-                     <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
+            <div class="col-md-12 text-center  animate-fade-in ">
+                <h1 class="heading-underline h1"><b>Local</b> & Expat Recruitment | HR | RPO</h1>
+                <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
 
-                     <p>AdoGreen Africa provides key fundamental services for companies in Africa whether it is Recruitment Process Outsourcing, Human Resource Outsourcing or Specialist Recruitment. AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
+                <p>AdoGreen Africa provides key fundamental services for companies in Africa whether it is Recruitment Process Outsourcing, Human Resource Outsourcing or Specialist Recruitment. AdoGreen Africa has the capability to source <b>local candidates</b> in highly competitive markets, where <b>skills shortages</b> prevail and where one faces connectivity challenges in rural areas in addition to getting to key candidates.</br></br>
 
-                         We understand Africa, and the need to source <b>experienced expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
-                        </p>
-                 </div>
+                    We understand Africa, and the need to source <b>experienced expats</b> who have worked within Africa, to offer our clients valuable experience and insight into the sectors of their requirements. Your company is as strong as the people you employ. We are here to offer you that strength!
+                </p>
             </div>
         </div>
     </div>
-<?php
-}
+    </div>
+    <?php
+    }
 
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
-if (Detect::isComputer()) {
+if (Detect::isComputer())
+    {
     include 'includes/js_slider.php';
-}
+    }
 ?>
 </body>
 </html>
