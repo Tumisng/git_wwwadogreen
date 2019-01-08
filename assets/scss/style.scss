@@ -59,6 +59,10 @@ img {
     }
 }
 
+.padding-bottom-20 {
+    padding-bottom: 20px
+}
+
 .padding-bottom-40 {
     padding-bottom: 40px;
 }
@@ -613,6 +617,28 @@ input[type=searching] {
         text-transform: uppercase;
 
     }
+}
+
+//
+//  Contact 
+//
+.spacing-25{
+    li{
+    padding-bottom: 25px;
+    }
+}
+
+.spacing-10{
+    li{
+    padding-bottom: 10px;
+    }
+}
+
+.indent-50{
+        p{
+            padding-left:  50px;
+        }
+    
 }
 
 //
