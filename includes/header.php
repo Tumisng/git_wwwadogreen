@@ -104,7 +104,7 @@ include_once ENV_ROOT . 'includes/head.php';
     if (Detect::isComputer()) {
         ?>
             <header class="cd-auto-hide-header">
-                <div class="logo"><a href="#0"><img src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-test.png'; ?>" alt="AdoGreen Africa Recruitment Logo"></a></div>
+                <div class="logo"><a href="<?php echo ENV_ROOTURL . 'index.php'; ?>"><img src="<?php echo ENV_ROOTURL . 'assets/img/logo-header-test.png'; ?>" alt="AdoGreen Africa Recruitment Logo"></a></div>
 
                 <nav class="cd-primary-nav">
                     <a href="#cd-navigation" class="nav-trigger">

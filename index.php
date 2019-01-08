@@ -75,13 +75,13 @@ if (Detect::isComputer())
                 <h1 class="front-sectors"><b>Recruitment in Africa - Sectors</b></h1>
             </div>
         </div>
-
-        <div class="container">
+        
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="sector-container">
-                        <div class="sector-icon ">
-                            <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/mining.png">
+                
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="sector-container mining-red ">
+                        <div class="sector-icon">
+                            <img  src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/mining.png">
                         </div>
                         <div class="sector-content ">
                             <h3 class="title">Mining</h3>
@@ -91,8 +91,11 @@ if (Detect::isComputer())
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="sector-container">
+                
+                
+                
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="sector-container engineering-blue">
                         <div class="sector-icon">
 <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/engineering.png">                        </div>
                         <div class="sector-content">
@@ -105,7 +108,7 @@ if (Detect::isComputer())
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
-                    <div class="sector-container">
+                    <div class="sector-container power-green">
                         <div class="sector-icon">
 
                     <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Power.png">
@@ -120,10 +123,9 @@ if (Detect::isComputer())
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <div class="sector-container blue">
+                    <div class="sector-container orange-manufacturing">
                         <div class="sector-icon">
-                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Manufacturing.png">
-
+                        <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Manufacturing.png">
 
                         </div>
                         <div class="sector-content">
@@ -136,7 +138,7 @@ if (Detect::isComputer())
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
-                    <div class="sector-container blue">
+                    <div class="sector-container redish-construction">
                         <div class="sector-icon">
                     <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Construction.png">
 
@@ -152,45 +154,22 @@ if (Detect::isComputer())
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
-                    <div class="sector-container blue">
+                    <div class="sector-container purple-finance">
                         <div class="sector-icon">
- <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/HR.png">
+                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/HR.png">
 
 
                         </div>
                         <div class="sector-content">
-                            <h3 class="title">Finance and HR</h3>
+                            <h3 class="title">Finance</h3>
                             <p class="description">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
                             </p>
                         </div> 
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="sector-container blue">
-                        <div class="sector-icon">
-                    <img width="70px" src="<?php echo ENV_ROOTURL;?>assets/img/icons/sector/Renewable.png">
-
-
-                        </div>
-                        <div class="sector-content">
-                            <h3 class="title">Renewable Energy</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
             
-            
-            
-            
-            
-        </div> 
-
-
-
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
                 <h2 >African Mining Recruitment</h2>
