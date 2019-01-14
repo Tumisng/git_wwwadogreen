@@ -6773,6 +6773,9 @@ input[type=searching] {
     padding-left: 0px;
     position: inherit;
     display: block; }
+    .country-dropdown ul li:hover, .sector-dropdown ul li:hover {
+      color: white;
+      background-color: green; }
 
 .country-dropdown.active .selLabel:after, .sector-dropdown.active .setLabel-Sector {
   content: '\25B2'; }
@@ -6781,8 +6784,7 @@ input[type=searching] {
   opacity: 1;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
-  transform: translateX(0);
-  display: none; }
+  transform: translateX(0); }
 
 .selLabel, .setLabel-Sector {
   background-color: #fff;
@@ -6878,6 +6880,9 @@ input[type=searching] {
 
 .spacing-10 li {
   padding-bottom: 10px; }
+
+.spacing-30 {
+  padding-bottom: 30px; }
 
 .indent-50 p {
   padding-left: 50px; }
@@ -7076,6 +7081,42 @@ input[type=searching] {
 
 .purple-finance .title {
   color: purple; }
+
+.gray-retail:after,
+.gray-retail .sector-icon,
+.gray-retail .sector-icon:after {
+  background: gray; }
+
+.gray-retail:before {
+  background-color: gray; }
+
+.gray-retail {
+  border-left-color: gray;
+  border-top-color: gray; }
+
+.gray-retail .sector-content {
+  border-right-color: gray; }
+
+.gray-retail .title {
+  color: gray; }
+
+.chocolate-transport:after,
+.chocolate-transport .sector-icon,
+.chocolate-transport .sector-icon:after {
+  background: chocolate; }
+
+.chocolate-transport:before {
+  background-color: chocolate; }
+
+.chocolate-transport {
+  border-left-color: chocolate;
+  border-top-color: chocolate; }
+
+.chocolate-transport .sector-content {
+  border-right-color: chocolate; }
+
+.chocolate-transport .title {
+  color: chocolate; }
 
 @media only screen and (max-width: 990px) {
   .sector-container {

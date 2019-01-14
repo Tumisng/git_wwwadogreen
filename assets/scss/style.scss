@@ -452,13 +452,10 @@ btn-services {
 
 
 input[type=searching] {
-
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center;
     border: solid 1px #ccc;
     padding: 10px 10px 9px 42px;
     width: 40%;
-
-
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;  
@@ -478,10 +475,8 @@ input[type=searching] {
     margin: 0 auto;
     width: 250px;
     position: inherit;
-
-
+    
     span {
-
         border: 1px solid #eee;
         box-shadow:  0 1px 1px rgba(0,0,0,0.1);
         cursor: pointer;
@@ -497,14 +492,14 @@ input[type=searching] {
         padding-left: 0px;
         position: inherit;
         display: block;
+       
+        li{
+            &:hover{
+                color: white;
+                background-color: green;
+            }
+        }
     }
-
-
-
-
-
-
-
 
 }
 
@@ -513,10 +508,9 @@ input[type=searching] {
 
 }
 .country-dropdown.active .country-dropdown-list li, .sector-dropdown.active .sector-dropdown-list li {
-    opacity: 1;
+   opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    display: none;
 }
 
 
@@ -634,12 +628,20 @@ input[type=searching] {
     }
 }
 
+.spacing-30{ 
+     padding-bottom: 30px;
+   
+}
+
+
 .indent-50{
         p{
             padding-left:  50px;
         }
     
 }
+
+
 
 //
 //  Sector icons  
@@ -663,10 +665,7 @@ input[type=searching] {
     top: 0;
     z-index: -2;        
     }
-    
-    
     &:after {
-    
     width: 100%;
     top: auto;
     bottom: 0;       
@@ -674,8 +673,6 @@ input[type=searching] {
 }
 
 .sector-container .sector-icon{
-    
-    
     line-height: 140px;
     width: 140px;
     height: 140px;
@@ -686,9 +683,8 @@ input[type=searching] {
     right: 0;
     z-index: 1;
 
-    img{
-        
-    transition: all 0.3s;
+    img{ 
+        transition: all 0.3s;
         width: 50px;
         height: 50px;
     }
@@ -696,7 +692,6 @@ input[type=searching] {
         img{ width: 90px; height: 90px;    transition: all 0.3s; }
     box-shadow: 0 0 45px rgba(0,0,0,0.3), 0 0 10px inset;
     }
-    
     
     &:before, &:after{
     content: '';
@@ -709,9 +704,7 @@ input[type=searching] {
     border: 10px solid white;
     border-radius: 1;
     z-index: -1;
-    
     }
-    
     &:after{
     border: none;
     height: 82%;
@@ -720,7 +713,6 @@ input[type=searching] {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: all 0.3s; 
     }
-
 }
 
 .sector-content{
@@ -796,8 +788,6 @@ input[type=searching] {
 .redish-construction .sector-content{ border-right-color: #e74c3c; }
 .redish-construction .title{ color: #e74c3c; }
 
-//e74c3c
-
 
 .purple-finance:after,
 .purple-finance .sector-icon,
@@ -809,6 +799,27 @@ input[type=searching] {
 .purple-finance .sector-content{ border-right-color: purple; }
 .purple-finance .title{ color: purple; }
 
+
+.gray-retail:after,
+.gray-retail .sector-icon,
+.gray-retail .sector-icon:after{
+    background: gray;
+}
+.gray-retail:before { background-color: gray; }
+.gray-retail { border-left-color: gray; border-top-color: gray;}
+.gray-retail .sector-content{ border-right-color: gray; }
+.gray-retail .title{ color: gray; }
+
+
+.chocolate-transport:after,
+.chocolate-transport .sector-icon,
+.chocolate-transport .sector-icon:after{
+    background: chocolate;
+}
+.chocolate-transport:before { background-color: chocolate; }
+.chocolate-transport { border-left-color: chocolate; border-top-color: chocolate;}
+.chocolate-transport .sector-content{ border-right-color: chocolate; }
+.chocolate-transport .title{ color: chocolate; }
 
 
 @media only screen and (max-width:990px){
