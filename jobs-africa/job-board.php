@@ -46,29 +46,19 @@ include_once ENV_ROOT . 'includes/header.php';
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 text-center" >
+        <div class="col-md-2 text-center" >
             <div class="sector-dropdown">
                 <span class="setLabel-Sector">Choose Sector</span>
                 <input type="hidden" name="cd-dropdown">
+              
                 <ul class="sector-dropdown-list" id="listSectors">
                 </ul>
             </div>
-        </div>
-        <div class="col-md-6 text-center" >
         </div>
     </div>
     </br>
     <h3 class="text-center"><span id="resultCount"></span></h3>
 </div>
-<style>
-    .img-flag-icon {
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
-        width: 150px
-    }
-
-</style>
 <div class="container">
     <div class="row">
         <div class="col-md-12" id="show_sector">
