@@ -1,57 +1,55 @@
 /*
  * app-job-boards.js for job board functionality
  *
- * Author: Natie Rautenbach
+ * Author: Natie Rautenbach + Upgraded by Mou Thabang
  * Date Written:14Nov2018
  * (c) AdoGreen Africa 2018
  */
 $(function ()
     {
-       $('#loadingmessage').show();
+        $('#loadingmessage').show();
         loadAllSectors();
         loadOpenJobs();
 
-
-
-    // Custom dropdown for countries
+        // Custom dropdown for countries
         $(".selLabel").click(function ()
-        {
+            {
                 $('.country-dropdown').toggleClass('active');
-        });
+                var dropdown = document.querySelector('#listCountries');
+                dropdown.style.display = dropdown.style.display == 'block' ? 'none' : 'block';
+            });
 
         $(".setLabel-Sector").click(function ()
-        {
+            {
                 $('.sector-dropdown').toggleClass('active');
-        });
-
+                var dropdown = document.querySelector('#listSectors');
+                dropdown.style.display = dropdown.style.display == 'block' ? 'none' : 'block';
+            });
 
         $("#listCountries").click(function ()
-        {
-
-            $('.country').click( function()
             {
-                $('.selLabel').text($(this).text());
-                $('.country-dropdown').removeClass('active');
-                fillCountry($(this).text().trim());
+                $('.country').click(function ()
+                    {
+                        $('.selLabel').text($(this).text());
+                        $('.country-dropdown').removeClass('active');
+                        fillCountry($(this).text().trim());
+                        var dropdown = document.querySelector('#listCountries');
+                        dropdown.style.display = 'none';
+                    });
             });
-
-        });
 
         $("#listSectors").click(function ()
-        {
-
-            $('.sectors').click( function()
             {
-                $('.setLabel-Sector').text($(this).text());
-                $('.sector-dropdown').removeClass('active');
-               changeSector($(this).text().trim());
+                $('.sectors').click(function ()
+                    {
+                        $('.setLabel-Sector').text($(this).text());
+                        $('.sector-dropdown').removeClass('active');
+                        changeSector($(this).text().trim());
+                        var dropdown = document.querySelector('#listSectors');
+                        dropdown.style.display = 'none';
+
+                    });
             });
-
-        });
-
-
-
-
     });
 
 //Search bar inputs
@@ -63,9 +61,6 @@ $("#search-input").on("keyup", function ()
                 return $(this).text().toLowerCase().indexOf(search) < 0;
             }).hide();
     });
-
-
-
 
 function loadOpenJobs()
     {
@@ -110,7 +105,7 @@ function fillCountry(objCountryName)
 
         $.ajax({
 
-            url: KQ_Url + "/ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Country="+country,
+            url: KQ_Url + "/ajax/getCmsDataLF.php?c=Job&s=OpenDate&Status=open&Published=yes&Country=" + country,
             method: "POST",
             datatype: "json",
 
@@ -144,7 +139,7 @@ function loadAllSectors()
 
                     for (var i = 0; i < objSectors.length; i++)
                         {
-                        returnHtml += '<li class="sectors" value="' + objSectors[i]['Value'] + '"><span> '+ objSectors[i]['DisplayValue'] +'</span></li>';
+                            returnHtml += '<li class="sectors" value="' + objSectors[i]['Value'] + '"><span> ' + objSectors[i]['DisplayValue'] + '</span></li>';
 
                         }
 //            console.log(returnHtml);
@@ -155,7 +150,7 @@ function loadAllSectors()
 
 function loadJobs(data)
     {
-        console.log(data);
+        //console.log(data);
 //          Move only values from Array [2] into a var
         var objJobs = data[2];
 
@@ -203,14 +198,14 @@ function loadJobs(data)
             {
 //                console.log(objCountry[i]);
                 var picFlag = objCountry[i].replace(/\s/g, '');
-                returnHtmlCountry2 += '<li class="country"><span><img  width="25px" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg"> '+objCountry[i]+'</span></li>';
+                returnHtmlCountry2 += '<li class="country"><span><img  width="25px" src="' + Ado_Url + '/assets/img/flags/' + picFlag + '.svg"> ' + objCountry[i] + '</span></li>';
             }
 
 
 //           console.log(objCountry);
         $('#job-board-listing').html(returnHtml);
         $('#listCountries').html(returnHtmlCountry2);
-     //   $("#search-input").focus();
+        //   $("#search-input").focus();
     }
 
 function sortArray(a, b)
