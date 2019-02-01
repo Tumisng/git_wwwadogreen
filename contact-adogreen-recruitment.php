@@ -25,11 +25,11 @@ include_once ENV_ROOT . 'includes/header.php';
     <div class="row">
         <div class="col-md-4">
             <div class="headline"><h2 >Contact Details</h2></div>
-            <h3><img hspace="10" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/building.png">  South Africa Head Office</h3>
+            <h3><i class="fa fa-building" aria-hidden="true"></i>South Africa Head Office</h3>
             <ul class="spacing-25">
-                <li ><a href="mailto:info@adogreen.com"><img hspace="20" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/mail.png">info@adogreen.com</a></li>
-                <li ><a href="tel:+27 10 140 0951"><img hspace="20" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/call.png"> +27 10 140 0951</a></li>
-                <li ><a href="http://www.adogreen.com"><img hspace="20" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/web.png">http://www.adogreen.com</a></li>
+                <li ><a href="mailto:info@adogreen.com"><i class="fa fa-envelope-o" aria-hidden="true"> </i>info@adogreen.com</a></li>
+                <li ><a href="tel:+27 10 140 0951"><i class="fa fa-phone" aria-hidden="true"> </i> +27 (0) 21 140 0899</a></li>
+                <li ><a href="http://www.adogreen.com"><i class="fa fa-globe" aria-hidden="true"> </i>http://www.adogreen.com</a></li>
             </ul>
          
             
@@ -37,12 +37,12 @@ include_once ENV_ROOT . 'includes/header.php';
         <div class="col-md-4">
             <div class="headline"><h2 >Address details</h2></div>
            <ul class="list-unstyled indent-50">
-                <h3 class="text-left"><img hspace="10" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/building2.png">Rustenburg</h3>
+                <h3 class="text-left"><i class="fa fa-building" aria-hidden="true"></i>Rustenburg</h3>
                 <p>Multiprac Building</p>
                 <p>167A Church Street</p>
             </ul>
             <ul class="list-unstyled indent-50">
-                <h3 class="text-left"><img hspace="10" src="<?php echo ENV_ROOTURL; ?>assets/img/icons/flat/building2.png">AdoGreen Botswana HQ</h3>
+                <h3 class="text-left"><i class="fa fa-building" aria-hidden="true"></i>AdoGreen Botswana HQ</h3>
                      <p>Plot 47 Unit 9 </p>
                      <p>Gaborone International Commerce Park </p>
             </ul>
@@ -116,9 +116,6 @@ include_once ENV_ROOT . 'includes/header.php';
 
         </div>
         <div class="col-md-4">
-            <h3>Richard Wadikgosi</h3>
-            <p>Senior Recruitment Coordinator | Botswana </p>
-            <a href="https://www.linkedin.com/in/richwadikgosi/"><img class="img-responsive" src="assets/img/social-linkedin-Richard.jpg" width="100%" alt="Richard Wadikgosi Senior Recruitment Coordinator | Botswana"></a>
 
         </div>
     </div>

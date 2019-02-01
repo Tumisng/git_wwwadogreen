@@ -62,8 +62,8 @@
                     <h4>Contact Details</h4>
                         <address>
 
-                            <strong>AdoGreen Africa</strong>
-                            <strong>Recruitment | HR | RPO</strong>
+                            <strong>AdoGreen Africa: </strong>
+                            <strong>Recruitment | HR | RPO | Training</strong>
                             <br/> South Africa Offices
                             <br/> Phone: +27 (0) 21 140 0899
                             <br/> Fax: +27 (0) 86 607 1173
