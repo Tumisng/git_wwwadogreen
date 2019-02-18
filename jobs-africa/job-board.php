@@ -31,13 +31,10 @@ include_once ENV_ROOT . 'includes/header.php';
     <div id='loadingmessage' style='display:none' class="text-center row padding-bottom-20">
         <img src='<?php echo ENV_ROOTURL; ?>assets/img/ajax-loader.gif'/>
     </div>
-    <div class="row padding-bottom-20">
-        <div class="col-md-12 text-center">
-            <h3 class="text-center">What Job Are You Looking For?</h3>
-            <input type="searching" id="search-input" placeholder="Search"><br><br>
-        </div>
+    <div class="row col-md-12 padding-top-80 padding-bottom-20 text-center">
+            <input type="searching" id="search-input" placeholder="What Job Are You Looking For?"><br>
     </div>
-    <div class="row padding-bottom-20">
+    <div class="row padding-bottom-80">
         <div class="col-md-3 text-center">
             <div class="country-dropdown">
                 <span class="selLabel">Choose country</span>

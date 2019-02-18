@@ -15,15 +15,13 @@ $(function ()
         $(".selLabel").click(function ()
             {
                 $('.country-dropdown').toggleClass('active');
-                var dropdown = document.querySelector('#listCountries');
-                dropdown.style.display = dropdown.style.display == 'block' ? 'none' : 'block';
+                
             });
 
         $(".setLabel-Sector").click(function ()
             {
                 $('.sector-dropdown').toggleClass('active');
-                var dropdown = document.querySelector('#listSectors');
-                dropdown.style.display = dropdown.style.display == 'block' ? 'none' : 'block';
+                console.log("I am clicked");
             });
 
         $("#listCountries").click(function ()
@@ -33,8 +31,6 @@ $(function ()
                         $('.selLabel').text($(this).text());
                         $('.country-dropdown').removeClass('active');
                         fillCountry($(this).text().trim());
-                        var dropdown = document.querySelector('#listCountries');
-                        dropdown.style.display = 'none';
                     });
             });
 
@@ -45,8 +41,6 @@ $(function ()
                         $('.setLabel-Sector').text($(this).text());
                         $('.sector-dropdown').removeClass('active');
                         changeSector($(this).text().trim());
-                        var dropdown = document.querySelector('#listSectors');
-                        dropdown.style.display = 'none';
 
                     });
             });
