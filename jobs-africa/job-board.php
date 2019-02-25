@@ -35,19 +35,19 @@ include_once ENV_ROOT . 'includes/header.php';
             <input type="searching" id="search-input" placeholder="What Job Are You Looking For?"><br>
     </div>
     <div class="row padding-bottom-80">
-        <div class="col-md-3 text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
             <div class="country-dropdown">
                 <span class="selLabel">Choose country</span>
                 <input type="hidden" name="cd-dropdown">
                 <ul class="country-dropdown-list" id="listCountries">
                 </ul>
             </div>
-        </div>
-        <div class="col-md-2 text-center" >
+        </div><br><br><br><br>
+        <div class="col-md-6">
             <div class="sector-dropdown">
                 <span class="setLabel-Sector">Choose Sector</span>
                 <input type="hidden" name="cd-dropdown">
-              
                 <ul class="sector-dropdown-list" id="listSectors">
                 </ul>
             </div>

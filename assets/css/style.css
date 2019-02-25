@@ -6747,7 +6747,7 @@ input[type=searching] {
   -o-transition: all .5s;
   transition: all .5s; }
   input[type=searching]:focus {
-    width: 80%;
+    width: 95%;
     background-color: #fff;
     border: solid 2px #6BCD6C;
     -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
@@ -6756,8 +6756,9 @@ input[type=searching] {
 
 .country-dropdown, .sector-dropdown {
   margin: 0 auto;
-  width: 250px;
-  position: absolute; }
+  width: 320px;
+  position: absolute;
+  z-index: 501; }
   .country-dropdown span, .sector-dropdown span {
     border: 1px solid #eee;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -6770,25 +6771,19 @@ input[type=searching] {
     padding: 0px 25px 0px;
     text-align: left; }
   .country-dropdown ul, .sector-dropdown ul {
-    padding-left: 0px;
-    position: inherit;
-    display: block; }
+    padding-left: 0px; }
     .country-dropdown ul li:hover, .sector-dropdown ul li:hover {
       color: white;
       background-color: green; }
 
 .country-dropdown.active .selLabel:after, .sector-dropdown.active .setLabel-Sector:after {
-  content: '\25B2';
-  position: absolute;
-  z-index: 0; }
+  content: '\25B2'; }
 
 .country-dropdown.active .country-dropdown-list li, .sector-dropdown.active .sector-dropdown-list li {
-  opacity: 1;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-  display: block;
-  z-index: 1; }
+  opacity: 1; }
 
 .selLabel, .setLabel-Sector {
   background-color: #fff;
@@ -6815,12 +6810,10 @@ input[type=searching] {
 
 .country-dropdown-list, .sector-dropdown-list {
   list-style: none;
-  position: relative;
-  left: -10;
   width: 100%; }
   .country-dropdown-list li, .sector-dropdown-list li {
     background-color: #fff;
-    display: block;
+    display: inherit;
     width: 100%;
     -webkit-transition: all 300ms;
     -o-transition: all 300ms;
@@ -6926,6 +6919,10 @@ address {
 
 .footer-a li a {
   text-decoration: none; }
+
+@media (min-width: 200px) {
+  .sector-dropdown {
+    z-index: 1; } }
 
 @media (min-width: 480px) {
   h1 {

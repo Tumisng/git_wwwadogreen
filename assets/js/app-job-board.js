@@ -21,7 +21,6 @@ $(function ()
         $(".setLabel-Sector").click(function ()
             {
                 $('.sector-dropdown').toggleClass('active');
-                console.log("I am clicked");
             });
 
         $("#listCountries").click(function ()
@@ -196,10 +195,11 @@ function loadJobs(data)
             }
 
 
-//           console.log(objCountry);
+           
         $('#job-board-listing').html(returnHtml);
         $('#listCountries').html(returnHtmlCountry2);
-        //   $("#search-input").focus();
+        console.log("Focus is here");
+         $("#search-input").focus();
     }
 
 function sortArray(a, b)
