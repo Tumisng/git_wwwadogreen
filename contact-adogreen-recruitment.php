@@ -8,7 +8,7 @@ include_once ENV_ROOT . 'includes/header.php';
     <div class="row">
         <div class="container">
             <div class="col-md-12">
-                <h6>AdoGreen Africa Recruitment | HR | RPO / Contact Us</h6>
+                <h6>AdoGreen Africa HR | Recruitment | Training | Legal Consultancy / Contact Us</h6>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@ include_once ENV_ROOT . 'includes/header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Contact AdoGreen Africa Recruitment</h1>
+            <h1>Contact AdoGreen Africa HR | Recruitment | Training | Legal Consultancy</h1>
             <p>Owing to the success of <strong>tried and tested</strong> recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen Africa has been able to deliver above expectation on recruitment specs across a spectrum of diverse environments. This has positioned us with the confidence to embrace any recruitment need and challenge within Africa. Although there is a primary focus on heavy industry and sectors, we continue to be successful in fulfilling broader specs beyond these requirements.
             </p>
             <hr>
@@ -31,8 +31,8 @@ include_once ENV_ROOT . 'includes/header.php';
                 <li ><a href="tel:+27 10 140 0951"><i class="fa fa-phone" aria-hidden="true"> </i> +27 (0) 21 140 0899</a></li>
                 <li ><a href="http://www.adogreen.com"><i class="fa fa-globe" aria-hidden="true"> </i>http://www.adogreen.com</a></li>
             </ul>
-         
-            
+
+
         </div>
         <div class="col-md-4">
             <div class="headline"><h2 >Address details</h2></div>
@@ -47,7 +47,7 @@ include_once ENV_ROOT . 'includes/header.php';
                      <p>Gaborone International Commerce Park </p>
             </ul>
         </div>
-        
+
         <div class="col-md-4">
             <!-- Business Hours -->
             <div class="headline"><h2>Business Hours +2GMT</h2></div>
@@ -94,32 +94,52 @@ include_once ENV_ROOT . 'includes/header.php';
         <div class="col-md-4">
             <h3>Yvette Rautenbach</h3>
             <p> CEO AdoGreen Africa</p>
-            <a href="https://za.linkedin.com/in/yvielee"><img class="img-responsive" src="assets/img/social-linkedin-yvette.png" width="100%" alt="Yvette Rautenbach Linkedin CEO AdoGreen Africa"></a>
+            <a href="https://za.linkedin.com/in/yvielee"><img class="img-responsive" src="assets/img/social-Yvette.jpg" width="100%" alt="Yvette Rautenbach Linkedin CEO AdoGreen Africa"></a>
         </div>
         <div class="col-md-4">
             <h3>Dr. Amanda Agathagelou</h3>
             <p>Psychologist - Industrial | Consulting</p>
-            <a href="https://www.linkedin.com/in/dr-amanda-agathagelou-399a4977/"><img class="img-responsive" src="assets/img/social-linkedin-amanda.png" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa"></a>
+            <a href="https://www.linkedin.com/in/dr-amanda-agathagelou-399a4977/"><img class="img-responsive" src="assets/img/social-Amanda.jpg" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa"></a>
         </div>
         <div class="col-md-4">
             <h3>Neo Nwako</h3>
             <p>Director/Shareholder AdoGreen Botswana</p>
-            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-linkedin-neo.png" width="100%" alt="Neo Nwako Director Botswana"></a>
-
+            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-Neo.jpg" width="100%" alt="Neo Nwako Director Botswana"></a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
+            <h3>Trish Nelson</h3>
+            <p>Legal Advisor & Commercial Mediator</p>
+            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Chantell Gericke</h3>
+            <p>Head HR</p>
+            <a href="https://www.linkedin.com/in/chantell-gericke-9325355b/"><img class="img-responsive" src="assets/img/social-Chantell.jpg" width="100%" alt="Chantell Gericke Head HR AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Marcel Hattingh</h3>
+            <p>Executive Training</p>
+            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Marcel.jpg" width="100%" alt="Marcel Hatting Executive Training AdoGreen Africa"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Tasha Cloete</h3>
+            <p>Dynamic Creative Consultant | AdoGreen Africa</p>
+            <a href="https://www.linkedin.com/in/natienatasha-cloete-b8246928rau/"><img class="img-responsive" src="assets/img/social-Tasha.jpg" width="100%" alt="Tasha Cloete Director Africa"></a>
+        </div>
+        <div class="col-md-4">
             <h3>Natie Rautenbach</h3>
             <p>Director | CIO AdoGreen Africa</p>
-            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-linkedin-natie.png" width="100%" alt="Natie Rautenbach CIO Africa"></a>
-
+            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
         </div>
         <div class="col-md-4">
 
         </div>
     </div>
-
+<br/>
 
 
 
