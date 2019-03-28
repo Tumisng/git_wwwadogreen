@@ -29,7 +29,7 @@
                     <!-- End About -->
                     <!-- Latest -->
                     <div class="col-md-3 col-sm-6">
-                        <h4>Sectors</h4>
+                        <h4>Recruitment Sectors</h4>
                         <ul class="list-unstyled footer-a">
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR Recruitment</a></li>
                             <li><a href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php" role="button">Africa Mining Recruitment</a></li>
@@ -63,7 +63,7 @@
                         <address>
 
                             <strong>AdoGreen Africa: </strong>
-                            <strong>Recruitment | HR | RPO | Training</strong>
+                            <strong> HR | Recruitment | Training | Legal</strong>
                             <br/> South Africa Offices
                             <br/> Phone: +27 (0) 21 140 0899
                             <br/> Fax: +27 (0) 86 607 1173
