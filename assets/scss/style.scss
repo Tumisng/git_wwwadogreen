@@ -11,7 +11,7 @@
 * {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
-    border-radius: 0 !important; 
+    border-radius: 0 !important;
 }
 
 body {
@@ -24,7 +24,7 @@ a {
     text-decoration: underline;
     &:hover {
         color: $ado-blue-dark;
-    } 
+    }
 }
 
 img {
@@ -296,7 +296,6 @@ btn-services {
     h6 {
         font-size: 18px !important;
     }
-
 }
 
 .btn-danger {
@@ -389,7 +388,6 @@ btn-services {
     }
 }
 
-
 .button-blue {
     background-color: $white;
     color: #2c3e50;
@@ -402,7 +400,6 @@ btn-services {
         text-decoration: none;
     }
 }
-
 
 .button-green {
     background-color: $white;
@@ -450,7 +447,6 @@ btn-services {
     text-decoration: none;
 }
 
-
 input[type=searching] {
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 10px center;
     border: solid 1px #ccc;
@@ -458,16 +454,16 @@ input[type=searching] {
     width: 40%;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
-    transition: all .5s;  
+    transition: all .5s;
 
     &:focus {
         width: 95%;
-        background-color: #fff; 
+        background-color: #fff;
         border: solid 2px #6BCD6C;
         -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
         -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
         box-shadow: 0 0 5px rgba(109,207,246,.5);
-    }  
+    }
 }
 
 .country-dropdown , .sector-dropdown{
@@ -475,7 +471,7 @@ input[type=searching] {
     width: 320px;
     position: absolute;
     z-index: 501;
-    span { 
+    span {
         border: 1px solid #eee;
         box-shadow:  0 1px 1px rgba(0,0,0,0.1);
         cursor: pointer;
@@ -493,24 +489,23 @@ input[type=searching] {
             &:hover{
                 color: white;
                 background-color: green;
-            } 
+            }
         }
     }
 }
 
 .country-dropdown.active .selLabel:after , .sector-dropdown.active .setLabel-Sector:after{
     content: '\25B2';
-} 
+}
 
 .country-dropdown.active .country-dropdown-list li, .sector-dropdown.active .sector-dropdown-list li {
-   
+
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
 }
 
 
- 
 .selLabel, .setLabel-Sector {
     background-color: #fff;
     width: 100%;
@@ -561,9 +556,9 @@ input[type=searching] {
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
         }
-        
+
     }
-   
+
 }
 
 .job-header {
@@ -572,36 +567,33 @@ input[type=searching] {
     p {
         font-size: 10px;
         text-transform: uppercase;
-
     }
 }
 
 //
-//  Contact 
+//  Contact
 //
 .spacing-25{
     li{
-    padding-bottom: 25px;
+        padding-bottom: 25px;
     }
 }
 
 .spacing-10{
     li{
-    padding-bottom: 10px;
+        padding-bottom: 10px;
     }
 }
 
-.spacing-30{ 
-     padding-bottom: 30px;
-   
+.spacing-30{
+    padding-bottom: 30px;
+
 }
 
-
 .indent-50{
-        p{
-            padding-left:  50px;
-        }
-    
+    p{
+        padding-left:  50px;
+    }
 }
 
 //
@@ -668,8 +660,6 @@ input[type=searching] {
 //
 // Footer
 //
-
-
 .footer-main {
     background-color: $footer-background;
     color: $white;
@@ -687,7 +677,6 @@ input[type=searching] {
     a {
         color: $grey-light;
     }
-
 }
 
 address {
@@ -711,25 +700,18 @@ address {
         }
     }
 }
-
-
 //
 // Responsive Design
 //
-
 @media(min-width: 200px){
     .sector-dropdown{
           z-index: 1;
     }
-    
 }
 @media (min-width: 480px){
     h1 {
         font-size: 2em;
     }
-    
-    
-    
 }
 
 @media (min-width: 768px){
@@ -746,9 +728,6 @@ address {
     .carousel-indicators {
         bottom: -16px;
     }
-
-
-   
 }
 
 @media (min-width: 992px){
@@ -763,7 +742,6 @@ address {
         bottom: 18px;
         h1 {
             font-size: 80px;
-
         }
     }
 
@@ -775,10 +753,6 @@ address {
         padding: 16px 0px;
         font-size: 12px;
     }
-   
-    
-     
-   
 }
 
 @media (min-width: 1200px){
@@ -793,7 +767,7 @@ address {
 
         }
     }
-     
+
 }
 
 @media (min-width: 1400px){
@@ -804,7 +778,7 @@ address {
 
         }
     }
-    
-   
+
+
 
 }
