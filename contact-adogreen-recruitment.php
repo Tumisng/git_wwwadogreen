@@ -24,6 +24,55 @@ include_once ENV_ROOT . 'includes/header.php';
     </div>
     <div class="row">
         <div class="col-md-4">
+            <h3>Yvette Rautenbach</h3>
+            <p> CEO AdoGreen Africa</p>
+            <a href="https://za.linkedin.com/in/yvielee"><img class="img-responsive" src="assets/img/social-Yvette.jpg" width="100%" alt="Yvette Rautenbach Linkedin CEO AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Dr. Amanda Agathagelou</h3>
+            <p>Psychologist - Industrial | Consulting</p>
+            <a href="https://www.linkedin.com/in/dr-amanda-agathagelou-399a4977/"><img class="img-responsive" src="assets/img/social-Amanda.jpg" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Neo Nwako</h3>
+            <p>Director/Shareholder AdoGreen Botswana</p>
+            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-Neo.jpg" width="100%" alt="Neo Nwako Director Botswana"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Trish Nelson</h3>
+            <p>Legal Advisor & Commercial Mediator</p>
+            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Chantell Gericke</h3>
+            <p>Head HR</p>
+            <a href="https://www.linkedin.com/in/chantell-gericke-9325355b/"><img class="img-responsive" src="assets/img/social-Chantell.jpg" width="100%" alt="Chantell Gericke Head HR AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Dr. Marcel Hattingh</h3>
+            <p>Executive Leadership Development</p>
+            <a href="https://www.linkedin.com/in/marcel-hattingh-5984a6a9/"><img class="img-responsive" src="assets/img/social-Marcel.jpg" width="100%" alt="Marcel Hatting Executive Training AdoGreen Africa"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Tasha Cloete</h3>
+            <p>Dynamic Creative Consultant | AdoGreen Africa</p>
+            <a href="https://www.linkedin.com/in/natasha-cloete-b8246928rau/"><img class="img-responsive" src="assets/img/social-Tasha.jpg" width="100%" alt="Tasha Cloete Director Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Natie Rautenbach</h3>
+            <p>Director | CIO AdoGreen Africa</p>
+            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
             <div class="headline"><h2 >Contact Details</h2></div>
             <h3><i class="fa fa-building" aria-hidden="true"></i>South Africa Head Office</h3>
             <ul class="spacing-25">
@@ -90,55 +139,7 @@ include_once ENV_ROOT . 'includes/header.php';
         <!-- ./row -->
 
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Yvette Rautenbach</h3>
-            <p> CEO AdoGreen Africa</p>
-            <a href="https://za.linkedin.com/in/yvielee"><img class="img-responsive" src="assets/img/social-Yvette.jpg" width="100%" alt="Yvette Rautenbach Linkedin CEO AdoGreen Africa"></a>
-        </div>
-        <div class="col-md-4">
-            <h3>Dr. Amanda Agathagelou</h3>
-            <p>Psychologist - Industrial | Consulting</p>
-            <a href="https://www.linkedin.com/in/dr-amanda-agathagelou-399a4977/"><img class="img-responsive" src="assets/img/social-Amanda.jpg" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa"></a>
-        </div>
-        <div class="col-md-4">
-            <h3>Neo Nwako</h3>
-            <p>Director/Shareholder AdoGreen Botswana</p>
-            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-Neo.jpg" width="100%" alt="Neo Nwako Director Botswana"></a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Trish Nelson</h3>
-            <p>Legal Advisor & Commercial Mediator</p>
-            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
-        </div>
-        <div class="col-md-4">
-            <h3>Chantell Gericke</h3>
-            <p>Head HR</p>
-            <a href="https://www.linkedin.com/in/chantell-gericke-9325355b/"><img class="img-responsive" src="assets/img/social-Chantell.jpg" width="100%" alt="Chantell Gericke Head HR AdoGreen Africa"></a>
-        </div>
-        <div class="col-md-4">
-            <h3>Marcel Hattingh</h3>
-            <p>Executive Training</p>
-            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Marcel.jpg" width="100%" alt="Marcel Hatting Executive Training AdoGreen Africa"></a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h3>Tasha Cloete</h3>
-            <p>Dynamic Creative Consultant | AdoGreen Africa</p>
-            <a href="https://www.linkedin.com/in/natienatasha-cloete-b8246928rau/"><img class="img-responsive" src="assets/img/social-Tasha.jpg" width="100%" alt="Tasha Cloete Director Africa"></a>
-        </div>
-        <div class="col-md-4">
-            <h3>Natie Rautenbach</h3>
-            <p>Director | CIO AdoGreen Africa</p>
-            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
-        </div>
-        <div class="col-md-4">
 
-        </div>
-    </div>
 <br/>
 
 

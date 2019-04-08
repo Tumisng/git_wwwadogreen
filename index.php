@@ -1,16 +1,10 @@
 <?php
 include_once 'environment/config.php';
 
-$strPageSlider = TRUE;
-$strPageHero = TRUE;
 include 'includes/header.php';
-//include 'includes/front_page_slider.php';
 
-
-
-if (Detect::isMobile() || Detect::isTablet())
-    {
-    ?>
+if (Detect::isMobile() || Detect::isTablet()){
+?>
     <!-- *****************     Mobile screen **********************-->
     <div class="container-fluid visible-xs">
         <div class="row">
@@ -60,12 +54,31 @@ if (Detect::isMobile() || Detect::isTablet())
         </div>
 
     </div>
-    <?php
-    }
+<?php
+}
 
-if (Detect::isComputer())
-    {
-    ?>
+if (Detect::isComputer()){
+
+echo '
+    <section class="cd-hero">
+        <div class="cd-hero-content">';
+        include_once ENV_ROOT . 'includes/slider_Front_Page.php';
+echo '  </div>
+    </section> <!-- .cd-hero -->';
+?>
+    <nav class="cd-secondary-nav">
+        <ul>
+            <li><a href="<?php echo ENV_ROOTURL . 'index.php'; ?>" class="current dropdown-toggle">Home</a></li>
+            <li><a href="<?php echo ENV_ROOTURL; ?>jobs-africa/register-cv.php">Register your CV</a></li>
+            <li><a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a></li>
+            <li><a href="<?php echo ENV_ROOTURL; ?>jobs-africa/job-board.php">Job Board</a></li>
+            <li><a href="<?php echo ENV_ROOTURL; ?>contact-adogreen-recruitment.php" class="current dropdown-toggle" rel="nofollow">Contact</a></li>
+            <!--		<li><a href="#0">Specs</a></li>
+                            <li><a href="#0">Support</a></li>
+                            <li><a href="#0">Compare</a></li>
+                            <li><a href="#0">Buy</a></li>-->
+        </ul>
+    </nav> <!-- .cd-secondary-nav -->
     <div class="container cd-main-content sub-nav-hero">
 
     </div>
@@ -75,8 +88,6 @@ if (Detect::isComputer())
                 <h1 class="front-sectors"><b>Recruitment in Africa - Sectors</b></h1>
             </div>
         </div>
-          
-                  
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
                 <h2 >African Mining Recruitment</h2>
@@ -158,15 +169,11 @@ if (Detect::isComputer())
             </div>
         </div>
     </div>
+<?php
+}
 
-
-
-    <?php
-    }
-if (Detect::isComputer())
-    {
+if (Detect::isComputer()){
     ?>
-
     <!-- ******************* -->
     <!--      Seoncd Row     -->
     <!-- ******************* -->
@@ -250,15 +257,16 @@ if (Detect::isComputer())
         </div>
     </div>
     </div>
-    <?php
-    }
+<?php
+}
 
 include 'includes/footer.php';
 include 'includes/js_scripts.php';
-if (Detect::isComputer())
-    {
+
+if (Detect::isComputer()){
     include 'includes/js_slider.php';
-    }
+}
+
 ?>
 </body>
 </html>
