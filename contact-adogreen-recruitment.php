@@ -34,16 +34,16 @@ include_once ENV_ROOT . 'includes/header.php';
             <a href="https://www.linkedin.com/in/dr-amanda-agathagelou-399a4977/"><img class="img-responsive" src="assets/img/social-Amanda.jpg" width="100%" alt="Dr. Amanda Agathagelou Linkedin Heavy Industry Pshycologist Africa"></a>
         </div>
         <div class="col-md-4">
-            <h3>Neo Nwako</h3>
-            <p>Director/Shareholder AdoGreen Botswana</p>
-            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-Neo.jpg" width="100%" alt="Neo Nwako Director Botswana"></a>
+            <h3>Trish Nelson</h3>
+            <p>Legal Advisor & Commercial Mediator</p>
+            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <h3>Trish Nelson</h3>
-            <p>Legal Advisor & Commercial Mediator</p>
-            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
+            <h3>Natie Rautenbach</h3>
+            <p>Director AdoGreen Africa</p>
+            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
         </div>
         <div class="col-md-4">
             <h3>Chantell Gericke</h3>
@@ -63,33 +63,46 @@ include_once ENV_ROOT . 'includes/header.php';
             <a href="https://www.linkedin.com/in/natasha-cloete-b8246928rau/"><img class="img-responsive" src="assets/img/social-Tasha.jpg" width="100%" alt="Tasha Cloete Director Africa"></a>
         </div>
         <div class="col-md-4">
-            <h3>Natie Rautenbach</h3>
-            <p>Director | CIO AdoGreen Africa</p>
-            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
+
         </div>
         <div class="col-md-4">
 
         </div>
     </div>
     <div class="row">
+        <h2>AdoGreen Botswana</h2>
         <div class="col-md-4">
-            <div class="headline"><h2 >Contact Details</h2></div>
+            <h3>Neo Nwako</h3>
+            <p>Director/Shareholder AdoGreen Botswana</p>
+            <a href="https://www.linkedin.com/in/neo-nwako-a7bb166/"><img class="img-responsive" src="assets/img/social-Neo.jpg" width="100%" alt="Neo Nwako Director Botswana"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Peter Meswele</h3>
+            <p>HR | Recruitment AdoGreen Botswana</p>
+            <a href="https://www.linkedin.com/in/o-peter-meswele-55970a6a/"><img class="img-responsive" src="assets/img/social-peter-meswele.jpg" width="100%" alt="Peter Meswele Botswana Recruitment HR Jobs"></a>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="headline"><h2 >Contact Details</h2></div>
+        <div class="col-md-4">
+            <div class="headline"><h2 >South AFrica</h2></div>
             <h3><i class="fa fa-building" aria-hidden="true"></i>South Africa Head Office</h3>
             <ul class="spacing-25">
                 <li ><a href="mailto:info@adogreen.com"><i class="fa fa-envelope-o" aria-hidden="true"> </i>info@adogreen.com</a></li>
                 <li ><a href="tel:+27 10 140 0951"><i class="fa fa-phone" aria-hidden="true"> </i> +27 (0) 21 140 0899</a></li>
                 <li ><a href="http://www.adogreen.com"><i class="fa fa-globe" aria-hidden="true"> </i>http://www.adogreen.com</a></li>
             </ul>
-
-
-        </div>
-        <div class="col-md-4">
-            <div class="headline"><h2 >Address details</h2></div>
-           <ul class="list-unstyled indent-50">
+            <ul class="list-unstyled indent-50">
                 <h3 class="text-left"><i class="fa fa-building" aria-hidden="true"></i>Rustenburg</h3>
                 <p>Multiprac Building</p>
                 <p>167A Church Street</p>
             </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="headline"><h2 >Botswana</h2></div>
             <ul class="list-unstyled indent-50">
                 <h3 class="text-left"><i class="fa fa-building" aria-hidden="true"></i>AdoGreen Botswana HQ</h3>
                      <p>Plot 47 Unit 9 </p>
@@ -131,26 +144,14 @@ include_once ENV_ROOT . 'includes/header.php';
                 <span class="fa fa-youtube"></span>
             </a>
 <!--                <a href="https://www.linkedin.com/company/adogreen"><img class="img-responsive" src="assets/img/social-linkedin.png" width="100%"></a>-->
-
-
-
-
         </div>
         <!-- ./row -->
-
     </div>
-
 <br/>
-
-
-
-
 </div>
 <?php
 include ENV_ROOT . 'includes/footer.php';
 include ENV_ROOT . 'includes/js_scripts.php';
 ?>
-
-
 </body>
 </html>

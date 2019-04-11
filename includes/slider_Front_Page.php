@@ -50,8 +50,8 @@
           <div class="item">
             <img class="fifth-slide" style="width:100%;" src="<?php echo ENV_ROOTURL; ?>assets/img/sliders/front-legal.jpg" alt="Fifth slide" />
             <div class="container-fluid carousel-caption">
-                        <h1 class="bold">Legal - POPI | Compliance</h1>
-                        <h3>Legal & Commercial Mediation</h3>
+                        <h1 class="bold">Legal | Compliance</h1>
+                        <h3>Commercial Mediation | POPI Compliance</h3>
                         <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>sectors/africa-renewable-energy-jobs-recruitment.php" role="button">Read More</a></p>
             </div>
         </div>
