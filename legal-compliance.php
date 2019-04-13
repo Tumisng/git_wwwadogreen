@@ -6,7 +6,7 @@ include 'includes/header.php';
 if (Detect::isMobile() || Detect::isTablet()){
 ?>
     <!-- *****************     Mobile screen **********************-->
-    <div class="container-fluid visible-xs">
+    <!-- <div class="container-fluid visible-xs">
         <div class="row">
             <div class="col-xs-12 no-padding-sides">
                 <img src="assets/img/logo-header.png" alt="AdoGreen Recruitment Logo">
@@ -53,11 +53,11 @@ if (Detect::isMobile() || Detect::isTablet()){
             ?>
         </div>
 
-    </div>
+    </div> -->
 <?php
 }
 
-if (Detect::isComputer()){
+if (Detect::isComputer() || Detect::isMobile() || Detect::isTablet()){
 
 echo '
     <section class="cd-hero">

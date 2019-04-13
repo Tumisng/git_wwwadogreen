@@ -41,6 +41,10 @@
 	background-color: $header-background;
         color: $white;
 }
+.navbar-nav .open .dropdown-menu>li>a {
+	color:white;
+}
+
 
 .navbar-fixed-top {
     background-color: $header-background;
@@ -251,8 +255,8 @@
 	height: 100%;
 	padding-right: 5%;
 
-
 	.dropdown-menu > li > a {
+			display: block;
 			font-family: $nav-font-family;
 			font-weight: 700;
 			font-size: 14px;
@@ -308,7 +312,9 @@
 			@include clearfix;
 			background-color: transparent;
 			box-shadow: none;
-
+			/*
+				Keeps spacing on main menu lists in line with word
+			*/
 			li {
 				display: inline-block;
 				margin-right: 1.5em;
@@ -317,11 +323,18 @@
 					margin-right: 0;
 				}
 			}
+			/*
+				This makes sure that the li dropdowns are full width
+			*/
+			.dropdown-menu {
+				li {
+					display: block;
+				}
+			}
 
 			a {
 				/* reset mobile style */
 				height: 30px;
-				display: inline-block;
 				line-height: normal;
 				padding: 0;
 				border: none;

@@ -25,7 +25,7 @@ include_once ENV_ROOT . 'includes/head.php';
     <?php
     if (Detect::isMobile()|| Detect::isTablet()) {
         ?>
-        <nav class="navbar yamm nafbar-default">
+        <nav class="navbar yamm navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
@@ -87,23 +87,6 @@ include_once ENV_ROOT . 'includes/head.php';
                                     <a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -162,17 +145,6 @@ include_once ENV_ROOT . 'includes/head.php';
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Services</a>
                             <ul class="dropdown-menu" role="menu">
-
-                                <li>
-                                    <a  href="<?php echo ENV_ROOTURL; ?>legal-compliance.php">Legal</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
-                                </li>
-                                </br>
                                 <li class="dropdown-submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruitment</a>
                                     <ul class="dropdown-menu">
@@ -190,12 +162,20 @@ include_once ENV_ROOT . 'includes/head.php';
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a  href="<?php echo ENV_ROOTURL; ?>legal-compliance.php">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Sectors</a>
                             <ul class="dropdown-menu" role="menu">
-                                </br>
                                 <li class="dropdown-submenu">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruitment</a>
                                     <ul class="dropdown-menu">
