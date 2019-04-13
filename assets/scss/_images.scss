@@ -6,6 +6,25 @@ CSS for main images loaded in pages etc.
     Author     : natie
 */
 
+/*
+PIC TOOLS - ONE PIC ON TOP OF ANOTHER I.E. LOGO
+*/
+.parent-image {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image-bottom {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 @media (min-width: 480px){
 }

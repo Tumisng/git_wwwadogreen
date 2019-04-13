@@ -61,7 +61,7 @@ if (Detect::isComputer()){
 echo '
     <section class="cd-hero">
         <div class="cd-hero-content">';
-        include_once ENV_ROOT . 'includes/slider_Front_Page.php';
+        include_once ENV_ROOT . 'includes/slider_Front_Recruitment.php';
 echo '  </div>
     </section> <!-- .cd-hero -->';
 ?>

@@ -43,7 +43,30 @@ include_once ENV_ROOT . 'includes/head.php';
                             <a href="<?php echo ENV_ROOTURL . 'index.php'; ?>" class="current dropdown-toggle">Home</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Clients</a>
+                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Services</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL; ?>africa-recruitment-jobs.php">Recruitment</a>
+                                </li>
+                                <li>
+                                    <a  href="<?php echo ENV_ROOTURL; ?>legal-compliance.php">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php">Localisation Recruitment</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Sectors</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a>
@@ -62,6 +85,24 @@ include_once ENV_ROOT . 'includes/head.php';
                                 </li>
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff?</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -119,13 +160,11 @@ include_once ENV_ROOT . 'includes/head.php';
                             <a href="<?php echo ENV_ROOTURL . 'index.php'; ?>" class="current dropdown-toggle">Home</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Clients</a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Services</a>
+                            <ul class="dropdown-menu" role="menu">
+
                                 <li>
-                                    <a href="<?php echo ENV_ROOTURL; ?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a>
-                                </li>
-                                <li>
-                                    <a  href="<?php echo ENV_ROOTURL; ?>services/permanent-placement-solutions-africa.php">Permanent Placement Solutions</a>
+                                    <a  href="<?php echo ENV_ROOTURL; ?>legal-compliance.php">Legal</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL;?>services/industrial-psychometric-services-africa.php ">Industrial And Clinical Psychometric Services</a>
@@ -133,11 +172,41 @@ include_once ENV_ROOT . 'includes/head.php';
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
                                 </li>
-                                <li>
-                                    <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php">Localisation Recruitment</a>
+                                </br>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruitment</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="<?php echo ENV_ROOTURL; ?>africa-recruitment-jobs.php">Recruitment</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo ENV_ROOTURL; ?>services/recruitment-process-outsourcing-africa.php">Recruitment Process Outsourcing</a>
+                                        </li>
+                                        <li>
+                                            <a  href="<?php echo ENV_ROOTURL; ?>services/permanent-placement-solutions-africa.php">Permanent Placement Solution</a>
+                                        </li>
+                                        <li>
+                                            <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php">Localisation Recruitment</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a href="<?php echo ENV_ROOTURL; ?>client-register-job.php">Need Staff ?</a>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="false" rel="nofollow">Sectors</a>
+                            <ul class="dropdown-menu" role="menu">
+                                </br>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruitment</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/finance-hr-jobs-heavy-industry-africa-recruitment.php" role="button">Finance & HR</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/mining-jobs-africa-recruitment.php" role="button">Mining</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/construction-jobs-africa-recruitment.php" role="button">Construction</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/engineering-jobs-heavy-industry-africa-recruitment.php" role="button">Engineering</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/energy-power-generation-jobs-africa-recruitment.php" role="button">Power Generation</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/africa-renewable-energy-jobs-recruitment.php" role="button">Renewable Energy</a></li>
+                                        <li><a href="<?php echo ENV_ROOTURL;?>sectors/heavy-industry-manufacturing-jobs-africa-recruitment.php" role="button">Manufacturing</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>

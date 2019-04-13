@@ -7030,8 +7030,8 @@ h3, h4 {
   text-transform: uppercase;
   border-bottom: solid 1px #eee;
   padding: 6px 15px;
+  display: inline-block;
   /* target primary-nav links */
-  display: block;
   height: 50px;
   line-height: 50px;
   border-top: 1px solid #3191d0;
@@ -7068,7 +7068,6 @@ h3, h4 {
   }
   .cd-primary-nav > ul li {
     display: inline-block;
-    float: left;
     margin-right: 1.5em;
   }
   .cd-primary-nav > ul li:last-of-type {
@@ -7077,10 +7076,55 @@ h3, h4 {
   .cd-primary-nav > ul a {
     /* reset mobile style */
     height: 30px;
+    display: inline-block;
     line-height: normal;
     padding: 0;
     border: none;
   }
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 
 .nav-open .cd-primary-nav ul,
@@ -8117,6 +8161,27 @@ CSS for main images loaded in pages etc.
     Created on : Sep 13, 2017, 2:05:35 PM
     Author     : natie
 */
+/*
+PIC TOOLS - ONE PIC ON TOP OF ANOTHER I.E. LOGO
+*/
+.parent-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-bottom {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: 992px) {
   .parallax-content {
     padding: 0px 20px;
@@ -8538,6 +8603,11 @@ li.breadactive {
   background-color: #EBEBEB;
   padding: 30px 15px;
   margin-bottom: 40px;
+}
+
+.row-breaker-no-margin {
+  background-color: #EBEBEB;
+  padding: 30px 15px;
 }
 
 .front-sector {
