@@ -16,6 +16,9 @@
 <!--                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/special-project-recruitment-africa.php">Special Project Recruitment</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>-->
                             <li>
+                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>executive-leadership-development-africa.php ">Executive Training</a>
+                            </li>
+                            <li>
                                 <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php ">Human Resources Services</a>
                             </li>
                             <li>
@@ -45,7 +48,7 @@
                     <!-- Link List -->
                     <div class="col-md-2 col-sm-6">
                         <div class="headline">
-                            <h4>Candidate Useful Links</h4></div>
+                            <h4>Candidates</h4></div>
                         <ul class="list-unstyled footer-a">
                             <li>
                                 <a href="<?php echo ENV_ROOTURL;?>about-us.php" rel="nofollow">About Us</a>

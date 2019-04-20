@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -15,30 +15,37 @@
 	$strPageDescription = 'Free resignation letter examples. AdoGreen Specialist African Recruitment Agency.';
 	$strPageKeywords = 'Resignation Letter Example - How to Resign - Tips';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/candidate-resignation-letter-man.png';
+	$strPageImg = ENV_ROOTURL . '/assets/img/candidate-resignation-man.jpg';
 	$strPageCountry = '';
 	$strPageSector = '';
 	$strPageJobList = '';
-	    
-	    include_once ENV_ROOT . 'includes/header.php';
-	    ?>
-<div class="container">
+
+include_once ENV_ROOT . 'includes/header.php';
+?>
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
-            <h1><?php echo $strPageTitle; ?></h1>
-            <p class="post-meta">
-                Published: Aug 2017
-            </p>
-            <hr>
+        <div class="col-md-12 background-resignation animate-fade-in">
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="heading-underline h1 animate-fade-in"><b>Resignation Letter </b> - How to resign</h1>
+            <h3 class="text-center heading-upper animate-fade-in">
+                In writing a resignation letter, it is of the utmost importance to be professional – there is just no sense in making enemies.
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
     <div class="row">
         <div class="col-md-4">
             <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
                 </div>
         <div class="col-md-6 col-padding-middle animated slideInUp">
             <p>
-                In writing a resignation letter, it is of the utmost importance to be professional – there is just no sense in making enemies. Regardless of whether you loved or hated your job, your employer or the company, the outcome should be the same: a short, polite, and professional letter stating your intention to leave.
+                Regardless of whether you loved or hated your job, your employer or the company, the outcome should be the same: a short, polite, and professional letter stating your intention to leave.
             </p>
             <br />
             <p>

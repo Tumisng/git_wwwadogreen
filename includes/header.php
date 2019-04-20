@@ -171,6 +171,9 @@ include_once ENV_ROOT . 'includes/head.php';
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php">Human Resources Services</a>
                                 </li>
+                                <li>
+                                    <a  href="<?php echo ENV_ROOTURL; ?>executive-leadership-development-africa.php">Executive Training</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="dropdown">

@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -22,13 +22,21 @@
 
     include_once ENV_ROOT . 'includes/header.php';
 ?>
-<div class="container-fluid cd-main-content sub-nav">
+<div class="container-fluid">
     <div class="row">
-            <img class="img-responsive" width="100%" src="<?php echo ENV_ROOTURL;?>assets/img/front-power-generation.png" alt="Africa Renewable Energy Jobs And Recruitment">
+        <div class="col-md-12 embed-responsive embed-responsive-16by9">
+            <video preload="true" src="<?php echo ENV_ROOTURL;?>assets/img/movie/adogreen-renewable-recruitment-small2.mp4" autoplay loop>
+            </video>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
             <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="5" onMouseOver="this.stop()" onMouseOut="this.start()"><i>
-            Sources of renewable energy: solar, wind, hydro, biofuel and geothermal (energy from the earths heat) and are all continually replenished  | 
-            Renewable Energy creates three-times more jobs than fossil fuels  |  
-            Fossil fuels get 4 times the subsidy of renewables  | 
+            Sources of renewable energy: solar, wind, hydro, biofuel and geothermal (energy from the earths heat) and are all continually replenished  |
+            Renewable Energy creates three-times more jobs than fossil fuels  |
+            Fossil fuels get 4 times the subsidy of renewables  |
             One wind turbine is able to generate enough electricity to power up to 1,400 households  | </i>
             </marquee>
     </div>
@@ -113,7 +121,6 @@
     include ENV_ROOT . 'includes/footer.php';
     include ENV_ROOT . 'includes/js_scripts.php';
 ?>
-
 
     </body>
 </html>

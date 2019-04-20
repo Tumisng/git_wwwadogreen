@@ -45,6 +45,13 @@
 	color:white;
 }
 
+.navbar-default .navbar-nav>li>a {
+	color: $white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: $white;
+}
 
 .navbar-fixed-top {
     background-color: $header-background;
