@@ -2,6 +2,11 @@
 include_once 'environment/config.php';
 
 include 'includes/header.php';
+$strPageTitle = 'Legal & Compliance Services - AdoGreen Africa';
+$strPageDescription = 'Business Contracts, Company Policies , Protection of Personal Information Act and Compliance Training, SCompliance, Risk Management , Employment agreement, Power of Attorney, Professional Legal Assistance, Drafting / Reviewing Of All Commercial Agreements';
+$strPageKeywords = 'Protection of Personal Information Act and Compliance Training, SCompliance, Risk Management , Employment agreement, Power of Attorney, Professional Legal Assistance, Drafting / Reviewing Of All Commercial Agreements';
+$strPageAuthor = 'AdoGreen Africa Legal Trish Nelson Townsend';
+$strPageImg = ENV_ROOTURL . 'assets/img/legal-compliacne-risk-management-south-africa.jpg';
 
 if (Detect::isMobile() || Detect::isTablet()){
 ?>

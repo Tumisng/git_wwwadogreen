@@ -8328,6 +8328,20 @@ video {
     background-size: 100%;
     background-position: top;
   }
+  .background-legal {
+    background: url(../img/legal-compliacne-risk-management-south-africa.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top;
+  }
+  .sector-headings-white h1 {
+    color: #fafafa;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .sector-headings-white p {
+    color: #fafafa;
+    text-shadow: 2px 2px 4px #000000;
+  }
   .background-manufacturing {
     background: url(../img/sector-manufacturing-main.jpg) no-repeat center;
     background-attachment: fixed;

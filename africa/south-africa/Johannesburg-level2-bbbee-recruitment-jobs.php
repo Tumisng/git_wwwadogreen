@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -11,15 +11,15 @@
     }
     include_once $strEnvConfigFile;
 
-	$strPageTitle = 'Johannesburg Level 4 BBBEE JSE Subsidiary Recruitment Agency Jobs';
-	$strPageDescription = 'Johannesburg Jobs - Level 4 BBBEE JSE Listed Subsidiary Recruitment Agency - specialist local recruitment in South Africa - Power Generation Jobs, Renewable Energy Recruitment, Mining jobs, Renewable Energy Projects, Solar Jobs, Mining Recruitment';
-	$strPageKeywords = 'Johannesburg, Level 4 BBBEE JSE Subsidiary Recruitment Agency, South Africa Recruitment Jobs, Mining recruitment, Construction Jobs, Engineering recruitment, Renewable Energy recruitment, Project managers jobs';
+	$strPageTitle = 'Johannesburg Level 2 BBBEE JSE Subsidiary Recruitment Agency Jobs';
+	$strPageDescription = 'Johannesburg Jobs - Level 2 BBBEE JSE Listed Subsidiary Recruitment Agency - specialist local recruitment in South Africa - Power Generation Jobs, Renewable Energy Recruitment, Mining jobs, Renewable Energy Projects, Solar Jobs, Mining Recruitment';
+	$strPageKeywords = 'Johannesburg, Level 2 BBBEE JSE Subsidiary Recruitment Agency, South Africa Recruitment Jobs, Mining recruitment, Construction Jobs, Engineering recruitment, Renewable Energy recruitment, Project managers jobs';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/south-africa-johannesburg-recruitment.png';
 	$strPageCountry = 'South Africa';
 	$strPageSector = 'Mining';
 	$strPageJobList = '';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">

@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -11,15 +11,15 @@
     }
     include_once $strEnvConfigFile;
 
-	$strPageTitle = 'BEE Level 4 JSE Subsidiary Gauteng Recruitment Agency Jobs';
-	$strPageDescription = 'Gauteng Jobs - Level 4 BEE Mining Gold Diamonds Jobs';
-	$strPageKeywords = 'Gauteng, Level 4 BEE JSE Subsidiary Recruitment Agency, Mining Gold Diamonds Jobs';
+	$strPageTitle = 'BEE Level 2 JSE Subsidiary Gauteng Recruitment Agency Jobs';
+	$strPageDescription = 'Gauteng Jobs - Level 2 BEE Mining Gold Diamonds Jobs';
+	$strPageKeywords = 'Gauteng, Level 2 BEE JSE Subsidiary Recruitment Agency, Mining Gold Diamonds Jobs';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
 	$strPageImg = ENV_ROOTURL . '/assets/img/south-africa-johannesburg-recruitment.png';
 	$strPageCountry = 'South Africa';
 	$strPageSector = 'Mining';
 	$strPageJobList = '';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">
@@ -57,10 +57,10 @@
                 <p>Gauteng means "Place of gold" is one of the 9 provinces of South Africa. Gauteng is the smallest province of South Africa but has the largest city <a href="Johannesburg-level1-bbbee-recruitment-jobs.html">Johannesburg</a> in it.</p><br>
                 <p>Gauteng is the largest city in South Africa. in 1886 after the discovery of gold on a farm, Gauteng was established. </p><br>
                 <p>
-                Gauteng - Sesotho for “place of gold”, Gauteng was built on the wealth of gold found deep underground – 40% of the world’s reserves. Johannesburg is the capital of Gauteng province, while its northern neighbour Pretoria is the capital of South Africa. Johannesburg – known as Joburg or Jozi – is the biggest city in South Africa, and often compared to Los Angeles, with a similar urban sprawl linked by huge highway interchanges. 
+                Gauteng - Sesotho for “place of gold”, Gauteng was built on the wealth of gold found deep underground – 40% of the world’s reserves. Johannesburg is the capital of Gauteng province, while its northern neighbour Pretoria is the capital of South Africa. Johannesburg – known as Joburg or Jozi – is the biggest city in South Africa, and often compared to Los Angeles, with a similar urban sprawl linked by huge highway interchanges.
                 </p><br>
                 <p>
-                
+
                 </p> <br>
                 <p>
                 Around 53% of the residents of Gauteng belong to a mainstream Christian church while 24% are not affiliated with any religion. 14% are members of African Independent Churches, 3% are Muslim, 1% are Jewish and 1% are Hindu. There is also a sizable Mormon population in Gauteng of around 49,000, and it is the site of the first LDS Temple in Africa.</p><br>
