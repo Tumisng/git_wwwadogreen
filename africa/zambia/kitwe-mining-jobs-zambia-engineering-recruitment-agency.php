@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -15,11 +15,11 @@
 	$strPageDescription = 'Kitwe a large mining city in Zambia - jobs and recruitment in copper mining. AdoGreen is a specialist recruitment search and placement agency in Zambia';
 	$strPageKeywords = 'Kitwe Copper Zambia Jobs Recruitment Agency Mining Engineer';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-mining-recruitment-jobs.png';
+	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-mining-jobs-recruitment.png';
 	$strPageCountry = 'Zambia';
 	$strPageSector = 'Mining';
 	$strPageJobList = 'Sector';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">
@@ -53,14 +53,14 @@
                 </p>
             <h3>Kitwe (Zambia) The center of the copper belt</h3>
                 <p>Kitwe is one of the largest cities in Zambia and situated in the middle of the copper belt in Zambia. It is sometimes referred to as Kitwe-Nkana and was founded in 1936</p><br>
-                <p>Jwaneng is home to the richest diamond mine in the world Jwaneng Diamond mine in regards to Gem-Quality Diamonds, 
-                    carries little resemblance to the meaning of its name “a place of small stones” (Setswana). The pipe was discovered 
-                    in the Valley of the Stars “Naledi River Valley” in 1972. Jwaneng Diamond Mine is a partnership between the Botswana 
-                    government and the De Beers group, and began operations in 1982 when it was opened by the then President of Botswana, 
-                    His Excellency Sir Ketumile Masire. It is an open pit mine. When Jwaneng started as a town it was a closed town and 
+                <p>Jwaneng is home to the richest diamond mine in the world Jwaneng Diamond mine in regards to Gem-Quality Diamonds,
+                    carries little resemblance to the meaning of its name “a place of small stones” (Setswana). The pipe was discovered
+                    in the Valley of the Stars “Naledi River Valley” in 1972. Jwaneng Diamond Mine is a partnership between the Botswana
+                    government and the De Beers group, and began operations in 1982 when it was opened by the then President of Botswana,
+                    His Excellency Sir Ketumile Masire. It is an open pit mine. When Jwaneng started as a town it was a closed town and
                     you had to have permission from the owners Debswana to live there.</p><br>
-                <p>The mine employs over 2100 people and operates its own Airport and Hospital. This mine is also the first in Botswana 
-                    to receive its ISO 14001 certificate for environmental compliance, and it comes with no surprise that it is known for 
+                <p>The mine employs over 2100 people and operates its own Airport and Hospital. This mine is also the first in Botswana
+                    to receive its ISO 14001 certificate for environmental compliance, and it comes with no surprise that it is known for
                     its outstanding safety record nationally and internationally.</p><br>
                 <p>Jwaneng is home to the Jwana Game Park and is host to the threatened Lappet-Faced Vulture.</p><br>
 

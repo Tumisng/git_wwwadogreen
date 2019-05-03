@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -15,36 +15,34 @@
 	$strPageDescription = 'Want to move a new job? Best tips for Africa employment. AdoGreen Specialist African Recruitment';
 	$strPageKeywords = 'Moving Jobs Africa Quit';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/candidate-why-move-hero.png';
+	$strPageImg = ENV_ROOTURL . '/assets/img/moving-jobs-recruitment.jpg';
 	$strPageCountry = '';
 	$strPageSector = '';
 	$strPageJobList = '';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
-	    ?>
-<div class="container">
+        ?>
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <h1><?php echo $strPageTitle; ?></h1>
-            <p class="post-meta">
-                Published: Aug 2017
-            </p>
-            <hr>
+            <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
         </div>
     </div>
+</div>
+<div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive" src="<?php echo $strPageImg; ?>" width="100%" alt "<?php echo $strPageTitle; ?>">
+        <div class="col-md-3">
+
                 </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
+            <h1><?php echo $strPageTitle; ?></h1>
+            <hr>
             <p>
                 Moving jobs is a big decision and should be addressed as such. One needs to carefully consider the reasons for moving, making sure that they are compelling enough to consider the change.
             </p>
-            <br />
             <p>
                 Why?
             </p>
-            <br />
             <div>
                 <h2>Here are some pointers to consider before moving</h2></div>
             <ul class="list-unstyled">
@@ -76,7 +74,7 @@
                     </p>
                 </li>
             </ul>
-            
+
         </div>
         <div class="col-md-2">
             <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>

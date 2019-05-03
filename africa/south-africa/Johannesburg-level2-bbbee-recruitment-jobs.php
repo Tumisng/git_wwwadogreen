@@ -43,7 +43,7 @@
             <?php include ENV_ROOT . 'includes/Page_Jobs.php';?>
         </div>
         <div class="col-md-6">
-            <h2>Recruitment needs in Johannesburg??</h2>
+            <h2>Recruitment needs in Johannesburg</h2>
             <p>
                 <a href="recruitment-jobs-south-africa-level4-bbbee.html">New business contract or critical staffing needs in Johannesburg, Gauteng?</a> We specialise in the recruitment of South African candidates (local citizens) whether it is for full time, part time or contract work in Johannesburg. Our database consist of all levels of <b>active local Johannesburg </b>candidates from office commercial to project managers and CEOs. We’ve spent years developing valuable relationships and building up our database to assist you with fast precise recruitment.
             </p>
@@ -69,6 +69,7 @@
         </div>
         <div class="col-md-2">
             <?php include ENV_ROOT . 'includes/Page_Sidebar.php';?>
+            <?php include ENV_ROOT . 'includes/Page_Services.php';?>
         </div>
     </div>
 </div>

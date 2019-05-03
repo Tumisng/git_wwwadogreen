@@ -1,4 +1,4 @@
-<?php 
+<?php
        $strEnvConfigFile = '../environment/config.php';
     $intLevel = 0;
     while (!file_exists($strEnvConfigFile)) {
@@ -15,11 +15,11 @@
 	$strPageDescription = 'Power Generation Recruitment, Renewable Energy Jobs In Zambia. AdoGreen recruitment is a specialist recruitment of locals and expats in Zambia';
 	$strPageKeywords = 'Zambia Power Generation Renewable Energy Recruitment enewable energy jobs, renewable energy recruitment, renewable energy projects, renewable, energy, jobs, career, solar, wind, hydro, bio, recruitment jobs';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-mining-recruitment-jobs.png';
+	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-power-generation-jobs-recruitment.png';
 	$strPageCountry = 'Zambia';
 	$strPageSector = 'Power';
 	$strPageJobList = 'Sector';
-	    
+
 	    include_once ENV_ROOT . 'includes/header.php';
 	    ?>
 <div class="container">

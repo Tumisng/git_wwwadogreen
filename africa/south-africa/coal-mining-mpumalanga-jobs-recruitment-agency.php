@@ -15,7 +15,7 @@
     $strPageDescription = 'Coal Mining Mpumalanga - Jobs And Recruitment';
     $strPageKeywords = 'Coal Mining Mpumalanga - Jobs And Recruitment | mining recruitment, coal projects, coal, energy, jobs, career, mining';
     $strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-    $strPageImg = ENV_ROOTURL . 'assets/img/botswana-renewable-energy-recruitment-jobs.png';
+    $strPageImg = ENV_ROOTURL . 'assets/img/pages-coal-mining-excavator.jpg';
     $strPageCountry = 'South-Africa';
     $strPageSector = 'Mining';
     $strPageJobList = '';
@@ -100,13 +100,12 @@ Most of the power generated in South Africa comes from coal fired power plants -
                      <h3 class="heading-upper">Where job boards, common social media resources and local newspaper advertising fails, we are able to assist </h3>
 
                      <p>
-                AdoGreen Africa is a specialist Recruitment | HR | RPO consultancy focusing on finding local talent in <?php echo $strPageCountry; ?>. As a client you want to work with an agency who understands the job and recruitment market at every level being able to provide insight into your expansion and needs. We have an extensive referral network and have built up trusted relationships and a highly reputable name in <?php echo $strPageCountry; ?>. Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you.
-            </p>
-            <br>
-            <br>
-                         Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within South Africa, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in South Africa with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
-                        </p>
-                 </div>
+                        AdoGreen Africa is a specialist Recruitment | HR | RPO consultancy focusing on finding local talent in <?php echo $strPageCountry; ?>. As a client you want to work with an agency who understands the job and recruitment market at every level being able to provide insight into your expansion and needs. We have an extensive referral network and have built up trusted relationships and a highly reputable name in <?php echo $strPageCountry; ?>. Whether you are looking for market and salary information or up to running a recruitment drive for a large scale projects we have the expertise and tools to assist you.
+                    </p>
+                    <p>
+                        Why AdoGreen Africa is so effective in working within <a href="<?php echo ENV_ROOTURL; ?>africa/recruitment-africa-local-specialist-agency.php ">Southern Africa</a>, being able to target local candidates, is owing to extensive experience in pioneering within unfamiliar locations and successfully identifying the best recruitment practices for these type of environments for expanding and established companies. We put high value on client and candidate relationships. Owing to physical restrictions in communication within South Africa, we have had to learn how to overcome these hurdles in order to market our clients correctly, network aggressively within local circles, and target the most sought after talent including those passive on the job market. In order to expand your business in South Africa with a strong local presence, we like to work closely with you to understand your company goals and development strategy.
+                    </p>
+                </div>
                  <div class="col-md-4 front-img-no-space  animate-fade-in-right">
                      <img class="img-responsive" src="../../assets/img/pages-coal-frontendloader.jpg">
                  </div>

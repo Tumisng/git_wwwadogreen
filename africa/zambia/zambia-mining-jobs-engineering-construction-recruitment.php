@@ -15,7 +15,7 @@
 	$strPageDescription = 'Mining,Construction and Engineering Jobs In Zambia. AdoGreen recruitment is a specialist recruitment of locals and expats in Zambia';
 	$strPageKeywords = 'Jobs Mining Zambia Construction Engineering, Africa Recruitment RPO';
 	$strPageAuthor = 'AdoGreen Africa Recruiment Agency';
-	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-mining-recruitment-jobs.png';
+	$strPageImg = ENV_ROOTURL . '/assets/img/zambia-mining-jobs-recruitment.png';
 	$strPageCountry = 'Zambia';
 	$strPageSector = 'Mining';
 	$strPageJobList = 'Sector';
