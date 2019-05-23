@@ -16,7 +16,10 @@
 <!--                            <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/special-project-recruitment-africa.php">Special Project Recruitment</a></li>
                             <li><a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/company-targeted-marketing-local-africa.php ">Company Targeted Marketing</a></li>-->
                             <li>
-                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>executive-leadership-development-africa.php ">Executive Training</a>
+                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>executive-leadership-development-africa.php">Executive Training</a>
+                            </li>
+                            <li>
+                                <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>legal-compliance.php">Legal</a>
                             </li>
                             <li>
                                 <a rel="nofollow" href="<?php echo ENV_ROOTURL;?>services/hr-services-africa-hro.php ">Human Resources Services</a>
@@ -55,6 +58,9 @@
                             </li>
                             <li>
                                 <a href="<?php echo ENV_ROOTURL;?>jobs-africa/register-cv.php" rel="nofollow">Register Your CV</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo ENV_ROOTURL;?>candidate/job-recruitment-scams.php" rel="nofollow">How To Spot Recruitment Scams</a>
                             </li>
                         </ul>
                     </div>

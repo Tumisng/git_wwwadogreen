@@ -85,60 +85,77 @@ echo '  </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 animate-fade-in text-center">
-                <h1 class="front-sectors"><b>Recruitment in Africa - Sectors</b></h1>
+                <h1 class="front-sectors"><b>Recruitment | HR | Training | Legal</b></h1>
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2 >African Mining Recruitment</h2>
+                <h2>Specialist Recruitment</h2>
 
                 <p>
-                    With extensive experience and industry knowledge of working into the mining sector across Africa, covering all commodities, facing the most challenging of requirements, we are well positioned to source the best of talent available within the industry. Our expertise enables us to understand the technical requirements of the mining sector and highly defined client needs. Our years of experience set us apart to save our valued clients time and money to identify the best within the industry.
+                   Owing to the success of tried and tested recruitment methodology within well-established business hubs to unfamiliar and remote locations, AdoGreen Africa has been able to deliver above expectation on recruitment specs, human resources and RPO across a spectrum of diverse environments. This has positioned us with the confidence to embrace any recruitment, HR and RPO need and challenge within Africa. Although there is a primary focus of 6 largely broad sectors, we are technically and intelligently equipped with the experience to tackle the most challenging of assignments.
                 </p>
+                <button class="btn btn-action" href="africa-recruitment-jobs.php">Read More...</button>
                 <hr class="style1">
             </div>
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-mining.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/front-sector-mining.jpg" width=100% alt="Specialist Recruitment Africa"/>
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-renewable.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/legal-compliacne-risk-management-south-africa.jpg" width=100% alt="Legal Services Recruitment Africa"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2 >Power & Renewable Energy Recruitment In Africa</h2>
-
-                <p>
-                    Be it Wind Power, Solar, Hydropower and Geothermal Energy projects, we are well positioned to effectively source some of the best candidates within the market based on our effective recruitment methodologies through strategic networking and headhunting.
-
-                    We have years of experience recruiting for highly skilled candidates within OHL, transmission and distribution, power stations, transformers and switchgear.
-                </p>
+                <h2>Legal Services</h2>
+                <ul>
+                    <li>Protection of Personal Information Act and Compliance Training</li>
+                    <li>Compliance, Risk Management And Training</li>
+                    <li>Company Policies</li>
+                    <li>Drafting / Reviewing Of All Commercial Agreements</li>
+                </ul>
+                <button class="btn btn-action" href="legal-compliance.php">Read More...</button>
                 <hr class="style1">
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-sectors">
-                <h2>African Engineering Recruitment</h2>
+                <h2>Human Resources</h2>
 
                 <p>
-                    We are highly targeted in our approach to finding skilled and experienced candidates within the market, particularly when presented with skills shortages. With a focus on middle-level to director-level candidates, our success lies in sourcing the best of technical capabilities.
+                    Various dedicated HR services to establish and run your Human Resources in Africa. Dedicated HR to assist your move into different countries into Africa.</br>
                 </p>
+                <ul>
+                    <li>HR Oursourcing</li>
+                    <li>Pre-Feasibility and Feasibility Study Support</li>
+                    <li>HR Consulting Services</li>
+                    <li>Outsourced Payroll Services</li>
+                    <li>Outsourced HR Function</li>
+                </ul>
+                <button class="btn btn-action" href="services/hr-services-africa-hro.php">Read More...</button>
                 <hr class="style1">
             </div>
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-engineering.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/legal-drafting-commercial-agreements.jpg" width=100% alt="Human Resources Outsourcing"/>
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-building.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/training-corporate-close-personal.jpg" width=100% alt="Executive Training South Africa"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Building and Construction Recruitment In Africa</h2>
+                <h2>Executive Training</h2>
 
                 <p>
-                    Our focus lies in sourcing various technical capabilities for construction companies throughout South Africa, and sub-Saharan Africa, enabling our clients to meet tight budgets and timelines through the provision of highly professional built environment personnel.
+                    Highly specilised executive training from small companies to large scale enterprises </br>
+                    <ul>
+                        <li>Personal Mastery </li>
+                        <li>Team Mastery</li>
+                        <li>Performance Mastery</li>
+                        <li>Organisational Mastery</li>
+                    </ul>
                 </p>
+                <button class="btn btn-action" href="executive-leadership-development-africa.php">Read More...</button>
                 <hr class="style1">
             </div>
         </div>
@@ -152,19 +169,29 @@ echo '  </div>
                 <hr class="style1">
             </div>
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-finance.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/front-sector-finance.jpg" width=100% alt="finance recruitment Africa"/>
             </div>
         </div>
         <div class="row animate-fade-in">
             <div class="col-md-6 padding-none">
-                <img class="img-responsive" src="assets/img/front-sector-manufacture.jpg" width=100% alt="front-sector-mining"/>
+                <img class="img-responsive" src="assets/img/training-organisational-mastery.jpg" width=100% alt="fIndustrial And Clinical Psychometric Services"/>
             </div>
             <div class="col-md-6 padding-sectors">
-                <h2>Manufacturing Recruitment In Africa</h2>
+                <h2>Industrial And Clinical Psychometric Services</h2>
 
-                <p>
-                    Our manufacturing recruiting services help drive your financial and operational results. We understand the importance of partnering with our clients to understand key requirements to gain a competitive edge within the market, and provide quality professional, engineering and technical talent with the most relevant skills and experience.
-                </p>
+                <p>Our Clients Include</p>
+                    <ul>
+                            <li>Individuals</li>
+                            <li>Mining Companies</li>
+                            <li>Hospitals</li>
+                            <li>Schools</li>
+                            <li>Security Companies</li>
+                            <li>Small businesses</li>
+                            <li>JSE listed and other big international companies Cooperatives</li>
+                            <li>PWC</li>
+                            <li>Manufacturing Companies</li>
+                    </ul>
+                    <button class="btn btn-action" href="services/industrial-psychometric-services-africa.php">Read More...</button>
                 <hr class="style1">
             </div>
         </div>

@@ -1,12 +1,13 @@
 <?php
 include_once 'environment/config.php';
 
-include 'includes/header.php';
+
 $strPageTitle = 'Legal & Compliance Services - AdoGreen Africa';
 $strPageDescription = 'Business Contracts, Company Policies , Protection of Personal Information Act and Compliance Training, SCompliance, Risk Management , Employment agreement, Power of Attorney, Professional Legal Assistance, Drafting / Reviewing Of All Commercial Agreements';
 $strPageKeywords = 'Protection of Personal Information Act and Compliance Training, SCompliance, Risk Management , Employment agreement, Power of Attorney, Professional Legal Assistance, Drafting / Reviewing Of All Commercial Agreements';
 $strPageAuthor = 'AdoGreen Africa Legal Trish Nelson Townsend';
 $strPageImg = ENV_ROOTURL . 'assets/img/legal-compliacne-risk-management-south-africa.jpg';
+include 'includes/header.php';
 
 if (Detect::isMobile() || Detect::isTablet()){
 ?>
@@ -156,11 +157,11 @@ echo '  </div>
                 <h2>Drafting / Reviewing Of All Commercial Agreements</h2>
 
                 <p>
-                    n today’s tough economic environment having concise, sound agreements, are crucial for business success. <br>
-
-Agreements that are drafted correctly prevent disputes and save a businesses money.<br>
-
-We are able to assist in the reviewing and/or drafting of all commercial agreements including, but not limited to:
+                    In today’s tough economic environment having concise, sound agreements, are crucial for business success.
+                    <br>
+                    Agreements that are drafted correctly prevent disputes and save a businesses money.
+                    <br>
+                    We are able to assist in the reviewing and/or drafting of all commercial agreements including, but not limited to:
                 </p>
                 <li>Joint Venture Agreements;</li>
                 <li>Memorandum Of Understanding;

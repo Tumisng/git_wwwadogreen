@@ -211,6 +211,9 @@ include_once ENV_ROOT . 'includes/head.php';
                                 <li>
                                     <a href="<?php echo ENV_ROOTURL; ?>candidate/moving-jobs-what-next.php">Moving Jobs?</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo ENV_ROOTURL; ?>candidate/job-recruitment-scams.php">Recruitment Scams</a>
+                                </li>
                             </ul>
                         </li>
                         <li>

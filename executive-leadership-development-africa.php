@@ -6,6 +6,7 @@ $strPageDescription = 'AdoGreen Africa - Executive Leadership Development Africa
 $strPageKeywords = 'Leadership Development ShadowMatch human capital learning development strategies';
 $strPageAuthor = 'AdoGreen Africa';
 $strPageImg = ENV_ROOTURL . 'assets/img/training-executive-planning.jpg';
+
 include 'includes/header.php';
 
 if (Detect::isMobile() || Detect::isTablet()){

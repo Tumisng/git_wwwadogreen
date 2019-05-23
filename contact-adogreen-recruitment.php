@@ -41,14 +41,14 @@ include_once ENV_ROOT . 'includes/header.php';
     </div>
     <div class="row">
         <div class="col-md-4">
-            <h3>Dr. Marcel Hattingh</h3>
-            <p>Executive Leadership Development</p>
-            <a href="https://www.linkedin.com/in/marcel-hattingh-5984a6a9/"><img class="img-responsive" src="assets/img/social-Marcel.jpg" width="100%" alt="Marcel Hatting Executive Training AdoGreen Africa"></a>
-        </div>
-        <div class="col-md-4">
             <h3>Chantell Gericke</h3>
             <p>HR South Africa</p>
             <a href="https://www.linkedin.com/in/chantell-gericke-9325355b/"><img class="img-responsive" src="assets/img/social-Chantell.jpg" width="100%" alt="Chantell Gericke Head HR AdoGreen Africa"></a>
+        </div>
+        <div class="col-md-4">
+            <h3>Naledi Mokgwathi </h3>
+            <p>HR | Recruitment AdoGreen Botswana</p>
+            <a href="https://www.linkedin.com/in/marcel-hattingh-5984a6a9/"><img class="img-responsive" src="assets/img/social-naledi.jpg" width="100%" alt="Naledi Mokgwathi HR Retail Botswana AdoGreen Africa"></a>
         </div>
         <div class="col-md-4">
             <h3>Peter Meswele</h3>
@@ -57,6 +57,11 @@ include_once ENV_ROOT . 'includes/header.php';
         </div>
     </div>
     <div class="row">
+        <div class="col-md-4">
+            <h3>Dr. Marcel Hattingh</h3>
+            <p>Executive Leadership Development</p>
+            <a href="https://www.linkedin.com/in/marcel-hattingh-5984a6a9/"><img class="img-responsive" src="assets/img/social-Marcel.jpg" width="100%" alt="Marcel Hatting Executive Training AdoGreen Africa"></a>
+        </div>
         <div class="col-md-4">
             <h3>Zolani Sinxo</h3>
             <p>Business Reporter, Journalist
@@ -68,17 +73,11 @@ include_once ENV_ROOT . 'includes/header.php';
             <p>Dynamic Creative Consultant | AdoGreen Africa</p>
             <a href="https://www.linkedin.com/in/natasha-cloete-b8246928rau/"><img class="img-responsive" src="assets/img/social-Tasha.jpg" width="100%" alt="Tasha Cloete Director Africa"></a>
         </div>
-        <div class="col-md-4">
-            <h3>Trish Nelson</h3>
-            <p>Legal Advisor & Commercial Mediator</p>
-            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
-        </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
-            <h3>Georges Mbede</h3>
-            <p> Business Development Director</p>
-            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-georges-mbede.jpg" width="100%" alt="Georges Mbede Africa"></a>
+        <div class="col-md-4"><h3>Trish Nelson</h3>
+            <p>Legal Advisor & Commercial Mediator</p>
+            <a href="https://www.linkedin.com/in/trish-nelson-townsend-48544077/"><img class="img-responsive" src="assets/img/social-Trish.jpg" width="100%" alt="Trish Nelson Legal Advisor & Commercial Mediator AdoGreen Africa"></a>
         </div>
         <div class="col-md-4">
             <h3>Natie Rautenbach</h3>
@@ -86,7 +85,9 @@ include_once ENV_ROOT . 'includes/header.php';
             <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-Natie.jpg" width="100%" alt="Natie Rautenbach Director Africa"></a>
         </div>
         <div class="col-md-4">
-
+            <h3>Georges Mbede</h3>
+            <p> Business Development Director</p>
+            <a href="https://www.linkedin.com/in/natierau/"><img class="img-responsive" src="assets/img/social-georges-mbede.jpg" width="100%" alt="Georges Mbede Africa"></a>
         </div>
     </div>
     <div class="row">
