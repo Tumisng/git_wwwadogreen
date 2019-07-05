@@ -18,6 +18,7 @@
                 <div class="panel-heading">
                     <h3>Referral</h3>
                     <p>Please note that all referrals are confidential, so we will not disclose your name to your referral.</p>
+                    <p><strong>Make sure you choose a job you are referral the person to</strong></p>
                         <ul>
                             <li>You are more than welcome to let them know that you have referred them.</li>
                             <li>Referrals work on a first come first serve basis, so should we already be in contact with the person you have referred, or where someone else has already referred them for this position, we will let you know in the next week or two as we come to your referral information. Our system automatically contacts the person you have referred on our behalf.</li>
@@ -74,6 +75,7 @@
                                     <label>Job referring for  - <span style="font-weight:100;">Please select the job you are referring the person for</span><span class="loud">*</span></label>
 
                                     <select id="JobListing" required="">
+                                        <option>NONE</option>
                                         <option>General Job</option>
                                     </select>
 
@@ -163,30 +165,39 @@
 
 
 <script>
+    $(document).ready(function(){
+        jobid = $('#JobListing').val();
 
-         var getUrlParameter = function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                    sURLVariables = sPageURL.split('&'),
-                    sParameterName,
-                    i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
+        $("#Fin").on('click', function (event) {
+            $(":selected").each(function(){
+                if($(this).val()=='NONE'){
+                    alert("You did not select a job);
+                    event.preventDefault();
                 }
-            }
-        };
+            });
+        });
+    });
 
+    var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
 
     var FirstName = getUrlParameter('fn');
     var LastName = getUrlParameter('ln');
     var Email = getUrlParameter('e');
     var Telephone = getUrlParameter('t');
     var undefined;
-
-
 
     if(typeof(FirstName != "undefined") && typeof(LastName != "undefined") && typeof(Email != "undefined") && typeof(Telephone != "undefined")){
         $('#RE').attr('value', Email);
@@ -197,19 +208,19 @@
     }
 
 
-        $('#JobListing').on('change',function(){
-           var ID = $(this, 'option').val();
-           $('input[name="JobId"]').attr('value',  ID);
-        });
+    $('#JobListing').on('change',function(){
+        var ID = $(this, 'option').val();
+        $('input[name="JobId"]').attr('value',  ID);
+    });
 
-        function SortByJobTitle(x,y) {
-            return ((x.JobTitle == y.JobTitle) ? 0 : ((x.JobTitle > y.JobTitle) ? 1 : -1 ));
-        }
+    function SortByJobTitle(x,y) {
+        return ((x.JobTitle == y.JobTitle) ? 0 : ((x.JobTitle > y.JobTitle) ? 1 : -1 ));
+    }
 
 
-        var objSectors = {};
+    var objSectors = {};
 
-        Sectors();
+    Sectors();
 
     function Sectors(){
         var getSectors = $.ajax({
