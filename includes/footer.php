@@ -98,12 +98,6 @@
                                         <i class="fa fa-2x fa-linkedin"></i>
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a rel="nofollow" href="https://plus.google.com/+AdoGreen" class="tooltips" target="_blank" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
-                                        <i class="fa fa-2x fa-google-plus"></i>
-                                    </a>
-                                </li>
                                 <li>
                                     <a rel="nofollow" href="https://www.youtube.com/c/adogreen" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="YouTube">
                                         <i class="fa fa-2x fa-youtube"></i>
