@@ -16,7 +16,7 @@
             <div class="carousel-caption">
               <!--<h1 class="bold font-black"></h1>-->
                <h3 class="font-black" >HR | Recruitment | Training | Legal</h3>
-               <p class="font-black text-center heading-upper">Established since 2007, AdoGreen Africa provides specialist Human Resources, Recruitment, Training and Legal services in the African market</p>
+               <p class="font-black text-center heading-upper">At AdoGreen Africa, we are passionate about people, achieving excellence and delivering a service that is trusted, througout Africa and globally.</p>
               <p><a class="btn btn-lg btn-primary" href="<?php echo ENV_ROOTURL; ?>about-us.php" role="button">Read More</a></p>
             </div>
           </div>
